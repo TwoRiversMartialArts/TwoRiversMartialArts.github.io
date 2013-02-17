@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<images>
+    <image groupId="homepage">
+        <ImageUrl>~/components/themes/default/i/main-01.jpg</ImageUrl>
+        <AlternateText>Optimal implementation thanks to CMS</AlternateText>
+        <NavigateUrl>~/web/services.aspx</NavigateUrl>
+    </image>
+    <image groupId="homepage">
+        <ImageUrl>~/components/themes/default/i/main-02.jpg</ImageUrl>
+        <AlternateText>Good web design makes an impression</AlternateText>
+        <NavigateUrl>~/web/services.aspx</NavigateUrl>
+    </image>
+    <image groupId="homepage">
+        <ImageUrl>~/components/themes/default/i/main-03.jpg</ImageUrl>
+        <AlternateText>Web 2.0 finally makes sense to use</AlternateText>
+        <NavigateUrl>~/web/services.aspx</NavigateUrl>
+    </image>
+    <image groupId="homepage">
+        <ImageUrl>~/components/themes/default/i/main-04.jpg</ImageUrl>
+        <AlternateText>We ensure your success on the Internet</AlternateText>
+        <NavigateUrl>~/web/services.aspx</NavigateUrl>
+    </image>
+</images>

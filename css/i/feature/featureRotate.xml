@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<images>
+    <image groupId="homepage">
+        <ImageUrl>~/components/themes/trma/i/feature/features_001.jpg</ImageUrl>
+        <AlternateText>Perseverance (In Nae)</AlternateText>
+        <NavigateUrl>~/web/contact.aspx</NavigateUrl>
+    </image>
+    <image groupId="homepage">
+        <ImageUrl>~/components/themes/trma/i/feature/features_002.jpg</ImageUrl>
+        <AlternateText>Integrity (Yom Chi)</AlternateText>
+        <NavigateUrl>~/web/contact.aspx</NavigateUrl>
+    </image>
+    <image groupId="homepage">
+        <ImageUrl>~/components/themes/trma/i/feature/features_003.jpg</ImageUrl>
+        <AlternateText>Courtesy (Ye Ui)</AlternateText>
+        <NavigateUrl>~/web/contact.aspx</NavigateUrl>
+    </image>
+    <image groupId="homepage">
+        <ImageUrl>~/components/themes/trma/i/feature/features_004.jpg</ImageUrl>
+        <AlternateText>Self-Control (Guk Gi)</AlternateText>
+        <NavigateUrl>~/web/contact.aspx</NavigateUrl>
+    </image>
+    <image groupId="homepage">
+        <ImageUrl>~/components/themes/trma/i/feature/features_005.jpg</ImageUrl>
+        <AlternateText>Perseverance (In Nae)</AlternateText>
+        <NavigateUrl>~/web/contact.aspx</NavigateUrl>
+    </image>
+    <image groupId="homepage">
+        <ImageUrl>~/components/themes/trma/i/feature/features_006.jpg</ImageUrl>
+        <AlternateText>Indomitable Spirit (Baekjul Boolgool)</AlternateText>
+        <NavigateUrl>~/web/contact.aspx</NavigateUrl>
+    </image>
+    <image groupId="homepage">
+        <ImageUrl>~/components/themes/trma/i/feature/features_007.jpg</ImageUrl>
+        <AlternateText>Self-Control (Guk Gi)</AlternateText>
+        <NavigateUrl>~/web/contact.aspx</NavigateUrl>
+    </image>
+    <image groupId="homepage">
+        <ImageUrl>~/components/themes/trma/i/feature/features_008.jpg</ImageUrl>
+        <AlternateText>Perseverance (In Nae)</AlternateText>
+        <NavigateUrl>~/web/contact.aspx</NavigateUrl>
+    </image>
+    <image groupId="homepage">
+        <ImageUrl>~/components/themes/trma/i/feature/features_009.jpg</ImageUrl>
+        <AlternateText>Indomitable Spirit (Baekjul Boolgool)</AlternateText>
+        <NavigateUrl>~/web/contact.aspx</NavigateUrl>
+    </image>
+    <image groupId="homepage">
+        <ImageUrl>~/components/themes/trma/i/feature/features_010.jpg</ImageUrl>
+        <AlternateText>Courtesy (Ye Ui)</AlternateText>
+        <NavigateUrl>~/web/contact.aspx</NavigateUrl>
+    </image>
+    <image groupId="homepage">
+        <ImageUrl>~/components/themes/trma/i/feature/features_011.jpg</ImageUrl>
+        <AlternateText>Self-Control (Guk Gi)</AlternateText>
+        <NavigateUrl>~/web/contact.aspx</NavigateUrl>
+    </image>
+    <image groupId="homepage">
+        <ImageUrl>~/components/themes/trma/i/feature/features_012.jpg</ImageUrl>
+        <AlternateText>Indomitable Spirit (Baekjul Boolgool)</AlternateText>
+        <NavigateUrl>~/web/contact.aspx</NavigateUrl>
+    </image>
+    <image groupId="homepage">
+        <ImageUrl>~/components/themes/trma/i/feature/features_013.jpg</ImageUrl>
+        <AlternateText>Self-Control (Guk Gi)</AlternateText>
+        <NavigateUrl>~/web/contact.aspx</NavigateUrl>
+    </image>
+    <image groupId="homepage">
+        <ImageUrl>~/components/themes/trma/i/feature/features_014.jpg</ImageUrl>
+        <AlternateText>Indomitable Spirit (Baekjul Boolgool)</AlternateText>
+        <NavigateUrl>~/web/contact.aspx</NavigateUrl>
+    </image>
+</images>

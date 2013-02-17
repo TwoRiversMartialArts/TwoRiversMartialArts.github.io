@@ -1,0 +1,65 @@
+<%@ master language="VB" inherits="components_master_default, DontblinkDesignsEZSite" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="main_Head" runat="server">
+    <title>Dontblink Designs :: EzSite</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="content-style-type" content="text/css" />
+    <meta http-equiv="content-script-type" content="text/javascript" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <style type="text/css" id="dbdstyle" runat="server" />
+    <asp:ContentPlaceHolder id="cph_Head" runat="server" />
+    <asp:Literal id="lit_LayoutHeader" runat="server" />
+</head>
+<body id="main_Body" runat="server">
+    <form id="frm_Main" runat="server">
+    <asp:scriptmanager ID="main_Script" runat="server" AsyncPostBackTimeOut="36000" />
+    <div id="ezSite">
+        <asp:Literal id="lit_LayoutTop" runat="server" />
+        <asp:ContentPlaceHolder id="cph_Body" runat="server" />
+        <asp:Panel ID="pnlCommentSection" runat="server" Visible="false">
+            <div class="pageComments">
+                <asp:Literal id="lit_Comments" runat="server" />
+                <asp:Panel ID="pnlCommentSectionForm" runat="server" Visible="false">
+                    <asp:Label ID="lbl_Message" runat="server" CssClass="message" Visible="false" />
+                    <fieldset>
+                        <legend> &nbsp; <asp:Label id="lit_CommentForm_Header" runat="server" CssClass="commentFormHeader" /> &nbsp; </legend><br />
+                        <asp:Literal id="lit_CommentForm_Title" runat="server" /><br />
+                        <asp:TextBox ID="txt_CommentForm_Title" runat="server" Columns="100" CssClass="formField" /><br /><br />
+                        <asp:Literal id="lit_CommentForm_Name" runat="server" /><br />
+                        <asp:TextBox ID="txt_CommentForm_Name" runat="server" Columns="100" CssClass="formField" /><br /><br />
+                        <asp:Literal id="lit_CommentForm_Comment" runat="server" /><br />
+                        <asp:TextBox ID="txt_CommentForm_Comment" runat="server" TextMode="MultiLine" Rows="8" Columns="100" CssClass="formField" /><br /><br /><br />
+                        <asp:Literal id="lit_CommentForm_Captcha" runat="server" /><br />
+                        <asp:TextBox ID="txt_CommentForm_CapchaField1" runat="server" Columns="1" ReadOnly="true" style="display:none;visibility:hidden;" /><asp:TextBox ID="txt_CommentForm_CapchaField2" runat="server" Columns="1" ReadOnly="true" style="display:none;visibility:hidden;" /><asp:TextBox ID="txt_CommentForm_CapchaField3" runat="server" Columns="1" ReadOnly="true" style="display:none;visibility:hidden;" /><asp:Literal id="lit_CommentForm_CaptchaEquation" runat="server" /><asp:TextBox ID="txt_CommentForm_CapchaFieldAnswer" runat="server" Columns="5"  CssClass="formField" /><br /><br /><br />
+                        <asp:Button ID="btn_CommentForm" runat="server" CssClass="submit" /><br /><br />
+                    </fieldset>
+                </asp:Panel>
+            </div>
+            <br />
+            <asp:RequiredFieldValidator ID="validReq_Title" runat="server" SetFocusOnError="True" ControlToValidate="txt_CommentForm_Title" Display="None" />
+            <asp:RequiredFieldValidator ID="validReq_Name" runat="server" SetFocusOnError="True" ControlToValidate="txt_CommentForm_Name" Display="None" />
+            <asp:RequiredFieldValidator ID="validReq_Comment" runat="server" SetFocusOnError="True" ControlToValidate="txt_CommentForm_Comment" Display="None" />
+            <asp:ValidationSummary ID="validAddSumm" runat="server" ShowMessageBox="True" ShowSummary="False" />
+        </asp:Panel>
+        <asp:Literal id="lit_LayoutBot" runat="server" />
+
+        <!-- overlayed element [external page] -->
+        <div class="simpleExt_overlay" id="overlayExtPage">
+            <div class="innerdetails" id="innerdetailsExtPage" style="">
+	            <!-- the external content is loaded inside this tag -->
+	            <div class="contentWrapExtPage"></div>
+	        </div>
+        </div>
+
+    </div>
+    <asp:Literal ID="lit_JScriptFiles" runat="server" />
+    <asp:Literal id="lit_LayoutFooter" runat="server" />
+    <asp:Literal ID="lit_TempBottomScript" runat="server" />
+    <asp:Literal ID="lit_BottomScript" runat="server" />
+    <asp:Image ID="imgAnalytics" runat="server" Visible="false" />
+    </form>
+</body>
+</html>

@@ -1,0 +1,1209 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<theme title="Two Rivers Martial Arts">
+
+    <layout id="Default Home Page">
+        <head>
+            <![CDATA[
+<style type="text/css"></style>
+<!--geo-->
+<meta name="geo.region" content="US-IA" />
+<meta name="geo.placename" content="Des Moines" />
+<meta name="geo.position" content="41.532949;-93.644135" />
+<meta name="ICBM" content="41.532949, -93.644135" />
+
+              ]]>
+        </head>
+        <html>
+            <![CDATA[
+<div id="homepage">
+    <div id="outer-a">
+        <div id="outer-b">
+            <div id="wrap">
+                <div id="masthead" class="noprint">
+                    <div id="logo">
+                        <a href="/default.aspx"><h1>{site-title}</h1></a>
+                    </div>
+                    <div id="utility-navigation">
+                        <layout:NavigationHead type="list" />
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+                <div id="main">
+                    <div id="features" class="noprint">
+                        <div style="position:relative;background:transparent url('{folder-theme}/i/feature/features_000.jpg') 0px 0px no-repeat;">
+                            <div id="bannerCaption"></div>
+							<plugin category="HeadlineRotator" count="100" file="{folder-theme}/i/feature/featureRotate.xml" height="250" heightu="px" modid="mod14" name="Headlines Rotator" settings="Display:Image;Speed:8000;GroupId:allrandom;" type="application/ezsite-plugin" width="960" widthu="px" />
+                        </div>
+                    </div>
+                    <div id="navigation" class="noprint">
+                        <layout:NavigationMain type="list" />
+                    </div>
+                    <div id="content">
+                        <layout:content />
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+
+            <div id="footer" class="noprint">
+                <div>
+                    <p id="social-icons">
+                        <span>Follow us on:</span>
+                        <a href="http://www.facebook.com/tworiversmartialarts" class="fb" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Facebook', 'Follow Us');">Facebook</a>
+                        <a href="http://twitter.com/tworiversma" class="tw" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Twitter', 'Follow Us');">Twitter</a>
+                        <a href="http://www.linkedin.com/pub/tworivers-martialarts/23/52b/155" class="li" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'LinkedIn', 'Follow Us');">LinkedIn</a>
+                        <a href="http://tworiversmartialarts.posterous.com/" class="poster" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Posterous', 'Follow Us');">Posterous</a>
+                        <!--<a href="http://www.youtube.com/trma" class="yt" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Youtube', 'Follow Us');">YouTube</a>-->
+                    </p>
+                    <p>&copy; {site-date-yyyy} {site-title}. All Rights Reserved.</p>
+                    <div style="clear: both;"></div>
+                </div><br />
+             
+                <div id="sitemap">
+                    <div>
+                        <strong>About Us</strong>
+						<plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:9;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong>Locations</strong>
+						<plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:7;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                        <br /><br /><br />
+                        <strong><a href="{folder-root}/web/martial-spirit.aspx">Martial Spirit</a></strong>
+                    </div>
+
+                    <div>
+                        <strong>Schedules</strong>
+						<plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:8;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong>Resources</strong>
+						<plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:6;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+                    
+                    <div>
+                        <strong><a href="{folder-root}/web/search.aspx">Search & Sitemap</a></strong>
+                    </div>
+
+                    <div style="clear: both;"></div>
+                </div>
+
+                <div style="clear: both;"></div>
+            </div>
+        
+        </div><!-- /outer-b -->
+    </div><!-- /outer-a -->
+</div><!-- /homepage -->
+              ]]>
+        </html>
+        <foot>
+            <![CDATA[
+<script src="{folder-root}/components/scripts/jquery/jquery.inputFocus.js" type="text/javascript"></script>
+              ]]>
+        </foot>
+    </layout>
+
+    <layout id="Interior Pages">
+        <head>
+            <![CDATA[
+<style type="text/css"></style>
+<!--geo-->
+<meta name="geo.region" content="US-IA" />
+<meta name="geo.placename" content="Des Moines" />
+<meta name="geo.position" content="41.532949;-93.644135" />
+<meta name="ICBM" content="41.532949, -93.644135" />
+              ]]>
+        </head>
+        <html>
+            <![CDATA[
+<div id="interior">
+    <div id="outer-a">
+        <div id="outer-b">
+            <div id="wrap">
+                <div id="masthead" class="noprint">
+                    <div id="logo">
+                        <a href="/default.aspx"><h1>{site-title}</h1></a>
+                    </div>
+                    <div id="utility-navigation">
+                        <layout:NavigationHead type="list" />
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+                <div id="main">
+                    <div id="navigation" class="noprint">
+                        <layout:NavigationMain type="list" />
+                    </div>
+                    <div id="content">
+                        <layout:PageGraphic type="asd" id="banner" />
+                        <layout:content />
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+
+            <div id="footer" class="noprint">
+                <div>
+                    <p id="social-icons">
+                        <span>Follow us on:</span>
+                        <a href="http://www.facebook.com/tworiversmartialarts" class="fb" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Facebook', 'Follow Us');">Facebook</a>
+                        <a href="http://twitter.com/tworiversma" class="tw" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Twitter', 'Follow Us');">Twitter</a>
+                        <a href="http://www.linkedin.com/pub/tworivers-martialarts/23/52b/155" class="li" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'LinkedIn', 'Follow Us');">LinkedIn</a>
+                        <a href="http://tworiversmartialarts.posterous.com/" class="poster" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Posterous', 'Follow Us');">Posterous</a>
+                        <!--<a href="http://www.youtube.com/trma" class="yt" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Youtube', 'Follow Us');">YouTube</a>-->
+                    </p>
+                    <p>&copy; {site-date-yyyy} {site-title}. All Rights Reserved.</p>
+                    <div style="clear: both;"></div>
+                </div><br />
+             
+                <div id="sitemap">
+                    <div>
+                        <strong>About Us</strong>
+						<plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:9;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong>Locations</strong>
+						<plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:7;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                        <br /><br /><br />
+                        <strong><a href="{folder-root}/web/martial-spirit.aspx">Martial Spirit</a></strong>
+                    </div>
+
+                    <div>
+                        <strong>Schedules</strong>
+						<plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:8;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong>Resources</strong>
+						<plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:6;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong><a href="{folder-root}/web/search.aspx">Search & Sitemap</a></strong>
+                    </div>
+
+                    <div style="clear: both;"></div>
+                </div>
+
+
+
+                <div style="clear: both;"></div>
+            </div>
+
+        </div><!-- /outer-b -->
+    </div><!-- /outer-a -->
+</div><!-- /interior -->
+              ]]>
+        </html>
+        <foot>
+            <![CDATA[
+<script src="{folder-root}/components/scripts/jquery/jquery.inputFocus.js" type="text/javascript"></script>
+              ]]>
+        </foot>
+    </layout>
+
+    <layout id="Interior Pages w SCHEDULES Nav">
+        <head>
+            <![CDATA[
+<style type="text/css"></style>
+<!--geo-->
+<meta name="geo.region" content="US-IA" />
+<meta name="geo.placename" content="Des Moines" />
+<meta name="geo.position" content="41.532949;-93.644135" />
+<meta name="ICBM" content="41.532949, -93.644135" />
+              ]]>
+        </head>
+        <html>
+            <![CDATA[
+<div id="interior">
+    <div id="outer-a">
+        <div id="outer-b">
+            <div id="wrap">
+                <div id="masthead" class="noprint">
+                    <div id="logo">
+                        <a href="/default.aspx"><h1>{site-title}</h1></a>
+                    </div>
+                    <div id="utility-navigation">
+                        <layout:NavigationHead type="list" />
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+                <div id="main">
+                    <div id="navigation" class="noprint">
+                        <layout:NavigationMain type="list" />
+                    </div>
+                    <div id="sub-navigation" class="noprint">
+                        <h4 class="first"><plugin category="PageTitle" count="1" file="" height="" heightu="px" modid="mod20" name="Page Title" settings="Pid:8;" type="application/ezsite-plugin" width="" widthu="px" />:</h4>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:8;" type="application/ezsite-plugin" width="" widthu="px" />
+                        <div style="padding-bottom: 100px;"></div>
+                    </div>
+                    <div id="content" class="v2">
+                        <layout:PageGraphic type="optionalGraphic" id="banner" />
+                        <layout:content />
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+
+            <div id="footer" class="noprint">
+                <div>
+                    <p id="social-icons">
+                        <span>Follow us on:</span>
+                        <a href="http://www.facebook.com/tworiversmartialarts" class="fb" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Facebook', 'Follow Us');">Facebook</a>
+                        <a href="http://twitter.com/tworiversma" class="tw" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Twitter', 'Follow Us');">Twitter</a>
+                        <a href="http://www.linkedin.com/pub/tworivers-martialarts/23/52b/155" class="li" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'LinkedIn', 'Follow Us');">LinkedIn</a>
+                        <a href="http://tworiversmartialarts.posterous.com/" class="poster" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Posterous', 'Follow Us');">Posterous</a>
+                        <!--<a href="http://www.youtube.com/trma" class="yt" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Youtube', 'Follow Us');">YouTube</a>-->
+                    </p>
+                    <p>&copy; {site-date-yyyy} {site-title}. All Rights Reserved.</p>
+                    <div style="clear: both;"></div>
+                </div><br />
+             
+                <div id="sitemap">
+                    <div>
+                        <strong>About Us</strong>
+						<plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:9;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong>Locations</strong>
+						<plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:7;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                        <br /><br /><br />
+                        <strong><a href="{folder-root}/web/martial-spirit.aspx">Martial Spirit</a></strong>
+                    </div>
+
+                    <div>
+                        <strong>Schedules</strong>
+						<plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:8;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong>Resources</strong>
+						<plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:6;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong><a href="{folder-root}/web/search.aspx">Search & Sitemap</a></strong>
+                    </div>
+
+                    <div style="clear: both;"></div>
+                </div>
+
+
+
+                <div style="clear: both;"></div>
+            </div>
+
+        </div><!-- /outer-b -->
+    </div><!-- /outer-a -->
+</div><!-- /interior -->
+
+              ]]>
+        </html>
+        <foot>
+            <![CDATA[
+<script src="{folder-root}/components/scripts/jquery/jquery.inputFocus.js" type="text/javascript"></script>
+              ]]>
+        </foot>
+    </layout>
+
+    <layout id="Interior Pages w ABOUT US Nav">
+        <head>
+            <![CDATA[
+<style type="text/css"></style>
+<!--geo-->
+<meta name="geo.region" content="US-IA" />
+<meta name="geo.placename" content="Des Moines" />
+<meta name="geo.position" content="41.532949;-93.644135" />
+<meta name="ICBM" content="41.532949, -93.644135" />
+              ]]>
+        </head>
+        <html>
+            <![CDATA[
+<div id="interior">
+    <div id="outer-a">
+        <div id="outer-b">
+            <div id="wrap">
+                <div id="masthead" class="noprint">
+                    <div id="logo">
+                        <a href="/default.aspx"><h1>{site-title}</h1></a>
+                    </div>
+                    <div id="utility-navigation">
+                        <layout:NavigationHead type="list" />
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+                <div id="main">
+                    <div id="navigation" class="noprint">
+                        <layout:NavigationMain type="list" />
+                    </div>
+                    <div id="sub-navigation" class="noprint">
+                        <h4 class="first"><plugin category="PageTitle" count="1" file="" height="" heightu="px" modid="mod20" name="Page Title" settings="Pid:9;" type="application/ezsite-plugin" width="" widthu="px" />:</h4>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:9;" type="application/ezsite-plugin" width="" widthu="px" />
+                        <div style="padding-bottom: 100px;"></div>
+                    </div>
+                    <div id="content" class="v2">
+                        <layout:PageGraphic type="optionalGraphic" id="banner" />
+                        <layout:content />
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+
+            <div id="footer" class="noprint">
+                <div>
+                    <p id="social-icons">
+                        <span>Follow us on:</span>
+                        <a href="http://www.facebook.com/tworiversmartialarts" class="fb" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Facebook', 'Follow Us');">Facebook</a>
+                        <a href="http://twitter.com/tworiversma" class="tw" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Twitter', 'Follow Us');">Twitter</a>
+                        <a href="http://www.linkedin.com/pub/tworivers-martialarts/23/52b/155" class="li" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'LinkedIn', 'Follow Us');">LinkedIn</a>
+                        <a href="http://tworiversmartialarts.posterous.com/" class="poster" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Posterous', 'Follow Us');">Posterous</a>
+                        <!--<a href="http://www.youtube.com/trma" class="yt" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Youtube', 'Follow Us');">YouTube</a>-->
+                    </p>
+                    <p>&copy; {site-date-yyyy} {site-title}. All Rights Reserved.</p>
+                    <div style="clear: both;"></div>
+                </div><br />
+             
+                <div id="sitemap">
+                    <div>
+                        <strong>About Us</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:9;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong>Locations</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:7;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                        <br /><br /><br />
+                        <strong><a href="{folder-root}/web/martial-spirit.aspx">Martial Spirit</a></strong>
+                    </div>
+
+                    <div>
+                        <strong>Schedules</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:8;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong>Resources</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:6;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong><a href="{folder-root}/web/search.aspx">Search & Sitemap</a></strong>
+                    </div>
+
+                    <div style="clear: both;"></div>
+                </div>
+
+
+
+                <div style="clear: both;"></div>
+            </div>
+
+        </div><!-- /outer-b -->
+    </div><!-- /outer-a -->
+</div><!-- /interior -->
+
+              ]]>
+        </html>
+        <foot>
+            <![CDATA[
+<script src="{folder-root}/components/scripts/jquery/jquery.inputFocus.js" type="text/javascript"></script>
+              ]]>
+        </foot>
+    </layout>
+
+    <layout id="Interior Pages w LOCATIONS Nav">
+        <head>
+            <![CDATA[
+<style type="text/css"></style>
+<!--geo-->
+<meta name="geo.region" content="US-IA" />
+<meta name="geo.placename" content="Des Moines" />
+<meta name="geo.position" content="41.532949;-93.644135" />
+<meta name="ICBM" content="41.532949, -93.644135" />
+              ]]>
+        </head>
+        <html>
+            <![CDATA[
+<div id="interior">
+    <div id="outer-a">
+        <div id="outer-b">
+            <div id="wrap">
+                <div id="masthead" class="noprint">
+                    <div id="logo">
+                        <a href="/default.aspx"><h1>{site-title}</h1></a>
+                    </div>
+                    <div id="utility-navigation">
+                        <layout:NavigationHead type="list" />
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+                <div id="main">
+                    <div id="navigation" class="noprint">
+                        <layout:NavigationMain type="list" />
+                    </div>
+                    <div id="sub-navigation" class="noprint">
+                        <h4 class="first"><plugin category="PageTitle" count="1" file="" height="" heightu="px" modid="mod20" name="Page Title" settings="Pid:7;" type="application/ezsite-plugin" width="" widthu="px" />:</h4>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:7;" type="application/ezsite-plugin" width="" widthu="px" />
+                        <div style="padding-bottom: 100px;"></div>
+                    </div>
+                    <div id="content" class="v2">
+                        <layout:PageGraphic type="optionalGraphic" id="banner" />
+                        <layout:content />
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+
+            <div id="footer" class="noprint">
+                <div>
+                    <p id="social-icons">
+                        <span>Follow us on:</span>
+                        <a href="http://www.facebook.com/tworiversmartialarts" class="fb" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Facebook', 'Follow Us');">Facebook</a>
+                        <a href="http://twitter.com/tworiversma" class="tw" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Twitter', 'Follow Us');">Twitter</a>
+                        <a href="http://www.linkedin.com/pub/tworivers-martialarts/23/52b/155" class="li" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'LinkedIn', 'Follow Us');">LinkedIn</a>
+                        <a href="http://tworiversmartialarts.posterous.com/" class="poster" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Posterous', 'Follow Us');">Posterous</a>
+                        <!--<a href="http://www.youtube.com/trma" class="yt" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Youtube', 'Follow Us');">YouTube</a>-->
+                    </p>
+                    <p>&copy; {site-date-yyyy} {site-title}. All Rights Reserved.</p>
+                    <div style="clear: both;"></div>
+                </div><br />
+             
+                <div id="sitemap">
+                    <div>
+                        <strong>About Us</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:9;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong>Locations</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:7;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                        <br /><br /><br />
+                        <strong><a href="{folder-root}/web/martial-spirit.aspx">Martial Spirit</a></strong>
+                    </div>
+
+                    <div>
+                        <strong>Schedules</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:8;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong>Resources</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:6;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong><a href="{folder-root}/web/search.aspx">Search & Sitemap</a></strong>
+                    </div>
+
+                    <div style="clear: both;"></div>
+                </div>
+
+                <div style="clear: both;"></div>
+            </div>
+
+        </div><!-- /outer-b -->
+    </div><!-- /outer-a -->
+</div><!-- /interior -->
+
+              ]]>
+        </html>
+        <foot>
+            <![CDATA[
+<script src="{folder-root}/components/scripts/jquery/jquery.inputFocus.js" type="text/javascript"></script>
+              ]]>
+        </foot>
+    </layout>
+
+    <layout id="Interior Pages w RESOURCES Nav">
+        <head>
+            <![CDATA[
+<style type="text/css"></style>
+<!--geo-->
+<meta name="geo.region" content="US-IA" />
+<meta name="geo.placename" content="Des Moines" />
+<meta name="geo.position" content="41.532949;-93.644135" />
+<meta name="ICBM" content="41.532949, -93.644135" />
+              ]]>
+        </head>
+        <html>
+            <![CDATA[
+<div id="interior">
+    <div id="outer-a">
+        <div id="outer-b">
+            <div id="wrap">
+                <div id="masthead" class="noprint">
+                    <div id="logo">
+                        <a href="/default.aspx"><h1>{site-title}</h1></a>
+                    </div>
+                    <div id="utility-navigation">
+                        <layout:NavigationHead type="list" />
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+                <div id="main">
+                    <div id="navigation" class="noprint">
+                        <layout:NavigationMain type="list" />
+                    </div>
+                    <div id="sub-navigation" class="noprint">
+                        <h4 class="first"><plugin category="PageTitle" count="1" file="" height="" heightu="px" modid="mod20" name="Page Title" settings="Pid:6;" type="application/ezsite-plugin" width="" widthu="px" />:</h4>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:6;" type="application/ezsite-plugin" width="" widthu="px" />
+                        <div style="padding-bottom: 100px;"></div>
+                    </div>
+                    <div id="content" class="v2">
+                        <layout:PageGraphic type="optionalGraphic" id="banner" />
+                        <layout:content />
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+
+            <div id="footer" class="noprint">
+                <div>
+                    <p id="social-icons">
+                        <span>Follow us on:</span>
+                        <a href="http://www.facebook.com/tworiversmartialarts" class="fb" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Facebook', 'Follow Us');">Facebook</a>
+                        <a href="http://twitter.com/tworiversma" class="tw" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Twitter', 'Follow Us');">Twitter</a>
+                        <a href="http://www.linkedin.com/pub/tworivers-martialarts/23/52b/155" class="li" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'LinkedIn', 'Follow Us');">LinkedIn</a>
+                        <a href="http://tworiversmartialarts.posterous.com/" class="poster" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Posterous', 'Follow Us');">Posterous</a>
+                        <!--<a href="http://www.youtube.com/trma" class="yt" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Youtube', 'Follow Us');">YouTube</a>-->
+                    </p>
+                    <p>&copy; {site-date-yyyy} {site-title}. All Rights Reserved.</p>
+                    <div style="clear: both;"></div>
+                </div><br />
+             
+                <div id="sitemap">
+                    <div>
+                        <strong>About Us</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:9;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong>Locations</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:7;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                        <br /><br /><br />
+                        <strong><a href="{folder-root}/web/martial-spirit.aspx">Martial Spirit</a></strong>
+                    </div>
+
+                    <div>
+                        <strong>Schedules</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:8;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong>Resources</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:6;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong><a href="{folder-root}/web/search.aspx">Search & Sitemap</a></strong>
+                    </div>
+
+                    <div style="clear: both;"></div>
+                </div>
+
+                <div style="clear: both;"></div>
+            </div>
+
+        </div><!-- /outer-b -->
+    </div><!-- /outer-a -->
+</div><!-- /interior -->
+
+              ]]>
+        </html>
+        <foot>
+            <![CDATA[
+<script src="{folder-root}/components/scripts/jquery/jquery.inputFocus.js" type="text/javascript"></script>
+              ]]>
+        </foot>
+    </layout>
+
+    <layout id="Interior Pages w FORMS Nav">
+        <head>
+            <![CDATA[
+<style type="text/css"></style>
+<!--geo-->
+<meta name="geo.region" content="US-IA" />
+<meta name="geo.placename" content="Des Moines" />
+<meta name="geo.position" content="41.532949;-93.644135" />
+<meta name="ICBM" content="41.532949, -93.644135" />
+              ]]>
+        </head>
+        <html>
+            <![CDATA[
+<div id="interior">
+    <div id="outer-a">
+        <div id="outer-b">
+            <div id="wrap">
+                <div id="masthead" class="noprint">
+                    <div id="logo">
+                        <a href="/default.aspx"><h1>{site-title}</h1></a>
+                    </div>
+                    <div id="utility-navigation">
+                        <layout:NavigationHead type="list" />
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+                <div id="main">
+                    <div id="navigation" class="noprint">
+                        <layout:NavigationMain type="list" />
+                    </div>
+                    <div id="sub-navigation" class="noprint">
+                        <h4 class="first">ITF Forms:</h4>
+                        <ul>
+                            <li><a href="{folder-root}/web/forms/forms-chonji.aspx">Chon-Ji</a></li>
+                            <li><a href="{folder-root}/web/forms/forms-dangun.aspx">Dan-Gun</a></li>
+                            <li><a href="{folder-root}/web/forms/forms-dosan.aspx">Do-San</a></li>
+                            <li><a href="{folder-root}/web/forms/forms-wonhyo.aspx">Won-Hyo</a></li>
+                            <li><a href="{folder-root}/web/forms/forms-yulgok.aspx">Yul-Gok</a></li>
+                            <li><a href="{folder-root}/web/forms/forms-chunggun.aspx">Chung-Gun</a></li>
+                            <li><a href="{folder-root}/web/forms/forms-toigye.aspx">Toi-Gye</a></li>
+                            <li><a href="{folder-root}/web/forms/forms-hwarang.aspx">Hwa-Rang</a></li>
+                            <li><a href="{folder-root}/web/forms/forms-chungmu.aspx">Chun-Mu</a></li>
+                        </ul><br /><br />
+
+                        <h4>WTF Forms:</h4>
+                        <ul>
+                            <li><a href="{folder-root}/web/forms/forms-palgwe1.aspx">Pal-Gwe One</a></li>
+                            <li><a href="{folder-root}/web/forms/forms-palgwe2.aspx">Pal-Gwe Two</a></li>
+                            <li><a href="{folder-root}/web/forms/forms-palgwe3.aspx">Pal-Gwe Three</a></li>
+                            <li><a href="{folder-root}/web/forms/forms-palgwe4.aspx">Pal-Gwe Four</a></li>
+                            <li><a href="{folder-root}/web/forms/forms-palgwe5.aspx">Pal-Gwe Five</a></li>
+                            <li><a href="{folder-root}/web/forms/forms-palgwe6.aspx">Pal-Gwe Six</a></li>
+                            <li><a href="{folder-root}/web/forms/forms-palgwe7.aspx">Pal-Gwe Seven</a></li>
+                            <li><a href="{folder-root}/web/forms/forms-palgwe8.aspx">Pal-Gwe Eight</a></li>
+                            <li><a href="{folder-root}/web/forms/forms-koryo.aspx">Koryo</a></li>
+                        </ul>
+
+                        <div style="padding-bottom: 100px;"></div>
+                    </div>
+                    <div id="content" class="v2">
+                        <layout:PageGraphic type="optionalGraphic" id="banner" />
+                        <layout:content />
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+
+            <div id="footer" class="noprint">
+                <div>
+                    <p id="social-icons">
+                        <span>Follow us on:</span>
+                        <a href="http://www.facebook.com/tworiversmartialarts" class="fb" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Facebook', 'Follow Us');">Facebook</a>
+                        <a href="http://twitter.com/tworiversma" class="tw" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Twitter', 'Follow Us');">Twitter</a>
+                        <a href="http://www.linkedin.com/pub/tworivers-martialarts/23/52b/155" class="li" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'LinkedIn', 'Follow Us');">LinkedIn</a>
+                        <a href="http://tworiversmartialarts.posterous.com/" class="poster" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Posterous', 'Follow Us');">Posterous</a>
+                        <!--<a href="http://www.youtube.com/trma" class="yt" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Youtube', 'Follow Us');">YouTube</a>-->
+                    </p>
+                    <p>&copy; {site-date-yyyy} {site-title}. All Rights Reserved.</p>
+                    <div style="clear: both;"></div>
+                </div><br />
+             
+                <div id="sitemap">
+                    <div>
+                        <strong>About Us</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:9;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong>Locations</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:7;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                        <br /><br /><br />
+                        <strong><a href="{folder-root}/web/martial-spirit.aspx">Martial Spirit</a></strong>
+                    </div>
+
+                    <div>
+                        <strong>Schedules</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:8;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong>Resources</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:6;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong><a href="{folder-root}/web/search.aspx">Search & Sitemap</a></strong>
+                    </div>
+
+                    <div style="clear: both;"></div>
+                </div>
+
+                <div style="clear: both;"></div>
+            </div>
+
+        </div><!-- /outer-b -->
+    </div><!-- /outer-a -->
+</div><!-- /interior -->
+
+              ]]>
+        </html>
+        <foot>
+            <![CDATA[
+<script src="{folder-root}/components/scripts/jquery/jquery.inputFocus.js" type="text/javascript"></script>
+              ]]>
+        </foot>
+    </layout>
+
+
+
+
+    <layout id="Interior Pages w PHOTO ALBUM Nav">
+        <head>
+            <![CDATA[
+<style type="text/css"></style>
+<!--geo-->
+<meta name="geo.region" content="US-IA" />
+<meta name="geo.placename" content="Des Moines" />
+<meta name="geo.position" content="41.532949;-93.644135" />
+<meta name="ICBM" content="41.532949, -93.644135" />
+              ]]>
+        </head>
+        <html>
+            <![CDATA[
+<div id="interior">
+    <div id="outer-a">
+        <div id="outer-b">
+            <div id="wrap">
+                <div id="masthead" class="noprint">
+                    <div id="logo">
+                        <a href="/default.aspx"><h1>{site-title}</h1></a>
+                    </div>
+                    <div id="utility-navigation">
+                        <layout:NavigationHead type="list" />
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+                <div id="main">
+                    <div id="navigation" class="noprint">
+                        <layout:NavigationMain type="list" />
+                    </div>
+                    <div id="sub-navigation" class="noprint">
+                        <h4 class="first"><plugin category="PageTitle" count="1" file="" height="" heightu="px" modid="mod20" name="Page Title" settings="Pid:69;" type="application/ezsite-plugin" width="" widthu="px" />:</h4>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:69;" type="application/ezsite-plugin" width="" widthu="px" />
+                        <div style="padding-bottom: 100px;"></div>
+                    </div>
+                    <div id="content" class="v2">
+                        <layout:PageGraphic type="optionalGraphic" id="banner" />
+                        <layout:content />
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+
+            <div id="footer" class="noprint">
+                <div>
+                    <p id="social-icons">
+                        <span>Follow us on:</span>
+                        <a href="http://www.facebook.com/tworiversmartialarts" class="fb" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Facebook', 'Follow Us');">Facebook</a>
+                        <a href="http://twitter.com/tworiversma" class="tw" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Twitter', 'Follow Us');">Twitter</a>
+                        <a href="http://www.linkedin.com/pub/tworivers-martialarts/23/52b/155" class="li" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'LinkedIn', 'Follow Us');">LinkedIn</a>
+                        <a href="http://tworiversmartialarts.posterous.com/" class="poster" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Posterous', 'Follow Us');">Posterous</a>
+                        <!--<a href="http://www.youtube.com/trma" class="yt" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Youtube', 'Follow Us');">YouTube</a>-->
+                    </p>
+                    <p>&copy; {site-date-yyyy} {site-title}. All Rights Reserved.</p>
+                    <div style="clear: both;"></div>
+                </div><br />
+             
+                <div id="sitemap">
+                    <div>
+                        <strong>About Us</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:9;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong>Locations</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:7;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                        <br /><br /><br />
+                        <strong><a href="{folder-root}/web/martial-spirit.aspx">Martial Spirit</a></strong>
+                    </div>
+
+                    <div>
+                        <strong>Schedules</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:8;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong>Resources</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:6;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong><a href="{folder-root}/web/search.aspx">Search & Sitemap</a></strong>
+                    </div>
+
+                    <div style="clear: both;"></div>
+                </div>
+
+
+
+                <div style="clear: both;"></div>
+            </div>
+
+        </div><!-- /outer-b -->
+    </div><!-- /outer-a -->
+</div><!-- /interior -->
+
+              ]]>
+        </html>
+        <foot>
+            <![CDATA[
+<script src="{folder-root}/components/scripts/jquery/jquery.inputFocus.js" type="text/javascript"></script>
+              ]]>
+        </foot>
+    </layout>
+
+
+
+
+
+
+    <layout id="Interior Pages - with Left Nav &amp; right column">
+        <head>
+            <![CDATA[
+<style type="text/css"></style>
+<!--geo-->
+<meta name="geo.region" content="US-IA" />
+<meta name="geo.placename" content="Des Moines" />
+<meta name="geo.position" content="41.532949;-93.644135" />
+<meta name="ICBM" content="41.532949, -93.644135" />
+              ]]>
+        </head>
+        <html>
+            <![CDATA[
+
+<div id="interior">
+<div id="outer-a">
+<div id="outer-b">
+<div id="wrap">
+<div id="masthead" class="noprint">
+
+
+<div id="logo">
+<a href="/default.aspx"><h1>{site-title}</h1></a>
+</div>
+
+<div id="utility-navigation">
+
+<layout:NavigationHead type="list" />
+
+</div>
+
+<div style="clear: both;"></div>
+
+
+
+
+
+</div>
+<div id="main">
+
+
+				<div id="navigation" class="noprint">
+				
+				
+				<layout:NavigationMain type="list" />
+
+				
+
+				</div>
+
+
+				<div id="sub-navigation" class="noprint">
+					
+					<h4 class="first"<plugin category="PageTitle" count="1" file="" height="" heightu="px" modid="mod20" name="Page Title" settings="Pid:13;" type="application/ezsite-plugin" width="" widthu="px" />:</h4>
+					
+					<plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:default;" type="application/ezsite-plugin" width="" widthu="px" />
+					
+					<div style="padding-bottom: 100px;"></div>
+					
+				</div>
+				
+					
+
+
+<div id="content" class="v3">
+
+                        <layout:PageGraphic type="optionalGraphic" id="banner" />
+
+<layout:content />
+
+</div>
+
+<div id="secondary-content" class="noprint">
+col3
+</div>
+
+<div style="clear: both;"></div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<div id="footer" class="noprint">
+    <div>
+        <p id="social-icons">
+            <span>Follow us on:</span>
+            <a href="http://www.facebook.com/tworiversmartialarts" class="fb" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Facebook', 'Follow Us');">Facebook</a>
+            <a href="http://twitter.com/tworiversma" class="tw" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Twitter', 'Follow Us');">Twitter</a>
+            <a href="http://www.linkedin.com/pub/tworivers-martialarts/23/52b/155" class="li" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'LinkedIn', 'Follow Us');">LinkedIn</a>
+            <a href="http://tworiversmartialarts.posterous.com/" class="poster" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Posterous', 'Follow Us');">Posterous</a>
+            <!--<a href="http://www.youtube.com/trma" class="yt" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Youtube', 'Follow Us');">YouTube</a>-->
+        </p>
+        <p>&copy; {site-date-yyyy} {site-title}. All Rights Reserved.</p>
+        <div style="clear: both;"></div>
+    </div><br />
+ 
+                <div id="sitemap">
+                    <div>
+                        <strong>About Us</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:9;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong>Locations</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:7;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                        <br /><br /><br />
+                        <strong><a href="{folder-root}/web/martial-spirit.aspx">Martial Spirit</a></strong>
+                    </div>
+
+                    <div>
+                        <strong>Schedules</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:8;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong>Resources</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:6;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong><a href="{folder-root}/web/search.aspx">Search & Sitemap</a></strong>
+                    </div>
+
+                    <div style="clear: both;"></div>
+                </div>
+
+    <div style="clear: both;"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!-- /outer-b -->
+</div><!-- /outer-a -->
+</div><!-- /interior -->
+
+
+
+              ]]>
+        </html>
+        <foot>
+            <![CDATA[
+<script src="{folder-root}/components/scripts/jquery/jquery.inputFocus.js" type="text/javascript"></script>
+              ]]>
+        </foot>
+    </layout>
+
+    <layout id="Interior Pages - Blog">
+        <head>
+            <![CDATA[
+<style type="text/css"></style>
+<!--geo-->
+<meta name="geo.region" content="US-IA" />
+<meta name="geo.placename" content="Des Moines" />
+<meta name="geo.position" content="41.532949;-93.644135" />
+<meta name="ICBM" content="41.532949, -93.644135" />
+              ]]>
+        </head>
+        <html>
+            <![CDATA[
+
+<div id="interior">
+<div id="outer-a">
+<div id="outer-b">
+<div id="wrap">
+<div id="masthead" class="noprint">
+
+
+<div id="logo">
+<a href="/default.aspx"><h1>{site-title}</h1></a>
+</div>
+
+<div id="utility-navigation">
+
+<layout:NavigationHead type="list" />
+
+</div>
+
+<div style="clear: both;"></div>
+
+
+
+
+
+</div>
+<div id="main">
+
+
+				<div id="navigation" class="noprint">
+				
+				
+				<layout:NavigationMain type="list" />
+
+				
+
+				</div>
+
+
+				
+					
+
+
+
+                        <layout:PageGraphic type="optionalGraphic" id="banner" />
+
+
+<layout:content />
+
+
+
+
+
+<div style="clear: both;"></div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="footer" class="noprint">
+    <div>
+        <p id="social-icons">
+            <span>Follow us on:</span>
+            <a href="http://www.facebook.com/tworiversmartialarts" class="fb" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Facebook', 'Follow Us');">Facebook</a>
+            <a href="http://twitter.com/tworiversma" class="tw" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Twitter', 'Follow Us');">Twitter</a>
+            <a href="http://www.linkedin.com/pub/tworivers-martialarts/23/52b/155" class="li" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'LinkedIn', 'Follow Us');">LinkedIn</a>
+            <a href="http://tworiversmartialarts.posterous.com/" class="poster" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Posterous', 'Follow Us');">Posterous</a>
+            <!--<a href="http://www.youtube.com/trma" class="yt" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Youtube', 'Follow Us');">YouTube</a>-->
+        </p>
+        <p>&copy; {site-date-yyyy} {site-title}. All Rights Reserved.</p>
+        <div style="clear: both;"></div>
+    </div><br />
+ 
+                <div id="sitemap">
+                    <div>
+                        <strong>About Us</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:9;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong>Locations</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:7;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                        <br /><br /><br />
+                        <strong><a href="{folder-root}/web/martial-spirit.aspx">Martial Spirit</a></strong>
+                    </div>
+
+                    <div>
+                        <strong>Schedules</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:8;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong>Resources</strong>
+                        <plugin category="SubpageNavi" count="1" file="" height="" heightu="px" modid="mod39" name="Subpage Navigation" settings="Pid:6;Type:footer;" type="application/ezsite-plugin" width="" widthu="px" />
+                    </div>
+
+                    <div>
+                        <strong><a href="{folder-root}/web/search.aspx">Search & Sitemap</a></strong>
+                    </div>
+
+                    <div style="clear: both;"></div>
+                </div>
+
+    <div style="clear: both;"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!-- /outer-b -->
+</div><!-- /outer-a -->
+</div><!-- /interior -->
+
+
+
+              ]]>
+        </html>
+        <foot>
+            <![CDATA[
+<script src="{folder-root}/components/scripts/jquery/jquery.inputFocus.js" type="text/javascript"></script>
+              ]]>
+        </foot>
+    </layout>
+
+</theme>
+
+
+
+<!-- 
+<layout:NavigationMain type="flyout|accordian|breadcrumb|list|stacked" id="OPTIONAL" direction="OPTIONAL (ReverseAll|ReverseTop|ReverseInner|Normal (default))" />
+<layout:NavigationHead type="flyout|accordian|breadcrumb|list|stacked" id="OPTIONAL" direction="OPTIONAL (ReverseAll|ReverseTop|ReverseInner|Normal (default))" />
+<layout:NavigationFoot type="flyout|accordian|breadcrumb|list|stacked" id="OPTIONAL" direction="OPTIONAL (ReverseAll|ReverseTop|ReverseInner|Normal (default))" />
+<layout:NavigationSubpage type="OPTIONAL main|header|footer|sitemap (default)" id="OPTIONAL (requires the "Unique Page Id" if used)" direction="OPTIONAL (ReverseAll|ReverseTop|ReverseInner|Normal (default))" />
+<layout:SignInText type="form|simple (default)" /><br />
+<layout:PageTitle type="alias|main (default)" id="OPTIONAL (requires the "Unique Page Id" if used)" />
+<layout:PageGraphic id="OPTIONAL" default="{folder-theme}/i/references.jpg" />
+<layout:content />
+<layout:search />
+
+
+Layout also allows the use of tokens such as:
+{folder-root}
+{folder-upload}
+{folder-theme}
+{site-date}
+{site-date-yyyy}
+
+
+<plugin settings="image;speed:5000;groupId:all" src="{folder-theme}/BannerRotate.xml" count="10" category="headlinerotator" name="Image Rotator" type="application/ezsite-plugin" width="400" height="300"></plugin>
+<plugin height="400" width="400" src="{folder-root}/web/myBlog.aspx" count="100" category="subpagerotator" name="subpagerotator" type="application/ezsite-plugin"></plugin>
+<plugin height="100%" width="100%" src="{folder-upload}/file/Headlines.xml" count="100" category="headlinerotator" name="headlinerotator" type="application/ezsite-plugin"></plugin>
+<script src="{folder-root}/components/scripts/jquery/jquery.corner.js" type="text/javascript"></script>
+<script src="{folder-theme}/scripts/script.js" type="text/javascript"></script>
+
+Use class="noprint" to hide items when printing
+-->

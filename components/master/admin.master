@@ -1,0 +1,37 @@
+<%@ master language="VB" inherits="components_master_admin, DontblinkDesignsEZSite" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="admin_Head" runat="server">
+    <title>Dontblink Designs :: Content Management System</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="content-style-type" content="text/css" />
+    <meta http-equiv="content-script-type" content="text/javascript" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <asp:ContentPlaceHolder id="cph_Head" runat="server" />
+</head>
+<body id="admin_Body" runat="server">
+    <form id="frm_Main" runat="server">
+    <asp:scriptmanager ID="admin_Script" runat="server" AsyncPostBackTimeOut="36000" />
+    <div id="ezSite">
+        <div id="wrapper-header">
+            <div id="logo"><asp:HyperLink ID="hlLogo" runat="server" /></div>
+            <div id="admin-leftnav-header">&nbsp;</div>
+            <div id="wrapper-slogan"><asp:Literal ID="lit_Cms" runat="server" Text="content manager" /></div>
+        </div>
+        <div id="wrapper-content">
+            <div id="wrapper-content-left" class="module">
+                <div id="leftnavlinks"><dbd:admin_left_nav ID="Adminleftnav" runat="server" /></div>
+                <div class="foot" style="left:-1px; width:147px; top:-1px;"><span class="cap_left"></span><span class="cap_right"></span></div>
+            </div>
+            <div id="wrapper-content-right">
+                <asp:ContentPlaceHolder id="cph_Body" runat="server" />
+            </div>
+        </div>
+        <div id="wrapper-footer"><asp:Literal ID="lit_Footer" runat="server" Text="Dontblink Designs. All rights reserved." /></div>
+    </div>
+    <asp:Literal ID="lit_JScriptFiles" runat="server" />
+    </form>
+</body>
+</html>

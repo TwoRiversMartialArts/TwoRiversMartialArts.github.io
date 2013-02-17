@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<sitemap title="Events">
+    <siteMapNode title="Calendar" url="~/admin/events/eventList.aspx" pid="30">
+        <siteMapNode title="Events List" url="~/admin/events/eventList.aspx" pid="3010" displayInMap="true">
+            <siteMapNode title="Add Event" url="~/admin/events/eventForm.aspx" pid="301010" />
+        </siteMapNode>
+        <siteMapNode title="Categories" url="~/admin/events/categoryList.aspx" pid="3020" displayInMap="true">
+            <siteMapNode title="Add Category" url="~/admin/events/categoryForm.aspx" pid="302010" />
+        </siteMapNode>
+    </siteMapNode>
+</sitemap>

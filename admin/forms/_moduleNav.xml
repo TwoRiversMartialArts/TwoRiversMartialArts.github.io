@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<sitemap title="Documents &amp; Forms">
+    <siteMapNode title="Documents &amp; Forms" url="~/admin/forms/default.aspx" pid="50">
+        <siteMapNode title="Document Library" url="~/admin/forms/fileList.aspx" pid="5010" displayInMap="true" />
+        <siteMapNode title="Site Folder Structure" url="~/admin/pages/structure.aspx" pid="5030" displayInMap="true" />
+        <siteMapNode title="File Upload" url="~/admin/tools/upload.aspx" pid="2020" displayInMap="true" />
+        <siteMapNode title="Forms Results" url="~/admin/forms/dynamicForms.aspx" pid="5020" displayInMap="true" />
+    </siteMapNode>
+</sitemap>

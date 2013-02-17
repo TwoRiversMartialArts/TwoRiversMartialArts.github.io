@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<sitemap title="Users &amp; Groups">
+    <siteMapNode title="People" url="~/admin/users/userList.aspx" pid="40">
+        <siteMapNode title="Users" url="~/admin/users/userList.aspx" pid="4010" displayInMap="true">
+            <siteMapNode title="Add User" url="~/admin/users/userForm.aspx" pid="401010" />
+        </siteMapNode>
+        <siteMapNode title="Groups" url="~/admin/users/groupList.aspx" pid="4020" displayInMap="true">
+            <siteMapNode title="Add Group" url="~/admin/users/groupForm.aspx" pid="402010" />
+        </siteMapNode>
+        <siteMapNode title="Address Book" url="javascript:addressBook('addressBook.aspx');" pid="4030" displayInMap="true"></siteMapNode>
+    </siteMapNode>
+</sitemap>

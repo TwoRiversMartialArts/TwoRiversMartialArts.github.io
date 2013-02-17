@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C/DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="../css/flexigrid.pack.css" />
+<link rel="stylesheet" type="text/css" href="../css/timepicker.css" />
+<link rel="stylesheet" type="text/css" href="../css/trma.css" />
+<link rel="stylesheet" type="text/css" href="../css/jqui.css" />
+
+<script type="application/javascript" src="../js/jq.js"></script>
+<script type="application/javascript" src="../js/trma.js"></script>
+<script type="application/javascript" src="../js/jqui.js"></script>
+<script type="application/javascript" src="../js/autoNumeric.js"></script>
+<script type="application/javascript" src="../js/flexigrid.js"></script>
+<script type="application/javascript" src="../js/jqac.js"></script>
+<script type="application/javascript" src="../js/timepicker.js"></script>
+
+</head><body>
+<div id="BASEPAGE">
+
+<!-- DIALOG BOX declarations -->
+  <div class="uidialog" id="log_in_dlg">
+    <h2>Log in</h2>
+    <span id="log_in_msg"></span>
+    <table>
+      <tr><td>user</td><td><input id="auth_uid"/></td>
+      <td>password</td><td><input type="password" id="auth_pwd"/></td></tr>
+    </table>
+  </div>
+  <!--  -->
+  <div class="uidialog" id="email_dlg">
+  <h2>Enter email address</h2>
+  <span id="email_msg"></span>
+  <table><tr><td>Email address:</td><td><input id="email_addr" size="35"/></td></tr>
+  </table>
+  </div>
+  <!--  -->
+  <div class="uidialog" id="rpemail_dlg">
+  <h2>Enter email address</h2>
+  <span id="rpemail_msg"></span>
+  <table>
+  <tr><td>Responsible party:</td><td><input id="rpname" size="35"/></td></tr>
+  <tr><td>Email address:</td><td><input id="rpemail_addr" size="35"/></td></tr>
+  </table>
+  </div>
+  <!-- -->
+  <div class="uidialog" id="beltpull_dlg">
+  <h2>Belt pull</h2>
+  <span id="beltpull_msg"></span>
+  <div id="beltpull_inner"></div>
+  </div>
+  <!-- -->
+  <div class="uidialog" id="addnote_dlg">
+  <h2>Add note</h2>
+  <textarea id="noteText" cols="65" rows="9"></textarea>
+  </div>
+<!-- +++++++++++++++++++++++++++++++++++++++++++ -->
+<div id="TRMA_UI">
+
+<div id="TRMA_UI_TABS">
+<ul>
+  <li><a href="#recpt_div"><span>RECEIPT ENTRY</span></a></li>
+  <li><a href="#stock_div"><span>STOCK ENTRY</span></a></li>
+  <li><a href="#report_div"><span>REPORTS</span></a></li>
+  <li><a href="#admin_div"><span>ADMIN</span></a></li>
+</ul>
+<div id="recpt_div">
+<h2>
+<input type="button" id="recpt_search" value="search"/>
+<input type="button" id="recpt_new" value="Enter New"/>
+<input type="button" id="recpt_clear" value="Clear"/><br/>
+</h2>
+<h2>
+Receipt # <input id="recpt_no"/> revision 
+          <span id="recpt_revno">0</span> of
+          <span id="recpt_revcount">0</span>
+          <input type="button" id="rev_minus" value="-"/>
+          <input type="button" id="rev_plus" value="+"/>
+</h2>
+<hr/>
+<table>
+<tr>
+<td>Date</td><td><input class="inp_date" id="recpt_date"/></td>
+<td><span class="spacer">&nbsp;&nbsp;&nbsp;</td>
+<td>Branch</td><td><input id="recpt_branch"/></td>
+</tr>
+</tr>
+<td>Signed out by</td><td><input id="recpt_outby"/></td>
+<td><span class="spacer">&nbsp;&nbsp;&nbsp;</td>
+<td>Recieved by</td><td><input id="recpt_recvby"/></td>
+<td><input type="button" id="recpt_add_note" value="note"/></td> 
+</table>
+
+<hr/>
+<h3><input id="commit_btn" type="button" value="COMMIT"/>
+<span id="commit_result"></span>
+</h3>
+
+<div id="removed_div">
+<span class="tablename">Inventory removed</span>
+<input id="recpt_addrow" type="button" value="Add row"/>
+<table class="varrows" id="recpt_rows">
+<thead>
+<tr><td>Item</td><td>Quantity</td>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+
+<hr/>
+
+<div id="returned_div">
+<span class="tablename">Inventory returned and/or paid for</span>
+<input id="recon_addrow" type="button" value="Add row"/>
+<table class="varrows" id="recon_rows">
+<thead>
+<tr><td>Item</td><td>Rtn Qty</td>
+    <td>Rtn Date</td>
+    <td>Paid Qty</td><td>Chk#</td><td>Paid</td><td>Paid Date</td>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+<hr/>
+</div> <!-- END recpt_div -->
+
+<div id="stock_div">
+<h2>Stocking changes</h2>
+
+Item: <input id="stk_item" size="32"/><input type="button" id="stk_search" value="Search/Add"/></br>
+<span id="stk_cnt"></span></br>
+<hr/>
+<table>
+<tr><td>Date</td><td><input id="stk_date" class="inp_date stknum"/></td></tr>
+<tr><td>Added/Lost</td><td><input id="stk_add" class="qty stknum"/></td>
+    <td><input type="button" id="stk_add_note" value="add note"/></td>
+       <!-- <td><input id="stk_note" size="25"/></td> --> 
+</tr>
+<tr><td>Set Count</td><td><input id="stk_set" class="qty stknum"/></td></tr>
+<tr><td>Set Reorder Value</td><td><input id="stk_reord" class="qty stknum"/></td></tr>
+</table>
+<input type="button" id="stk_commit" value="COMMIT"/>
+<button type="button" id="beltpull_btn">Belt pull</button>
+<span id="stk_msg"/></span>
+</div> <!-- END stock_div -->
+
+<div id="report_div">
+Reports<hr/>
+
+<table><tr>
+<td><input type="button" value="Open receipts" id="reportOpen"/></td>
+<td><input type="button" value="Open by branch" id="reportByBranch"/></td>
+<td><input type="button" value="Current stock" id="reportStockLevels"/><td>
+</tr>
+<tr>
+<td><input type="button" value="Needs reordered" id="reportReorder"/></td>
+<td><input type="button" value="Run SQL" id="reportSQL"/></td>
+</tr>
+</table>
+
+<hr/>
+<div id="report_out">
+  <div id="report_out_txt">
+    <textarea id="reportText" cols="80" rows="25"></textarea>
+  </div>
+  <div id="report_out_grid">
+  </div>
+</div>
+
+</div> <!-- END report_div -->
+
+<div id="admin_div">
+<input type="button" value="Add User/Change Password" id="admin_adduser" />
+UserID: <input id="admin_user"/> Password: <input type="password" id="admin_pwd"/>
+<hr/>
+<input type="button" value="Set your email address" id="admin_email"/></br>
+<input type="button" value="Set email for a responsible party" id="admin_rpemail"/></br>
+<input type="button" value="Backup Database" id="admin_bkupdb" /></br>
+<hr/>
+<span id="admin_msg"></span>
+</div> <!-- END admin_div -->
+
+</div> <!-- END TRMA_UI_TABS -->
+</div> <!-- END TRMA_UI -->
+</div> <!-- END of BASEPAGE -->
+</body></html>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<sitemap title="Web Pages">
+    <siteMapNode title="Pages" url="~/admin/pages/webPageList.aspx" pid="10">
+        <siteMapNode title="Web Page List" url="~/admin/pages/webPageList.aspx" pid="1010" displayInMap="true">
+            <siteMapNode title="Add Web Page" url="~/admin/pages/webPageForm.aspx" pid="101010" />
+        </siteMapNode>
+        <siteMapNode title="Categories" url="~/admin/pages/categoryList.aspx" pid="1020" displayInMap="true">
+            <siteMapNode title="Add Category" url="~/admin/pages/categoryForm.aspx" pid="102010" />
+        </siteMapNode>
+        <siteMapNode title="Modules" url="~/admin/pages/modulesList.aspx" pid="1030" displayInMap="true">
+            <siteMapNode title="Add Module" url="~/admin/pages/modulesForm.aspx" pid="103010" />
+        </siteMapNode>
+    </siteMapNode>
+</sitemap>

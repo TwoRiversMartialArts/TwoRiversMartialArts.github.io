@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<theme title="Dontblink Designs">
+
+<!-- www.netprofit.de -->
+    <layout id="Default Home Page">
+        <head>
+            <![CDATA[
+<style type="text/css"></style>
+<!--geo-->
+<meta name="geo.region" content="US-IA" />
+<meta name="geo.placename" content="Grimes" />
+<meta name="geo.position" content="41.683056;-93.784444" />
+<meta name="ICBM" content="41.683056, -93.784444" />
+              ]]>
+        </head>
+        <html>
+            <![CDATA[
+<script src="{folder-theme}/scripts/script.js" type="text/javascript"></script>
+
+<div id="header"><div class="w130">
+    <h1 id="logo">Dontblink Designs Website Optimization</h1>
+</div></div><!--/header-->
+
+<div id="teaser"><div class="w130" style="padding-left:3px;position:relative;background:transparent url('{folder-theme}/i/main-01.jpg') 2px 0px no-repeat;">
+    <div id="bannerCaption"></div>
+    <plugin settings="image;speed:5000;groupId:allrandom;scriptId:FillBannerText" src="{folder-theme}/BannerRotate.xml" count="100" category="headlinerotator" name="Image Rotator" type="application/ezsite-plugin" width="986" height="230"></plugin>
+</div></div><!--/teaser-->
+
+<div id="content"><div class="completion w130 clearfix"><div style="padding:10px;">
+    <div style="float:left;width:967px;">
+    <layout:content />
+    </div>
+    <div style="float:left;width:1px;height:280px;"></div>
+</div></div></div><!--/content-->
+
+
+<div id="footr" class="vcard">
+    <div id="z1" class="w130 clearfix">
+        <div class="first w33">
+            <p><img class="org" src="{folder-theme}/i/logo-footer.png" alt="Dontblink Designs" id="logo-footer" width="153" height="22" /></p>
+            <p><span class="street-address">913 NW Calista Drive</span><br />
+            Grimes, Iowa 50111</p>
+        </div>
+        <div class="w33">
+            <p><abbr title="Telephone">Tel</abbr>.: <span class="tel">(515) 979-7913</span><br />
+            
+            E-Mail: <a class="email" title="send an e-mail" href="mailto:&#105;&#110;&#102;&#111;&#64;&#100;&#111;&#110;&#116;&#98;&#108;&#105;&#110;&#107;&#46;&#110;&#101;&#116;">&#105;&#110;&#102;&#111;&#64;&#100;&#111;&#110;&#116;&#98;&#108;&#105;&#110;&#107;&#46;&#110;&#101;&#116;</a></p>
+        </div>
+        <div class="last w33"><img src="{folder-theme}/i/scissors.png" alt="" id="icon-scissors" width="33" height="30" />
+            <p><a id="f-feed" class="icons-footer" href="{folder-root}/rssView.aspx?feed=J2FDkN8l1r28Qxz9yXuqaIZTV61ic+uqkqpurP6KWgUOpITzpjcdsBizhFgYyVPE" rel="nofollow" title="Dontblink Designs Blog Feed - RSS 2.0">RSS-Feed</a> <a href="{folder-root}/web/blog.aspx" title="Dontblink Designs Blog: SEO and CMS"><acronym title="Search Engine Optimization">SEO</acronym> Blog</a><br />
+            <a id="f-twitter" class="icons-footer" href="http://twitter.com/dontblinkd" rel="nofollow" target="_blank" title="Follow Dontblink Designs via Twitter">Dontblink Designs on Twitter</a><br />
+            <a id="f-vcard" class="icons-footer" href="{folder-upload}/file/DontblinkDesigns.vcf" title="vCard (.vcf) for Dontblink Designs" rel="nofollow">vCard Dontblink Designs</a></p>
+        </div>
+    </div>
+    <div id="pageselection">
+        <div id="z3" class="w130 clearfix">
+            <div class="first w33">
+                <h4>Dontblink Designs</h4>
+                <ul>
+                <li><a href="{folder-root}/web/about.aspx">About Us</a></li>
+                <li><a href="{folder-root}/web/services.aspx">Services</a></li>
+                </ul>
+            </div>
+            <div class="w33">
+                <h4>Visitors</h4>
+                <ul>
+                <li><a href="{folder-root}/web/blog.aspx">Company Blog</a></li>
+                <li><a href="{folder-root}/web/contact.aspx">Contacting Us</a></li>
+                </ul>
+            </div>
+            <div class="last w33">
+                <h4>Popular</h4>
+                <ul>
+                <li><a href="{folder-root}/web/quote.aspx">Get A Quote</a></li>
+                <li><a href="{folder-root}/web/faq.aspx"><acronym title="Frequently Asked Questions">FAQ</acronym></a></li>
+                <li><a href="{folder-root}/web/process.aspx">Our Process</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="z2" class="w130 clearfix">
+        <div class="first w50">&copy;&nbsp; 2001 &minus; {site-date-yyyy}&nbsp; Dontblink Designs &nbsp;|  <a href="{folder-root}/web/contact.aspx" title="Contact Our Company">Contact</a> | 
+            <a href="{folder-root}/web/privacy-policy.aspx" title="Privacy Policy">Privacy Policy</a>
+        </div>
+        <div class="last w50 re"><a href="{folder-root}/web/sitemap.aspx" title="To The Site Map">Site Map</a> | <a href="#pageselection" id="clickshow" title="Page Selection">Page Selection</a> | 
+            <a href="#top" class="totop" title="Up to Top">Back to Top</a>
+        </div>
+    </div>
+</div><!--/footr-->
+
+
+<div id="naviheader"><div class="mod_navigation block">
+    <layout:NavigationMain direction="Normal" type="list" id="dropmenu" />
+</div></div><!--/naviheader-->
+
+<div id="searchfield"><div class="mod_form tableless block"><div class="formbody">
+    <layout:search />
+</div></div></div><!--/searchfield-->
+
+                        
+              ]]>
+        </html>
+        <foot>
+            <![CDATA[
+
+<script type="text/javascript">
+    function FillBannerText(outgoing,incoming,opts) {
+        // 'this' is the currently displayed slide element
+        var cycleId = this.id;
+        var imgS = $('#' + cycleId).find('img:visible').attr("src");
+        var bannerText = '';
+        
+        if (imgS.indexOf('main-01') != -1 ) {
+            //keyboard
+            bannerText = '<h2>Content Management</h2><br />You want to maintain your website yourself?<br />We can help you do that!<br /><br /><a href="{folder-root}/web/quote.aspx" class="button">Get a quote today!</a>';
+        } else if (imgS.indexOf('main-02') != -1 ) {
+            //pencils
+            bannerText = '<h2>Good web design makes great impressions</h2><br />On the internet, first impressions count.<br />We design high quality and functional websites for businesses and non-profit organizations.<br /><br /><a href="{folder-root}/web/services.aspx" class="button">See what we offer!</a>';
+        } else if (imgS.indexOf('main-03') != -1 ) {
+            //web2.0
+            bannerText = '<h2>Web 2.0 finally makes sense to use</h2><br />Web 2.0 has enormous potential and we can help you use it successfully.<br /><br /><a href="{folder-root}/web/services.aspx" class="button">See what we offer!</a>';
+        } else if (imgS.indexOf('main-04') != -1 ) {
+            //balls
+            bannerText = '<h2>We help you succeed on the internet</h2><br />Take advantage of our experience and knowledge.<br /><br /><a href="{folder-root}/web/quote.aspx" class="button">Get a quote today!</a>';
+        }
+        
+        $('#bannerCaption').hide();
+        $('#bannerCaption').html(bannerText).fadeIn(1000);
+        
+        //$('#bannerCaption').html(bannerText)
+    }
+</script>
+
+
+              ]]>
+        </foot>
+    </layout>
+
+
+
+
+<!-- www.netprofit.de -->
+    <layout id="Interior Pages">
+        <head>
+            <![CDATA[
+<style type="text/css"></style>
+<!--geo-->
+<meta name="geo.region" content="US-IA" />
+<meta name="geo.placename" content="Grimes" />
+<meta name="geo.position" content="41.683056;-93.784444" />
+<meta name="ICBM" content="41.683056, -93.784444" />
+              ]]>
+        </head>
+        <html>
+            <![CDATA[
+<script src="{folder-theme}/scripts/script.js" type="text/javascript"></script>
+
+<div id="header"><div class="w130">
+    <h1 id="logo">Dontblink Designs Website Optimization</h1>
+</div></div><!--/header-->
+
+<div id="teaser"><div class="w130" style="padding-left:3px;">
+<layout:PageGraphic type="asd" id="banner" default="{folder-theme}/i/references.jpg" />
+</div></div><!--/teaser-->
+
+<div id="content"><div class="completion w130 clearfix"><div style="padding:10px;">
+    <div id="breads"><layout:NavigationMain type="breadcrumb" id="breads2" /></div>
+    <div style="float:left;width:967px;">
+    <layout:content />
+    </div>
+    <div style="float:left;width:1px;height:280px;"></div>
+</div></div></div><!--/content-->
+
+
+<div id="footr" class="vcard">
+    <div id="z1" class="w130 clearfix">
+        <div class="first w33">
+            <p><img class="org" src="{folder-theme}/i/logo-footer.png" alt="Dontblink Designs" id="logo-footer" width="153" height="22" /></p>
+            <p><span class="street-address">913 NW Calista Drive</span><br />
+            Grimes, Iowa 50111</p>
+        </div>
+        <div class="w33">
+            <p><abbr title="Telephone">Tel</abbr>.: <span class="tel">(515) 979-7913</span><br />
+           
+            E-Mail: <a class="email" title="send an e-mail" href="mailto:&#105;&#110;&#102;&#111;&#64;&#100;&#111;&#110;&#116;&#98;&#108;&#105;&#110;&#107;&#46;&#110;&#101;&#116;">&#105;&#110;&#102;&#111;&#64;&#100;&#111;&#110;&#116;&#98;&#108;&#105;&#110;&#107;&#46;&#110;&#101;&#116;</a></p>
+        </div>
+        <div class="last w33"><img src="{folder-theme}/i/scissors.png" alt="" id="icon-scissors" width="33" height="30" />
+            <p><a id="f-feed" class="icons-footer" href="{folder-root}/rssView.aspx?feed=J2FDkN8l1r28Qxz9yXuqaIZTV61ic+uqkqpurP6KWgUOpITzpjcdsBizhFgYyVPE" rel="nofollow" title="Dontblink Designs Blog Feed - RSS 2.0">RSS-Feed</a> <a href="{folder-root}/web/blog.aspx" title="Dontblink Designs Blog: SEO and CMS"><acronym title="Search Engine Optimization">SEO</acronym> Blog</a><br />
+            <a id="f-twitter" class="icons-footer" href="http://twitter.com/dontblinkd" rel="nofollow" target="_blank" title="Follow Dontblink Designs via Twitter">Dontblink Designs on Twitter</a><br />
+            <a id="f-vcard" class="icons-footer" href="{folder-upload}/file/DontblinkDesigns.vcf" title="vCard (.vcf) for Dontblink Designs" rel="nofollow">vCard Dontblink Designs</a></p>
+        </div>
+    </div>
+    <div id="pageselection">
+        <div id="z3" class="w130 clearfix">
+            <div class="first w33">
+                <h4>Dontblink Designs</h4>
+                <ul>
+                <li><a href="{folder-root}/web/about.aspx">About Us</a></li>
+                <li><a href="{folder-root}/web/services.aspx">Services</a></li>
+                </ul>
+            </div>
+            <div class="w33">
+                <h4>Visitors</h4>
+                <ul>
+                <li><a href="{folder-root}/web/blog.aspx">Company Blog</a></li>
+                <li><a href="{folder-root}/web/contact.aspx">Contacting Us</a></li>
+                </ul>
+            </div>
+            <div class="last w33">
+                <h4>Popular</h4>
+                <ul>
+                <li><a href="{folder-root}/web/quote.aspx">Get A Quote</a></li>
+                <li><a href="{folder-root}/web/faq.aspx"><acronym title="Frequently Asked Questions">FAQ</acronym></a></li>
+                <li><a href="{folder-root}/web/process.aspx">Our Process</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="z2" class="w130 clearfix">
+        <div class="first w50">&copy;&nbsp; 2001 &minus; {site-date-yyyy}&nbsp; Dontblink Designs &nbsp;|  <a href="{folder-root}/web/contact.aspx" title="Contact Our Company">Contact</a> | 
+            <a href="{folder-root}/web/privacy-policy.aspx" title="Privacy Policy">Privacy Policy</a>
+        </div>
+        <div class="last w50 re"><a href="{folder-root}/web/sitemap.aspx" title="To The Site Map">Site Map</a> | <a href="#pageselection" id="clickshow" title="Page Selection">Page Selection</a> | 
+            <a href="#top" class="totop" title="Up to Top">Back to Top</a>
+        </div>
+    </div>
+</div><!--/footr-->
+
+
+<div id="naviheader"><div class="mod_navigation block">
+    <layout:NavigationMain direction="Normal" type="list" id="dropmenu" />
+</div></div><!--/naviheader-->
+
+<div id="searchfield"><div class="mod_form tableless block"><div class="formbody">
+    <layout:search />
+</div></div></div><!--/searchfield-->
+
+              ]]>
+        </html>
+        <foot>
+            <![CDATA[
+              ]]>
+        </foot>
+    </layout>
+
+
+
+
+
+<!-- www.netprofit.de -->
+    <layout id="Interior Pages - Blog">
+        <head>
+            <![CDATA[
+<style type="text/css"></style>
+<!--geo-->
+<meta name="geo.region" content="US-IA" />
+<meta name="geo.placename" content="Grimes" />
+<meta name="geo.position" content="41.683056;-93.784444" />
+<meta name="ICBM" content="41.683056, -93.784444" />
+              ]]>
+        </head>
+        <html>
+            <![CDATA[
+<script src="{folder-theme}/scripts/script.js" type="text/javascript"></script>
+
+<div id="header"><div class="w130">
+    <h1 id="logo">Dontblink Designs Website Optimization</h1>
+</div></div><!--/header-->
+
+<div id="teaser"><div class="w130" style="padding-left:3px;">
+<layout:PageGraphic type="asd" id="banner" default="{folder-theme}/i/references.jpg" />
+</div></div><!--/teaser-->
+
+<div id="content"><div class="completion w130 clearfix"><div style="padding:10px;">
+    <div id="breads"><layout:NavigationMain type="breadcrumb" id="breads2" /></div>
+    <div style="float:left;width:967px;">
+        <div style="width: 100%">
+            <div style="width: 200px; float: right">
+                <div class="highlightBox">
+                    <div class="highlightBoxTitle">News and Updates</div>
+                        Updates written about CMS, SEO and web design. <a href="{folder-root}/web/contact.aspx">Contact &rarr;</a><br />
+                        <ul id="blogstats" class="blog-sidebar-sprite">
+                            <li id="sb-feed"><a class="neu" title="" rel="nofollow" href="{folder-root}/rssView.aspx?feed=J2FDkN8l1r28Qxz9yXuqaIZTV61ic+uqkqpurP6KWgUOpITzpjcdsBizhFgYyVPE"><acronym title="Really Simple Syndication">RSS</acronym>-Feed</a></li>
+                            <li id="sb-twitter"><a class="neu" title="Follow us on Twitter" rel="nofollow" href="http://twitter.com/dontblinkd">Twitter</a></li>
+                        </ul>
+                    </div><br />
+                    <plugin title="Archives" type="application/ezsite-plugin" name="Blog Archives Listing" category="PageArchiveListing" src="{folder-root}/web/blog.aspx" count="0" settings="n/a" width="100%"></plugin><br />
+                    <plugin title="Tags List" type="application/ezsite-plugin" name="Blog Tag Cloud" category="PageTagCloud" count="40" src="{folder-root}/web/blog.aspx" settings="n/a" width="100%"></plugin>
+                </div>
+            <div style="margin-right: 210px">
+                <layout:content />
+            </div>
+        </div>    
+    </div>
+    <div style="float:left;width:1px;height:280px;"></div>
+</div></div></div><!--/content-->
+
+
+<div id="footr" class="vcard">
+    <div id="z1" class="w130 clearfix">
+        <div class="first w33">
+            <p><img class="org" src="{folder-theme}/i/logo-footer.png" alt="Dontblink Designs" id="logo-footer" width="153" height="22" /></p>
+            <p><span class="street-address">913 NW Calista Drive</span><br />
+            Grimes, Iowa 50111</p>
+        </div>
+        <div class="w33">
+            <p><abbr title="Telephone">Tel</abbr>.: <span class="tel">(515) 979-7913</span><br />
+           
+            E-Mail: <a class="email" title="send an e-mail" href="mailto:&#105;&#110;&#102;&#111;&#64;&#100;&#111;&#110;&#116;&#98;&#108;&#105;&#110;&#107;&#46;&#110;&#101;&#116;">&#105;&#110;&#102;&#111;&#64;&#100;&#111;&#110;&#116;&#98;&#108;&#105;&#110;&#107;&#46;&#110;&#101;&#116;</a></p>
+        </div>
+        <div class="last w33"><img src="{folder-theme}/i/scissors.png" alt="" id="icon-scissors" width="33" height="30" />
+            <p><a id="f-feed" class="icons-footer" href="{folder-root}/rssView.aspx?feed=J2FDkN8l1r28Qxz9yXuqaIZTV61ic+uqkqpurP6KWgUOpITzpjcdsBizhFgYyVPE" rel="nofollow" title="Dontblink Designs Blog Feed - RSS 2.0">RSS-Feed</a> <a href="{folder-root}/web/blog.aspx" title="Dontblink Designs Blog: SEO and CMS"><acronym title="Search Engine Optimization">SEO</acronym> Blog</a><br />
+            <a id="f-twitter" class="icons-footer" href="http://twitter.com/dontblinkd" rel="nofollow" target="_blank" title="Follow Dontblink Designs via Twitter">Dontblink Designs on Twitter</a><br />
+            <a id="f-vcard" class="icons-footer" href="{folder-upload}/file/DontblinkDesigns.vcf" title="vCard (.vcf) for Dontblink Designs" rel="nofollow">vCard Dontblink Designs</a></p>
+        </div>
+    </div>
+    <div id="pageselection">
+        <div id="z3" class="w130 clearfix">
+            <div class="first w33">
+                <h4>Dontblink Designs</h4>
+                <ul>
+                <li><a href="{folder-root}/web/about.aspx">About Us</a></li>
+                <li><a href="{folder-root}/web/services.aspx">Services</a></li>
+                </ul>
+            </div>
+            <div class="w33">
+                <h4>Visitors</h4>
+                <ul>
+                <li><a href="{folder-root}/web/blog.aspx">Company Blog</a></li>
+                <li><a href="{folder-root}/web/contact.aspx">Contacting Us</a></li>
+                </ul>
+            </div>
+            <div class="last w33">
+                <h4>Popular</h4>
+                <ul>
+                <li><a href="{folder-root}/web/quote.aspx">Get A Quote</a></li>
+                <li><a href="{folder-root}/web/faq.aspx"><acronym title="Frequently Asked Questions">FAQ</acronym></a></li>
+                <li><a href="{folder-root}/web/process.aspx">Our Process</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="z2" class="w130 clearfix">
+        <div class="first w50">&copy;&nbsp; 2001 &minus; {site-date-yyyy}&nbsp; Dontblink Designs &nbsp;|  <a href="{folder-root}/web/contact.aspx" title="Contact Our Company">Contact</a> | 
+            <a href="{folder-root}/web/privacy-policy.aspx" title="Privacy Policy">Privacy Policy</a>
+        </div>
+        <div class="last w50 re"><a href="{folder-root}/web/sitemap.aspx" title="To The Site Map">Site Map</a> | <a href="#pageselection" id="clickshow" title="Page Selection">Page Selection</a> | 
+            <a href="#top" class="totop" title="Up to Top">Back to Top</a>
+        </div>
+    </div>
+</div><!--/footr-->
+
+
+<div id="naviheader"><div class="mod_navigation block">
+    <layout:NavigationMain direction="Normal" type="list" id="dropmenu" />
+</div></div><!--/naviheader-->
+
+<div id="searchfield"><div class="mod_form tableless block"><div class="formbody">
+    <layout:search />
+</div></div></div><!--/searchfield-->
+
+              ]]>
+        </html>
+        <foot>
+            <![CDATA[
+              ]]>
+        </foot>
+    </layout>
+
+
+
+</theme>
+
+
+<!-- 
+<layout:NavigationMain type="flyout|accordian|breadcrumb|list|stacked" id="OPTIONAL" direction="OPTIONAL (ReverseAll|ReverseTop|ReverseInner|Normal (default))" />
+<layout:NavigationHead type="flyout|accordian|breadcrumb|list|stacked" id="OPTIONAL" direction="OPTIONAL (ReverseAll|ReverseTop|ReverseInner|Normal (default))" />
+<layout:NavigationFoot type="flyout|accordian|breadcrumb|list|stacked" id="OPTIONAL" direction="OPTIONAL (ReverseAll|ReverseTop|ReverseInner|Normal (default))" />
+<layout:NavigationSubpage type="OPTIONAL main|header|footer|sitemap (default)" id="OPTIONAL (requires the "Unique Page Id" if used)" direction="OPTIONAL (ReverseAll|ReverseTop|ReverseInner|Normal (default))" />
+<layout:SignInText type="form|simple (default)" /><br />
+<layout:PageTitle type="alias|main (default)" id="OPTIONAL (requires the "Unique Page Id" if used)" />
+<layout:PageGraphic id="OPTIONAL" default="{folder-theme}/i/references.jpg" />
+<layout:content />
+<layout:search />
+
+
+Layout also allows the use of tokens:
+{folder-root}
+{folder-upload}
+{folder-theme}
+{site-date}
+{site-date-yyyy}
+
+
+<plugin settings="image;speed:5000;groupId:all" src="{folder-theme}/BannerRotate.xml" count="10" category="headlinerotator" name="Image Rotator" type="application/ezsite-plugin" width="400" height="300"></plugin>
+<plugin height="400" width="400" src="{folder-root}/web/myBlog.aspx" count="100" category="subpagerotator" name="subpagerotator" type="application/ezsite-plugin"></plugin>
+<plugin height="100%" width="100%" src="{folder-upload}/file/Headlines.xml" count="100" category="headlinerotator" name="headlinerotator" type="application/ezsite-plugin"></plugin>
+<script src="{folder-root}/components/scripts/jquery/jquery.corner.js" type="text/javascript"></script>
+<script src="{folder-theme}/scripts/script.js" type="text/javascript"></script>
+-->

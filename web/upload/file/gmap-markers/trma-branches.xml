@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<markers>
+  <marker guid="0b53bc80-123e-4858-96e8-50da2038f6bb" lat="40.265294" lng="-94.025144">
+    <name>Bethany Branch</name>
+    <description><![CDATA[North Missouri Family<br>Health Center<br>2703 Miller Street<br>Bethany, Missouri]]></description>
+    <icon height="34" width="20">/web/upload/image/gmap/TRMA-GMap.png</icon>
+  </marker>
+  <marker guid="441fcef3-7428-4207-80d0-b59577f906e9" lat="41.356169" lng="-93.588889">
+    <name>Indianola Branch</name>
+    <description><![CDATA[Indianola Parks &amp; Recreation<br />
+2204 West 2nd Street<br />
+Indianola, Iowa]]></description>
+    <icon height="34" width="20">/web/upload/image/gmap/TRMA-GMap.png</icon>
+  </marker>
+  <marker guid="253c789c-098d-49fe-a2b5-6cd99e883d14" lat="40.623682" lng="-93.933706">
+    <name>Lamoni Branch</name>
+    <description><![CDATA[133 Main Street<br>Lamoni, Iowa]]></description>
+    <icon height="34" width="20">/web/upload/image/gmap/TRMA-GMap.png</icon>
+  </marker>
+  <marker guid="c1bc455d-2161-4166-a3b2-d4a913f76ac3" lat="40.073767" lng="-93.616199">
+    <name>Trenton Branch</name>
+    <description><![CDATA[203 East 9th St., Suite B<br>Trenton, Missouri]]></description>
+    <icon height="34" width="20">/web/upload/image/gmap/TRMA-GMap.png</icon>
+  </marker>
+  <marker guid="9eda82c4-ed4c-4ced-b570-b2ee19273740" lat="41.582703" lng="-93.711942">
+    <name>West Des Moines Branch</name>
+    <description><![CDATA[West Des Moines United Methodist Church<br>8th St. & Grand Av.<br>West Des Moines, Iowa]]></description>
+    <icon height="34" width="20">/web/upload/image/gmap/TRMA-GMap.png</icon>
+  </marker>
+  <marker guid="addf2ac0-3b1a-4619-ad92-0c8444ef6b42" lat="41.331803" lng="-94.015775">
+    <name>Winterset Branch</name>
+    <description><![CDATA[Winterset Elementary<br>Winterset, Iowa 50273]]></description>
+    <icon height="34" width="20">/web/upload/image/gmap/TRMA-GMap.png</icon>
+  </marker>
+  <marker guid="7aa437f3-6bd6-4581-97c0-eb6d04bfba2f" lat="39.724497" lng="-94.84313">
+    <name>St. Joseph Branch</name>
+    <description><![CDATA[4501 South 14th St.<br>St. Joseph, Missouri]]></description>
+    <icon height="34" width="20">/web/upload/image/gmap/TRMA-GMap.png</icon>
+  </marker>
+  <marker guid="b5b783d9-7dee-4bfc-b98e-9be22eb8879c" lat="41.48847" lng="-93.4910">
+    <name>Carlisle Branch</name>
+    <description><![CDATA[Parks and Rec building<br />
+1230 S. 5th St.<br />
+Carlisle, Iowa]]></description>
+    <icon height="34" width="20">/web/upload/image/gmap/TRMA-GMap.png</icon>
+  </marker>
+  <marker guid="7b3954e5-aa5e-4f76-8d25-96061915c74e" lat="41.53285" lng="-93.6443">
+    <name>Two Rivers Hub (and Business Office)</name>
+    <description><![CDATA[2017 Southlawn Drive<br />
+Suite D<br />
+Des Moines, Iowa<br />
+(515) 285-5049<br />
+[<a href="/web/get-directions.aspx?daddr=2017+Southlawn+Drive%2c+Des+Moines%2c+Iowa">directions</a>]]]></description>
+    <icon height="34" width="20">/web/upload/image/gmap/TRMA-GMap.png</icon>
+  </marker>
+  <marker guid="2283020e-77f9-401d-bea4-530f285d7a87" lat="41.59860" lng="-93.51902">
+    <name>Pleasant Hill (AKA SEP) Branch</name>
+    <description><![CDATA[4830 Maple Drive<br />
+Suite 9<br />
+Pleasant Hill, Iowa, 50327]]></description>
+    <icon height="34" width="20">/web/upload/image/gmap/TRMA-GMap.png</icon>
+  </marker>
+  <marker guid="5180f844-2f66-4016-85eb-0a3d6ffd6cec" lat="41.957038" lng="-91.721272">
+    <name>Jung's Tae Kwon Do</name>
+    <description><![CDATA[Jung`s TaeKwonDo Academy<br />
+3950 Wilson Ave. SW<br />
+Cedar Rapids, IA 52404<br />
+<br />
+ph: 319-396-1973]]></description>
+    <icon height="34" width="20">/web/upload/image/gmap/JUNG-GMap.png</icon>
+  </marker>
+</markers>

@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /account/
+Disallow: /admin/
+Disallow: /App_Browsers/            # Contains browser specific declarations
+Disallow: /App_Code/                # Contains uncompilied class files
+Disallow: /App_Data/                # Contains database files
+Disallow: /App_GlobalResources/     # Contains Global Resources
+Disallow: /App_Themes/              # Contains skins and stylesheets for each theme folder
+Disallow: /App_WebReferences/       # Contains Web References
+Disallow: /Bin/                     # Contains compiled assemblies
+Disallow: /Components/
+Disallow: /Web.config               # prevent web.config
+Sitemap: http://www.dontblink.net/web/sitemap.xml

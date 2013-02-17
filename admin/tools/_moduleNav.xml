@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<sitemap title="Tools">
+    <siteMapNode title="Tools" url="~/admin/tools/default.aspx" pid="20">
+        <siteMapNode title="Search" url="~/admin/tools/search.aspx" pid="2000" displayInMap="true" />
+        <siteMapNode title="Statistics" url="~/admin/tools/quickstat.aspx" pid="2010" displayInMap="true">
+            <siteMapNode title="QuickStat" url="~/admin/tools/quickstat.aspx" pid="201010" displayInMap="true" />
+            <siteMapNode title="Activity Log" url="~/admin/tools/activity.aspx" pid="201020" displayInMap="true" />
+            <siteMapNode title="Error Log" url="~/admin/tools/error.aspx" pid="201030" displayInMap="true" />
+            <siteMapNode title="Domain Exclusion" url="~/admin/tools/excludeVisitor.aspx" pid="201050" displayInMap="true" />
+        </siteMapNode>
+        <siteMapNode title="Broken Link Check" url="~/admin/tools/linkChecker.aspx" pid="2070" displayInMap="true" />
+        <siteMapNode title="Social Networking" url="~/admin/tools/socialNetworking.aspx" pid="2080" displayInMap="true" />
+        <siteMapNode title="Conversion Tool" url="javascript:commentsListing('conversion.aspx');" pid="2090" displayInMap="true" />
+
+
+        <siteMapNode title="SEO" url="~/admin/tools/sitemap.aspx" pid="2030" displayInMap="true">
+            <siteMapNode title="Sitemap" url="~/admin/tools/sitemap.aspx" pid="203010" displayInMap="true" />
+        </siteMapNode>
+        <siteMapNode title="Mapping" url="~/admin/tools/whois.aspx" pid="2040" displayInMap="true">
+            <siteMapNode title="Whois Lookup" url="~/admin/tools/whois.aspx" pid="204010" displayInMap="true" />
+            <siteMapNode title="Lat/Long Lookup" url="~/admin/tools/latlong.aspx" pid="204020" displayInMap="true" />
+        </siteMapNode>
+        <siteMapNode title="Links" url="~/admin/tools/links.aspx" pid="2050" displayInMap="true">
+            <siteMapNode title="Alexa Web Ranking" target="_blank" url="http://www.alexa.com/data/details/main?q=&amp;url={website}" pid="205010" displayInMap="true" />
+            <siteMapNode title="Page Rank Check" target="_blank" url="http://www.validrank.com/report/{website}" pid="205020" displayInMap="true" />
+            <siteMapNode title="Copyscape" target="_blank" url="http://www.copyscape.com/?q={website}" pid="205150" displayInMap="true" />
+            <siteMapNode title="Plagium" target="_blank" url="http://plagium.com/index.cfm?mode=url&amp;url={website}" pid="205160" displayInMap="true" />
+            <siteMapNode title="SEO" target="_blank" url="http://developers.evrsoft.com/seotool/bot.pl?url={website}" pid="205030" displayInMap="true" />
+            <siteMapNode title="Site Timer" target="_blank" url="http://www.octagate.com/service/SiteTimer/?URL={website}" pid="205040" displayInMap="true" />
+            <siteMapNode title="Yotta Performance" target="_blank" url="http://www.yottaa.com/url/search?u={website}" pid="205045" displayInMap="true" />
+            <siteMapNode title="Pingdom Tools" target="_blank" url="http://tools.pingdom.com/?url={website}" pid="205050" displayInMap="true" />
+            <siteMapNode title="Webpage Test" target="_blank" url="http://www.webpagetest.org/runtest.php?url={website}&amp;runs=2" pid="205051" displayInMap="true" />
+            <siteMapNode title="InternetSupervision" target="_blank" url="http://internetsupervision.com/scripts/urlcheck/check.aspx?lan=en-US&amp;checkurl={website}" pid="205060" displayInMap="true" />
+            <siteMapNode title="Keyword Analysis" target="_blank" url="http://www.webmaster-toolkit.com/keyword-analysis-tool.shtml?url={website}" pid="205070" displayInMap="true" />
+            <siteMapNode title="Link Popularity" target="_blank" url="http://www.webmaster-toolkit.com/link-popularity-checker.shtml?url={website}" pid="205080" displayInMap="true" />
+            <siteMapNode title="Meta-Tag Generator" target="_blank" url="http://www.webmaster-toolkit.com/meta-tag-generator.shtml?url={website}&amp;maxkeywords=12&amp;delimiter=%2C" pid="205090" displayInMap="true" />
+            <siteMapNode title="Code Validator" target="_blank" url="http://validator.w3.org/check?uri={website}" pid="205100" displayInMap="true" />
+            <siteMapNode title="Link Checker" target="_blank" url="http://www.webmaster-toolkit.com/link-checker.shtml?url={website}&amp;type=href" pid="205110" displayInMap="true" />
+            <siteMapNode title="Keyword Density" target="_blank" url="http://www.webuildpages.com/seo-tools/keyword-density/?url={website}" pid="205120" displayInMap="true" />
+            <siteMapNode title="Google Analytics" target="_blank" url="https://www.google.com/analytics/settings/" pid="205130" displayInMap="true" />
+            <siteMapNode title="Google Webmaster Tools" target="_blank" url="https://www.google.com/webmasters/tools/" pid="205140" displayInMap="true" />
+
+            <siteMapNode title="Google AdWords:Keyword Tool" target="_blank" url="https://adwords.google.com/o/Targeting/Explorer?__u=1000000000&amp;__c=1000000000" pid="205170" displayInMap="true" />
+
+        <siteMapNode title="Daily Razor Admin" target="_blank" url="https://tworiversmartialarts.com:8443" pid="2051800" displayInMap="true" />
+	<siteMapNode title="TRMAWEB Webmail" target="_blank" url="http://webmail.tworiversmartialarts.com/" pid="2051805" displayInMap="true" />
+        <siteMapNode title="AIT Domains" target="_blank" url="https://dmt.aitdomains.com" pid="2051900" displayInMap="true" />
+
+
+        </siteMapNode>
+        <siteMapNode title="Report Issue" url="~/admin/tools/bugReport.aspx" pid="2060" displayInMap="true" />
+    </siteMapNode>
+</sitemap>
+
