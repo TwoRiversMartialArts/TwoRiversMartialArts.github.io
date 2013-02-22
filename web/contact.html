@@ -231,8 +231,9 @@ Select branch (choose the Hub if the branch you are interested in is not listed:
         $.ajax({ url: "/cgi-bin/recpt.py",dataType:'json',type:'POST',
            data : data,
            success: function(data,status,x) {
-              $("#contact_msg").text(data.msg);
-              if( data.alert ) alert(data.alert);
+              alert(data.msg);
+              $("#contact_msg").text("");
+              //if( data.alert ) alert(data.alert);
            },
            error: function(x,msg,err) {
               //$("#contact_msg").text("Message received");
