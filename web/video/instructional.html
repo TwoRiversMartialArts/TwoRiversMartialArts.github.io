@@ -1,16 +1,354 @@
-<html>
-<head>
-	<title>Instructional Videos</title>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_main_Head"><title>
+	Instructional Videos
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta http-equiv="imagetoolbar" content="no" /><style id="ctl00_dbdstyle" type="text/css">
+</style>
+<style type="text/css">
+tr.week {
+  width:100%;
+  margin: 0;
+}
+tr.week td, tr.cost td, tr.schedrow td {
+  width: 14%;
+  border: 2px solid black;
+  margin: 2px ;
+}
+table.cost {
+  width: 50%;
+  margin-left: 20%;
+}
+table.week,table.cost {
+  border-spacing:0;
+  border-collapse:collapse;
+}
+div.dow, div.nstudents {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5px;
+  font-style: italic;
+  border-bottom: 1px solid black;
+}
+div.dowsched, div.nstudents_cost {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+div.nstudents_cost {
+  text-align: center;
+}
+div#dynContent {
+  color:black;
+}
+div.moreinfo,div.address{
+  margin-left: 20%;
+}
+div.topofpage {text-align:center;}
+div.topofpage img {
+ display:inline-block;
+ height: 400px;}
+
+</style>
+<!--geo-->
+
+<link href="/css/common.css" type="text/css" rel="stylesheet" />
+<link href="/css/style.css" type="text/css" rel="stylesheet" />
+<link rel="shortcut icon" href="/components/themes/trma/favicon.ico" />
+<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+<script src="/components/scripts/jquery/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+(function($){
+function makeMap() {
+   var M = google.maps;
+   var center= new M.LatLng(<%%LATLNG%%>);
+   var map = new M.Map(document.getElementById("mygmap"),
+              {zoom:16,center:center});
+   var mark = new M.Marker({ position: center,
+          map: map, title:"Branch Location: <%%BranchName%%>",
+          icon : "upload/image/gmap/TRMA-GMap.png"});
+}
+$(makeMap);
+})($);
+</script>
 </head>
-<body>
+<body id="ctl00_main_Body">
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/NFHzNr5XqnI" frameborder="10" allowfullscreen></iframe>
+    <div id="ezSite">
+<div id="interior">
+    <div id="outer-a">
+        <div id="outer-b">
+            <div id="wrap">
+                <div id="masthead" class="noprint">
+                    <div id="logo">
+                        <a href="/"><h1>Two Rivers Martial Arts</h1></a>
+                    </div>
+                    <div id="utility-navigation">
+                        <div id="naviHeader">
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/DhAISFQdUZA" frameborder="10" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/UEajI_j65PU" frameborder="10" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/HwuWgOgcCfI" frameborder="10" allowfullscreen></iframe>
+<!-- Navigation Container -->
+<div id="NavigationContainer">
+
+<ul>
+<li class=""><a href="/">Home</a></li>
+<li class=""><a href="/web/contact.html">Contact</a></li>
+<li class=""><a href="/web/startingtkd.html">How To Start</a></li>
+</ul>
+</div>
+<!-- End of Navigation Container -->
+
+
+
+</div>
+
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+                <div id="main">
+                    <div id="navigation" class="noprint">
+                        <div id="naviMain">
+
+
+
+<!-- Navigation Container -->
+
+
+<div id="NavigationContainer">
+<ul id="nav">
+<li class=""><a href="/web/history-trma.html">About</a> </li>
+<li class=""><a href="/web/locations-trma.html">Locations</a></li>
+<li class=""><a href="/web/locations-trma.html#sched">Schedule</a></li>
+<li class=""><a href="/web/martial-spirit.html">Martial Spirit</a></li>
+<li class=""><a style="width:195px;" href="/web/ybbc.html">Young Black Belt Class</a></li>
+<li class=""><a href="/web/resource-tenets.html">Resources</a></li>
+</ul>
+</div>
+<!-- End of Navigation Container -->
+
+
+
+</div>
+
+
+                    </div>
+
+<!-- End of SubPage Navigation -->
+
+   <div style="clear: both;"></div>
+</div>
+                    </div>
+                    <div id="content" class="v2">
+                        
+                        
+
+<!-- Dynamic Content -->
+<div id="dynContent" style="padding-left:100px;">
+<h2>Video Slide Show</h2>
+<br/>
+Here is a sequence of instructional videos.  Click the arrow to advance from one to the next.  You can 
+switch to full screen on any of them.
+<br/>
+<br/>
+<p>
+<iframe src="https://docs.google.com/presentation/d/1-IB0BPmEkvlE38YFQqR2dmActDw4i--zx8F0DghZS4U/embed?start=false&loop=false&delayms=60000" frameborder="0" width="640" height="480" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+</div>
+<!-- End of Dynamic Content -->
+
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+
+            <div id="footer" class="noprint">
+                <div>
+                    <p id="social-icons">
+                        <span>Follow us on:</span>
+                        <a href="http://www.facebook.com/tworiversmartialarts" class="fb" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Facebook', 'Follow Us');">Facebook</a>
+                        <a href="http://twitter.com/tworiversma" class="tw" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Twitter', 'Follow Us');">Twitter</a>
+                        <a href="http://www.linkedin.com/pub/tworivers-martialarts/23/52b/155" class="li" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'LinkedIn', 'Follow Us');">LinkedIn</a>
+                        <a href="http://tworiversmartialarts.posterous.com/" class="poster" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Posterous', 'Follow Us');">Posterous</a>
+                        <!--<a href="http://www.youtube.com/trma" class="yt" target="_blank" onClick="pageTracker._trackEvent('Social Networking', 'Youtube', 'Follow Us');">YouTube</a>-->
+                    </p>
+                    <p>&copy; 2013 Two Rivers Martial Arts. All Rights Reserved.</p>
+                    <div style="clear: both;"></div>
+                </div><br />
+             
+                <div id="sitemap">
+                    <div>
+                        <strong>About Us</strong>
+                        
+
+<div style="width:;height:;">
+
+
+<!-- SubPage Navigation -->
+<div class="subpagenavi">
+<ul>
+<li><a href="/web/instructors-primary.html">Primary Instructors</a></li>
+<li><a href="/web/startingtkd.html">How Do I Start</a></li>
+<li><a href="/web/history-trma.html">About Two Rivers Martial Arts</a></li>
+<li><a href="/web/curriculum.html">Curriculum</a></li>
+<li><a href="/web/blackbeltlist.html">List of Black Belt Members</a></li>
+<li><a href="/web/competition.html">Competition</a></li>
+<li><a href="/web/upload/file/trma_Release.pdf" target="_blank">Two Rivers Release Form </a></li>
+</ul>
+
+</div>
+<!-- End of SubPage Navigation -->
+
+   <div style="clear: both;"></div>
+</div>
+
+
+                    </div>
+
+                    <div>
+                        <strong>Locations</strong>
+                        
+
+<div style="width:;height:;">
+
+
+<!-- SubPage Navigation -->
+<div class="subpagenavi">
+<ul>
+<li class="navOn"><a href="/web/locations-trma.html">TRMA Locations</a></li>
+<li><a href="/web/related-schools.html">Related Schools</a></li>
+</ul>
+
+</div>
+<!-- End of SubPage Navigation -->
+
+   <div style="clear: both;"></div>
+</div>
+
+
+                        <br /><br /><br />
+                        <br/>
+<strong>_____________</strong><br/>
+<a href="/web/ybbc.html">Young Black Belt Class</a>
+<br/>
+<a href="/web/martial-spirit.html">Martial Spirit</a><br/><br/>
+<strong><a href="/web/ybbc.html">Young Black Belt Class</a></strong>
+                    </div>
+
+                    <div>
+                        <strong>Schedules</strong>
+                        
+
+<div style="width:;height:;">
+
+
+<!-- SubPage Navigation -->
+<div class="subpagenavi">
+<ul>
+<li><a href="/web/locations-trma.html#sched">Class Schedules</a></li>
+<li><a href="/web/locations-trma.html#sched">Calendar</a></li>
+<li><a href="/web/test-schedule.html">Test Schedule</a></li>
+</ul>
+
+</div>
+<!-- End of SubPage Navigation -->
+
+   <div style="clear: both;"></div>
+</div>
+
+
+                    </div>
+
+                    <div>
+                        <strong>Resources</strong>
+                        
+
+<div style="width:;height:;">
+
+
+<!-- SubPage Navigation -->
+<div class="subpagenavi">
+<ul>
+<li><a href="/web/resource-tenets.html">Tenets of Tae Kwon Do</a></li>
+<li><a href="/web/resource-terminology.html">Terminology</a></li>
+<li><a href="/web/resource-belts.html">Significance of Belts</a></li>
+<li><a href="/web/resource-forms.html">Forms</a></li>
+<li><a href="/web/video/instructional.html">Instructional Videos</a></li>
+</ul>
+
+</div>
+<!-- End of SubPage Navigation -->
+
+   <div style="clear: both;"></div>
+</div>
+
+
+                    </div>
+
+                    <div>
+                        <strong><a href="/web/search.html">Search & Sitemap</a></strong>
+                    </div>
+
+                    <div style="clear: both;"></div>
+                </div>
+
+                <div style="clear: both;"></div>
+            </div>
+
+        </div><!-- /outer-b -->
+    </div><!-- /outer-a -->
+</div><!-- /interior -->
+
+              
+
+        <!-- overlayed element [external page] -->
+        <div class="simpleExt_overlay" id="overlayExtPage">
+            <div class="innerdetails" id="innerdetailsExtPage" style="">
+	            <!-- the external content is loaded inside this tag -->
+	            <div class="contentWrapExtPage"></div>
+	        </div>
+        </div>
+
+    </div>
+    
+<script src="/components/scripts/jquery/jquery.tools.min.js" type="text/javascript" language="javascript"></script>
+<script src="/components/scripts/jquery/jquery.cycle.all.min.js" type="text/javascript" language="javascript"></script>
+<script src="/components/scripts/jquery/jquery.cycle.transitions.addon.js" type="text/javascript" language="javascript"></script>
+<script src="/components/scripts/jquery/jquery.sharebox.js" type="text/javascript" language="javascript"></script>
+<script src="/components/scripts/jquery/jquery.flash.min_.js" type="text/javascript" language="javascript"></script>
+<script src="/components/scripts/jquery/jquery.googlemaps1.01.js" type="text/javascript" language="javascript"></script>
+<script src="/components/scripts/javascript.js" type="text/javascript" language="javascript"></script>
+
+<script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript">try{var pageTracker = _gat._getTracker("UA-16668387-1");pageTracker._setCustomVar(2,"page_category","Locations",3);pageTracker._trackPageview();} catch(err) {}</script>
+<script type="text/javascript">
+var exts = ['pdf','doc','docx','xls','xlsx','csv','swf','txt','pps','ppt','pptx','pub','zip','zipx','sit','gz','7z','rar','ace','tar','dmg','vcf','ics','wps','wpd','rtf','csv','xml','mp3','wma','ra','wmv','mpg','mp4','mov','flv','avi','exe','bat','msi','torrent'];
+function trackLinkClick(category, action, url) {if (url != null) {try {url = url.replace("'", "\'");} catch (err) {}}
+pageTracker._setCustomVar(3,action,url,3);pageTracker._trackPageview(url);pageTracker._trackEvent(category, 'Click', url);
+}
+$(function() {
+for(i = 0; i < exts.length; i++){$('a[href*=.' + exts[i] + ']').click(function(){var thisUrl = $(this).attr('href');trackLinkClick('File', 'Click', thisUrl);});}});
+$(document).ready(function(){$("a[href^=http]").not("[href*=tworiversmartialarts.com]").click(function() {var thisUrl = $(this).attr('href');trackLinkClick('Link', 'Click', thisUrl);});});
+$(document).ready(function(){$("a[href^=mailto]").click(function() {var thisUrl = $(this).attr('href');trackLinkClick('Email', 'Click', thisUrl);});});
+$(document).ready(function(){$("input[type='image'],input[type='submit'],input[type='button']").click(function() {var thisFormUrl = window.location.pathname;var thisButtonValue = $(this).attr('value');var thisButtonType = $(this).attr('type');var _ButtonType = 'Button';if(thisButtonType == 'submit'){_ButtonType='Submit'};trackLinkClick(_ButtonType, 'Click', thisFormUrl + ' [' + thisButtonValue + ']');});});
+</script>
+<script type="text/javascript">pageTracker._setVar('not_loggedin_user');</script>
+
+    
+<script src="/components/scripts/jquery/jquery.inputFocus.js" type="text/javascript"></script>
+              
+    
+
+<!-- Begin placement of scripts -->
+    <script type="text/javascript">$(function() {$("a[rel='#overlayExtPage']").overlay({expose: '#f1f1f1',onBeforeClose: function() {try {var player  = null;player = document.getElementById('player1');player.sendEvent('STOP');} catch (err) {}},onClose: function() {},onLoad: function() {var objH = $(".contentWrapExtPage").height();var objW = $(".contentWrapExtPage").width();$("#overlayExtPage").css('position','absolute');$("#overlayExtPage").css('left', ( $(window).width() - objW ) / 2+$(window).scrollLeft() + 'px');},onBeforeLoad: function() {var wrap = this.getOverlay().find(".contentWrapExtPage");var lnkHref = (this.getTrigger().attr("href"));lnkHref = lnkHref.replace(/&/g,'%26');;var aHref = '/components/controls/overlay.html?url=' + lnkHref;wrap.load(aHref);}});});</script>
+
+<a href="http://www.dontblink.net" target="_blank"><img src="/components/images/base/dbdEzsite.gif" alt="Generated by Dontblink Designs EZSite" border="0" style="width:1px;height:1px;" /></a>
 
 </body>
 </html>
+

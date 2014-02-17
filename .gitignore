@@ -5,10 +5,7 @@ _vti_*
 *.odt
 *.pdf
 *.flv
-*.jpg
 *.gif
-*.png
-*.JPG
 *.mdb
 *.log
 *.doc*
@@ -18,6 +15,11 @@ _vti_*
 *.asmx
 *.ascx
 *.asax
+*.jpg
+*.JPG
+*.png
+*.PNG
+*.tgz
 mathematician
 y_key_*
 SAMPLE_*
@@ -25,6 +27,6 @@ SAMPLE_*
 fusion
 jwFLV
 *.zip
-
 web2py
 ckeditor
+web/location-[^x]*
