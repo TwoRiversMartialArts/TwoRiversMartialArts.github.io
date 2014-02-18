@@ -55,6 +55,10 @@ for the Young Black Belt Club
 meeting times.  An announcement is posted each month to 
 confirm the time and other details.
 <br/>
+<br/>
+In addtion to the above, on the last Sunday of each month a black belt class will be held
+at the hub.  Watch for <a href="http://announce.trma.us">announcements</a>
+regarding time and instructor.  The first class is 2/23/2014 at 3pm.
 </div>
 @@@
 <%%instructors%%>~
