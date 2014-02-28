@@ -4,7 +4,8 @@
 class Recpt :
    hdrs = ["recpt_no","recpt_date","recpt_branch",
            "recpt_outby","recpt_recvby",
-           "recpt_revcount","note"]
+           "recpt_revcount","note","recpt_loc",
+           "xfer_toggle"]
    recptFields = ["recpt_item","recpt_qty"]
    reconFields = ["recon_item","recon_rqty","recon_pqty","recon_chkn",
                    "recon_paid","recon_pdate","recon_rdate"]
@@ -58,7 +59,9 @@ class Recpt :
                         (self.userid,hsh))
       row = self.cur.fetchone()
       if not row : return self.sendJSON({'msg':'FAILED'})
-      res = { 'msg':'SUCCESS','uid':encUID(self.userid) }
+      self.cur.execute("select name from location order by id")
+      locs = [ r[0] for r in self.cur ]
+      res = { 'msg':'SUCCESS','uid':encUID(self.userid),'locs':locs }
       if row[0] is None : res['needemail'] = True
       return self.sendJSON(res)
       
@@ -90,6 +93,8 @@ class Recpt :
       return self.sendJSON({'msg':'SUCCESS'})
    #===============
    def store(self) :
+      isxfer = (self.map['xfer_toggle'] == 'T')
+      if isxfer : return self.xfer_store()
       rn = self.map['recpt_no']
       if not self.user :
          return self.sendJSON({'msg':"Can't commit unless you are logged in"})
@@ -114,19 +119,19 @@ class Recpt :
       reconQtyByItem = {}
       incr = lambda m,k,v : m.__setitem__(k,m.get(k,0)+v)
       for row in self.map['recpt'] :
-         if not row['recpt_item'] : continue
+         recptQty = int(row['recpt_qty'] or 0)
+         if not recptQty : continue
          itemid = self._finditemid(row['recpt_item'])
-         recptQty = int(row['recpt_qty'])
          if itemid is None: return self.sendJSON({'msg':"Bad item"})        
          self.cur.execute("""insert into recpt_dtl
             (recptid,userid,itemid,qty) values
             (?,?,?,?)""",(rid,self.user,itemid,recptQty))
          incr(recptQtyByItem,itemid,recptQty)
       for row in self.map['recon'] :
-         if not row['recon_item'] : continue
-         itemid = self._finditemid(row['recon_item'])
          reconQtyRtn = int(row['recon_rqty'] or 0)
          reconQtyPd = int(row['recon_pqty'] or 0)
+         if not (reconQtyRtn+reconQtyPd) : continue
+         itemid = self._finditemid(row['recon_item'])
          if itemid is None: return self.sendJSON({'msg':"Bad item"})
          incr(reconQtyByItem,itemid,reconQtyRtn+reconQtyPd)
          if reconQtyByItem[itemid] > recptQtyByItem.get(itemid,0) :
@@ -143,7 +148,31 @@ class Recpt :
       self.cur.execute("""select cnt from recpt_recent_rev 
          where num = ?""",(rn,))
       cnt = self.cur.fetchone()[0]
-      self.sendJSON({'msg':'Data stored','cnt':str(cnt)})
+      return self.sendJSON({'msg':'Receipt stored.  Thank you!','cnt':str(cnt)})
+   #===============
+   def xfer_store(self) :
+      locs = [ self.arg('recpt_x'+x) for x in ('from','to') ]
+      if locs[0] == locs[1] :
+         return self.sendJSON({'msg':"Locations need to be different"})
+      locstr = "%s->%s" % (locs[0],locs[1])
+      locids = [ self._getloc(x) for x in locs ]
+      dt = self.map["recpt_date"]
+      for row in self.map['recpt'] :
+         recptQty = int(row['recpt_qty'] or 0)
+         if not recptQty : continue
+         itemid = self._finditemid(row['recpt_item'])
+         if itemid is None: return self.sendJSON({'msg':"Bad item"})        
+         self.cur.execute("""insert into stock
+            (itemid,qty,dtl,userid,ts,locid) values
+            (?,?,?,?,?,?)""",(itemid,-recptQty,
+            "XFEROUT|%s"%locstr,self.user,ts(dt),locids[0]))      
+         self.cur.execute("""insert into stock
+            (itemid,qty,dtl,userid,ts,locid) values
+            (?,?,?,?,?,?)""",(itemid,recptQty,
+            "XFERIN|%s"%locstr,self.user,ts(dt),locids[1]))
+      self.cur.connection.commit()
+      return self.sendJSON({'msg':'Transfer stored.  Thank you!','cnt':'0'})
+      
    #===============
    def _findbranchid(self,br) :
       self.cur.execute("select id from branch where name = ?",(br,))
@@ -177,6 +206,15 @@ class Recpt :
       self.cur.execute("select name from item where id = ?",(id,))
       return self.cur.fetchone()[0]
    #===============
+   def _getloc(self,key) :
+      if isinstance(key,(int,long)) :
+         self.cur.execute("select name from location where id = ?",(key,))
+      else : 
+         self.cur.execute("select id from location where name = ?",(key,))
+      row = self.cur.fetchone()
+      if not row : print "No loc %s" % str(key)
+      return row[0]
+   #===============
    def _getnextNUM(self) :
       self.cur.execute("select distinct num from recpt")
       nums = [ int(x[0]) for x in self.cur ]
@@ -188,58 +226,73 @@ class Recpt :
    #===============
    def stock_search(self) :
       name = self.arg("item")
+      locid = self._getloc(self.arg('loc'))
       itemid = self._finditemid(name,1)
       self.cur.execute("""
-         select itemid,total from stock_levels
-         where itemid = ?
-      """,(itemid,))
+         select itemid,total,cost,price from 
+           stock_levels A join item B on A.itemid=B.id
+         where itemid = ? and locid = ?
+      """,(itemid,locid))
       row = self.cur.fetchone()
       if not row : return self.sendJSON({ 'count':0 })
-      return self.sendJSON({'count':row[1]})      
+      res = {'count':row[1]}
+      if row[2] : res['cost'] = "$%.2f"%row[2]
+      if row[3] : res['price'] = "$%.2f"%row[3]
+      return self.sendJSON(res)      
    #===============
    def stock_store(self):
       if not self.user :
          return self.sendJSON({'msg':"Not logged in"})
       item = self.arg('item')
+      locid = self._getloc(self.arg('loc'))
       if not item :
          return self.sendJSON({'msg':"No item name entered"})
          
       itemid = self._finditemid(self.arg('item'))
       if itemid is None : return self.sendJSON({'msg':"Unrecognized item"})
+     
+      for attr in ('cost','price') :
+         v = self.arg(attr)
+         if v :
+            v = float(re.sub(r"\s|\$","",v))
+            self.cur.execute("update item set %s=? where id =?"%attr,
+                             (v,itemid))
+            self.cur.connection.commit()
       
       newcnt = self.arg('setqty')
       if newcnt :
          self.cur.execute("""delete from stock where
-            itemid=? and ts = ? and dtl like ?""",
-            (itemid,ts(self.arg("stk_date")),"COUNT%%"))
+            itemid=? and ts = ? and dtl like ? and locid = ?""",
+            (itemid,ts(self.arg("dt")),"COUNT%",locid))
          self.cur.execute("""
-           replace into stock (itemid,ts,qty,dtl,userid)
-           values (?,?,?,?,?)
+           replace into stock (itemid,ts,qty,dtl,userid,locid)
+           values (?,?,?,?,?,?)
            """,(itemid,ts(self.arg('dt')),
-              int(newcnt),"COUNT",self.user))
+              int(newcnt),"COUNT",self.user,locid))
       addcnt = self.arg("addqty")
       if addcnt :
          self.cur.execute("""
-            insert into stock (itemid,ts,qty,dtl,userid)
-            values (?,?,?,?,?)
+            insert into stock (itemid,ts,qty,dtl,userid,locid)
+            values (?,?,?,?,?,?)
            """,(itemid,ts(self.arg('dt')),
-              int(addcnt),"CHANGE|"+self.arg('note'),self.user))
+              int(addcnt),"CHANGE|"+self.arg('note'),self.user,locid))
       reord = self.arg("reord")
       if reord:
          self.cur.execute("""replace into item_reorder
-            (itemid,reorder_level) values (?,?)""",
-            (itemid,int(reord)) )
+            (itemid,reorder_level,locid) values (?,?,?)""",
+            (itemid,int(reord),locid) )
       self.cur.connection.commit()
-      return self.sendJSON({'msg':'Data stored'})
+      return self.sendJSON({'msg':'Data stored. Thank you!'})
       
    #===============
    def search(self) :
       num = self.arg('recpt_no')
       revno = self.arg('recpt_revno')
-      self.computeOpen(num)
+      _,_,owe = self.computeOpen(num=num)
       if not revno :
          self.cur.execute("""select id,num,branchid,removedby,
-                          recvby,ts,createts,rev,status,cnt,note
+                          recvby,ts,createts,rev,status,cnt,note,
+                          locid
                           from recpt_recent A
                           where num = ?""",(num,))
       else :
@@ -251,7 +304,8 @@ class Recpt :
          rev = self.cur.fetchone()
          if rev :
             self.cur.execute("""select A.id,A.num,A.branchid,A.removedby,
-                          A.recvby,A.ts,A.createts,A.rev,A.status,R.cnt,A.note
+                          A.recvby,A.ts,A.createts,A.rev,A.status,R.cnt,A.note,
+                          A.locid
                           from recpt A join recpt_recent R
                                on A.num = R.num
                           where A.num = ? and A.rev = ?""",(num,rev[0]))
@@ -276,6 +330,7 @@ class Recpt :
       result["recpt_recvby"] = hdr[4]
       result["recpt_revcount"] = str(hdr[9])
       result["recpt_revno"] = str(revno or hdr[9])
+      result["recpt_loc"] = self._getloc(hdr[11])
       result["note"] = hdr[10] or ''
       
       for i,row in enumerate(rcptdtl) :
@@ -289,8 +344,7 @@ class Recpt :
          result["recon_pdate%d"%i] = scrdt(row[5])
          result["recon_rdate%d"%i] = scrdt(row[6])
          result["recon_chkn%d"%i] = scrt(row[7])
-      msg = "Success%s" % (" (note: this receipt is CLOSED)"
-                  if hdr[8]=='CLOSED' else '')   
+      msg = "Success, owed item count = %d" % owe   
       return self.sendJSON({'data':result,'msg':msg})
    #===============
    def suggbranch(self) :
@@ -328,63 +382,91 @@ class Recpt :
          'data' : [] }
       return self.sendJSON(res)
    #===============
-   def computeOpen(self,num = None) :
+   def computeOpen(self,db=0,num = None) :
+      rloc = self.arg('recpt_loc')
+      locs = self.arg('locs')
+      locs = rloc and [rloc] or (locs and locs.split(",") or []) 
+      where = []
+      args = ()
+      if locs: 
+         where.append('( A.name in (%s) )' % ','.join('?'*len(locs))) 
+         args += tuple(locs)
+      if num :
+         where.append('RecptNo = ?')
+         args += (num,)
+      if db :
+         where.append("Date>=?")
+         args += (daysback_cutoff(db),)
+      elif not num :
+         where.append("Remaining>?")
+         args += (0,)
+  
       self.cur.execute("""
-         select * from rpt_open_recpts %s
-         """ % (num and "where RecptNo = ?" or ""),
-          num and (num,) or ())
-      rows = {}
-      res = []
+         select A.name,B.*,coalesce(C.userid,'') 
+            from 
+            location A join rpt_open_recpts B
+            on A.id = B.locid
+            left outer join (
+              select A.id recptid, min(B.userid) userid
+              from recpt_recent A join recpt_dtl B on A.id = B.recptid
+              group by A.id) C on B.id = C.recptid
+            where %s
+         """ % " and ".join(where),args) 
       desc = self.cur.description
-      for row in self.cur:
-         rows.setdefault(row[2],[]).append(row)
-         
-      for num,recs in rows.iteritems() :
-         if sum(x[9] for x in recs) == 0 :
-            self.cur.execute("update recpt set status = ? where id = ?",
-               ("CLOSED",recs[0][0]))
-            self.cur.connection.commit()
-         else :
-            res.extend(recs)
-      res.sort(key=lambda x:x[1])
+      res = self.cur.fetchall()
+      tot = res and sum([x[11] for x in res]) or 0 
+      res.sort(key=lambda x:x[3])
       
-      return desc, res
+      return desc, res, tot
    #===============
    def rptOpen_g(self) :
+      locs = self.arg('locs')
+      days = self.arg('days')
       col = fgCol
-      grd = JS(colModel=[col('Date',w=65),
+      grd = JS(colModel=[col('LOC',w=20),
+               col('Date',w=65),
                col('Receipt#',w=65),
                col('RcvBy',w=90),
                col('RcvEmail',w=80),
-               col('Branch',w=130),
+               col('Branch',w=80),
                col('item',w=200),col('Qty',w=45),col('Returned'),col('Paid For'),
-               col('Remaining'),col('days',w=30)],
+               col('Remaining'),col('days',w=30),
+               col('entered',w=45)],
                title='Open Receipts')
-      return self.sendJSON({'grid':grd.d,'param':fgParam(action="rptOpen")})
+      return self.sendJSON({'grid':grd.d,
+              'param':fgParam(action="rptOpen",locs=locs,days=days)})
    #===============
    def rptOpen(self) :
-      desc,rows = self.computeOpen()
+      days = self.arg('days')
+      args = (days and dict(db=int(days)) or {})
+      desc,rows,_ = self.computeOpen(**args)
       res = [ list(x) for x in rows ]
       self.cur.execute("select name,email from person")
       email = dict([(x[0],x[1]) for x in self.cur])
-      print str(email)
       for r in res :
-         r[0:2] = [ scrdt(r[1]) ]
-         r[3:3] = [ email.get(r[2],'') ]
-         r.append( dayspast( r[0] ) )
+         r[:4] = [ r[0],scrdt(r[3]) ]
+         r[4:4] = [ email.get(r[3],'') ]
+         r[-1:-1] = [ dayspast( r[1] ) ]
       return self.sendJSON( fgData(res) )
    #===============
    def rptBranch_g(self) :
+      locs = self.arg('locs')
       col = fgCol
       grd = JS(colModel=[col('Branch',w=130),col('item',w=200),col('Out')],
                title='Branch inventory report')
-      return self.sendJSON({'grid':grd.d,'param':fgParam(action="rptBranch")})
+      return self.sendJSON({'grid':grd.d,
+                  'param':fgParam(action="rptBranch",locs=locs)})
    #===============
    def rptBranch(self) :
-      self.cur.execute("""select * from rpt_by_branch""")
+      locs = self.arg('locs').split(",")
+      self.cur.execute("""select A.name,B.* 
+        from location A join rpt_by_branch B on A.id = B.locid
+        where A.name in (%s) and Owe > 0""" % (','.join('?'*len(locs)),),
+        tuple( self.arg('locs').split(",") ) )
       res = {}
       for row in self.cur :
-         res.setdefault((row[0],row[1]),[]).append(row)
+         drow = row[2:]
+         res.setdefault((drow[0],drow[1]),[]).append(drow)
       res = fgData( (key[0],key[1],sum(x[2] for x in res[key]))
                      for key in sorted(res.keys()) )
       return self.sendJSON(res)
@@ -414,30 +496,83 @@ class Recpt :
             
    #===============
    def rptStock_g(self) :
+      locs = self.arg('locs')
       col = fgCol
-      grd = JS(colModel=[col('id'),col('item',w=150),col('counted'),
+      grd = JS(colModel=[
+               col('id'),col('item',w=150),
+               col('cost'),col('price'),
+               col('counted'),
                col('out'),col('returned'),col('change'),
                col('reorder',w=90),col('total')],
                title='Stock Level')
-      return self.sendJSON({'grid':grd.d,'param':fgParam(action="rptStock")})
+      return self.sendJSON({'grid':grd.d,
+                  'param':fgParam(action="rptStock",locs=locs)})
    #===============
    def rptStock(self):
-      sql = "select * from stock_levels order by item"
-      self.cur.execute(sql,())
-      res = fgData(self.cur)
+      locs = self.arg("locs").split(",")
+      locids = [ self._getloc(x) for x in locs ] 
+      
+      sql = """select itemid,item,cost,price,
+                      sum(counted),sum(out),sum(returned),
+                      sum(change),sum(reord),sum(total) 
+               from stock_levels A join item B
+                  on A.itemid = B.id
+               where locid in (%s)
+               group by item,itemid
+               order by item,itemid""" % ','.join('?'*len(locids))
+      self.cur.execute(sql,tuple(locids))
+      rows = [ list(x) for x in self.cur ]
+      res = fgData(rows)
       return self.sendJSON(res)      
    #===============
-   def rptReord_g(self) :
+   def rptTx_g(self) :
+      locs = self.arg('locs')
+      days = self.arg('days')
       col = fgCol
-      grd = JS(colModel=[col('id'),col('item',w=150),col('current'),
+      grd = JS(colModel=[col('Date',w=90),
+               col('Locs',w=115),col('id',w=65),col('item',w=160),
+               col('Qty',w=65,a=1)],
+               title='Stock transfers')
+      return self.sendJSON({'grid':grd.d,
+                  'param':fgParam(action="rptTx",locs=locs,days=days)})
+   #===============
+   def rptTx(self) :
+      locs = self.arg('locs').split(",")
+      locids = [ self._getloc(x) for x in locs ] 
+      days = self.arg('days')
+      sql = """select ts,dtl,itemid,name,qty
+               from transfers where ts > ?
+               and locid in (%s)
+               order by ts desc""" % ','.join('?'*len(locids))
+      self.cur.execute(sql,(daysback_cutoff(int(days)),)+tuple(locids))
+      rows = [ list(x) for x in self.cur ]
+      for r in rows : r[0] = scrdt(r[0])
+      return self.sendJSON(fgData(rows))
+      
+   #===============
+   def rptReord_g(self) :
+      locs = self.arg('locs')
+      col = fgCol
+      grd = JS(colModel=[col('LOC',w=20),
+               col('id'),col('item',w=150),col('current'),
                col('reorder',w=90)],
                title='Stock Below Reorder Level')
-      return self.sendJSON({'grid':grd.d,'param':fgParam(action="rptReord")})
+      return self.sendJSON({'grid':grd.d,
+                  'param':fgParam(action="rptReord",locs=locs)})
    #===============
    def rptReord(self):
-      sql = "select * from rpt_item_reorder order by name"
-      self.cur.execute(sql,())
-      res = fgData(self.cur)
+      rows = []
+      for i in self.arg('locs').split(',') :
+         locid = self._getloc(i)
+         sql = """select * from rpt_item_reorder
+            where locid = ? order by name"""
+         self.cur.execute(sql,(locid,))
+         
+         rs = [list(x) for x in self.cur]
+         for r in rs :
+            r[0] = i
+         rows.extend(rs)
+      res = fgData(rows)
       return self.sendJSON(res)
    #===============
    def adduser(self):
@@ -485,6 +620,35 @@ class Recpt :
       html, nms = beltHTML()
       self.sendJSON({'html':str(html),'names':nms})
       
+   #===============
+   def contact_msg(self) :
+      try :
+         wdm = 'wdm@tworiversmartialarts.com'
+         toaddr = [ x.strip() for x in self.arg('to').split(",") ]
+         sender = self.arg('name').strip()
+         emailNotice(
+            toaddr,
+            "from: %s (%s)\nphone: %s\n\n%s\n" 
+              % (sender,self.arg('email'),self.arg('phone'),
+                 self.arg('msg')),
+             "TRMA Website contact form: %s" % self.arg('subj'))
+         if (wdm not in toaddr) or (sender == 'kendall') : 
+            emailNotice( [wdm],
+               "to: %s\nfrom: %s (%s)\nphone: %s\n\n%s\n" 
+                 % (str(toaddr),sender,
+                    self.arg('email'),self.arg('phone'),
+                    self.arg('msg')),
+                "TRMA Website contact form: %s" % self.arg('subj'))
+         res = self.sendJSON({'msg':'Message sent. Thank you '
+                                    'for your interest in TRMA'})
+         return res 
+      except :
+         import traceback
+         error = sio()
+         traceback.print_exc(file=error)
+         self.sendJSON({'msg':
+          ('There was a problem, please use an email program to send a '
+          'message to one of the addresses listed above')})
    #===============
    def backupDB(self) :
       try :
@@ -566,6 +730,9 @@ def money(v) : # parse an input money value
    return float( v.replace("$","") )  
 def createts() : # current date formatted for db storage
    return datetime.today().strftime("%Y/%m/%d")
+def daysback_cutoff(n) :
+   back = datetime.today() - timedelta(days=n)
+   return back.strftime("%Y/%m/%d")
 def ts(v) : # parse date and convert to format for db storage
    if not v: return ''
    dt = [ int(x) for x in v.split("/") ]
@@ -607,16 +774,21 @@ def emailNotice(addr,msg,subj) :
    from email.mime.text import MIMEText
    import smtplib
 
+   #s = smtplib.SMTP('smtp.gmail.com',587)
    s = smtplib.SMTP('localhost',25)
    s.ehlo()
-   #s.login('john.doe@baileyplex.com','pilsung2012')
+   #s.starttls()
+   #s.ehlo()
+   #smtpuser = 'john.doe@baileyplex.com'
+   smtpuser = 'trmaweb@tworiversmartialarts.com'
+   s.login(smtpuser,'trmapilsung!')
    email = MIMEMultipart()
-   email['From'] = 'trmaweb@tworiversmartialarts.com'
+   email['From'] = smtpuser
    email['To'] = ", ".join(addr)
    email['Subject'] = subj
    email.attach(MIMEText(msg))
-   s.sendmail('trmaweb@tworiversmartialarts.com',addr,email.as_string())
-   s.quit()
+   s.sendmail(smtpuser,addr,email.as_string())
+   s.close()
 
 #----------------------------------------------------------------------- 
 def bkupDB(fn) :
@@ -669,7 +841,7 @@ def main() :
    if not action : return
    
    result = sio()
-   handler = Recpt(result,form,"web/invapp/inv.db")
+   handler = Recpt(result,form,"../httpdocs/web/invapp/inv.db")
    try :
       getattr(handler,action)()
    except :
