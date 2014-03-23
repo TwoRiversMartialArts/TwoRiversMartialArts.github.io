@@ -23,6 +23,9 @@ TKD: 7:00pm - 8:00pm
 <%%.*day%%>~&nbsp;
 @@@
 <%%Sched_Detail%%>~
+* Beginer class times: Mon. & Wed. 5:45 - 6:30 pm<br/>
+<a href="#&contactus">Call or email</a> for specific dates these are
+available.
 <br/>
 <br/>
 <img style="float:left"
