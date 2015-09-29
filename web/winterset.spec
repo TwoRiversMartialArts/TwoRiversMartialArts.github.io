@@ -16,10 +16,13 @@ li(.*?winterset.*?Winter)~li class="navOn"\1
 @@@
 <%%.*day?%%>~&nbsp;
 @@@
-(?ms)<table.class..cost.*?<.table>~
-The Winterset schools adult education program runs the class registration and
-collects payments.  
-<a href="/web/contact.html">Contact</a> us for more information.
+<%%FamCost1%%>~$20
+@@@
+<%%FamCost2%%>~$15
+@@@
+<%%FamCost3%%>~$10
+@@@
+<%%FamCost4%%>~$5
 @@@
 <%%instructors%%>~
 <br/>

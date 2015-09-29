@@ -7,7 +7,8 @@ li(.*?wdm.*?West Des Moines)~li class="navOn"\1
 @@@
 <%%picture%%>~
 <div class="topofpage">
-<!-- <img src="/web/gallery/wdm_dojang.jpg"></img> -->
+<img 
+src="http://www.googledrive.com/host/0BwR416kAi4R-Zk95UHkxME82c2M/branches/WDM/pic_2015-04-11--16.33.02.JPG"></img>
 </div>
 @@@
 <%%Tuesday%%>~6:15pm - 7:15pm
@@ -16,17 +17,20 @@ li(.*?wdm.*?West Des Moines)~li class="navOn"\1
 @@@
 <%%.*day%%>~&nbsp;
 @@@
-<%%FamCost1%%>~$15
+<%%FamCost1%%>~$20
 @@@
-<%%FamCost2%%>~$10
+<%%FamCost2%%>~$15
 @@@
-<%%FamCost3%%>~$5
+<%%FamCost3%%>~$10
+@@@
+<%%FamCost4%%>~$5
 @@@
 <%%instructors%%>~
 <br/>
 <ul>
 <li><a href="instructors-primary.html#&BaileyJ">Ms. Jennifer Bailey</a></li>
-<li><a href="instructors-primary.html#&DouglassR">Ms. Rochelle Douglass</a></li>
+<li><a href="instructors-primary.html#&DaleR">Mr. Rob Dale</a></li>
+<li><a href="instructors-primary.html#&BaileyK">Mr. Kendall Bailey</a></li>
 </ul>
 @@@
 <%%address%%>~

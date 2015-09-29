@@ -22,6 +22,8 @@ li(.*?carlisle.*?Carlisle)~li class="navOn"\1
 @@@
 <%%FamCost3%%>~$5
 @@@
+<%%FamCost4%%>~$5
+@@@
 <%%instructors%%>~
 <br/>
 <ul>
