@@ -1,11 +1,13 @@
 App_*
 _vti_*
+*.tar
 *.db
+*.swp
 *.aspx
+*.xaspx
 *.odt
 *.pdf
 *.flv
-*.gif
 *.mdb
 *.log
 *.doc*
@@ -15,10 +17,6 @@ _vti_*
 *.asmx
 *.ascx
 *.asax
-*.jpg
-*.JPG
-*.png
-*.PNG
 *.tgz
 mathematician
 y_key_*
@@ -29,4 +27,4 @@ jwFLV
 *.zip
 web2py
 ckeditor
-web/location-[^x]*
+web/location-[^x]*.html
