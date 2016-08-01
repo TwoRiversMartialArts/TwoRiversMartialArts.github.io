@@ -101,6 +101,7 @@ State of Iowa employees, show your perks card and receive up to 25% off of month
 <!-- <li><a href="instructors-primary.html#&BrownB">Mr. Bruce Brown</a></li>
 -->
 <li><a href="instructors-primary.html#&DouglassR">Ms. Rochelle Douglass</a></li>
+<li><a href="instructors-primary.html#&NelsonD">Mr. Dave Nelson</a></li>
 </ul>
 
 @@@

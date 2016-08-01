@@ -6,9 +6,22 @@
 li(.*?carlisle.*?Carlisle)~li class="navOn"\1
 @@@
 <%%picture%%>~
-<div class="topofpage">
-<!-- <img src="/web/gallery/wdm.jpg"></img> -->
+
+<div class="img-shadow" >
+  <a href="http://www.googledrive.com/host/0BwR416kAi4R-Zk95UHkxME82c2M/branches/Carlisle/CarlisleBranch1.jpg">
+  <img style="width:100%"
+  src="http://www.googledrive.com/host/0BwR416kAi4R-Zk95UHkxME82c2M/branches/Carlisle/CarlisleBranch1.jpg"></img>
+</a>
 </div>
+
+<div class="img-shadow" style="width:65%;margin-left:auto;margin-right:auto;float:none;" >
+  <a href="http://www.googledrive.com/host/0BwR416kAi4R-Zk95UHkxME82c2M/branches/Carlisle/CarlisleBranch2.jpg">
+  <img style="width:100%"
+  src="http://www.googledrive.com/host/0BwR416kAi4R-Zk95UHkxME82c2M/branches/Carlisle/CarlisleBranch2.jpg"></img>
+</a>
+</div>
+<div style="clear:both"></div>
+
 @@@
 <%%Monday%%>~6:30pm - 7:30pm
 @@@

@@ -6,10 +6,24 @@
 li(.*?wdm.*?West Des Moines)~li class="navOn"\1
 @@@
 <%%picture%%>~
-<div class="topofpage">
-<img 
-src="http://www.googledrive.com/host/0BwR416kAi4R-Zk95UHkxME82c2M/branches/WDM/pic_2015-04-11--16.33.02.JPG"></img>
-</div>
+<table><thead></thead><tbody><tr><td>
+<div class="img-shadow" >
+  <img style="height:210px"
+  src="http://www.googledrive.com/host/0BwR416kAi4R-Zk95UHkxME82c2M/branches/WDM/pic_2015-04-11--16.33.02.JPG"></img>
+</div></td><td colspan="2">
+<div class="img-shadow" >
+  <a href="http://www.googledrive.com/host/0BwR416kAi4R-Zk95UHkxME82c2M/branches/WDM/PilSung2016medals.JPG">
+  <img style="height:210px"
+  src="http://www.googledrive.com/host/0BwR416kAi4R-Zk95UHkxME82c2M/branches/WDM/PilSung2016medals.JPG"></img>
+  </a>
+</div></td></tr>
+<tr>
+<td style="font-size:80%; font-weight:bold;">Ms. Bailey reverse side kick at 3rd Dan test.</td>
+<td  style="font-size:80%; font-weight:bold;" colspan="2" >
+   West Des Moines students with medals from the 2016 Pil Sung tournament.</td>
+</tr>
+</tbody></table>
+<div style="clear:both"></div>
 @@@
 <%%Tuesday%%>~6:15pm - 7:15pm
 @@@

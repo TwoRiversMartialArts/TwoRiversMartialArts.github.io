@@ -10,14 +10,14 @@ li(.*?pleasanthill.*?Pleasant)~li class="navOn"\1
 <!-- <img src="/web/gallery/wdm.jpg"></img> -->
 </div>
 @@@
-<%%Monday%%>~TKD:<br/>6:15pm - 7:15pm
+<%%Monday%%>~
 @@@
 <%%Tuesday%%>~TKD:<br/>6:15pm - 7:30pm
 @@@
 <%%Wednesday%%>~
 @@@
 <%%Thursday%%>~
-Cub's Club:<br/> 6:15pm - 6:55pm<br/><br/>
+Cub's Club:<br/> 6:10pm - 6:50pm<br/><br/>
 TKD: 7:00pm - 8:00pm
 @@@
 <%%.*day%%>~&nbsp;
@@ -27,8 +27,8 @@ TKD: 7:00pm - 8:00pm
 <br/>
 <img style="float:left"
 src="https://googledrive.com/host/0BwR416kAi4R-Zk95UHkxME82c2M/cubsclub.png"></img>
-A new class for 4&frac12; through 6 year olds started
-on February 20, 2014.  It is a weekly class Thursdays 6:15 - 6:55pm.  
+A class for 4&frac12; through 6 year olds started
+on February 20, 2014.  It is a weekly class Thursdays 6:10 - 6:50pm.  
 This is a specialized class tailored for children.  
 Students will learn respect, gain strength, coordination, concentration, 
 self-confidence, and increase attention span.  Once techniques are learned or a student 
@@ -50,8 +50,8 @@ information.  <br/>
 <ul>
 <!--
 <li><a href="instructors-primary.html#&dgookin">Mr. Don Gookin</a></li>
--->
 <li><a href="instructors-primary.html#&cummings">Mr. Michael Cummings</a></li>
+-->
 <li><a href="instructors-primary.html#&adamson">Ms. Melinda Adamson</a></li>
 <li><a href="instructors-primary.html#&WilwerdingG">Mr. Gerry Wilwerding</a></li>
 </ul>

@@ -1,7 +1,7 @@
 ﻿
 <%%BranchName%%>~Indianola
 @@@
-<%%LATLNG%%>~41.356169,-93.588889
+<%%LATLNG%%>~41.361352, -93.578426
 @@@
 li(.*?indianola.*?Indian)~li class="navOn"\1
 @@@
@@ -17,7 +17,10 @@ li(.*?indianola.*?Indian)~li class="navOn"\1
     <li>Advanced TKD<ul><li>7:00pm - 8:00pm</li></ul></li></ul>
 @@@
 <%%Wednesday%%>~
-Advanced TKD<br/>6:00pm - 7:00pm
+<ul>
+  <li> Advanced TKD<ul><li>6:00pm - 7:00pm</li></ul></li>
+  <li> Adult/Family<ul><li>7:00pm - 8:00pm</li></ul></li>
+</ul>
 @@@
 <%%Thursday%%>~
 <ul>
@@ -50,10 +53,10 @@ here</a>.
 
 (?ms)<table.class..cost.*?<.table>~
 The Indianola Parks and Rec department runs class registration and
-collects payments.  See the 
-<a href="https://online.activecommunities.com/indianola/Activities/ActivitiesAdvSearch.asp">
-Park and Recreation registration page</a>, or the <a href="http://www.indianolaiowa.gov/309/Programs-Events">
-City of Indianola events page</a>.
+collects payments.  See the Indianola
+<a href="https://apm.activecommunities.com/cityofindianola/Activity_Search">
+activity search page</a>, or the <a href="http://www.indianolaiowa.gov/309/Programs-Events">
+events page</a>.
 @@@
 <%%instructors%%>~
 <br/>
@@ -61,14 +64,22 @@ City of Indianola events page</a>.
 <li><a href="instructors-primary.html#&SamuelsonM">Master Marvin Samuelson</a></li>
 <li><a href="instructors-primary.html#&NetschR">Master Roger Netsch</a></li>
 <li><a href="instructors-primary.html#&AndersonB">Mr. Brian Anderson</a></li>
+<li><a href="instructors-primary.html#&LerchCh">Mr. Chris Lerch</a></li>
+<li><a href="instructors-primary.html#&LerchCi">Ms. Cindy Lerch</a></li>
+<li><a href="instructors-primary.html#&StJohnZ">Mr. Zachary St. John</a></li>
 </ul>
 
 @@@
 <%%address%%>~
 <div class="address">
-Indianola Parks & Recreation<br/>
+<!-- Indianola Parks & Recreation<br/>
 2204 West 2nd Street<br/>
-Indianola, Iowa 50125<br/>
+Indianola, Iowa 50125<br/> 
+Indianola East Dojang<br/>
+1204 East 2nd Ave., Hwy 92,<br/> -->
+Whittier Elementary Gym</br>
+1306 W Salem Ave<br/>
+Indianola, IA 50125<br> 
 </div>
 @@@
 <%%moreinfo%%>~
@@ -79,6 +90,8 @@ Contact Doug Byland through the Department of Parks & Recreation for further inf
 or email 
 indianola@tworiversmartialarts.com <br/>
 </div>
+@@@
+(?s)PAYMENT_INFO.*?PAYMENT_INFO~PAY_INFO
 @@@
 # remove all left over tags
 <%%.*?%%>~ <!-- -->

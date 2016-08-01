@@ -47,6 +47,8 @@ of Adult Education for further information.<br/>
 or email: winterset@tworiversmartialarts.com <br/>
 </div>
 @@@
+(?s)PAYMENT_INFO.*PAYMENT_INFO~PAY_INFO
+@@@
 # remove all left over tags
 <%%.*?%%>~ <!-- -->
 

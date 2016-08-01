@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import re,sys
+import re,sys,pdb
 
 def main() :
    with open(sys.argv[1],'r') as f :
@@ -16,13 +16,15 @@ def main() :
       with open(sys.argv[2],'r') as f :
          src = f.read()
    else : src = sys.stdin.read()
+   orig = src
    for repl in spec :
       #sys.stderr.write("\n---\n%s~%s" % (repl[0],repl[1]))
       src = re.sub(repl[0],repl[1],src,flags=re.M)
 
    if len(sys.argv) > 3 :
-      with open(sys.argv[3],'w') as f :
-         f.write(src)
+      if (sys.argv[3] != sys.argv[2]) or (src != orig) :
+         with open(sys.argv[3],'w') as f :
+            f.write(src)
    else : sys.stdout.write(src) 
          
 

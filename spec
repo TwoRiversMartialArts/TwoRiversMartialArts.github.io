@@ -1,5 +1,4 @@
-https://www.youtube.com/channel/UCJIDAaG4qEHQaND-rYZgsWg">
-Youtube channel</a></li>~
-/web/resource-videos.html">
-Video Archive</a></li>
+<a href="/web/resource-videos~
+<a href="/web/resource-photos.html">Photo Archive</a></li>
+<li><a href="/web/resource-videos
 
