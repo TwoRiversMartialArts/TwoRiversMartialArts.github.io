@@ -1,6 +1,11 @@
 html,body,div,span,applet,object, h1,h2,h3,h4,h5,h6,p,blockquote,pre, p,a,abbr,acronym,address,big,cite,code, del,dfn,em,font,img,ins,kbd,q,s,samp, small,strike,strong,tt,var, b,u,i,center, dl,dt,dd,ol,ul,li, fieldset,form,label,legend, table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;background:transparent}
 html, body, #aspnetForm, #ezSite{text-align:left;width:100%;}
 
+
+@media (max-width:900px) {
+div.toobig { display : none }
+
+}
 /* TYPOGRAPHY */
 
 body, #ezSite {
@@ -94,75 +99,113 @@ acronym.formhelp {color:#00a9e9;border-bottom:1px dotted #ddd;font-size:10px;}
 
 /* MASTHEAD */
 
-#masthead {
-	height: 86px;
-	padding-bottom: 0px;
+@media (min-width:900px) {
+	#masthead {
+		height: 86px;
+		padding-bottom: 0px;
+	}
+	#masthead #utility-navigation {
+		float: right;
+		margin: 20px 10px 0px 0px;
+		height: 35px;
+		text-align:right;
+	}
+	#masthead #logo {
+		float: left;
+		margin: 0;
+		background-position: top left;
+		background-repeat: no-repeat;
+	}
+	#masthead #logo h1 {
+		margin: 0;
+		padding: 0;
+		text-indent: -9999px;
+	}
+	#homepage #masthead #logo {	
+		margin-top:10px;
+		width: 435px;
+		height: 77px;
+		/*background-image: url('i/logo-homepage.jpg');*/
+	}
+	#homepage #masthead #logo h1 {
+		height: 75px;
+		width: 360px;
+	}
+
+	#homepage #masthead {
+		background:transparent url('i/logo-homepage.jpg') no-repeat left bottom;
+	}
+	#interior #masthead #logo {	
+		margin-top:5px;
+		width: 435px;
+		height: 77px;
+		/*background-image: url('i/logo-interior.jpg');*/
+	}
+
+	#interior #masthead #logo h1 {
+		height: 75px;
+		width: 360px;
+	}
+
+	#interior #masthead {
+		background:transparent url('i/logo-interior.jpg') no-repeat left 10px;
+	}
+
+
+	#navigation {
+		height: 45px;
+		background-image: url('i/navi-background.gif');
+		background-repeat: repeat-x;
+		background-position: 0px -45px;
+		padding-bottom:5px;
+	}
+	#navigation ul li {
+		display: inline;
+		margin: 0;
+		padding: 0;
+		width: 190px;
+		height: 45px;
+	}
+	#navigation ul li a {
+		float: left;
+		/*text-indent: -9999px;*/
+		width: 150px;
+		height: 45px;
+		background-position: 0px -45px;
+		background-repeat: repeat-x;
+		text-align:center;
+		line-height:40px;
+		border-left: 1px dotted #fff;
+	}
+	#navigation ul li {
+		background-image: url('i/navi-background.gif');
+		background-position: 0px -45px;
+	}
+	#navigation ul li a, #navigation ul li a:hover, #navigation ul li a.selected {
+	color:#fff;
+	font-size:125%;
+	text-decoration:none;
+	}
+
 }
-
-#masthead #utility-navigation {
-	float: right;
-	margin: 20px 10px 0px 0px;
-	height: 35px;
-	text-align:right;
-}
-
-
-
-/* MASTHEAD: Logo & Navigation */
-
-#masthead #logo {
-	float: left;
-	margin: 0;
-	background-position: top left;
-	background-repeat: no-repeat;
-}
-
-#masthead #logo h1 {
-	margin: 0;
-	padding: 0;
-	text-indent: -9999px;
-}
-
-#homepage #masthead #logo {	
-	margin-top:10px;
-    width: 435px;
-	height: 77px;
-	/*background-image: url('i/logo-homepage.jpg');*/
-}
-
-#homepage #masthead #logo h1 {
-	height: 75px;
-	width: 360px;
-}
-
-#homepage #masthead {
-    background:transparent url('i/logo-homepage.jpg') no-repeat left bottom;
-}
-
-
-#interior #masthead #logo {	
-	margin-top:5px;
-    width: 435px;
-	height: 77px;
-	/*background-image: url('i/logo-interior.jpg');*/
-}
-
-#interior #masthead #logo h1 {
-	height: 75px;
-	width: 360px;
-}
-
-#interior #masthead {
-    background:transparent url('i/logo-interior.jpg') no-repeat left 10px;
-}
-
-
-#navigation {
-	height: 45px;
-	background-image: url('i/navi-background.gif');
-	background-repeat: repeat-x;
-	background-position: 0px -45px;
-	padding-bottom:5px;
+@media (max-width:899px) {
+	#masthead #utility-navigation {
+		margin: 20px 10px 0px 0px;
+		text-align:center;
+	}
+	#navigation {
+		/* background-image: url('i/navi-background.gif'); 
+		background-repeat: repeat; */
+		background-position: 0px -45px;
+		padding-bottom:35px;
+        /* text-align:center; */
+	}
+	#navigation ul li {
+		padding: 15px;
+	}
+	#navigation ul li a, #navigation ul li a:hover, #navigation ul li a.selected {
+		font-size:250%;
+	}
 }
 
 #navigation ul {
@@ -171,32 +214,6 @@ acronym.formhelp {color:#00a9e9;border-bottom:1px dotted #ddd;font-size:10px;}
 	padding: 0;
 }
 
-#navigation ul li {
-	display: inline;
-	margin: 0;
-	padding: 0;
-	width: 190px;
-	height: 45px;
-}
-
-#navigation ul li a, #navigation ul li a:hover, #navigation ul li a.selected {
-color:#fff;
-font-size:125%;
-text-decoration:none;
-}
-
-#navigation ul li a {
-	float: left;
-	/*text-indent: -9999px;*/
-	width: 150px;
-	height: 45px;
-	background-image: url('i/navi-background.gif');
-	background-position: 0px -45px;
-	background-repeat: repeat-x;
-	text-align:center;
-	line-height:40px;
-	border-left: 1px dotted #fff;
-}
 
 #navigation ul li:first-child a {border-left:none;}
 
@@ -795,5 +812,7 @@ ol.indent li, ul.indent li {list-style-position:inside;}
 #main div#content.v4 {
 	border-left: none;
 }
-}
+
+
+}
 

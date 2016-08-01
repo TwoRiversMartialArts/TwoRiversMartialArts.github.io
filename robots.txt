@@ -10,3 +10,4 @@ Disallow: /App_WebReferences/       # Contains Web References
 Disallow: /Bin/                     # Contains compiled assemblies
 Disallow: /Components/
 Disallow: /Web.config               # prevent web.config
+Sitemap: http://www.dontblink.net/web/sitemap.xml

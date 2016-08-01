@@ -2,7 +2,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="ctl00_main_Head"><title>
-	Two Rivers Martial Arts - <!-- --> 
+	Two Rivers Martial Arts - <%%BranchName%%> 
 </title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <meta http-equiv="content-style-type" content="text/css" />
@@ -66,11 +66,11 @@ div.topofpage img {
 (function($){
 function makeMap() {
    var M = google.maps;
-   var center= new M.LatLng(41.361352, -93.578426);
+   var center= new M.LatLng(<%%LATLNG%%>);
    var map = new M.Map(document.getElementById("mygmap"),
               {zoom:16,center:center});
    var mark = new M.Marker({ position: center,
-          map: map, title:"Branch Location: <!-- -->",
+          map: map, title:"Branch Location: <%%BranchName%%>",
           icon : "upload/image/gmap/TRMA-GMap.png"});
 }
 $(makeMap);
@@ -148,7 +148,7 @@ $(makeMap);
 <li><a href="/web/location-hub.html">Two Rivers Hub and 
 Business Office</a></li>
 <li><a href="/web/location-carlisle.html">Carlisle</a></li>
-<li class="navOn"><a href="/web/location-indianola.html">Indianola</a></li>
+<li><a href="/web/location-indianola.html">Indianola</a></li>
 <li><a href="/web/location-pleasanthill.html">Pleasant Hill</a></li>
 <li><a href="/web/location-wdm.html">West Des Moines</a></li>
 <li><a href="/web/location-winterset.html">Winterset</a></li>
@@ -171,7 +171,7 @@ Business Office</a></li>
 <!-- Dynamic Content -->
 <div id="dynContent">
 <h1>
-Branch Location: <!-- --></h1>
+Branch Location: <%%BranchName%%></h1>
 <br/> <br/>
 Two Rivers Martial Arts is a non-profit organization.
 All instructors are unpaid volunteers, 
@@ -185,9 +185,7 @@ and instructor who will guide the student&apos;s
 preparations for promotion tests.
 <!-- picture sched section-->
 <br/> <br/>
-<div class="topofpage">
-<!-- <img src="/web/gallery/wdm.jpg"></img> -->
-</div>
+<%%picture%%>
 <!-- end section -->
 
 <!-- class sched section-->
@@ -203,51 +201,26 @@ preparations for promotion tests.
   <td> <div class="dow">Saturday</div> </td>
  </tr>
  <tr class="schedrow"><td>
-   <div class="dowsched"><ul>
-    <li>Little Dragons<ul><li>6:00pm - 6:30pm</li></ul></li>
-    <li>Beginner TKD<ul><li>6:00pm - 7:00pm</li></ul></li>
-    <li>Advanced TKD<ul><li>7:00pm - 8:00pm</li></ul></li></ul></div>
+   <div class="dowsched"><%%Monday%%></div>
   </td> 
   <td>
-   <div class="dowsched">&nbsp;</div>
+   <div class="dowsched"><%%Tuesday%%></div>
   </td> 
   <td>
-   <div class="dowsched"><ul>
-  <li> Advanced TKD<ul><li>6:00pm - 7:00pm</li></ul></li>
-  <li> Adult/Family<ul><li>7:00pm - 8:00pm</li></ul></li>
-</ul></div>
+   <div class="dowsched"><%%Wednesday%%></div>
   </td> 
   <td>
-   <div class="dowsched"><ul>
-    <li>Little Dragons<ul><li>6:00pm - 6:30pm</li></ul></li>
-    <li>Beginner TKD<ul><li>6:00pm - 7:00pm</li></ul></li>
-    <li>Advanced TKD<ul><li>7:00pm - 8:00pm</li></ul></li></ul></div>
+   <div class="dowsched"><%%Thursday%%></div>
   </td> 
   <td>
-   <div class="dowsched">&nbsp;</div>
+   <div class="dowsched"><%%Friday%%></div>
   </td> 
   <td>
-   <div class="dowsched">&nbsp;</div>
+   <div class="dowsched"><%%Saturday%%></div>
   </td> 
 </tr>
 </table>
-<br/>
-<a href="http://announce.trma.us/home/LittleDragons">
-<img style="height:100px;padding-right:35px;padding-left:15px;float:left"
-src="https://googledrive.com/host/0BwR416kAi4R-Zk95UHkxME82c2M/littledragons.png"></img>
-</a>
-<br/>
-A new class for 4 through 6 year olds is offered each two month session starting 
-on October 12th, 2015.
-The class meets Mondays and Thursdays 6:00 - 6:30pm.  
-This is a specialized class tailored for children.  
-Students will learn respect, gain strength, coordination, concentration, 
-self-confidence, and increase attention span.  Use the
-<a href="#contactus">contact information</a>
-below to request more
-information.  See the announcement <a href="http://announce.trma.us/home/LittleDragons">
-here</a>.
-<br/><br/>
+<%%Sched_Detail%%>
 <!-- end section-->
 
 
@@ -255,15 +228,85 @@ here</a>.
 <br />
 <br />
 <h2>Monthly Class Fees</h2><br/>
-The Indianola Parks and Rec department runs class registration and
-collects payments.  See the Indianola
-<a href="https://apm.activecommunities.com/cityofindianola/Activity_Search">
-activity search page</a>, or the <a href="http://www.indianolaiowa.gov/309/Programs-Events">
-events page</a>.
+<table class="cost">
+<tr class="cost">
+  <td>
+    <div class="nstudents">First family<br/>member</div>
+    <br/>
+    <div class="nstudents_cost"><%%FamCost1%%></div>
+  </td> 
+  <td>
+    <div class="nstudents">Second family<br/> member</div>
+    <br/>
+    <div class="nstudents_cost"><%%FamCost2%%></div>
+  </td> 
+  <td>
+    <div class="nstudents">Third family<br/> member</div>
+    <br/>
+    <div class="nstudents_cost"><%%FamCost3%%></div>
+  </td> 
+  <td>
+    <div class="nstudents">Each additional<br/>family member</div>
+    <br/>
+    <div class="nstudents_cost"><%%FamCost4%%></div>
+  </td> 
+</tr>
+</table>
 <!-- end section-->
-<!-- -->
+<%%Cost_Detail%%>
 
-<!-- START PAY_INFO END -->
+<!-- START PAYMENT_INFO -->
+<br/><br/>
+<h2> Payment Options </h2>
+<br/>
+There are several options for paying class fees. Two Rivers recommends setting up
+a recurring payment using an online bill-pay service or another automated method.
+This helps instructors focus
+their time on teaching. When paying by mail or electronically, please include
+an account number or student names.  See the <a href="contact.html">contact
+page</a> for ways to reach the Hub business office to request
+your account number, provide feedback, or ask any questions. Your instructor 
+can also obtain your account
+number from the Two Rivers treasurer.
+Options for payment:<br/><br/>
+<ul>
+<li> <b>Online bill pay</b> - Have your bank send payments to the Hub
+business office address ( see the <a href="contact.html">contact page</a> ).
+It will also be helpful to <a href="contact.html">send a note</a> to 
+the Hub office, letting us know you've set this up.
+</li>
+<li> <b>Credit/Debit card</b> - The Hub business office, and some individual
+instructors are equipped to accept credit or debit card payments using mobile
+swiper equipment.
+</li>
+<li> <b> Cash/Check </b> - Instructors will accept cash or checks made out to 
+the school. Checks can also be mailed to the Hub business office. Include in the
+check memo what the payment covers ( class fees, boards, uniform, etc. ) 
+and student name.
+</li>
+<li> <b> Paypal</b> - 
+Ask your instructor for the Two Rivers <a href="https://www.paypal.com">Paypal</a>
+address.
+</li>
+<li> <b>At Tests</b> - The Hub business office is staffed on test days
+and is able to accept payments from students of any branch for class fees, 
+boards, or any other items.
+</li>  
+<li> <b>Other</b> - If there are other payment methods that students want to
+use, talk to your instructor, or send a message to 
+<a href="mailto:trmaweb@tworiversmartialarts.com">
+trmaweb@tworiversmartialarts.com</a>. 
+Examples of other methods are <a href="https://www.dwolla.com">
+Dwolla</a>, or having a Paypal button on the Two Rivers web site.
+Two Rivers will work to enable new payment options if there is interest
+from students.
+</li>
+</ul><br/>
+Class fee payments are due at the beginning of each month. Some students 
+prefer to pay on a 2-month cycle aligning with our scheduled promotion tests, 
+which works as well. 
+
+<!-- PAYMENT_INFO END -->
 
 <!-- Test fee section-->
 <br />
@@ -284,34 +327,17 @@ curriculum page</a>.
 
 
 <!-- instructors section -->
-<!-- -->
+<%%instructors_section%%>
 <br/><br/>
 <h2>Instructors</h2>
-<br/>
-<ul>
-<li><a href="instructors-primary.html#SamuelsonM">Master Marvin Samuelson</a></li>
-<li><a href="instructors-primary.html#NetschR">Master Roger Netsch</a></li>
-<li><a href="instructors-primary.html#AndersonB">Mr. Brian Anderson</a></li>
-<li><a href="instructors-primary.html#LerchCh">Mr. Chris Lerch</a></li>
-<li><a href="instructors-primary.html#LerchCi">Ms. Cindy Lerch</a></li>
-<li><a href="instructors-primary.html#StJohnZ">Mr. Zachary St. John</a></li>
-</ul>
-<!-- -->
+<%%instructors%%>
+<%%instructors_section_end%%>
 <!-- end section -->
 
 <!-- address section-->
 <br/><br/>
 <h2>Address</h2>
-<div class="address">
-<!-- Indianola Parks & Recreation<br/>
-2204 West 2nd Street<br/>
-Indianola, Iowa 50125<br/> 
-Indianola East Dojang<br/>
-1204 East 2nd Ave., Hwy 92,<br/> -->
-Whittier Elementary Gym</br>
-1306 W Salem Ave<br/>
-Indianola, IA 50125<br> 
-</div>
+<%%address%%>
 
 <!-- end section -->
 
@@ -323,13 +349,7 @@ Indianola, IA 50125<br>
 <!-- moreinfo section-->
 <br/><br/>
 <h3>For more information</h3>
-<br/><br/>
-<a name="contactus"></a><div class="moreinfo">
-Contact Doug Byland through the Department of Parks & Recreation for further information.
-<br/>
-or email 
-indianola@tworiversmartialarts.com <br/>
-</div>
+<%%moreinfo%%>
 <!-- end section -->
 </div>
 <!-- End of Dynamic Content -->
