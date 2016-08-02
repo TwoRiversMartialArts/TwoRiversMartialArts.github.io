@@ -1,3 +1,15 @@
+gallery
+invapp
+.htaccess
+t.html
+cgi-bin
+admin
+bin
+components
+css
+*test*
+*.xcf
+*~
 App_*
 _vti_*
 *.tar

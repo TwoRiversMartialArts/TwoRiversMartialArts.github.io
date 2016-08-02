@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+
+		<title>TRMA photos</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>      
+      <script type="text/javascript" src="https://googledrive.com/host/0BwR416kAi4R-NEFVbUpwTjNqbnc/jquery.cycle2.min.js"></script>
+<script type="text/javascript">
+      jQuery(function($){
+	       var url = document.URL;
+               var folder = (/folder=(.*?)($|&)/).exec(url);
+               folder = folder && folder[1] || "YBBC1";
+                
+               folder = "https://googledrive.com/host/0BwR416kAi4R-aXB0LUFhM1RhcjQ/site_graphics/"+folder+"/";
+               function par(p,dflt) {
+                  var re = RegExp(p+"=(.*?)(&|$)");
+                  var result = re.exec(url)
+                  result = result && result[1] || dflt;
+                  return result;
+               }
+               var tr = parseFloat(par('tr',"1"));
+               var sp = parseFloat(par('sp',"3.5")) * 1000;
+               var ap = parseInt(par('ap',"1"));
+               var style = parseInt(par('style',"1"));
+               var ph = parseInt(par('ph',"0"));
+               var ip = parseInt(par('ip',"0"));
+               var sl = par('sl',false);
+               var rand = parseInt(par('rand',"0"));
+                
+              $.get(folder,
+                   function(data) {
+                         var pics = data.match( />\w+?\.(jpg|png|gif)/ig );
+                         var slides = $.map(pics,function(v,i) { return {image : (folder+v.substr(1)) }; });
+                
+                   var rot = $('.imageRotatorList_93922');
+                   $.each(
+                      slides
+                      ,function(i,v) {
+                    var img = $('<img class="rotimg" src="' + v.image + '" ></img>');
+                    rot.append(img);
+                  });
+
+                  //$(".rotimg").css("width","100%");
+                  //$(".rotimg").css("height","100%");
+                  rot.css('display','block');
+                  rot.cycle({fx: 'fade2',pause: tr,timeout: sp,fit:1}); 
+              });
+      });
+</script>
+		
+	</head>
+	
+<body style="position:relative;min-height:100%;width:100%">
+<div class="imageRotatorList_93922"
+style="display:none;width:100%;height:100%;"
+>
+</div>
+
+</body>
+</html>
