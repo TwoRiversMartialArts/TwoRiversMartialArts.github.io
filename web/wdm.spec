@@ -9,12 +9,12 @@ li(.*?wdm.*?West Des Moines)~li class="navOn"\1
 <table><thead></thead><tbody><tr><td>
 <div class="img-shadow" >
   <img style="height:210px"
-  src="http://www.googledrive.com/host/0BwR416kAi4R-Zk95UHkxME82c2M/branches/WDM/pic_2015-04-11--16.33.02.JPG"></img>
+  src="https://sites.google.com/a/trma.us/imagehosting/branches/wdm/pic_2015-04-11--16.33.02.JPG"></img>
 </div></td><td colspan="2">
 <div class="img-shadow" >
-  <a href="http://www.googledrive.com/host/0BwR416kAi4R-Zk95UHkxME82c2M/branches/WDM/PilSung2016medals.JPG">
+  <a href="https://sites.google.com/a/trma.us/imagehosting/branches/wdm/PilSung2016medals.JPG">
   <img style="height:210px"
-  src="http://www.googledrive.com/host/0BwR416kAi4R-Zk95UHkxME82c2M/branches/WDM/PilSung2016medals.JPG"></img>
+  src="https://sites.google.com/a/trma.us/imagehosting/branches/wdm/PilSung2016medals.JPG"></img>
   </a>
 </div></td></tr>
 <tr>
