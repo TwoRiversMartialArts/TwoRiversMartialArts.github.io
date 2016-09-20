@@ -18,7 +18,9 @@ li(.*?pleasanthill.*?Pleasant)~li class="navOn"\1
 @@@
 <%%Thursday%%>~
 Cub's Club:<br/> 6:10pm - 6:50pm<br/><br/>
-TKD: 7:00pm - 8:00pm
+TKD: 7:00pm - 8:00pm <br/><br/>
+<span style="font-weight:bold"> 2<sup>nd</sup> and 4<sup>th</sup> Thurs.
+of each month, TKD class starts at 6:45pm</span>
 @@@
 <%%.*day%%>~&nbsp;
 @@@
