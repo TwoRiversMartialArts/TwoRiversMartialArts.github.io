@@ -1,7 +1,7 @@
 ﻿
 <%%BranchName%%>~Indianola
 @@@
-<%%LATLNG%%>~41.361352, -93.578426
+<%%LATLNG%%>~41.357495,-93.5921747
 @@@
 li(.*?indianola.*?Indian)~li class="navOn"\1
 @@@
@@ -10,21 +10,15 @@ li(.*?indianola.*?Indian)~li class="navOn"\1
 <!-- <img src="/web/gallery/wdm.jpg"></img> -->
 </div>
 @@@
-<%%Monday%%>~
+<%%Tuesday%%>~
 <ul>
-    <li>Little Dragons<ul><li>6:00pm - 6:30pm</li></ul></li>
+    <li>Little Dragons<ul><li>6:30pm - 7:00pm</li></ul></li>
     <li>Beginner TKD<ul><li>6:00pm - 7:00pm</li></ul></li>
     <li>Advanced TKD<ul><li>7:00pm - 8:00pm</li></ul></li></ul>
 @@@
-<%%Wednesday%%>~
-<ul>
-  <li> Advanced TKD<ul><li>6:00pm - 7:00pm</li></ul></li>
-  <li> Adult/Family<ul><li>7:00pm - 8:00pm</li></ul></li>
-</ul>
-@@@
 <%%Thursday%%>~
 <ul>
-    <li>Little Dragons<ul><li>6:00pm - 6:30pm</li></ul></li>
+    <li>Little Dragons<ul><li>6:30pm - 7:00pm</li></ul></li>
     <li>Beginner TKD<ul><li>6:00pm - 7:00pm</li></ul></li>
     <li>Advanced TKD<ul><li>7:00pm - 8:00pm</li></ul></li></ul>
 @@@
@@ -39,8 +33,7 @@ src="https://sites.google.com/a/trma.us/imagehosting/branches/indianola/littledr
 </a>
 <br/>
 A new class for 4 through 6 year olds is offered each two month session starting 
-on October 12th, 2015.
-The class meets Mondays and Thursdays 6:00 - 6:30pm.  
+on October 12th, 2015.  
 This is a specialized class tailored for children.  
 Students will learn respect, gain strength, coordination, concentration, 
 self-confidence, and increase attention span.  Use the
@@ -72,14 +65,18 @@ events page</a>.
 @@@
 <%%address%%>~
 <div class="address">
-<!-- Indianola Parks & Recreation<br/>
+Indianola Parks & Recreation<br/>
 2204 West 2nd Street<br/>
-Indianola, Iowa 50125<br/> 
-Indianola East Dojang<br/>
-1204 East 2nd Ave., Hwy 92,<br/> -->
+Indianola, Iowa 50125<br/> <br/>
+Some classes are held at:<br/>
+Trinity United Presbyterian Church Fellowship Room<br/>
+200 South Howard, <br/>
+Indianola, IA 50125
+<!-- Indianola East Dojang<br/>
+1204 East 2nd Ave., Hwy 92,<br/> 
 Whittier Elementary Gym</br>
 1306 W Salem Ave<br/>
-Indianola, IA 50125<br> 
+Indianola, IA 50125<br> -->
 </div>
 @@@
 <%%moreinfo%%>~
