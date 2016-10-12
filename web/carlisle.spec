@@ -29,11 +29,11 @@ li(.*?carlisle.*?Carlisle)~li class="navOn"\1
 @@@
 <%%.*day%%>~&nbsp;
 @@@
-<%%FamCost1%%>~$15
+<%%FamCost1%%>~$20
 @@@
-<%%FamCost2%%>~$10
+<%%FamCost2%%>~$15
 @@@
-<%%FamCost3%%>~$5
+<%%FamCost3%%>~$10
 @@@
 <%%FamCost4%%>~$5
 @@@
@@ -42,6 +42,7 @@ li(.*?carlisle.*?Carlisle)~li class="navOn"\1
 <ul>
 <li><a href="instructors-primary.html#&endecott">Ms. Morgan Endecott</a></li>
 <li><a href="instructors-primary.html#&hornback">Ms. Vickie Hornback</a></li>
+<li><a href="instructors-primary.html#&macdonald">Mr. Don McDonald</a></li>
 </ul>
 @@@
 <%%address%%>~

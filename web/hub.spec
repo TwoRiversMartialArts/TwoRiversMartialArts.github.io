@@ -12,9 +12,7 @@ li(.*?hub.*?Two Rivers Hub)~li class="navOn"\1
 @@@
 <%%Monday%%>~TKD:<br/>6:00-7:00 PM
 @@@
-<%%Tuesday%%>~TKD:<br/>6:00-7:00 PM <br/><br/>
- Adult/Family<sup>*</sup> TKD: <br/>
-  7:30-8:30 PM 
+<%%Tuesday%%>~TKD:<br/>6:00-7:00 PM <br/>
 @@@
 <%%Wednesday%%>~TKD:<br/>6:00-7:00 PM
 @@@
