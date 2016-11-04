@@ -69,13 +69,6 @@ regarding time and instructor. This and other special classes and
 events can be found
 on the <a href="http://www.trma.us/home/events-calendar">school calendar</a>.
 </div>
-<a name="perksinfo"></a>
-@@@
-<%%Cost_Detail%%>~
-<div>
-<h3 style="padding-top:20px">Perks Card Discount</h3><br/>
-State of Iowa employees, show your perks card and receive up to 25% off of monthly class fees at the Hub branch.
-</div>
 @@@
 <%%.*day%%>~&nbsp;
 @@@

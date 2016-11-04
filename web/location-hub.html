@@ -14,14 +14,19 @@ tr.week {
   width:100%;
   margin: 0;
 }
-tr.week td, tr.cost td, tr.schedrow td {
+
+table.cost td, tr.week td, tr.cost td, tr.schedrow td {
   width: 14%;
   border: 2px solid black;
   margin: 2px ;
 }
+tr.nfam td {
+  padding: 4px;
+}
 table.cost {
   width: 50%;
   margin-left: 20%;
+  border: 2px solid black;
 }
 table.week,table.cost {
   border-spacing:0;
@@ -267,7 +272,6 @@ regarding time and instructor. This and other special classes and
 events can be found
 on the <a href="http://www.trma.us/home/events-calendar">school calendar</a>.
 </div>
-<a name="perksinfo"></a>
 <!-- end section-->
 
 
@@ -276,34 +280,21 @@ on the <a href="http://www.trma.us/home/events-calendar">school calendar</a>.
 <br />
 <h2>Monthly Class Fees</h2><br/>
 <table class="cost">
-<tr class="cost">
-  <td>
-    <div class="nstudents">First family<br/>member</div>
-    <br/>
-    <div class="nstudents_cost">$25</div>
-  </td> 
-  <td>
-    <div class="nstudents">Second family<br/> member</div>
-    <br/>
-    <div class="nstudents_cost">$15</div>
-  </td> 
-  <td>
-    <div class="nstudents">Third family<br/> member</div>
-    <br/>
-    <div class="nstudents_cost">$10</div>
-  </td> 
-  <td>
-    <div class="nstudents">Each additional<br/>family member</div>
-    <br/>
-    <div class="nstudents_cost">$5</div>
-  </td> 
+<tr class="nfam">
+<td class="nstudents">First family member</td>
+<td class="nstudents">Second family member</td>
+<td class="nstudents">Third family member</td>
+<td class="nstudents">Each additional family member</td>
+</tr>
+<tr>
+<td> <div class="nstudents_cost">$25</div> </td>
+<td> <div class="nstudents_cost">$15</div> </td>
+<td> <div class="nstudents_cost">$10</div> </td>
+<td> <div class="nstudents_cost">$5</div> </td>
 </tr>
 </table>
 <!-- end section-->
-<div>
-<h3 style="padding-top:20px">Perks Card Discount</h3><br/>
-State of Iowa employees, show your perks card and receive up to 25% off of monthly class fees at the Hub branch.
-</div>
+<!-- -->
 
 <!-- START PAYMENT_INFO -->
 <br/><br/>

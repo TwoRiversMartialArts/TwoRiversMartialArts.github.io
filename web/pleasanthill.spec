@@ -51,9 +51,9 @@ information.  <br/>
 <br/>
 <ul>
 <!--
-<li><a href="instructors-primary.html#&dgookin">Mr. Don Gookin</a></li>
 <li><a href="instructors-primary.html#&cummings">Mr. Michael Cummings</a></li>
 -->
+<li><a href="instructors-primary.html#&dgookin">Mr. Don Gookin</a></li>
 <li><a href="instructors-primary.html#&adamson">Ms. Melinda Adamson</a></li>
 <li><a href="instructors-primary.html#&WilwerdingG">Mr. Gerry Wilwerding</a></li>
 </ul>
