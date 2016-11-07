@@ -19,7 +19,7 @@ def main() :
    orig = src
    for repl in spec :
       #sys.stderr.write("\n---\n%s~%s" % (repl[0],repl[1]))
-      src = re.sub(repl[0],repl[1],src,flags=re.M)
+      src = re.sub(repl[0],repl[1],src,flags=re.M | re.S)
 
    if len(sys.argv) > 3 :
       if (sys.argv[3] != sys.argv[2]) or (src != orig) :
