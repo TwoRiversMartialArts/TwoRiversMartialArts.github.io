@@ -1,22 +1,22 @@
 html,body,div,span,applet,object, h1,h2,h3,h4,h5,h6,p,blockquote,pre, p,a,abbr,acronym,address,big,cite,code, del,dfn,em,font,img,ins,kbd,q,s,samp, small,strike,strong,tt,var, b,u,i,center, dl,dt,dd,ol,ul,li, fieldset,form,label,legend, table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;background:transparent}
 html, body, #aspnetForm, #ezSite{text-align:left;width:100%;}
 
-.dropdown {
-    position: relative;
-    display: inline;
+div.dropdown {
+    display: inline-block;
 }
 .dropdown-content {
     display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
+    background-color: black;
+   /* min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
+    padding: 12px 16px; */
+    z-index: 99;
 }
-
-.dropdown:hover .dropdown-content {
+div.dropdown:hover .dropdown-content {
     display: block;
+}
+.dropdown-content a:hover {
+    text-decoration: underline;
 }
 @media (max-width:900px) {
 div.toobig { display : none }
@@ -179,13 +179,13 @@ acronym.formhelp {color:#00a9e9;border-bottom:1px dotted #ddd;font-size:10px;}
 		display: inline;
 		margin: 0;
 		padding: 0;
-		width: 190px;
+		width: 191px;
 		height: 45px;
 	}
 	#navigation ul li a, #navigation ul li div span {
 		float: left;
 		/*text-indent: -9999px;*/
-		width: 150px;
+		width: 191px;
 		height: 45px;
 		background-position: 0px -45px;
 		background-repeat: repeat-x;
@@ -193,16 +193,12 @@ acronym.formhelp {color:#00a9e9;border-bottom:1px dotted #ddd;font-size:10px;}
 		line-height:40px;
 		border-left: 1px dotted #fff;
 	}
-	#navigation ul li {
-		background-image: url('i/navi-background.gif');
-		background-position: 0px -45px;
-	}
 	#navigation ul li a, #navigation ul li a:hover, 
     #navigation ul li a.selected,
     #navigation ul li div span {
 	color:#fff;
 	font-size:125%;
-	text-decoration:none;
+	/* text-decoration:none; */
 	}
 
 }
@@ -239,8 +235,8 @@ acronym.formhelp {color:#00a9e9;border-bottom:1px dotted #ddd;font-size:10px;}
 	background-position: 0px 0px;
 }
 
-#navigation ul li ul, #navigation ul li ul li ul {display:none;}
-
+/* #navigation ul li ul, #navigation ul li ul li ul {display:none;}
+*/
 
 
 /* UTILITY NAV & SEARCH FORM */
