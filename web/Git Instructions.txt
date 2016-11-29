@@ -1,0 +1,13 @@
+Notes for Mrs. Hornback
+
+Go here and download / install
+https://git-for-windows.github.io/
+
+Go here and read for the key
+https://help.github.com/articles/generating-an-ssh-key/
+
+Mirror the development tree
+git clone git@github.com:TwoRiversMartialArts/TwoRiversMartialArts.github.io.git
+
+Here's the test web site
+http://tworiversmartialarts.github.io/web/weapons.html
