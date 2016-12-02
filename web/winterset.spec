@@ -3,7 +3,7 @@
 @@@
 <%%LATLNG%%>~41.331803,-94.015775
 @@@
-li(.*?winterset.*?Winter)~li class="navOn"\1
+<li>([^\n]*?winterset[^\n]*?Winter)~<li class="navOn">\1
 @@@
 <%%picture%%>~
 <div class="topofpage">
@@ -14,7 +14,7 @@ li(.*?winterset.*?Winter)~li class="navOn"\1
 @@@
 <%%Wednesday%%>~7:00pm - 8:00pm
 @@@
-<%%.*day?%%>~&nbsp;
+<%%[^\n]*day?%%>~&nbsp;
 @@@
 <%%FamCost1%%>~$20
 @@@

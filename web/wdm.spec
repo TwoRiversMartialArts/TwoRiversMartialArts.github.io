@@ -3,7 +3,7 @@
 @@@
 <%%LATLNG%%>~41.582703,-93.711942
 @@@
-li(.*?wdm.*?West Des Moines)~li class="navOn"\1
+<li>([^\n]*?wdm[^\n]*?West Des Moines)~<li class="navOn">\1
 @@@
 <%%picture%%>~
 <table><thead></thead><tbody><tr><td>
@@ -29,7 +29,7 @@ li(.*?wdm.*?West Des Moines)~li class="navOn"\1
 @@@
 <%%Thursday%%>~6:15pm - 7:15pm
 @@@
-<%%.*day%%>~&nbsp;
+<%%[^\n]*day%%>~&nbsp;
 @@@
 <%%FamCost1%%>~$20
 @@@

@@ -3,7 +3,7 @@
 @@@
 <%%LATLNG%%>~41.48847,-93.4910
 @@@
-li(.*?carlisle.*?Carlisle)~li class="navOn"\1
+<li>([^\n]*?carlisle[^\n]*?Carlisle)~<li class="navOn">\1
 @@@
 <%%picture%%>~
 
@@ -27,7 +27,7 @@ li(.*?carlisle.*?Carlisle)~li class="navOn"\1
 @@@
 <%%Wednesday%%>~6:30pm - 7:30pm
 @@@
-<%%.*day%%>~&nbsp;
+<%%[^\n]*day%%>~&nbsp;
 @@@
 <%%FamCost1%%>~$20
 @@@

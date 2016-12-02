@@ -3,7 +3,7 @@
 @@@
 <%%LATLNG%%>~41.601833,-93.504325
 @@@
-li(.*?pleasanthill.*?Pleasant)~li class="navOn"\1
+<li>([^\n]*?pleasanthill[^\n]*?Pleasant)~<li class="navOn">\1
 @@@
 <%%picture%%>~
 <div class="topofpage">
@@ -22,7 +22,7 @@ TKD: 7:00pm - 8:00pm <br/><br/>
 <span style="font-weight:bold"> 2<sup>nd</sup> and 4<sup>th</sup> Thurs.
 of each month, TKD class starts at 6:45pm</span>
 @@@
-<%%.*day%%>~&nbsp;
+<%%[^\n]*day%%>~&nbsp;
 @@@
 <%%Sched_Detail%%>~
 <br/>

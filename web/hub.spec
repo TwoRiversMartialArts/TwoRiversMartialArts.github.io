@@ -3,7 +3,7 @@
 @@@
 <%%LATLNG%%>~41.53319,-93.64416
 @@@
-li(.*?hub.*?Two Rivers Hub)~li class="navOn"\1
+<li>([^\n]*?hub[^\n]*?Two Rivers Hub)~<li class="navOn">\1
 @@@
 <%%picture%%>~
 <div class="topofpage">
@@ -38,9 +38,12 @@ li(.*?hub.*?Two Rivers Hub)~li class="navOn"\1
   <td> <div class="dow">Sunday</div> </td>
  </tr>
  <tr class="schedrow"><td>
-   <div class="dowsched"></div>
+   <div class="dowsched">
    Martial Spirit:<br/>
-   9:30-11:15am
+   9:30-11:15am <br/><br/>
+   Kobudo:<br/>
+   1:00-2:00pm<br/>
+   </div>
   </td>
  </tr>
 </table>
