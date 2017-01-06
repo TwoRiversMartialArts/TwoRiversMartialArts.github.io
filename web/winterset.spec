@@ -27,7 +27,7 @@
 <%%instructors%%>~
 <br/>
 <ul>
-<li><a href="instructors-primary.html#&McBroomB">Master Brett McBroom</a></li>
+<li><a href="instructors-primary.html#&McBroomB">Grandmaster Brett McBroom</a></li>
 <li><a href="instructors-primary.html#&MaxwellT">Master Tony Maxwell</a></li>
 <li><a href="instructors-primary.html#&MaxwellJ">Master Jayne Maxwell</a></li>
 </ul>

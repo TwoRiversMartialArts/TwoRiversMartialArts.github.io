@@ -86,8 +86,8 @@ on the <a href="http://www.trma.us/home/events-calendar">school calendar</a>.
 <%%instructors%%>~
 <br/>
 <ul>
-<li><a href="instructors-primary.html#&GonzalezS">Master Steve Gonzalez</a></li>
-<li><a href="instructors-primary.html#&DeatonB">Master Brad Deaton</a></li>
+<li><a href="instructors-primary.html#&GonzalezS">Grandmaster Steve Gonzalez</a></li>
+<li><a href="instructors-primary.html#&DeatonB">Grandmaster Brad Deaton</a></li>
 <li><a href="instructors-primary.html#&WilliamsA">Master Anita Williams</a></li>
 <li><a href="instructors-primary.html#&FergusonD">Master Dwayne Ferguson</a></li>
 <li><a href="instructors-primary.html#&SieverB">Master Bryan Siever</a></li>
