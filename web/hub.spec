@@ -41,6 +41,8 @@
    <div class="dowsched">
    Martial Spirit:<br/>
    9:30-11:15am <br/><br/>
+   Tai Chi:<br/>
+   12:00-1:00pm <br/><br/>
    Kobudo:<br/>
    1:00-2:00pm<br/>
    </div>
@@ -109,8 +111,8 @@ Des Moines, Iowa 50315 <br/>
 <%%moreinfo%%>~
 <br/><br/>
 <div class="moreinfo">
-Contact the business office  <br/>
-(515) 423-0804 <br/>
+Contact the business office : (515)285-5049  <br/>
+Contact a Hub instructor: (515) 423-0804 <br/>
 trmaweb@tworiversmartialarts.com <br/>
 </div>
 <br/>
