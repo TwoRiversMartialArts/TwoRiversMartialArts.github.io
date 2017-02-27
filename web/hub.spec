@@ -44,7 +44,7 @@
    Tai Chi:<br/>
    12:00-1:00pm <br/><br/>
    Kobudo:<br/>
-   1:00-2:00pm<br/>
+   1:00-3:00pm<br/>
    </div>
   </td>
  </tr>
