@@ -17,7 +17,7 @@
 <%%Wednesday%%>~TKD:<br/>6:00-7:00 PM
 @@@
 <%%Thursday%%>~TKD:<br/>6:00-7:00 PM <br/><br/>
-  Adult/Family<sup>*</sup> TKD: <br/>7:30-8:30 PM
+  <!-- Adult/Family<sup>*</sup> TKD: <br/>7:30-8:30 PM -->
 @@@
 <%%Friday%%>~Brown/Black Class<br/>
   6:00-<br/>approx. 7:30 PM
