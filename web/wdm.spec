@@ -61,6 +61,7 @@ West Des Moines class photo on 2/14/2017 ( click to enlarge )<span></td>
 <li><a href="instructors-primary.html#&BaileyJ">Ms. Jennifer Bailey</a></li>
 <li><a href="instructors-primary.html#&DaleR">Mr. Rob Dale</a></li>
 <li><a href="instructors-primary.html#&BaileyK">Mr. Kendall Bailey</a></li>
+<li><a href="instructors-primary.html#&OchicheT">Mr. Tony Ochiche</a></li>
 </ul>
 @@@
 <%%address%%>~
