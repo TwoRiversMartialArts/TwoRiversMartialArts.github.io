@@ -26,7 +26,6 @@
 <ul> 
 <li>Adult/Family<sup>*</sup> TKD<ul><li> 10AM - 11AM</li></ul></li>
 <li>TKD class<sup>**</sup> <ul><li>11:15AM - 12:15PM</li></ul></li>
-<li>Tai Chi <ul><li> 1PM - 2PM </li></ul></li>
 <li>Black Belt Youth Group 
     <ul><li>1:00 PM or 3:00 PM on 2<sup>nd</sup> Saturday
         of each month<sup>***</sup></li></ul>
@@ -42,8 +41,8 @@
    <div class="dowsched">
    Martial Spirit:<br/>
    9:30-11:15am <br/><br/>
-   <!-- Tai Chi:<br/>
-   12:00-1:00pm <br/><br/> -->
+   Tai Chi:<br/>
+   12:00-1:00pm <br/><br/>
    Kobudo:<br/>
    1:00-3:00pm<br/><br/>
    Brown/Black Class<br/>
