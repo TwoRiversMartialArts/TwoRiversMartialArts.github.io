@@ -46,7 +46,7 @@
    Kobudo:<br/>
    1:00-3:00pm<br/><br/>
    Brown/Black Class<br/>
-   4:30-<br/>approx. 6:00 PM
+   3:00-<br/>approx. 4:30 PM
    </div>
   </td>
  </tr>
@@ -63,9 +63,12 @@ the Hub on the promotion test days, which are typically
 the first Saturday of each even month.
 <br/><sup>***</sup>
 The Youth Group meets at 1pm unless there is a make up test, in which case
-the Youth Group will meet at 3pm.  Please watch for <a href="http://announce.trma.us">announcements</a> 
-for the Black Belt Youth Group meeting times.  An announcement is posted each month to 
-confirm the time and other details. A social at CiCi's pizza typically follows the Youth Group class.
+the Youth Group will meet at 3pm.  The scheduling of Youth group meetings may
+be changed due to guest instructor availability or other reasons.
+Please watch the
+<a href="http://www.trma.us/home/events-calendar">school calendar</a>
+for meeting times each month. 
+A social at CiCi's pizza typically follows the Youth Group class.
 <br/>
 <div style="clear:both"></div>
 <br/>
