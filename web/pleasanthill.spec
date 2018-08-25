@@ -40,7 +40,7 @@ TKD: 6:15pm - 7:30pm <br/><br/>
 
 <li><a href="instructors-primary.html#&dgookin">Mr. Don Gookin</a></li>
 -->
-<li>Mr. Todd Adamson</li>
+<li><a href="instructors-primary.html#&adamsont">Mr. Todd Adamson</a></li>
 <li><a href="instructors-primary.html#&adamson">Ms. Melinda Adamson</a></li>
 <li><a href="instructors-primary.html#&WilwerdingG">Mr. Gerry Wilwerding</a></li>
 </ul>

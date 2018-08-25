@@ -14,7 +14,8 @@
               <meta name="author" content="Kenneth Gerstenberger" /><meta name="description" content="Two Rivers Martial Arts has six locations in central Iowa. Classes are taught at each of these locations by TRMA black belt instructors. Advanced students from all branches attend Brown/Black Belt Class Friday nights at 6:00 PM at the Two Rivers Hub, 2017 Southlawn Drive in Des Moines, Iowa near the corner of Fleur and Southlawn." /><meta name="keywords" content="Where To Find Us,,Branch,Iowa,Master,,,,," /><meta name="google-site-verification" content="Ha8RvE3Ru2SnsvQZajjCX7ez83QW-BU8tHppJROWdAw" /><meta name="copyright" content="Copyright 2014 Two Rivers Martial Arts" /><link href="/css/common.css" type="text/css" rel="stylesheet" /><link href="/css/style.css" type="text/css" rel="stylesheet" /><link rel="shortcut icon" href="/components/themes/trma/favicon.ico" /></head>
 <body id="ctl00_main_Body">
    
-<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAA3o65nx3LvrDpyzKnyUYRARR5EWfI6UV9VcAYdaxcqUONoMtg7RS0chVJkOIkDhXhYS_pXfSzXf5XvA" type="text/javascript"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.js"></script>
 <script src="/components/scripts/jquery/jquery.min.js" type="text/javascript"></script>
 
     <div id="ezSite">
@@ -147,57 +148,32 @@ West Des Moines: (515) 650-3808<br />
 <div style="width:100%;height:250px;">
 
 
-<!--
-<div id="map_address1" class="GmapMarker">
-  <div id="map_address1_title" class="MarkerTitle">Bethany Branch</div>
-  <div id="map_address1_descr" class="MarkerDescr">North Missouri Family<br>Health Center<br>2703 Miller Street<br>Bethany, Missouri</div>
-  <div id="map_address1_link" class="MarkerDirectionsLink">Directions: <a href="http://www.google.com/maps?daddr=40.265294,-94.025144&iwstate1=dir:to&z=7" target="_blank" onclick="pageTracker._trackEvent('Maps', 'Get Directions', '40.265294,-94.025144 (Bethany Branch)');">To Here</a> - <a href="http://www.google.com/maps?saddr=40.265294,-94.025144&iwstate1=dir:from&z=7" target="_blank" onclick="pageTracker._trackEvent('Maps', 'Get Directions', '40.265294,-94.025144 (Bethany Branch)');">From Here</a></div>
-</div>
--->
-<div id="map_address2" class="GmapMarker">
+<div style="display:none">
+<div id="map_address2" class="GmapMarker" >
   <div id="map_address2_title" class="MarkerTitle">Indianola Branch</div>
-  <div id="map_address2_descr" class="MarkerDescr">Indianola Parks &amp; Recreation<br />
-1306 W Salem Ave<br />
-Indianola, Iowa, 50125</div>
-  <div id="map_address2_link" class="MarkerDirectionsLink">Directions: <a href="http://www.google.com/maps?daddr=41.361346,-93.578428&iwstate1=dir:to&z=7" target="_blank" onclick="pageTracker._trackEvent('Maps', 'Get Directions', '41.361346,-93.578428 (Indianola Branch)');">To Here</a> - <a href="http://www.google.com/maps?saddr=41.361346,-93.578428&iwstate1=dir:from&z=7" target="_blank" onclick="pageTracker._trackEvent('Maps', 'Get Directions', '41.361346,-93.578428 (Indianola Branch)');">From Here</a></div>
+  <div id="map_address2_descr" class="MarkerDescr">
+2204 West 2nd Street<br />
+Indianola, Iowa 50125</div>
+  <div id="map_address2_link" class="MarkerDirectionsLink">Directions: <a href="http://www.google.com/maps?daddr=41.355373,-93.583986&iwstate1=dir:to&z=7" target="_blank">To Here</a> - <a href="http://www.google.com/maps?saddr=41.355373,-93.583986&iwstate1=dir:from&z=7" target="_blank">From Here</a></div>
 </div>
-<!--
-<div id="map_address3" class="GmapMarker">
-  <div id="map_address3_title" class="MarkerTitle">Lamoni Branch</div>
-  <div id="map_address3_descr" class="MarkerDescr">133 Main Street<br>Lamoni, Iowa</div>
-  <div id="map_address3_link" class="MarkerDirectionsLink">Directions: <a href="http://www.google.com/maps?daddr=40.62367,-93.932905&iwstate1=dir:to&z=7" target="_blank" onclick="pageTracker._trackEvent('Maps', 'Get Directions', '40.62367,-93.932905 (Lamoni Branch)');">To Here</a> - <a href="http://www.google.com/maps?saddr=40.62367,-93.932905&iwstate1=dir:from&z=7" target="_blank" onclick="pageTracker._trackEvent('Maps', 'Get Directions', '40.62367,-93.932905 (Lamoni Branch)');">From Here</a></div>
-</div>
-
-<div id="map_address4" class="GmapMarker">
-  <div id="map_address4_title" class="MarkerTitle">Trenton Branch</div>
-  <div id="map_address4_descr" class="MarkerDescr">203 East 9th St., Suite B<br>Trenton, Missouri</div>
-  <div id="map_address4_link" class="MarkerDirectionsLink">Directions: <a href="http://www.google.com/maps?daddr=40.073767,-93.616199&iwstate1=dir:to&z=7" target="_blank" onclick="pageTracker._trackEvent('Maps', 'Get Directions', '40.073767,-93.616199 (Trenton Branch)');">To Here</a> - <a href="http://www.google.com/maps?saddr=40.073767,-93.616199&iwstate1=dir:from&z=7" target="_blank" onclick="pageTracker._trackEvent('Maps', 'Get Directions', '40.073767,-93.616199 (Trenton Branch)');">From Here</a></div>
-</div>
--->
 <div id="map_address5" class="GmapMarker">
   <div id="map_address5_title" class="MarkerTitle">West Des Moines Branch</div>
   <div id="map_address5_descr" class="MarkerDescr">West Des Moines United Methodist Church<br>8th St. & Grand Av.<br>West Des Moines, Iowa</div>
-  <div id="map_address5_link" class="MarkerDirectionsLink">Directions: <a href="http://www.google.com/maps?daddr=41.582703,-93.711942&iwstate1=dir:to&z=7" target="_blank" onclick="pageTracker._trackEvent('Maps', 'Get Directions', '41.582703,-93.711942 (West Des Moines Branch)');">To Here</a> - <a href="http://www.google.com/maps?saddr=41.582703,-93.711942&iwstate1=dir:from&z=7" target="_blank" onclick="pageTracker._trackEvent('Maps', 'Get Directions', '41.582703,-93.711942 (West Des Moines Branch)');">From Here</a></div>
+  <div id="map_address5_link" class="MarkerDirectionsLink">Directions: <a href="http://www.google.com/maps?daddr=41.582703,-93.711942&iwstate1=dir:to&z=7" target="_blank" >To Here</a> - <a href="http://www.google.com/maps?saddr=41.582703,-93.711942&iwstate1=dir:from&z=7" target="_blank">From Here</a></div>
 </div>
 
 <div id="map_address6" class="GmapMarker">
   <div id="map_address6_title" class="MarkerTitle">Winterset Branch</div>
   <div id="map_address6_descr" class="MarkerDescr">Winterset Elementary<br>Winterset, Iowa 50273</div>
-  <div id="map_address6_link" class="MarkerDirectionsLink">Directions: <a href="http://www.google.com/maps?daddr=41.331803,-94.015775&iwstate1=dir:to&z=7" target="_blank" onclick="pageTracker._trackEvent('Maps', 'Get Directions', '41.331803,-94.015775 (Winterset Branch)');">To Here</a> - <a href="http://www.google.com/maps?saddr=41.331803,-94.015775&iwstate1=dir:from&z=7" target="_blank" onclick="pageTracker._trackEvent('Maps', 'Get Directions', '41.331803,-94.015775 (Winterset Branch)');">From Here</a></div>
+  <div id="map_address6_link" class="MarkerDirectionsLink">Directions: <a href="http://www.google.com/maps?daddr=41.331803,-94.015775&iwstate1=dir:to&z=7" target="_blank">To Here</a> - <a href="http://www.google.com/maps?saddr=41.331803,-94.015775&iwstate1=dir:from&z=7" target="_blank">From Here</a></div>
 </div>
-<!--
-<div id="map_address7" class="GmapMarker">
-  <div id="map_address7_title" class="MarkerTitle">St. Joseph Branch</div>
-  <div id="map_address7_descr" class="MarkerDescr">4501 South 14th St.<br>St. Joseph, Missouri</div>
-  <div id="map_address7_link" class="MarkerDirectionsLink">Directions: <a href="http://www.google.com/maps?daddr=39.724497,-94.84313&iwstate1=dir:to&z=7" target="_blank" onclick="pageTracker._trackEvent('Maps', 'Get Directions', '39.724497,-94.84313 (St. Joseph Branch)');">To Here</a> - <a href="http://www.google.com/maps?saddr=39.724497,-94.84313&iwstate1=dir:from&z=7" target="_blank" onclick="pageTracker._trackEvent('Maps', 'Get Directions', '39.724497,-94.84313 (St. Joseph Branch)');">From Here</a></div>
-</div>
--->
+
 <div id="map_address8" class="GmapMarker">
   <div id="map_address8_title" class="MarkerTitle">Carlisle Branch</div>
   <div id="map_address8_descr" class="MarkerDescr">Parks and Rec building<br />
 1230 S. 5th St.<br />
 Carlisle, Iowa</div>
-  <div id="map_address8_link" class="MarkerDirectionsLink">Directions: <a href="http://www.google.com/maps?daddr=41.48847,-93.4910&iwstate1=dir:to&z=7" target="_blank" onclick="pageTracker._trackEvent('Maps', 'Get Directions', '41.48847,-93.4910 (Carlisle Branch)');">To Here</a> - <a href="http://www.google.com/maps?saddr=41.48847,-93.4910&iwstate1=dir:from&z=7" target="_blank" onclick="pageTracker._trackEvent('Maps', 'Get Directions', '41.48847,-93.4910 (Carlisle Branch)');">From Here</a></div>
+  <div id="map_address8_link" class="MarkerDirectionsLink">Directions: <a href="http://www.google.com/maps?daddr=41.48847,-93.4910&iwstate1=dir:to&z=7" target="_blank">To Here</a> - <a href="http://www.google.com/maps?saddr=41.48847,-93.4910&iwstate1=dir:from&z=7" target="_blank">From Here</a></div>
 </div>
 
 <div id="map_address9" class="GmapMarker">
@@ -207,7 +183,7 @@ Suite D<br />
 Des Moines, Iowa<br />
 (515) 423-0804<br />
 [<a href="http://maps.google.com/maps?saddr=&daddr=2017+Southlawn+Drive%2c+Des+Moines%2c+Iowa">directions</a>]</div>
-  <div id="map_address9_link" class="MarkerDirectionsLink">Directions: <a href="http://www.google.com/maps?daddr=41.53285,-93.6443&iwstate1=dir:to&z=7" target="_blank" onclick="pageTracker._trackEvent('Maps', 'Get Directions', '41.53285,-93.6443 (Two Rivers Hub (and Business Office))');">To Here</a> - <a href="http://www.google.com/maps?saddr=41.53285,-93.6443&iwstate1=dir:from&z=7" target="_blank" onclick="pageTracker._trackEvent('Maps', 'Get Directions', '41.53285,-93.6443 (Two Rivers Hub (and Business Office))');">From Here</a></div>
+  <div id="map_address9_link" class="MarkerDirectionsLink">Directions: <a href="http://www.google.com/maps?daddr=41.53285,-93.6443&iwstate1=dir:to&z=7" target="_blank">To Here</a> - <a href="http://www.google.com/maps?saddr=41.53285,-93.6443&iwstate1=dir:from&z=7" target="_blank">From Here</a></div>
 </div>
 
 <div id="map_address10" class="GmapMarker">
@@ -215,7 +191,7 @@ Des Moines, Iowa<br />
   <div id="map_address10_descr" class="MarkerDescr">Shining Stars Assembly hall<br />
 1250 NE 56th St., Pleasant Hill 50327<br />
 West doors</div>
-  <div id="map_address10_link" class="MarkerDirectionsLink">Directions: <a href="http://www.google.com/maps?daddr=41.601833,-93.504325&iwstate1=dir:to&z=7" target="_blank" onclick="pageTracker._trackEvent('Maps', 'Get Directions', '41.601833,-93.504325 (Pleasant Hill Branch)');">To Here</a> - <a href="http://www.google.com/maps?saddr=41.601833,-93.504325&iwstate1=dir:from&z=7" target="_blank" onclick="pageTracker._trackEvent('Maps', 'Get Directions', '41.601833,-93.504325 (Pleasant Hill Branch)');">From Here</a></div>
+  <div id="map_address10_link" class="MarkerDirectionsLink">Directions: <a href="http://www.google.com/maps?daddr=41.601833,-93.504325&iwstate1=dir:to&z=7" target="_blank">To Here</a> - <a href="http://www.google.com/maps?saddr=41.601833,-93.504325&iwstate1=dir:from&z=7" target="_blank">From Here</a></div>
 </div>
 
 <div id="map_address11" class="GmapMarker">
@@ -225,9 +201,9 @@ West doors</div>
 Cedar Rapids, IA 52404<br />
 <br />
 ph: 319-396-1973</div>
-  <div id="map_address11_link" class="MarkerDirectionsLink">Directions: <a href="http://www.google.com/maps?daddr=41.957038,-91.721272&iwstate1=dir:to&z=7" target="_blank" onclick="pageTracker._trackEvent('Maps', 'Get Directions', '41.957038,-91.721272 (Jung\'s Tae Kwon Do)');">To Here</a> - <a href="http://www.google.com/maps?saddr=41.957038,-91.721272&iwstate1=dir:from&z=7" target="_blank" onclick="pageTracker._trackEvent('Maps', 'Get Directions', '41.957038,-91.721272 (Jung\'s Tae Kwon Do)');">From Here</a></div>
+  <div id="map_address11_link" class="MarkerDirectionsLink">Directions: <a href="http://www.google.com/maps?daddr=41.957038,-91.721272&iwstate1=dir:to&z=7" target="_blank">To Here</a> - <a href="http://www.google.com/maps?saddr=41.957038,-91.721272&iwstate1=dir:from&z=7" target="_blank">From Here</a></div>
 </div>
-
+</div>
 <div id="map_canvas54990" style="width:100%; height:250px"></div>
 
    <div style="clear: both;"></div>
@@ -789,64 +765,30 @@ Video Archive</a></li>
 
 <script type="text/javascript">
 $(function() {
-    $('#map_canvas54990').googleMaps({
-feed: 'http',
-latitude: 41.5330854853839,
-longitude: -93.6441510915756,
-depth: 7,
-scroll: false,
-trafficInfo: false,
-streetViewOverlay: false,
-controls: {
-localSearch: false,
-mapType: [
-{remove: 'G_TERRAIN_MAP'}],
-type: {
-control: 'GMapTypeControl'
-},
-zoom: {
-control: 'GLargeMapControl3D'
-}
-},
-markers: [
-//{
-//latitude: 40.265294,longitude: -94.025144,icon: {image: '/web/upload/image/gmap/TRMA-GMap.png'},info: {layer: '#map_address1'}
-//},
-{
-latitude: 41.361385,longitude: -93.578420,icon: {image: '/web/upload/image/gmap/TRMA-GMap.png'},info: {layer: '#map_address2'}
-},
-//{
-//latitude: 40.62367,longitude: -93.932905,icon: {image: '/web/upload/image/gmap/TRMA-GMap.png'},info: {layer: '#map_address3'}
-//},
-//{
-//latitude: 40.073767,longitude: -93.616199,icon: {image: '/web/upload/image/gmap/TRMA-GMap.png'},info: {layer: '#map_address4'}
-//},
-{
-latitude: 41.582703,longitude: -93.711942,icon: {image: '/web/upload/image/gmap/TRMA-GMap.png'},info: {layer: '#map_address5'}
-},{
-latitude: 41.331803,longitude: -94.015775,icon: {image: '/web/upload/image/gmap/TRMA-GMap.png'},info: {layer: '#map_address6'}
-},
-//{
-//latitude: 39.724497,longitude: -94.84313,icon: {image: '/web/upload/image/gmap/TRMA-GMap.png'},info: {layer: '#map_address7'}
-//},
-{
-latitude: 41.48847,longitude: -93.4910,icon: {image: '/web/upload/image/gmap/TRMA-GMap.png'},info: {layer: '#map_address8'}
-},{
-latitude: 41.53285,longitude: -93.6443,icon: {image: '/web/upload/image/gmap/TRMA-GMap.png'},info: {layer: '#map_address9'}
-},{
-latitude: 41.601833,longitude: -93.504325,icon: {image: '/web/upload/image/gmap/TRMA-GMap.png'},info: {layer: '#map_address10'}
-},{
-latitude: 41.957038,longitude: -91.721272,icon: {image: '/web/upload/image/gmap/JUNG-GMap.png'},info: {layer: '#map_address11'}
-}]    });
+   var map = L.map('map_canvas54990').setView([41.70,-93.0],8);
+  
+   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ' + 
+               '(<a href="https://www.openstreetmap.org/fixthemap">fix</a>) contributors'
+   }).addTo(map);
+ 
+   var trma = L.icon({ iconUrl : '/web/upload/image/gmap/TRMA-GMap.png',iconAnchor:[10,23]});
+   var jung = L.icon({ iconUrl : '/web/upload/image/gmap/JUNG-GMap.png',iconAnchor:[10,23]});
+   L.marker([41.355373,-93.583986],{icon:trma}).addTo(map)
+    .bindPopup( $('#map_address2').html() );
+   L.marker([41.582703,-93.711942],{icon:trma}).addTo(map)
+    .bindPopup( $('#map_address5').html() ); 
+   L.marker([41.331803,-94.015775],{icon:trma}).addTo(map)
+    .bindPopup( $('#map_address6').html() );
+   L.marker([41.48847,-93.4910],{icon:trma}).addTo(map)
+    .bindPopup( $('#map_address8').html() );
+   L.marker([41.53285,-93.6443],{icon:trma}).addTo(map)
+    .bindPopup( $('#map_address9').html() );
+   L.marker([41.601833,-93.504325],{icon:trma}).addTo(map)
+    .bindPopup( $('#map_address10').html() );
+   L.marker([41.957038,-91.721272],{icon:jung}).addTo(map)
+    .bindPopup( $('#map_address11').html() );
 });
-</script>
-
-    
-
-<script type="text/javascript">
-//<![CDATA[
-Sys.Application.initialize();
-//]]>
 </script>
 </body>
 </html>
