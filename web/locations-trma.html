@@ -545,8 +545,8 @@ Mr. Tony Ochiche<br/>
 				or email <a href="mailto:winterset@tworiversmartialarts.com">winterset@tworiversmartialarts.com</a></td>
 			<td valign="top" width="33%">
 				Grandmaster Brett McBroom<br />
-				Master Tony Maxwell<br />
-				Master Jayne Maxwell</td>
+				Ms. Cinthia Barch<br />
+				Mr. Michael Carter</td>
 			<td valign="top" width="33%">
 				<p>
 					Mon. and Wed.<br />
@@ -765,7 +765,8 @@ Video Archive</a></li>
 
 <script type="text/javascript">
 $(function() {
-   var map = L.map('map_canvas54990').setView([41.70,-93.0],8);
+   var map = L.map('map_canvas54990',
+             {scrollWheelZoom: false}).setView([41.70,-93.0],8);
   
    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ' + 
@@ -776,7 +777,7 @@ $(function() {
    var jung = L.icon({ iconUrl : '/web/upload/image/gmap/JUNG-GMap.png',iconAnchor:[10,23]});
    L.marker([41.355373,-93.583986],{icon:trma}).addTo(map)
     .bindPopup( $('#map_address2').html() );
-   L.marker([41.582703,-93.711942],{icon:trma}).addTo(map)
+   L.marker([41.5823,-93.7125],{icon:trma}).addTo(map)
     .bindPopup( $('#map_address5').html() ); 
    L.marker([41.331803,-94.015775],{icon:trma}).addTo(map)
     .bindPopup( $('#map_address6').html() );

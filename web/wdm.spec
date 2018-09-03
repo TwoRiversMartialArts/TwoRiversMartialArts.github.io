@@ -1,7 +1,7 @@
 
 <%%BranchName%%>~West Des Moines
 @@@
-<%%LATLNG%%>~41.582703,-93.711942
+<%%LATLNG%%>~41.5823,-93.7125
 @@@
 <li>([^\n]*?wdm[^\n]*?West Des Moines)~<li class="navOn">\1
 @@@

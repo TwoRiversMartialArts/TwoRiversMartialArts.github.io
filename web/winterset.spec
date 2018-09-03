@@ -28,8 +28,8 @@
 <br/>
 <ul>
 <li><a href="instructors-primary.html#&McBroomB">Grandmaster Brett McBroom</a></li>
-<li>Ms. Cynthia Barth</li>
-<li>Mr. Michael Carter</li>
+<li><a href="instructors-primary.html#&barthc">Ms. Cynthia Barth</a></li>
+<li><a href="instructors-primary.html#&carterm">Mr. Michael Carter</a></li>
 </ul>
 @@@
 <%%address%%>~

@@ -71,13 +71,13 @@ div.topofpage img {
 <script type="text/javascript">
 (function($){
 function makeMap() {
-   var map = L.map('mymap').setView([41.582703,-93.711942],15);
+   var map = L.map('mymap').setView([41.5823,-93.7125],15);
    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ' + 
                '(<a href="https://www.openstreetmap.org/fixthemap">fix</a>) contributors'
    }).addTo(map);
    var trma = L.icon({ iconUrl : '/web/upload/image/gmap/TRMA-GMap.png',iconAnchor:[10,23]});
-   L.marker([41.582703,-93.711942],{icon:trma,
+   L.marker([41.5823,-93.7125],{icon:trma,
       title:"Branch Location: West Des Moines"}).addTo(map);
 }
 $(makeMap);
