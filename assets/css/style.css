@@ -567,7 +567,7 @@ html {
   -webkit-box-shadow: 0 4px 28px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 4px 28px rgba(0, 0, 0, 0.2);
   padding: 2em 1em;
-  margin-top: -40px;
+  margin-top: 10px;
   border-radius: 6px;
   position: relative;
   z-index: 3; }
