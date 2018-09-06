@@ -40,7 +40,7 @@ def main() :
         t = Template(pass1)
         pass2 = t.render(context)
 
-        with codecs.open(path.join("site",fn),'w',encoding='utf8') as f :
+        with codecs.open(path.join("../../",fn),'w',encoding='utf8') as f :
             f.write(pass2)
 
 if __name__ == "__main__" :
