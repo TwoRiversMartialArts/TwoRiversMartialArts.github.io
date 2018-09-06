@@ -8,10 +8,13 @@ template name so it applies only to that page.
 
 @author Kendall Bailey
 '''
+import sys
 from jinja2 import Environment, PackageLoader, Template
 import os, codecs, pprint, traceback, six
 from os import path
 from six import print_, iteritems
+
+sys.path.append(path.abspath( path.join(path.dirname( __file__ ), '..')))
 
 def main() :
     env = Environment(
@@ -19,7 +22,7 @@ def main() :
           )
     content = {}
     dynamic = {}
-    os.chdir( path.dirname(__file__) )
+    os.chdir( path.dirname(__file__) or '.' )
 
     # read all static and dynamic content
     for fn in os.listdir('content') :
