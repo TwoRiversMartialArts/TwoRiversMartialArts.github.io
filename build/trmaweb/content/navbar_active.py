@@ -23,7 +23,7 @@ addins = {
 'contact.html' : 
     {},
 'curriculum.html' : 
-    {},
+    { 'CURRICULUM_active' : A },
 'history-trma.html' : 
     {},
 'index.html' : 
