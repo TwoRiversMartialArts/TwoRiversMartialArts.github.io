@@ -15,7 +15,7 @@ addins = {
 'blackbeltlist.html' : 
     {},
 'calendar.html' : 
-    {},
+    {'CALENDAR_active' : A },
 'community.html' : 
     {},
 'competition.html' : 
