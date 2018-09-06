@@ -1,0 +1,57 @@
+{#
+ Navigation bar along top of every page.
+   The current page's section is marked as active.
+#}
+<!-- Start: Navigation Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navigation" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item {{ HOME_active }}">
+                        <a class="nav-link" href="index.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item {{ ABOUT_active }}">
+                        <a class="nav-link" href="history-trma.html">About</a>
+                    </li>
+                    <li class="nav-item {{ LOCATIONS_active }}">
+                        <a class="nav-link" href="location-trma.html">Locations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="location-trma.html#sched">Schedule</a>
+                    </li>
+                    <li class="nav-item {{ RESOURCES_active }}">
+                        <a class="nav-link" href="resource-tenets.html">Resources</a>
+                    </li>
+                    <li class="nav-item dropdown {{ PROGRAMS_active }}">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Programs
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="startingtkd.html">TKD</a>
+                            <a class="dropdown-item" href="taichi.html">Taichi</a>
+                            <a class="dropdown-item" href="ybbc.html">Black Belt Youth Group</a>
+                            <a class="dropdown-item" href="kobudo.html">Kobudo</a>
+                        </div>
+                    </li>
+                    <li class="nav-item {{ CONTACT_active }}">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item {{ GALLERY_active }}">
+                        <a class="nav-link" href="portfolio.html">Gallery</a>
+                    </li>
+                    <li class="nav-item {{ CALENDAR_active }}">
+                        <a class="nav-link" href="calendar.html">Calendar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End: Navigation Section -->

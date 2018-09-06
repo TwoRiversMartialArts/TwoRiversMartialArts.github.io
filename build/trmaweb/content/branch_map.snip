@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.js"></script>
+<script type="text/javascript">
+(function($){
+function makeMap() {
+   var map = L.map('mymap').setView([{{LATLNG}}],15);
+   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ' + 
+               '(<a href="https://www.openstreetmap.org/fixthemap">fix</a>) contributors'
+   }).addTo(map);
+   var trma = L.icon({ iconUrl : '/assets/images/TRMA-GMap.png',iconAnchor:[10,23]});
+   L.marker([{{LATLNG}}],{icon:trma,
+      title:"Branch Location: {{BRANCHNAME}}"}).addTo(map);
+}
+$(makeMap);
+})($);
+</script>
