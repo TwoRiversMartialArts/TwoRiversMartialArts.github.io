@@ -31,7 +31,7 @@ addins = {
 'instructors-primary.html' : 
     {},
 'kobudo.html' : 
-    {},
+    { 'KOBUDO_active' : A },
 'location-carlisle.html' : 
     {'CARLISLE_active':A},
 'location-hub.html' : 
@@ -47,7 +47,7 @@ addins = {
 'location-winterset.html' : 
     {'WINTERSET_active':A},
 'martial-spirit.html' : 
-    {},
+    { 'MS_active' : A },
 'portfolio.html' : 
     {},
 'resource-tenets.html' : 
@@ -57,11 +57,11 @@ addins = {
 'server.py' : 
     {},
 'taichi.html' : 
-    {},
+    {'TC_active' : A },
 'tkdt-bbyg.html' : 
     {},
 'ybbc.html' : 
-    {}
+    { 'BBYG_active' : A }
 }
 main()
 
