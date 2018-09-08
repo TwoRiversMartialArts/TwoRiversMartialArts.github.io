@@ -90,6 +90,10 @@ body {
 html {
   font-family: "Raleway", sans-serif; }
 
+.curriculum .trma-img {
+  height : 300px 
+}
+
 .top-area {
   background-color: #0069D9;
   padding: 15px 0; }

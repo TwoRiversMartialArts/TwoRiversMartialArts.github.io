@@ -262,7 +262,6 @@ jQuery(function($) {
      var captcha_validate = function() {
         return (captcha.n1+captcha.n2 == parseInt($("#captcha_3").val().trim()));
      }
-     
      $("#contact_send").click(function() {
         if( ! captcha_validate() ) {
            $("#contact_msg").text("CAPTCHA failed, please try again");
@@ -286,10 +285,8 @@ jQuery(function($) {
            success: function(data,status,x) {
               alert(data.msg);
               $("#contact_msg").text("");
-              //if( data.alert ) alert(data.alert);
            },
            error: function(x,msg,err) {
-              //$("#contact_msg").text("Message received");
               $("#contact_msg").text("Encountered a problem.  Please try again.");
            }
          });  

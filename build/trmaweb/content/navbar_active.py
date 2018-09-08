@@ -13,23 +13,23 @@ addins = {
  'startingtkd.html' :
     { 'ABOUT_active' : A, 'STARTING_active': A },
 'blackbeltlist.html' : 
-    {},
+    {'ABOUT_active' : A,'LISTOFBB_active' : A},
 'calendar.html' : 
     {'CALENDAR_active' : A },
 'community.html' : 
-    {},
+    {'ABOUT_active' : A,'OUTREACH_active' : A},
 'competition.html' : 
-    {},
+    {'ABOUT_active' : A,'COMPETITION_active' : A},
 'contact.html' : 
     {},
 'curriculum.html' : 
     { 'CURRICULUM_active' : A },
 'history-trma.html' : 
-    {},
+    {'ABOUT_active' : A,'ABOUTTRMA_active' : A},
 'index.html' : 
     {},
 'instructors-primary.html' : 
-    {},
+    {'ABOUT_active' : A,'INSTRUCTORS_active' : A},
 'kobudo.html' : 
     { 'KOBUDO_active' : A },
 'location-carlisle.html' : 
