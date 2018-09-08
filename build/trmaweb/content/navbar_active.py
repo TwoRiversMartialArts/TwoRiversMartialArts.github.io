@@ -21,13 +21,13 @@ addins = {
 'competition.html' : 
     {'ABOUT_active' : A,'COMPETITION_active' : A},
 'contact.html' : 
-    {},
+    { 'CONTACT_active' : A },
 'curriculum.html' : 
     { 'CURRICULUM_active' : A },
 'history-trma.html' : 
     {'ABOUT_active' : A,'ABOUTTRMA_active' : A},
 'index.html' : 
-    {},
+    { 'HOME_active' : A },
 'instructors-primary.html' : 
     {'ABOUT_active' : A,'INSTRUCTORS_active' : A},
 'kobudo.html' : 
@@ -51,15 +51,13 @@ addins = {
 'portfolio.html' : 
     {},
 'resource-tenets.html' : 
-    {},
+    { 'RESOURCES_active' : A, 'TENETS_active' : A },
 'resource-terminology.html' : 
-    {},
-'server.py' : 
-    {},
+    { 'RESOURCES_active' : A , 'TERM_active' : A },
 'taichi.html' : 
     {'TC_active' : A },
 'tkdt-bbyg.html' : 
-    {},
+    { 'BBYG_active' : A },
 'ybbc.html' : 
     { 'BBYG_active' : A }
 }
