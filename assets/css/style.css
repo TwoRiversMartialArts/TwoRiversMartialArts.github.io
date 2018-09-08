@@ -104,6 +104,12 @@ html {
   font-size : 16px;
 }
 
+@media only screen and (max-width: 767px) {
+p.trma-loc-sched {
+ margin-left : 1em;
+}
+}
+
 div.trma-news-scroll {
   max-height : 600px;
   overflow : auto;
