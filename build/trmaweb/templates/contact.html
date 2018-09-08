@@ -130,7 +130,7 @@
                     </div>
                     <div class="col-md-4">
 
-                        <form action="" method="POST" class="validation-form">
+                        <div class="validation-form">
                             <div>
 
                              <select id="send_to_select">
@@ -173,9 +173,9 @@
                        <br/>
 
                             <div class="button-group text-right">
-                                <button class="btn btn-outline" type="submit">Send</button>
+                                <button class="btn btn-outline" id="contact_send" >Send</button>
                             </div>
-                        </form>
+                        </div>
 
                         <div class="row socialmedia-content">
                             <div class="col-md-2 ">
@@ -263,7 +263,7 @@ jQuery(function($) {
         return (captcha.n1+captcha.n2 == parseInt($("#captcha_3").val().trim()));
      }
      
-     $("#contact_submit").click(function() {
+     $("#contact_send").click(function() {
         if( ! captcha_validate() ) {
            $("#contact_msg").text("CAPTCHA failed, please try again");
            return;
