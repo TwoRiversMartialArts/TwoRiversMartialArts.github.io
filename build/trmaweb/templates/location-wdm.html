@@ -62,34 +62,7 @@
                 <div class="row">
                     <div class="col-md-12 title">
                         {{ branch_page_intro }}
-                        <!-- CLASSS SCHEDULE -->
-                        <div class="row">
-                            <div class="location-schedule">
-                                <h3>
-                                    <strong>Class Schedule</strong>
-                                </h3>
-                                <ul class="notes">
-                                    <li>
-                                        <div>
-                                            <small>
-                                                <b> Tuesday</b>
-                                            </small>
-                                            <h4> TKD </h4>
-                                            <h5>6:15 PM - 7:15 PM</h5>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <small>
-                                                <b> Thursday</b>
-                                            </small>
-                                            <h4> TKD </h4>
-                                            <h5>6:15 PM - 7:15 PM</h5>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        {{ branch_sched }}
                         <!--begin pricing row-->
                         <div class="row">
                             <section class="pricing py-5">
@@ -99,82 +72,10 @@
                                     </h2>
                                     <!--Beginning pricing row-->
                                     <div class="row location-fees">
-                                        <!-- 1st Family Member -->
-                                        <div class="col-md-3">
-                                            <div class="card mb-5 mb-lg-0">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-muted text-uppercase text-center">Family Of 1</h5>
-                                                    <h6 class="card-price text-center">$20
-                                                        <span class="period">/month</span>
-                                                    </h6>
-                                                    <hr>
-                                                    <ul class="fa-ul">
-                                                        <li>
-                                                            <span class="fa-li"></span>First</li>
-                                                        <li>
-                                                            <span class="fa-li"></span>Family Member</li>
-                                                    </ul>
-                                                    <a href="#" class="btn btn-block btn-primary text-uppercase">Call Us Now!</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 2nd Family Member -->
-                                        <div class="col-md-3">
-                                            <div class="card mb-5 mb-lg-0">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-muted text-uppercase text-center">Family Of 2</h5>
-                                                    <h6 class="card-price text-center">$15
-                                                        <span class="period">/month</span>
-                                                    </h6>
-                                                    <hr>
-                                                    <ul class="fa-ul">
-                                                        <li>
-                                                            <span class="fa-li"></span>Second</li>
-                                                        <li>
-                                                            <span class="fa-li"></span>Family Member</li>
-                                                    </ul>
-                                                    <a href="#" class="btn btn-block btn-primary text-uppercase">Call Us Now!</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 3rd Family Member -->
-                                        <div class="col-md-3">
-                                            <div class="card mb-5 mb-lg-0">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-muted text-uppercase text-center">Family Of 3</h5>
-                                                    <h6 class="card-price text-center">$10
-                                                        <span class="period">/month</span>
-                                                    </h6>
-                                                    <hr>
-                                                    <ul class="fa-ul">
-                                                        <li>
-                                                            <span class="fa-li"></span>Third</li>
-                                                        <li>
-                                                            <span class="fa-li"></span>Family Member</li>
-                                                    </ul>
-                                                    <a href="#" class="btn btn-block btn-primary text-uppercase">Call Us Now!</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- 4th + Family Member -->
-                                        <div class="col-md-3">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <h5 class="card-title text-muted text-uppercase text-center">Family Of 4+</h5>
-                                                    <h6 class="card-price text-center">$5
-                                                        <span class="period">/month</span>
-                                                    </h6>
-                                                    <hr>
-                                                    <ul class="fa-ul">
-                                                        <li>
-                                                            <span class="fa-li"></span>Each Additional</li>
-                                                        <li>
-                                                            <span class="fa-li"></span>Family Member</li>
-                                                    </ul>
-                                                    <a href="#" class="btn btn-primary text-uppercase">Call Us Now!</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        {{ family_price( pricecard, "First","$20" ) }}
+                                        {{ family_price( pricecard, "Second","$15" ) }}
+                                        {{ family_price( pricecard, "Third","$10" ) }}
+                                        {{ family_price( pricecard, "Each additional","$5" ) }}
                                     </div>
                                 </div>
                             </section>

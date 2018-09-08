@@ -94,6 +94,10 @@ html {
   height : 300px 
 }
 
+.notes li div b {
+  font-size : 16pt;
+}
+
 .trma-news h2 {
   margin-top : 1em;
   font-weight : bold;
@@ -2502,7 +2506,7 @@ ul.notes li div {
   color: #000;
   background: #ffc;
   display: block;
-  height: 140px;
+  min-height: 200px;
   width: 140px;
   padding: 1em;
   position: relative;
@@ -2531,7 +2535,7 @@ ul.notes li div {
   color: #000;
   background: #ffc;
   display: block;
-  height: 140px;
+ /* height: 140px; */
   width: 140px;
   padding: 1em;
   /* Firefox */
@@ -2585,7 +2589,7 @@ ul.notes li div {
   color: #000;
   background: #ffc;
   display: block;
-  height: 310px;
+ /* height: 310 px; */
   width: 260px;
   padding: 1em;
   -moz-box-shadow: 5px 5px 7px #212121;

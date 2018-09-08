@@ -61,58 +61,7 @@
                 <div class="row" >
                     <div class="col-md-12 title ">
                         {{ branch_page_intro }}
-                        <!-- CLASSS SCHEDULE -->
-                        <div class="row">
-                            <div class="location-schedule">
-                                <h3>
-                                    <strong>Class Schedule</strong>
-                                </h3>
-                                <ul class="notes">
-                                    <li>
-                                        <div>
-                                            <small>
-                                                <b>Monday</b>
-                                            </small>
-                                            <h4> Little Dragons </h4>
-                                            <h5>6:30 PM - 7:00 PM</h5>
-                                            <br>
-                                            <h4> Beginner TKD </h4>
-                                            <h5>6:00 PM - 7:00 PM</h5>
-                                            <br>
-                                            <h4> Advanced TKD </h4>
-                                            <h5>7:00 PM - 8:00 PM</h5>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <small>
-                                                <b> Wednesday </b>
-                                            </small>
-                                            <h4> Colored Belts </h4>
-                                            <h5>6:00 PM - 7:00 PM</h5>
-                                            <br>
-                                            <h4> Adults </h4>
-                                            <h5>7:00 PM - 8:00 PM</h5>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <small>
-                                                <b>Thursday</b>
-                                            </small>
-                                            <h4> Little Dragons </h4>
-                                            <h5>6:30 PM - 7:00 PM</h5>
-                                            <br>
-                                            <h4> Beginner TKD </h4>
-                                            <h5>6:00 PM - 7:00 PM</h5>
-                                            <br>
-                                            <h4> Advanced TKD </h4>
-                                            <h5>7:00 PM - 8:00 PM</h5>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        {{ branch_sched }}
                         <div class="row location-top-bottom">
                             <div class="container">
                                 <div class="col-md-12">
@@ -130,18 +79,20 @@
                         </div>
                         <!--begin pricing row-->
                         <div class="row">
-                            <div class="container">
-                                <h2>
-                                    <strong>Monthly Class Fees <br><br></strong>
-                                </h2>
-                                <div class="location-bottom">
-                                    <p>
-                                        The Indianola Parks and Rec department runs class registration and collects payments. See the Indianola
-                                        <a href="https://apm.activecommunities.com/cityofindianola/Activity_Search"> activity search page</a>, or the
-                                        <a href="http://www.indianolaiowa.gov/309/Programs-Events">events page</a>. <br>
-                                    </p>
+                            <section class="pricing py-5">
+                                <div class="container">
+                                    <h2>
+                                        <strong>Monthly Class Fees</strong>
+                                    </h2>
+                                    <!--Beginning pricing row-->
+                                    <div class="row location-fees">
+                                        {{ family_price( pricecard, "First","$25" ) }}
+                                        {{ family_price( pricecard, "Second","$15" ) }}
+                                        {{ family_price( pricecard, "Third","$10" ) }}
+                                        {{ family_price( pricecard, "Each additional","$5" ) }}
+                                    </div>
                                 </div>
-                            </div>
+                            </section>
                         </div>
                         <!--end pricing row-->
                         <!--begin Payment Options row-->

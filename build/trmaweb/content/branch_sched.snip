@@ -1,0 +1,23 @@
+                        <!-- CLASS SCHEDULE -->
+                        <div class="row">
+
+                            <div class="location-schedule">
+                                <h3>
+                                    <strong>Class Schedule</strong>
+                                </h3>
+                                <ul class="notes">
+                                   {% for daysched in class_schedule %}
+                                    <li>
+                                        <div>
+                                             <b>{{ daysched['day'] }}</b>
+                                             {% for class,tm in daysched['classes'] %}
+                                               <h4> {{ class }} </h4>
+                                               <h5> {{ tm }} </h5>
+                                               <hr/>
+                                             {% endfor %}
+                                        </div>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>

@@ -49,7 +49,8 @@ def main() :
         # combine the static content with the dynamic
         # content specific to this page
         context = {}
-        context.update(content)
+        context.update(content )
+        context.update( dynamic.get('*',{}) )
         context.update( dynamic.get(fn,{}) )
         prev = ''
         while True : # keep rendering until no changes
