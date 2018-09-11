@@ -1,29 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "layout1.html" %}
 
-<head>
-    <title>Two Rivers Martial Arts - School Locations</title>
-     {{ meta_and_links }}
-</head>
+{% block title %}
+Two Rivers Martial Arts - School Locations
+{% endblock %}
 
-<body>
-    {{ top_area }}
-    {{ navigation_bar }}
-    <!-- Start: Banner Background -->
-    <div class="banner-background">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="banner-content">
-                        <div class="banner-heading">
-                            <h2>Where To Find Us</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End: Banner Background -->
+{% block banner %}
+Where To Find Us
+{% endblock %}
+
+{% block content %}
     <!-- Start: content Section -->
     <div class="instructor-detail">
          <!-- Start: container Section -->
@@ -585,11 +570,10 @@ ph: 319-396-1973</div>
 </div>
 </div>
     <!-- End: content Section -->
+{% endblock %}
 
-    {{ back_to_top }}
-    {{ footer_section }}
 
-    {{ basic_js_libs }}
+{% block morejs %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.js"></script>
 
@@ -621,7 +605,4 @@ $(function() {
     .bindPopup( $('#map_address11').html() );
 });
 </script>
-
-</body>
-
-</html>
+{% endblock %}

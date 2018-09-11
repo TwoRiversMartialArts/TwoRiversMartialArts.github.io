@@ -1,30 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "layout1.html" %}
 
-<head>
-    <title>Two Rivers Martial Arts - Two Rivers Martial Arts - Des Moines, Iowa, Tae Kwon Do, Self Defense
-    </title>
-    {{ meta_and_links }}
-</head>
+{% block title %}
+ Two Rivers Martial Arts -
+ Des Moines, Iowa, Tae Kwon Do, Self Defense, Tai Chi, Kobudo
+{% endblock %}
 
-<body>
-    {{ top_area }}
-    {{ navigation_bar }}
-    <!-- Start: Banner Background -->
-    <div class="banner-background">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="banner-content">
-                        <div class="banner-heading">
-                            <h2>Welcome to Two Rivers Martial Arts</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End: Banner Background -->
+{% block banner %}
+Welcome to Two Rivers Martial Arts
+{% endblock %}
+
+{% block content %}
     <!-- Start: What we offer -->
     <div class="offer-content">
         <div class="container">
@@ -422,59 +407,7 @@
         </div>
     </div>
     <!-- End: Staff Our Masters -->
-{#
-    <!-- Start: Latest News Section -->
-    <div class="testimonial-content alert alert-success">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="heading">
-                        <h2>Latest News</h2>
-                    </div>
-                </div>
-                <div class="wrapper">
-<div>
-MACC Breakathon at Valley West Mall, Sept 15th, 12-2pm.
-TRMA will supply some boards!<br/>
-<a href="https://sites.google.com/a/trma.us/blog/home/2018-macc-breakathon">
-Read more</a>.
-</div>
-<hr/>
-<div>
-Jung's TKD Tournament, Sept. 29th, in Cedar Rapids.<br/>
-<a href="http://www.jungstkd.com/Tournaments.html">Read more</a>.
-</div>
-<hr/>
 
-<div>
-Sun Do Sul Tournament, Oct. 13th, in West Des Moines.<br/>
-<a href="https://www.facebook.com/sundosul/photos/a.702548253285045/935040096702525/?type=3&theater">Read more</a>.
-</div>
-<hr/>
-
-<div>
-Staples Taekwondo Tournament, Oct. 13th, in Davenport.<br/>
-<a href="https://www.facebook.com/Staples-TaeKwonDo-Martial-Arts-Academy-216102855075645/">Read more</a>.
-</div>
-<hr/>
-
-<div>
-Martial Arts America Tournament, Oct. 20th, in Ankeny.<br/>
-<a href="http://www.martialartsamerica.net/content/maa-2018-fall-tkd-tournament">Read more</a>.
-</div>
-<hr/>
-
-<div>
-Sunday Black Belt / Brown Belt class is
-now at 3pm every Sunday.
-</div>
-<hr/>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End: Latest News Section -->
-#}
     <!-- Start: Promo Section -->
     <div class="testimonial-content">
         <div class="container">
@@ -543,10 +476,5 @@ now at 3pm every Sunday.
         </div>
         <!-- End: Testimonial Section -->
 #}
-    {{ back_to_top }}
-    {{ footer_section }}
-    {{ basic_js_libs }}
-    
-</body>
 
-</html>
+{% endblock %}

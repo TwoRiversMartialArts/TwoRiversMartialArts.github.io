@@ -104,6 +104,14 @@ html {
   font-size : 16px;
 }
 
+.trma-inst-anchor {
+  /* vertical-align: middle; */
+  display: block;
+  height: 120px; /*same height as header*/
+  margin-top: -120px; /*same height as header*/
+  visibility: hidden;
+}
+
 @media only screen and (max-width: 767px) {
 p.trma-loc-sched {
  margin-left : 1em;
