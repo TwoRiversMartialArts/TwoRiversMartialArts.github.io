@@ -16,9 +16,12 @@ from six import print_, iteritems
 
 sys.path.append(path.abspath( path.join(path.dirname( __file__ ), '..')))
 
+tmpl = 'templates'
+s_tmpl = len(tmpl)+1
+
 def main() :
     env = Environment(
-            loader=PackageLoader('trmaweb', 'templates')
+            loader=PackageLoader('trmaweb', tmpl)
           )
     content = {}
     dynamic = {}
@@ -39,15 +42,18 @@ def main() :
            for tn, ctx in iteritems(data.get('context',{})) :
                dynamic.setdefault(tn,{}).update(ctx)
 
-    for fn in os.listdir('templates') :
+    for pth in walk(tmpl) :
+        if 'layout' in pth : continue
+
         try :
-            t = env.get_template(fn)
+            t = env.get_template(pth[s_tmpl:])
         except :
-            print_("FAILED: %s" % fn)
+            print_("FAILED: %s" % pth)
             traceback.print_exc()
             continue
         # combine the static content with the dynamic
         # content specific to this page
+        fn = path.basename(pth)        
         context = {}
         context.update(content )
         context.update( dynamic.get('*',{}) )
@@ -60,8 +66,13 @@ def main() :
             prev = page
             t = Template(page)
 
-        with codecs.open(path.join("../../",fn),'w',encoding='utf8') as f :
+        with codecs.open(path.join("../../",pth[s_tmpl:]),'w',encoding='utf8') as f :
             f.write(page)
+
+def walk(pth) :
+    for p,_,fls in os.walk(pth) :
+        for f in fls :
+            yield path.join(p,f)
 
 if __name__ == "__main__" :
     main()
