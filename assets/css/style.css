@@ -1166,8 +1166,8 @@ div.trma-news-scroll {
       left: 20px; }
 
     .our-instructor .instructor figure.snip1390 .profile {
-      width: 100px;
-      height: 100px;
+     /* width: 100px;
+      height: 100px; */
       position: relative;
       border-radius: 50%;
       display: inline-block;
