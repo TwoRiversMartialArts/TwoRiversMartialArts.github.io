@@ -77,8 +77,8 @@ hub.append( { 'day' : 'Saturday',
               ] } )
 hub.append( { 'day' : 'Sunday' ,
   'classes' : [
-      ('Martial Spirit','9:30 AM - 12:00 AM'),
-      ('Tai Chi','12:00 PM - 1:00 PM'),
+      ('Martial Spirit','9:30 AM - 12:00 noon'),
+      ('Tai Chi','12:00 noon - 1:00 PM'),
       ('Kobudo','1:00 PM - 2:00 PM'),
       ('Brown/Black belt class','3:00 PM - 4:30 PM')
     ] })
