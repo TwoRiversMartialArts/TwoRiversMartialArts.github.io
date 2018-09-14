@@ -4,7 +4,7 @@ context = {}
 
 def main() :
     global A, context, addins
-    for br in 'carlisle wdm hub indianola winterset pleasanthill'.split() :
+    for br in 'carlisle wdm hub indianola winterset pleasanthill trma'.split() :
        context.setdefault('location-'+br+'.html',{})['LOCATIONS_active']=A
     for tmp, add in addins.items() :
        context.setdefault(tmp,{}).update(add)
