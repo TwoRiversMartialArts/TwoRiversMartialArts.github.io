@@ -1,0 +1,84 @@
+{% extends "layout1.html" %}
+
+{% block title %}
+ Two Rivers Martial Arts - Awards
+{% endblock %}
+
+{% block banner %}
+Awards
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            {{ about_sidenav }}
+            <div class="col-md-9 weapon">
+                <!--begin right content row-->
+                <div class="left-content title">
+                    <div class="row">
+
+                        <div class="row awards">
+                            <div class="container-fluid">
+                                <div class="col-md-12">
+                                    <div class="heading community-outreach">
+                                        <h3>Two Rivers Martial Arts Grandmaster Award</h3>
+                                    </div>
+                                    <p>
+                                      The Grandmasters of Two Rivers Martial Arts select outstanding
+                                      black belts who exemplify the true essence of volunteerism. This 
+                                      award is given to recognize their time, talents and dedication to 
+                                      Two Rivers. Their contributions include the following areas:  
+                                      teaching, testing, tournaments, training, marketing, recruitment, 
+                                      serving on the board, committee work, self-defense presentations,  
+                                      cleaning, dojang repairs, developing programs, fostering positive 
+                                      relationships in the community, fund-raisers and other duties. 
+                                    </p>
+                                    <div class="row">
+                                    {% for winner,year in gmawards %}
+                                    	<div class="col-md-5 text-center">
+                                    		<div class="card">
+                                        		<div class="name">
+                                                <h4>{{ winner }}</h4>
+                                                <p>{{ year }}</p>
+                                        		</div>
+                                    		</div>
+                                    	</div>
+                                    {% endfor %}
+
+                                    </div>
+                                </div>
+                                <br/><br/>
+                                <div class="col-md-12">
+                                    <div class="heading community-outreach">
+                                        <h3><a href="http://www.jungstkd.com/Black-Belt-Hall-of-Fame.html">
+                                            Jung's Tae Kwon Do Black Belt Hall of Fame
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <p>
+                                      The following Two Rivers Black Belts have been inducted into
+                                      Grandmaster Jung's Hall of Fame.
+                                    </p>
+                                    <div class="row">
+                                    {% for winner,year in bbhof %}
+                                    	<div class="col-md-5 text-center">
+                                    		<div class="card">
+                                        		<div class="name">
+                                                <h4>{{ winner }}</h4>
+                                                <p>{{ year }}</p>
+                                        		</div>
+                                    		</div>
+                                    	</div>
+                                    {% endfor %}                                    
+                                    </div><br/><br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end content area col-->
+        </div>
+        <!--end row-->
+    </div>
+{% endblock %}

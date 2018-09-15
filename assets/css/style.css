@@ -2190,6 +2190,15 @@ a.active:after {
   .sidebar-left {
     margin-bottom: 20px; } }
 
+.awards .card {
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+    border: none;
+    margin : 20px;
+}
+s
+.awards .card .name {
+   margin : 10px;
+}
 .instructor-detail {
   margin: 3em 0; }
 

@@ -10,20 +10,22 @@ def main() :
        context.setdefault(tmp,{}).update(add)
 
 addins = {
- 'startingtkd.html' :
+ 'awards.html': 
+    {'AWARDS_active':A,'ABOUT_active':A},
+ 'startingtkd.html' : 
     { 'ABOUT_active' : A, 'STARTING_active': A },
-'blackbeltlist.html' : 
+ 'blackbeltlist.html' :  
     {'ABOUT_active' : A,'LISTOFBB_active' : A},
-'calendar.html' : 
+ 'calendar.html' :  
     {'CALENDAR_active' : A },
-'community.html' : 
+ 'community.html' :  
     {'ABOUT_active' : A,'OUTREACH_active' : A},
-'competition.html' : 
+ 'competition.html' : 
     {'ABOUT_active' : A,'COMPETITION_active' : A},
-'contact.html' : 
+ 'contact.html' :  
     { 'CONTACT_active' : A },
-'curriculum.html' : 
-    { 'CURRICULUM_active' : A },
+ 'curriculum.html' : 
+    { 'CURRICULUM_active' : A, 'ABOUT_active':A },
 'history-trma.html' : 
     {'ABOUT_active' : A,'ABOUTTRMA_active' : A},
 'index.html' : 
