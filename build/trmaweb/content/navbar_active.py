@@ -52,8 +52,12 @@ addins = {
     { 'MS_active' : A },
 'portfolio.html' : 
     {},
+'resource-dresscode.html' : 
+    { 'RESOURCES_active' : A, 'DRESS_active' : A },
 'resource-tenets.html' : 
     { 'RESOURCES_active' : A, 'TENETS_active' : A },
+'resource-forms.html' : 
+    { 'RESOURCES_active' : A, 'FORMS_active' : A },
 'resource-terminology.html' : 
     { 'RESOURCES_active' : A , 'TERM_active' : A },
 'taichi.html' : 
