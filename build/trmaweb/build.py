@@ -44,7 +44,7 @@ def main() :
 
     for pth in walk(tmpl) :
         if 'layout' in pth : continue
-
+        if not pth.endswith(".html") : continue
         try :
             t = env.get_template(pth[s_tmpl:])
         except :

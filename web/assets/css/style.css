@@ -2773,17 +2773,20 @@ section.pricing {
   height: 150px; 
 }
 
-table.trma-forms {
-border-collapse: collapse;
-}
+div.trma-test-sched div.trma-test-level { padding: .2em; }
 
-table.trma-forms td {
- padding : .5em;
-}
-
-.trma-dresscode,.trma-forms {
-line-height: 1.4em;
-}
+.trma-test-sched { margin-top: 1em; margin-bottom: 1em; }
+.trma-green { background-color: #060; color: white; }
+.trma-black { background-color: black; color: white; }
+.trma-white { border-width: 1px; border-color: black; border-style: solid; }
+.trma-orange { background-color: #f60; }
+.trma-yellow { background-color: #ff0; }
+.trma-blue { background-color: #339; color : white;}
+.trma-brown { background-color: #785200; color: white; }
+.trma-temp {  color: white; background: #000 url(temp-black.gif) repeat-x left -35px; }
+table.trma-forms {border-collapse: collapse;}
+table.trma-forms td { padding : .5em; }
+.trma-dresscode,.trma-forms { line-height: 1.4em; }
 
 span.toplevel {
  text-decoration: underline;

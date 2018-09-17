@@ -1,0 +1,101 @@
+{% extends "layout1.html" %}
+
+{% block title %}
+Two Rivers Martial Arts - Test Schedule
+{% endblock %}
+
+{% block banner %}
+Test Schedule
+{% endblock %}
+
+{% block content %}
+    <!-- Start: sidebar Section -->
+    <div class="container-fluid">
+        <div class="row">
+            {{ resources_sidenav }}
+            <div class="col-md-9 weapon">
+                <!--begin right content row-->
+                <div class="left-content title">
+                    <div class="row trma-dresscode">
+                    <div class="col-md-11">   
+{# PORTED CONTENT HERE #}
+<h3>
+	Test Schedule</h3>
+<br />
+<br />
+Promotion tests are usually scheduled on the first
+Saturday of each even month.
+All tests are held
+at the <a href="location-hub.html">Two Rivers Martial Arts Hub</a>. If 
+you have any questions about your test or times, 
+please contact your instructor. October 6th
+test times have been set as shown below.<br />
+<br />
+<br/>
+{# 
+              ('Higher Dan','Approx. 4:00 pm','trma-black')
+              ,('Temp Black Belt','1:45 pm','trma-temp')
+#}
+{% for color,time,cls in [
+                 ('Green Belts','9:00 am','trma-green'),
+                 ('Black Belt Demo','9:45 am','trma-black'),
+                 ('White Belts','10:15 am','trma-white'),
+                 ('Orange Belts','11:30 am','trma-orange'),
+                 ('Yellow Belts','12:30 pm','trma-yellow'),
+                 ('Blue Belts','1:45 pm','trma-blue'),
+                 ('Brown Belts','2:30 pm','trma-brown'),
+                 ('Higher Dan','Approx. 4:00 pm','trma-black')
+                 ]
+                 %}
+<div class="row trma-test-sched">
+  <div class="col-md-4 trma-test-level {{cls}}">{{color}}</div>
+  <div class="col-md-4">{{time}}</div>
+</div>
+{% endfor %}
+
+<br />
+<br />
+ Make up testing will be held at the Hub location on the Saturday immediately following the test date, at 1:00 pm. 
+<div>
+	<br />
+	<br />
+	<table align="right" border="0" cellpadding="0" cellspacing="0">
+		<tbody>
+			<tr>
+				<td align="left" style="padding-right: 13px;" valign="top">
+					
+
+<div style="width:;height:;">
+
+   <div style="clear: both;"></div>
+</div>
+
+</td>
+				<td align="left" valign="top">
+					
+
+<div style="width:;height:;">
+
+   <div style="clear: both;"></div>
+</div>
+
+</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<br />
+
+<br/><br/>
+
+{# PORTED CONTENT END #}
+                    </div>
+                    </div>
+                </div>
+                <!--end content row-->
+            </div>
+            <!--end content area col-->
+        </div>
+        <!--end row-->
+    </div>
+{% endblock %}
