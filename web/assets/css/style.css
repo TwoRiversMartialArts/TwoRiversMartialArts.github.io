@@ -87,16 +87,12 @@ body {
   padding: 0;
   font-family: "Raleway", sans-serif; }
 
-html {
-  font-family: "Raleway", sans-serif; }
+html { font-family: "Raleway", sans-serif; }
 
-.curriculum .trma-img {
-  height : 300px 
-}
+.curriculum .trma-img { max-height : 310px; height: auto; width: auto; display: block; }
+.curriculum .trma-img-wide { max-height : 250px; height: auto; width: auto; display: block; }
 
-.notes li div b {
-  font-size : 16pt;
-}
+.notes li div b { font-size : 16pt; }
 
 .trma-news h2 {
   margin-top : 1em;
@@ -655,7 +651,7 @@ div.trma-news-scroll {
     position: relative;
     line-height: 22px;
     text-align: left;
-    color: #222; }
+    color: black /* #222; */ }
 
     .offer-level .title img{
       margin: 0 10px 0 0;
@@ -2071,7 +2067,7 @@ div.trma-news-scroll {
 
       .lastest-new .lastest-blog .card-blog-lastest .title p {
         line-height: 22px;
-        color: #76777a;
+        color: black /* #76777a; */
         position: relative;
         font-size: 16px;
         font-weight: 400; }
@@ -2195,7 +2191,7 @@ a.active:after {
     border: none;
     margin : 20px;
 }
-s
+
 .awards .card .name {
    margin : 10px;
 }
@@ -2701,7 +2697,7 @@ section.pricing {
 }
 .weapon .title p{
   line-height: 22px;
-    color: #76777a;
+    color: black; / * #76777a; */
     position: relative;
     font-size: 16px;
     font-weight: 400;
@@ -2775,6 +2771,13 @@ section.pricing {
 
 div.trma-test-sched div.trma-test-level { padding: .2em; }
 
+table.beltTest tr td {
+  height : 30px;
+}
+
+div.trma-belt-page {
+ line-height : 1.2em;
+}
 .trma-test-sched { margin-top: 1em; margin-bottom: 1em; }
 .trma-green { background-color: #060; color: white; }
 .trma-black { background-color: black; color: white; }

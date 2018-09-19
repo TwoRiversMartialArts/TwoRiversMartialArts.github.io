@@ -16,8 +16,8 @@ context = {
         ''',2017),
         ('''Ms. Rochelle Douglass''',2018)
        ],
-       'bbhof' : [ #('Master Eric Heintz',1990),
-                   #('Master Kaye Bair',1992),
+       'bbhof' : [ ('Master Eric Heintz',1990),
+                   ('Master Kaye Bair',1992),
           ('Master Judith Clinton',2011),
           ('Master Marvin Samuelson',2013),
           ('Grandmaster Steve Gonzalez',2013),

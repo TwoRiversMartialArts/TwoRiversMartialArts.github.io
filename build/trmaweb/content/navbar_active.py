@@ -52,6 +52,8 @@ addins = {
     { 'MS_active' : A },
 'portfolio.html' : 
     {},
+'resource-belts.html' :
+	{ 'BELTS_active' : A, 'RESOURCES_active': A },
 'test-schedule.html' : 
     { 'RESOURCES_active' : A, 'TEST_active' : A },
 'resource-dresscode.html' : 
