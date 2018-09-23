@@ -1,29 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "layout1.html" %}
 
-<head>
-    <title>Community Outreach</title>
-    {{ meta_and_links }}
-</head>
+{% block title %}
+ Two Rivers Martial Arts - Community Outreach
+{% endblock %}
 
-<body>
-    {{ top_area }}
-    {{ navigation_bar }}
-    <!-- Start: Banner Background -->
-    <div class="banner-background">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="banner-content">
-                        <div class="banner-heading">
-                            <h2>Community Outreach</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End: Banner Background -->
+{% block banner %}
+Community Outreach
+{% endblock %}
+
+{% block content %}
     <!-- Start: sidebar Section -->
     <div class="container-fluid">
         <div class="row">
@@ -75,11 +60,4 @@
         </div>
         <!--end row-->
     </div>
-    </div>
-    <!-- End: sidebar Section -->
-    {{ back_to_top }}
-    {{ footer_section }}
-    {{ basic_js_libs }}
-</body>
-
-</html>
+{% endblock %}

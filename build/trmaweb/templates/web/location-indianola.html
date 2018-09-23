@@ -1,29 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "layout1.html" %}
 
-<head>
-    <title>Two Rivers Martial Arts - Indianola</title>
-    {{ meta_and_links }}
-</head>
+{% block title %}
+ Two Rivers Martial Arts - Indianola
+{% endblock %}
 
-<body>
-    {{ top_area }}
-    {{ navigation_bar }}
-    <!-- Start: Banner Background -->
-    <div class="banner-background">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="banner-content">
-                        <div class="banner-heading">
-                            <h2>Branch Location: Indianola</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End: Banner Background -->
+{% block banner %}
+Branch Location: Indianola
+{% endblock %}
+
+{% block content %}
     <!-- Start: Carousel Section -->
     <div class="container-fluid weapon">
         <div class="row">
@@ -66,13 +51,13 @@
                             <div class="container">
                                 <div class="col-md-12">
                                     <p>
-                                        <img src="assets/images/instructors/indianola/LittleDragon01.png" alt="Little Dragon" class="img-responsive img-thumbnail float-left location-littledragon"> A new class for 4 through 6 year olds is offered each two month session starting
-                                        on October 12th, 2015. This is a specialized class tailored for children. Students
+                                        <img src="assets/images/instructors/indianola/LittleDragon01.png" alt="Little Dragon" class="img-responsive img-thumbnail float-left location-littledragon">
+                                        A class for 4 through 6 year olds is offered each two month session. 
+                                        This is a specialized class tailored for children. Students
                                         will learn respect, gain strength, coordination, concentration, self-confidence,
                                         and increase attention span. Use the
-                                        <a href="#">contact information</a>
-                                        below to request more information. See the announcement
-                                        <a href="http://announce.trma.us/home/LittleDragons">here</a>.
+                                        <a href="#contact">contact information</a>
+                                        below to request more information.
                                     </p>
                                 </div>
                             </div>
@@ -152,10 +137,6 @@
                                 <div class="alert alert-warning">
                                     <p>
                                         <i class="fa fa-map-marker"></i>
-                                        Indianola Parks & Recreation
-                                        <br> 2204 West 2nd Street
-                                        <br> Indianola, Iowa 50125
-                                        <br>
                                         <br> All classes are held at:
                                         <br> 1801 W 2nd
                                         <br> Indianola, IA 50125
@@ -163,7 +144,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4">{{ make_anchor("contact") }}
                                 <h3>
                                     <strong>For more information</strong>
                                 </h3>
@@ -197,16 +178,5 @@
         </div>
         <!-- End: content row -->
     </div>
-    <!-- End: Container fluid -->
-
-    <!-- Start of New code -->
-
-    <!-- End of New code -->
-    {{ back_to_top }}
-    {{ footer_section }}
-
-    {{ basic_js_libs }}
-    {{ branch_map }}
-</body>
-
-</html>
+{% endblock %}
+{% block morejs %} {{ branch_map }} {% endblock %}
