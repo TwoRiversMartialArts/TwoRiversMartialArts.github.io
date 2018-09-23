@@ -7,14 +7,14 @@ context = {
         Ms. Cindy Lerch<br/>
         Ms. Alex Lerch<br/>
         Mr. Max Lerch
-        ''',2017),
-        ('''Ms. Jennifer Bailey <br/>Mr. Kendall Bailey''',2017),
+        ''','May 2017'),
+        ('''Ms. Jennifer Bailey <br/>Mr. Kendall Bailey''','August 2017'),
         ('''Ms. Vickie Hornback<br/>
             Mr. John Hornback<br/>
             Mr. Daniel Hornback<br/>
             Ms. Jasmine Hornback
-        ''',2017),
-        ('''Ms. Rochelle Douglass''',2018)
+        ''','December 2017'),
+        ('''Ms. Rochelle Douglass''','April 2018')
        ],
        'bbhof' : [ ('Master Eric Heintz',1990),
                    ('Master Kaye Bair',1992),

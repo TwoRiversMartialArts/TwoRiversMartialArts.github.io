@@ -22,6 +22,8 @@ addins = {
     {'ABOUT_active' : A,'OUTREACH_active' : A},
  'competition.html' : 
     {'ABOUT_active' : A,'COMPETITION_active' : A},
+ 'testimonials.html' : 
+    {'ABOUT_active' : A,'TESTIMONIALS_active' : A},
  'contact.html' :  
     { 'CONTACT_active' : A },
  'curriculum.html' : 
@@ -51,7 +53,11 @@ addins = {
 'martial-spirit.html' : 
     { 'MS_active' : A },
 'portfolio.html' : 
-    {},
+    {'GALLERY_active':A},
+'resource-photos.html' :
+	{ 'PICS_active' : A, 'RESOURCES_active': A },
+'resource-videos.html' :
+	{ 'VIDARCHS_active' : A, 'RESOURCES_active': A },
 'resource-belts.html' :
 	{ 'BELTS_active' : A, 'RESOURCES_active': A },
 'test-schedule.html' : 

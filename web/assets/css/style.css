@@ -2192,6 +2192,10 @@ a.active:after {
     margin : 20px;
 }
 
+.awards .card .date {
+    font-style : italic;
+}
+
 .awards .card .name {
    margin : 10px;
 }
@@ -2819,6 +2823,20 @@ span.toplevel {
   margin:0 0 10px 0;
 }
 
+.testimonial p {
+  margin: 1em;
+}
+.testimonials .attribution {
+	text-align: center;
+	font-style: italic;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+.testimonials div.card {
+	margin-bottom:1.5em;
+	box-shadow : 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+}
 /* community outreach */
 .community-outreach{
   margin:10px 0 10px 0;

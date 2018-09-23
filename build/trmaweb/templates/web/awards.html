@@ -34,12 +34,12 @@ Awards
                                       relationships in the community, fund-raisers and other duties. 
                                     </p>
                                     <div class="row">
-                                    {% for winner,year in gmawards %}
+                                    {% for winner,date in gmawards %}
                                     	<div class="col-md-5 text-center">
                                     		<div class="card">
                                         		<div class="name">
                                                 <h4>{{ winner }}</h4>
-                                                <p>{{ year }}</p>
+                                                <p class="date">{{ date }}</p>
                                         		</div>
                                     		</div>
                                     	</div>
@@ -66,7 +66,7 @@ Awards
                                     		<div class="card">
                                         		<div class="name">
                                                 <h4>{{ winner }}</h4>
-                                                <p>{{ year }}</p>
+                                                <p class="date">{{ year }}</p>
                                         		</div>
                                     		</div>
                                     	</div>

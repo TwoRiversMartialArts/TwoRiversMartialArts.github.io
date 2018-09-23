@@ -1,27 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "layout1.html" %}
 
-<head>
-    <title>Two Rivers Martial Arts - A Brief History</title>
-    {{ meta_and_links }}
-</head>
-<body>
-    {{ top_area }}
-    {{ navigation_bar }}
-    <!-- Start: Banner Background -->
-    <div class="banner-background">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="banner-content">
-                        <div class="banner-heading">
-                            <h2>Origins of Two Rivers</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+{% block title %}
+Two Rivers Martial Arts - A Brief History
+{% endblock %}
+
+{% block banner %}
+Origins of Two Rivers
+{% endblock %}
+
+{% block content %}
     <!-- End: Banner Background -->
     <!-- Start: content Section -->
     <div class="container-fluid">
@@ -243,7 +230,7 @@
                                         <br>
                                     </p>
                                 </div>
-{#
+
                                 <div class="col-9 col-sm-9 col-md-12">
                                     <div class="col-md-6 alert alert-info">
                                         <div class="heading" style="margin:10px 0 0 0">
@@ -254,25 +241,21 @@
                                         <p style="margin: 20px 0 0 0">
                                             <ul style="list-style-type: none;">
                                                 <li>
-                                                    <a href=""> History of Tae Kwon Do</a>
+                                                    <a href={{linkto("history-tkd.html")}}> History of Tae Kwon Do</a>
+                                                </li>
+                                                <br>                                   
+                                                <li>
+                                                    <a href={{linkto("hold-the-mayo.html")}}> Hold The Mayo (Clinic)</a>
                                                 </li>
                                                 <br>
                                                 <li>
-                                                    <a href=""> Hold The Mayo (Clinic)</a>
+                                                    <a href={{linkto("torts-to-tkd.html")}}> Torts To Tae Kwon Do</a>
                                                 </li>
                                                 <br>
-                                                <li>
-                                                    <a href=""> Torts To Tae Kwon Do</a>
-                                                </li>
-                                                <br>
-                                                <li>
-                                                    <a href="tkdt-bbyg.html"> Mixing it up in the Dojang</a>
-                                                </li>
                                             </ul>
                                         </p>
                                     </div>
                                 </div>
-#}
                             </div>
                         </div>
                     </div>
@@ -284,11 +267,4 @@
             <!--end row-->
         </div>
     </div>
-    <!-- End: content Section -->
-    {{ back_to_top }}
-    {{ footer_section }}
-
-    {{ basic_js_libs }}
-</body>
-
-</html>
+{% endblock %}
