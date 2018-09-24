@@ -710,8 +710,8 @@ div.trma-news-scroll {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 20em;
-  margin-bottom: 4em;
+  height: 22em;
+  margin-bottom: 2em;
   position: relative;
   display: -webkit-flex;
   display: -ms-flex;
@@ -725,8 +725,8 @@ div.trma-news-scroll {
     content: '';
     position: absolute;
     top: 0;
-    height: 20em;
-    background-color: rgba(0, 0, 0, 0.5);
+    height: 22em;
+    background-color: rgba(0, 0, 0, 0.35);
     width: 100%; }
 
   .parallax-banner .heading {
@@ -1623,7 +1623,7 @@ div.trma-news-scroll {
 
   .banner-background::before {
     content: '';
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.35);
     position: absolute;
     top: 0;
     width: 100%;
