@@ -2196,6 +2196,31 @@ a.active:after {
     font-style : italic;
 }
 
+.paypal-code td {
+ padding : 2px;
+}
+
+.paypal-viewcart {
+ margin : 1.5em;
+}
+
+div.paypal-button {
+   padding : 5px;
+   border-style: groove;
+   border-width : 1px;
+   border-color: black;
+   border-radius: 5px;
+   margin: 3px;
+}
+
+div.paypal-button h3 {
+   text-decoration: underline;
+   margin-bottom: 1em;
+}
+
+.paypal-button input,td {
+   margin: 10px;
+}
 .awards .card .name {
    margin : 10px;
 }
