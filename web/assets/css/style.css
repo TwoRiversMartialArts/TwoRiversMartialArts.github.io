@@ -2200,8 +2200,10 @@ a.active:after {
  padding : 2px;
 }
 
-.paypal-viewcart {
- margin : 1.5em;
+.paypal-viewcart form {
+ margin-top: 4em;
+ margin-left: 1em;
+
 }
 
 div.paypal-button {

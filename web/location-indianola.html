@@ -519,12 +519,49 @@ Branch Location: Indianola
                            <br/>
                            <h3><strong>Use these buttons to pay with Paypal or credit/debit card:</strong></h3>
                            <br/>
+                           <p>Select the items you wish to pay for, and on the shopping cart page, you
+                           can select a quantity for each.  Signing up for a subscription requires a
+                           Paypal account, to manage the subscription, and will charge the same fees
+                           on a monthly basis.  If you don't have a Paypal account, you can create
+                           one during the checkout process.</p><br/>
+                           <p>At any time, you can use the "view cart" button to see your shopping cart:</p><br/>
+                           <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+                           <input type="hidden" name="cmd" value="_s-xclick">
+                           <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+                           <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                           <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                           </form>
+                           <br/>
                            <br/>
                          </div>
                         </div>
                         <div class="row">
+                          <!-- Subscribe BUTTON -->
+                           <div class="col-md-5 paypal-button">
+                           <h3>Monthly Class Fee Subscription (Indianola)</h3>
+                           <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                           <input type="hidden" name="cmd" value="_s-xclick">
+                           <input type="hidden" name="hosted_button_id" value="7JGZT8DSW65F8">
+                           <table>
+                           <tr><td><input type="hidden" name="on0" value="Family size">Family size</td></tr><tr><td><select name="os0">
+                           	<option value="Single">Single : $25.00 USD - monthly</option>
+                           	<option value="Two family members">Two family members : $40.00 USD - monthly</option>
+                           	<option value="Three family members">Three family members : $50.00 USD - monthly</option>
+                           	<option value="Four family members">Four family members : $55.00 USD - monthly</option>
+                           	<option value="Five family members">Five family members : $60.00 USD - monthly</option>
+                           </select> </td></tr><tr><td>&nbsp;</td></tr>
+                           <tr><td><input type="hidden" name="on1" value="Student name(s)">Student name(s)</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+                           </table>
+                           <input type="hidden" name="currency_code" value="USD">
+                           <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribe_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                           <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                           </form>
+
+                           </div>
+                         <!-- Class fee BUTTON -->
                          <div class="col-md-4 paypal-button">
-                           <h3>Monthly Class Fees (Indianola)</h3>
+                           <h3>One Time Monthly Class Fees (Indianola)</h3>
                            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
                            <input type="hidden" name="cmd" value="_s-xclick">
                            <input type="hidden" name="hosted_button_id" value="NVPR56ELLRKB2">
@@ -551,6 +588,7 @@ Branch Location: Indianola
                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                            </form>
                            </div>
+                           <!-- Uniform BUTTON -->
                            <div class="col-md-4 paypal-button">
                            <h3>Uniform and patch (Indianola)</h3>
                            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -567,12 +605,11 @@ Branch Location: Indianola
                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                            </form>
-
-
                            </div>
-                        </div>
-                        <div class="row paypal-code">
-                           <div class="col-md-4 paypal-viewcart">
+                         
+                       <!-- </div> -->
+                      <!--  <div class="row paypal-code"> 
+                           <div class="col-md-2 paypal-viewcart paypal-button">
                            <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
                            <input type="hidden" name="cmd" value="_s-xclick">
                            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
@@ -580,12 +617,14 @@ Branch Location: Indianola
                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
                            </form>
-                           </div>
-                        </div> 
+                           </div> -->
+                       </div>
                         
                         <!-- end paypal-buttons -->
 
                         <!--begin Testing, Promotion, and Test Fees row-->
+                        <br/>
+                        <br/>
                         <div class="row">
                         <div class="container">
                                 <h2>
