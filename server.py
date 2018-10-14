@@ -11,7 +11,7 @@ import SimpleHTTPServer
 import select
 import copy
 
-PORT = 8000
+PORT = 8001
 
 class CGIHTTPRequestHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
 
