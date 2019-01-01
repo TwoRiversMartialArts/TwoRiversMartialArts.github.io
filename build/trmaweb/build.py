@@ -8,7 +8,7 @@ template name so it applies only to that page.
 
 @author Kendall Bailey
 '''
-import sys
+import sys, pdb
 from jinja2 import Environment, PackageLoader, Template
 import os, codecs, pprint, traceback, six
 from os import path
@@ -31,9 +31,13 @@ def main() :
     for fn in os.listdir('content') :
         fnp = path.join('content',fn)
         if not path.isfile(fnp) : continue
+        if fnp.endswith("swp") : continue
 
         with codecs.open(fnp,encoding='utf8') as f :
-           txt = f.read()
+           try :
+               txt = f.read()
+           except :
+               pdb.set_trace()
         if fn.endswith(".snip") :
            content[fn[:-5]] = txt
         elif fn.endswith(".py") :

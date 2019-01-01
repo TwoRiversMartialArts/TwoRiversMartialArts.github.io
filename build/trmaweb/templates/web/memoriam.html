@@ -1,0 +1,53 @@
+{% extends "layout1.html" %}
+
+{% block title %}
+ Two Rivers Martial Arts - In Memoriam 
+{% endblock %}
+
+{% block banner %}
+In Memoriams
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            {{ about_sidenav }}
+            <div class="col-md-9 weapon">
+                <!--begin right content row-->
+                <div class="left-content title">
+                    <div class="row">
+
+                        <div class="row testimonials">
+                            <div class="container-fluid">
+                                <div class="col-md-12">
+                                    <div class="heading community-outreach">
+                                        <h3>In Memoriams</h3>
+                                    </div>
+                                   
+                                    <div class="row">
+                                    {% for txt,dt in memoriams %}
+                                    	<div class="col-md-12">
+                                    		<div class="card">
+                                       		<div class="name">
+                                                <div class="testimonial">
+                                                  {{txt}}
+                                                </div>
+                                                <div class="attribution">
+                                                   {{ dt }}
+                                                </div>
+                                      	 	</div>
+                                    		</div>
+                                    	</div>
+                                    {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end content area col-->
+        </div>
+        <!--end row-->
+    </div>
+{% endblock %}

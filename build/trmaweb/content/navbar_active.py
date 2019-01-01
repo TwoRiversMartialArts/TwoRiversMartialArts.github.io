@@ -28,6 +28,8 @@ addins = {
     { 'CONTACT_active' : A },
  'curriculum.html' : 
     { 'CURRICULUM_active' : A, 'ABOUT_active':A },
+ 'memoriam.html' : 
+    { 'MEMORIAM_active' : A, 'ABOUT_active':A },
 'history-trma.html' : 
     {'ABOUT_active' : A,'ABOUTTRMA_active' : A},
 'index.html' : 
