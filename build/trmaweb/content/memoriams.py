@@ -16,5 +16,7 @@ context = {
           </p>
           <div style="clear:both"></div>
         ''',
-        '2018')
+        '''<a href="https://www.legacy.com/obituaries/desmoinesregister/obituary.aspx?n=marvin-samuelson&pid=190873832&fhid=17489">
+           November 29th, 2018
+        ''')
 ]}}
