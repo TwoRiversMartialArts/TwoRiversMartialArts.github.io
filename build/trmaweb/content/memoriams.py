@@ -22,7 +22,7 @@ context = {
         '''),
         (
         '''
-        <p>Mr. Richard Miles</p>
+        <p>Mr. Richard Miles began training in 1996 and earned his 1st Dan black belt in 2006.</p>
         '''
         ,
         '''<a href="https://www.legacy.com/obituaries/desmoinesregister/obituary.aspx?n=richard-j-miles&pid=174263675">

@@ -117,6 +117,7 @@ p.trma-loc-sched {
 div.trma-news-scroll {
   max-height : 600px;
   overflow : auto;
+  line-height : 1.2;
 }
 
 .top-area {

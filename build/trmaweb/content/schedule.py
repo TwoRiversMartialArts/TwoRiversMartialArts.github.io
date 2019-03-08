@@ -40,14 +40,14 @@ context = {
  'location-indianola.html' : {
     'class_schedule' : [
        { 'day' : 'Monday',
-         'classes' : [( 'Little Dragons','6:30 PM - 7:00 PM'),
+         'classes' : [( 'Little Dragons','5:30 PM - 6:00 PM'),
                       ( 'Beginner TKD','6:00 PM - 7:00 PM'),
                       ( 'Advanced TKD','7:00 PM - 8:00 PM')]},
        { 'day' : 'Wednesday',
          'classes' : [( 'Colored Belts', '6:00 PM - 7:00 PM'),
                       ( 'Adults', '7:00 PM - 8:00 PM')]},
        { 'day' : 'Thursday',
-         'classes' : [( 'Little Dragons','6:30 PM - 7:00 PM'),
+         'classes' : [( 'Little Dragons','5:30 PM - 6:00 PM'),
                       ( 'Beginner TKD','6:00 PM - 7:00 PM'),
                       ( 'Advanced TKD','7:00 PM - 8:00 PM')]}
       ]
