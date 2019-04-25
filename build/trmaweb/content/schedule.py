@@ -1,6 +1,15 @@
 
 context = {
 
+ 'location-waukee.html' : {
+    'class_schedule' : [
+       { 'day' : 'Tuesday',
+         'classes' : [( 'TKD','6:30 PM - 7:30 PM')]},
+       { 'day' : 'Thursday',
+         'classes' : [( 'TKD', '6:30 PM - 7:30 PM')]}
+      ]
+   },
+
  'location-wdm.html' : {
     'class_schedule' : [
        { 'day' : 'Tuesday',
@@ -31,9 +40,9 @@ context = {
  'location-pleasanthill.html' : {
     'class_schedule' : [
        { 'day' : 'Tuesday',
-         'classes' : [( 'TKD','6:30 PM - 7:30 PM')]},
+         'classes' : [( 'TKD','6:15 PM - 7:30 PM')]},
        { 'day' : 'Thursday',
-         'classes' : [( 'TKD', '6:15 PM - 7:15 PM')]}
+         'classes' : [( 'TKD', '6:15 PM - 7:30 PM')]}
       ]
    },
 

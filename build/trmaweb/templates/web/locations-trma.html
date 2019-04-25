@@ -395,6 +395,55 @@ Where To Find Us
                     </div>
                     <hr class="divider">
 
+                    <!-- Begin Row 1 Waukee -->
+                    <div class="row location-trma">
+                        <div class="col-md-4 title">
+                            <h3>
+                                <strong>
+                                    <a href="location-waukee.html">Waukee Branch</a></strong>
+                            </h3>
+                            <div class="alert alert-warning">
+                                <p>
+                                    <i class="fa fa-map-marker"></i>
+                                    Westview Church
+                                    <br> 1155 SE Boone Dr 
+                                    <br> Waukee, Iowa 50263
+                                    <br>
+                                    <br> [<a href="http://maps.google.com/maps?saddr=&daddr=1155 SE Boone Dr, Waukee, Iowa">directions</a>]
+                                    <br/><br/>
+                                </p>
+                                <p>
+                                    <span class="location-contact-more-info">
+                                        <i class="fa fa-envelope"></i>
+                                        <a href="mailto:waukee@tworiversmartialarts.com">waukee@tworiversmartialarts.com</a>
+                                        <br/>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 title">
+                            <h3>
+                                <strong>Instructors</strong>
+                            </h3>
+                            <p>
+                                Mr. Robert Dale
+                                <br>Mr. Tony Ochiche
+                                <br>
+                            </p>
+                        </div>
+                        <div class="col-md-4 title">
+                            <h3>
+                              <p class="trma-loc-sched"><strong>Schedule</strong></p>
+                            </h3>
+                            <p class="trma-loc-sched">
+                                <strong>TKD</strong>: Tue. and Thu.
+                                <br>6:30-7:30 PM
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                    <hr class="divider">
+
                     <!-- Begin Row 1 West Des Moines Branch-->
                     <div class="row location-trma">
                         <div class="col-md-4 title">
@@ -429,9 +478,7 @@ Where To Find Us
                             </h3>
                             <p>
                                 Ms. Jennifer Bailey
-                                <br>Mr. Robert Dale
                                 <br>Mr. Kendall Bailey
-                                <br>Mr. Tony Ochiche
                                 <br>
                             </p>
                         </div>
@@ -517,9 +564,17 @@ Indianola, Iowa 50125</div>
 <div id="map_address5" class="GmapMarker">
   <div id="map_address5_title" class="MarkerTitle">West Des Moines Branch</div>
   <div id="map_address5_descr" class="MarkerDescr">West Des Moines United Methodist Church<br>8th St. & Grand Av.<br>West Des Moines, Iowa</div>
-  <div id="map_address5_link" class="MarkerDirectionsLink">Directions: <a href="http://www.google.com/maps?daddr=41.582703,-93.711942&iwstate1=dir:to&z=7" target="_blank" >To Here</a> - <a href="http://www.google.com/maps?saddr=41.582703,-93.711942&iwstate1=dir:from&z=7" target="_blank">From Here</a></div>
+  <div id="map_address5_link" class="MarkerDirectionsLink">Directions:
+      <a href="http://www.google.com/maps?daddr=41.582703,-93.711942&iwstate1=dir:to&z=7" target="_blank" >To Here</a> -
+      <a href="http://www.google.com/maps?saddr=41.582703,-93.711942&iwstate1=dir:from&z=7" target="_blank">From Here</a></div>
 </div>
-
+<div id="map_address3" class="GmapMarker">
+  <div id="map_address3_title" class="MarkerTitle">Waukee Branch</div>
+  <div id="map_address3_descr" class="MarkerDescr">Westview Church<br>1155 SE Boone Dr<br>Waukee, Iowa, 50263</div>
+  <div id="map_address3_link" class="MarkerDirectionsLink">Directions: 
+      <a href="http://www.google.com/maps?daddr=41.601793,-93.831828&iwstate1=dir:to&z=7" target="_blank" >To Here</a> -
+      <a href="http://www.google.com/maps?saddr=41.601793,-93.831828&iwstate1=dir:from&z=7" target="_blank">From Here</a></div>
+</div> 
 <div id="map_address6" class="GmapMarker">
   <div id="map_address6_title" class="MarkerTitle">Winterset Branch</div>
   <div id="map_address6_descr" class="MarkerDescr">Winterset Elementary<br>Winterset, Iowa 50273</div>
@@ -584,6 +639,8 @@ $(function() {
    var jung = L.icon({ iconUrl : 'assets/images/JUNG-GMap.png',iconAnchor:[10,23]});
    L.marker([41.355373,-93.583986],{icon:trma}).addTo(map)
     .bindPopup( $('#map_address2').html() );
+   L.marker([41.601793,-93.831828],{icon:trma}).addTo(map)
+    .bindPopup( $('#map_address3').html() ); 
    L.marker([41.5823,-93.7125],{icon:trma}).addTo(map)
     .bindPopup( $('#map_address5').html() ); 
    L.marker([41.331803,-94.015775],{icon:trma}).addTo(map)

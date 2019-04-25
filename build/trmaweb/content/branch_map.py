@@ -8,6 +8,8 @@ context = {
     {'LATLNG':'41.355373,-93.583986','BRANCHNAME':'Indianola'},
 'location-pleasanthill.html' : 
     {'LATLNG':'41.601833,-93.504325','BRANCHNAME':'Pleasant Hill'},
+'location-waukee.html' : 
+    {'LATLNG':'41.601793,-93.831828','BRANCHNAME':'Waukee'},
 'location-wdm.html' : 
     {'LATLNG':'41.5823,-93.7125','BRANCHNAME':'West Des Moines'},
 'location-winterset.html' : 
