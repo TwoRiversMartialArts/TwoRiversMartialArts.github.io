@@ -50,6 +50,8 @@ addins = {
     {'TRMALOC_active':A, 'LOCATIONS_active':A},
 'location-wdm.html' : 
     {'WDM_active':A},
+'location-waukee.html' : 
+    {'WAUKEE_active':A},
 'location-winterset.html' : 
     {'WINTERSET_active':A},
 'martial-spirit.html' : 
