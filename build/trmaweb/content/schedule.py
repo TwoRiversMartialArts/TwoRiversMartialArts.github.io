@@ -49,14 +49,17 @@ context = {
  'location-indianola.html' : {
     'class_schedule' : [
        { 'day' : 'Monday',
-         'classes' : [( 'Little Dragons','5:30 PM - 6:00 PM'),
+         'classes' : [
+                      #( 'Little Dragons','5:30 PM - 6:00 PM'),
                       ( 'Beginner TKD','6:00 PM - 7:00 PM'),
                       ( 'Advanced TKD','7:00 PM - 8:00 PM')]},
        { 'day' : 'Wednesday',
-         'classes' : [( 'Colored Belts', '6:00 PM - 7:00 PM'),
-                      ( 'Adults', '7:00 PM - 8:00 PM')]},
+         'classes' : [( 'Colored Belts', '6:00 PM - 7:00 PM')
+                      #,( 'Adults', '7:00 PM - 8:00 PM')
+                     ]},
        { 'day' : 'Thursday',
-         'classes' : [( 'Little Dragons','5:30 PM - 6:00 PM'),
+         'classes' : [ 
+                      #( 'Little Dragons','5:30 PM - 6:00 PM'),
                       ( 'Beginner TKD','6:00 PM - 7:00 PM'),
                       ( 'Advanced TKD','7:00 PM - 8:00 PM')]}
       ]
@@ -78,8 +81,7 @@ hub.append( { 'day' : 'Friday',
   'classes' : [('Brown/Black belt class',
                 '6:00 PM - 7:30 PM')] } )
 hub.append( { 'day' : 'Saturday',
-  'classes' : [ ('Adult/Family TKD*','10:00 AM - 11:00 AM'),
-                ('TKD','11:15 AM - 12:15 PM'),
+  'classes' : [ ('TKD','10:30 AM - 11:30 AM'),
                 ('Black Belt Youth Group',
                  '1:00 PM or 3:00 PM on 2<sup>nd</sup> '
                  'Saturday of each month***') 
