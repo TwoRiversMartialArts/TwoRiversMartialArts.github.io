@@ -26,7 +26,8 @@ context = {
           ('Grandmaster Brett McBroom',2015),
           ('Master Dwayne Ferguson',2016),
           ('Master Anita Williams',2017),
-          ('Master Roger Netsch',2018)         
+          ('Master Roger Netsch',2018),
+          ('Master Bryan Siever',2019)         
        ]
     }
 }
