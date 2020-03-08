@@ -12,10 +12,16 @@ context = {
 
  'location-wdm.html' : {
     'class_schedule' : [
+       { 'day' : 'Monday',
+         'classes' : [( 'TKD','6:15 PM - 7:15 PM')]},
        { 'day' : 'Tuesday',
          'classes' : [( 'TKD','6:15 PM - 7:15 PM')]},
+       { 'day' : 'Wednesday',
+         'classes' : [( 'TKD','6:15 PM - 7:15 PM')]},
        { 'day' : 'Thursday',
-         'classes' : [( 'TKD', '6:15 PM - 7:15 PM')]}
+         'classes' : [( 'TKD', '6:15 PM - 7:15 PM')]},
+       { 'day' : 'Saturday',
+         'classes' : [( 'TKD', '10:30 AM - 11:30 AM')]}
       ]
    },
 
