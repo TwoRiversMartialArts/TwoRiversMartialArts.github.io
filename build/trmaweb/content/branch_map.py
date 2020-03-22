@@ -11,7 +11,7 @@ context = {
 'location-waukee.html' : 
     {'LATLNG':'41.601793,-93.831828','BRANCHNAME':'Waukee'},
 'location-wdm.html' : 
-    {'LATLNG':'41.581512, -93.712401','BRANCHNAME':'West Des Moines'},
+    {'LATLNG':'41.602414, -93.740185','BRANCHNAME':'West Des Moines/Clive'},
 'location-winterset.html' : 
     {'LATLNG':'41.331803,-94.015775','BRANCHNAME':'Winterset'},
 }
