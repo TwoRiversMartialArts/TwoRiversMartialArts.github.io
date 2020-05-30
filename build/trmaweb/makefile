@@ -8,3 +8,9 @@ up: site
 site:
 	python build.py
 
+test: site serve
+
+serve:
+	( cd ../../ ; python server.py )
+
+

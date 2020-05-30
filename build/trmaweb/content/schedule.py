@@ -1,4 +1,6 @@
 
+wdm_reopen = [('TKD','5:45 PM - 6:30 PM'),
+              ('TKD','6:45 PM - 7:30 PM')]
 context = {
 
  'location-waukee.html' : {
@@ -13,17 +15,16 @@ context = {
  'location-wdm.html' : {
     'class_schedule' : [
        { 'day' : 'Monday',
-         'classes' : [( 'TKD','6:15 PM - 7:15 PM')]},
+         'classes' : wdm_reopen}, #[( 'TKD','6:15 PM - 7:15 PM')]},
        { 'day' : 'Tuesday',
-         'classes' : [( 'TKD','6:15 PM - 7:15 PM')]},
+         'classes' : wdm_reopen}, #[( 'TKD','6:15 PM - 7:15 PM')]},
        { 'day' : 'Wednesday',
-         'classes' : [( 'TKD','6:15 PM - 7:15 PM')]},
+         'classes' : wdm_reopen}, #[( 'TKD','6:15 PM - 7:15 PM')]},
        { 'day' : 'Thursday',
-         'classes' : [( 'TKD', '6:15 PM - 7:15 PM')]},
+         'classes' : wdm_reopen}, #[( 'TKD', '6:15 PM - 7:15 PM')]},
        { 'day' : 'Saturday',
-         'classes' : [( 'TKD', '10:30 AM - 11:30 AM')]}
-      ]
-   },
+         'classes' : [( 'TKD*', '10:00 AM - 11:15 AM')]}
+      ] },
 
  'location-carlisle.html' : {
     'class_schedule' : [
@@ -65,7 +66,7 @@ context = {
                      ]},
        { 'day' : 'Thursday',
          'classes' : [ 
-                      ( 'Little Dragons','5:00 PM - 5:30 PM'),
+                    #  ( 'Little Dragons','5:00 PM - 5:30 PM'),
                       ( 'Beginner TKD','6:00 PM - 7:00 PM'),
                       ( 'Advanced TKD','7:00 PM - 8:00 PM')]}
       ]
@@ -87,7 +88,7 @@ hub.append( { 'day' : 'Friday',
   'classes' : [('Brown/Black belt class',
                 '6:00 PM - 7:30 PM')] } )
 hub.append( { 'day' : 'Saturday',
-  'classes' : [ ('TKD','10:30 AM - 11:30 AM'),
+  'classes' : [ ('TKD**','10:30 AM - 11:30 AM'),
                 ('Black Belt Youth Group',
                  '1:00 PM or 3:00 PM on 2<sup>nd</sup> '
                  'Saturday of each month***') 

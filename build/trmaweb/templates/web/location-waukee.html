@@ -12,6 +12,7 @@ Branch Location: Waukee
 
     <!-- Start: Carousel Section -->
     <div class="container-fluid weapon">
+        {{ RE_OPEN }}
         <div class="row">
             {{loc_sidenav}}
             <!--begin content area col-->
@@ -71,6 +72,80 @@ Branch Location: Waukee
                         {{ payoptions }}
                         </div>
                         <!--end Payment Options row-->
+
+                        <div class="row paypal-code">{{ make_anchor("paybuttons") }}
+                         <div class="col-md-12">
+                           <br/>
+                           <h3><strong>Use these buttons to pay with Paypal or credit/debit card:</strong></h3>
+                           <br/>
+                           <p>Select the items you wish to pay for, and on the shopping cart page, you
+                           can select a quantity for each.  For class fees, The quantity
+                           value determines the number of months
+                           you'd like to pay for.  If paying for one session at a time, set the quantity value to
+                           2.  You can pay for as many months as you like.
+                           </p><br/><p>Signing up for a subscription requires a
+                           Paypal account, to manage the subscription, and will charge the same fees
+                           on a monthly basis.  If you don't have a Paypal account, you can create
+                           one during the checkout process.</p><br/>
+                           <p>At any time, you can use the "view cart" button to see your shopping cart:</p><br/>
+
+                           {{ VIEW_CART }}
+
+                           <br/>
+                           <br/>
+                         </div>
+                        </div>
+                        <div class="row">
+                          <!-- Subscribe BUTTON -->
+                           <div class="col-md-5 paypal-button">
+                           <h3>Recurring Charge Monthly Class Fee (Waukee)</h3>
+
+                  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="hosted_button_id" value="KAP6FQCC5LGWQ">
+                  <table>
+                  <tr><td><input type="hidden" name="on0" value="Family size">Family size</td></tr><tr><td><select name="os0">
+                      <option value="Single">Single : $20.00 USD - monthly</option>
+                      <option value="Two family members">Two family members : $35.00 USD - monthly</option>
+                      <option value="Three family members">Three family members : $45.00 USD - monthly</option>
+                      <option value="Four family members">Four family members : $50.00 USD - monthly</option>
+                      <option value="Five family members">Five family members : $55.00 USD - monthly</option>
+                  </select> </td></tr>
+                  <tr><td><input type="hidden" name="on1" value="Student name(s)">Student name(s)</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+                  </table>
+                  <input type="hidden" name="currency_code" value="USD">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribe_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+                            
+                           </div>
+                         <!-- Class fee BUTTON -->
+                         <div class="col-md-4 paypal-button">
+                         <h3>One Time Charge Monthly Class Fees (Waukee)</h3>
+
+               <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="hosted_button_id" value="JMXU3TPC3GKYA">
+                  <table>
+                  <tr><td><input type="hidden" name="on0" value="Family size">Family size</td></tr><tr><td><select name="os0">
+                      <option value="Single">Single $20.00 USD</option>
+                      <option value="Two family members">Two family members $35.00 USD</option>
+                      <option value="Three family members">Three family members $45.00 USD</option>
+                      <option value="Four family members">Four family members $50.00 USD</option>
+                      <option value="Five family members">Five family members $55.00 USD</option>
+                  </select> </td></tr>
+                  <tr><td><input type="hidden" name="on1" value="Student name(s)">Student name(s)</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+                  </table>
+                  <input type="hidden" name="currency_code" value="USD">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+
+                         </div>
+                         
+                       </div>
+                       <br/><br/>
+
 
                         <!--begin Testing, Promotion, and Test Fees row-->
                         <div class="row">
