@@ -61,7 +61,8 @@ context = {
                       ( 'Beginner TKD','6:00 PM - 7:00 PM'),
                       ( 'Advanced TKD','7:00 PM - 8:00 PM')]},
        { 'day' : 'Wednesday',
-         'classes' : [( 'Colored Belts', '6:00 PM - 7:00 PM')
+         'classes' : #[( 'Colored Belts', '6:00 PM - 7:00 PM')
+                     [( 'All TKD levels', '7:00 PM - 8:00 PM')
                       #,( 'Adults', '7:00 PM - 8:00 PM')
                      ]},
        { 'day' : 'Thursday',

@@ -2,12 +2,12 @@
 def reopen_block(s):
     pre = '''
     <div class="row"
-     style="line-height: 1.6; font-size: 18px; font-weight: bold;">
-     <div style="border: 3px solid black;  border-radius: 3px; margin:8px; margin-bottom:20px">
-    <p style="margin:12px">'''
+     style="ackground-color: #d4edda; line-height: 1.6; font-size: 18px; font-weight: bold;">
+     <div style="background-color: #d4edda; border: 3px solid black;  border-radius: 23px; margin:8px; margin-bottom:20px">
+    <div style="margin:12px">'''
 
     post = '''
-       </p>
+       </div>
        </div>
        <br/><br/>
        </div>'''
@@ -43,8 +43,33 @@ context = {
 'location-indianola.html' : 
     {
     'RE_OPEN': reopen_block('''
-    Please check back soon for re-opening plans!
+    <p>
+    We will be reopening the Indianola dojang on June 4th,
+    running 2 classes as usual ... white belts from 6-7 pm
+    and colored belts from 7-8 pm.
+    </p>
+
+    <ul style="margin: 15px"> 
+     <li>Monday 6-7 pm White and 7-8 pm all others</li>
+     <li>Wednesday 6-7 pm all belt levels</li>
+     <li>Thursday 6-7 pm white and 7-8 pm all others</li>
+    </ul>
+
+    <p>
+     We may do lower belts in the earlier class and higher
+     belts in the later, but we'll see how many people turn out first.
+     There will be no Little Dragons classes for the time being.
+     There will be no additional workout after class to allow
+     time for adequate cleaning.
+    </p>
+    <p>
+    People will be spread out on the floor and we will be practicing
+    enhanced cleaning of the dojang. It is our students' choice
+    to participate at the dojang. If they feel that it's unsafe
+    they may participate in the Zoom classes.
+    </p>
     ''')
+
     },
 'location-pleasanthill.html' : 
     {
@@ -74,7 +99,8 @@ context = {
     Monday through Thursday, and at least one class on
     Saturday mornings.  These classes will have limited size and initially
     require masks be worn.  To attend, you must sign up in advance
-    to reserve your spot.  We will have links here to the sign-up
+    to reserve your spot.  Wednesday, June 3rd, will be the
+    first class date. We will have links here to the sign-up
     page very soon. 
     ''')
     },

@@ -9,10 +9,151 @@ def fill_price(snip,lbl,value) :
 def make_anchor(id) :
 	return '<span class="trma-inst-anchor" id="%s"></span>' % id
 
-context = {
+def paypal_buttons(nm, subsc, month, prices):
+    args = dict( ('P%d'%i,v) for i,v in enumerate(prices) )
+    args.update( dict(nm=nm, subsc=subsc, month=month) )
+    return '''
+     <div class="row">
+     <!-- Subscribe BUTTON -->
+     <div class="col-md-5 paypal-button">
+     <h3>Recurring Charge Monthly Class Fee (%(nm)s)</h3>
 
+     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+     <input type="hidden" name="cmd" value="_s-xclick">
+     <input type="hidden" name="hosted_button_id" value="%(subsc)s">
+     <table>
+     <tr><td><input type="hidden" name="on0" value="Family size">Family size</td></tr><tr><td><select name="os0">
+	     <option value="Single">Single : $%(P0).2f USD - monthly</option>
+	     <option value="Two family members">Two family members : $%(P1).2f USD - monthly</option>
+	     <option value="Three family members">Three family members : $%(P2).2f USD - monthly</option>
+	     <option value="Four family members">Four family members : $%(P3).2f USD - monthly</option>
+	     <option value="Five family members">Five family members : $%(P4).2f USD - monthly</option>
+     </select> </td></tr>
+     <tr><td><input type="hidden" name="on1" value="Student name(s)">Student name(s)</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+     </table>
+     <input type="hidden" name="currency_code" value="USD">
+     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribe_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+     </form>
+     
+                                </div>
+                              <!-- Class fee BUTTON -->
+                              <div class="col-md-4 paypal-button">
+                                <h3>One Time Charge Monthly Class Fees (%(nm)s)</h3>
+     
+     <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+     <input type="hidden" name="cmd" value="_s-xclick">
+     <input type="hidden" name="hosted_button_id" value="%(month)s">
+     <table>
+     <tr><td><input type="hidden" name="on0" value="Family size">Family size</td></tr><tr><td><select name="os0">
+	     <option value="Single">Single $%(P0).2f USD</option>
+	     <option value="Two family members">Two family members $%(P1).2f USD</option>
+	     <option value="Three family members">Three family members $%(P2).2f USD</option>
+	     <option value="Four family members">Four family members $%(P3).2f USD</option>
+	     <option value="Five family members">Five family members $%(P4).2f USD</option>
+     </select> </td></tr>
+     <tr><td><input type="hidden" name="on1" value="Student name(s)">Student name(s)</td></tr><tr><td><input type="text" name="os1" maxlength="200"></td></tr>
+     </table>
+     <input type="hidden" name="currency_code" value="USD">
+     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+     <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+     </form>
+      </div>
+       <!-- Uniform BUTTON -->
+     <div class="col-md-4 paypal-button">
+     <h3>Uniform and patch</h3>
+     <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="VKEBWAQLXNNUW">
+      <table>
+      <tr><td><input type="hidden" name="on0" value="Select option">Select option</td></tr><tr><td><select name="os0">
+       <option value="Uniform and patch">Uniform and patch $35.00 USD</option>
+       <option value="Uniform only">Uniform only $30.00 USD</option>
+      </select> </td></tr><tr><td>&nbsp;</td></tr>
+      <tr><td><input type="hidden" name="on1" value="Branch and Student name(s)">Branch and Student name(s)</td></tr>
+          <tr><td><input value="%(nm)s," type="text" name="os1" size="30" maxlength="200"></td></tr>
+      </table>
+      <input type="hidden" name="currency_code" value="USD">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+     </div>
+     </div>
+     <br/><br/>
+    ''' % args
+
+# ========================================
+context = {
+ 'location-wdm.html' : {
+    'BUTTON_BRANCH' : 'Clive/WDM',
+    'PRICE_ARR' : [25, 40, 50, 55, 60],
+    'CLS_BUTTON_ID' : '4866A5YJNPECN' ,
+    'SUBSC_BUTTON_ID' : 'NUA77T77LT7QG'
+ },
+ 'location-carlisle.html' : {
+    'BUTTON_BRANCH' : 'Carlisle',
+    'PRICE_ARR' : [20, 35, 45, 50, 55],
+    'CLS_BUTTON_ID' :  'M8FHZJN42KY58',
+    'SUBSC_BUTTON_ID' : 'ZEGDSVCZ2BPXS'
+ },
+ 'location-hub.html': {
+    'BUTTON_BRANCH' : 'Hub',
+    'PRICE_ARR' : [25, 40, 50, 55, 60],
+    'CLS_BUTTON_ID' :  "K44KYJMJWZKCG",
+    'SUBSC_BUTTON_ID' : "CJZACC9XLYE48"
+ },
+ 'location-pleasanthill.html' : {
+    'BUTTON_BRANCH' : 'Pleasant Hill',
+    'PRICE_ARR' : [20, 35, 45, 50, 55],
+    'CLS_BUTTON_ID' :  "PMGR7M2PM9EZA",
+    'SUBSC_BUTTON_ID' : "C5HCWK693GC46"
+ },
+ 'location-waukee.html' : {
+    'BUTTON_BRANCH' : 'Waukee',
+    'PRICE_ARR' : [20, 35, 45, 50, 55],
+    'CLS_BUTTON_ID' :  "JMXU3TPC3GKYA",
+    'SUBSC_BUTTON_ID' : "KAP6FQCC5LGWQ"
+ },
+ 'location-indianola.html' : {
+    'BUTTON_BRANCH' : 'Indianola',
+    'PRICE_ARR' : [25, 40, 50, 55, 60],
+    'CLS_BUTTON_ID' : "NVPR56ELLRKB2",
+    'SUBSC_BUTTON_ID' : "7JGZT8DSW65F8"
+ },
+ 'location-winterset.html' : {
+    'BUTTON_BRANCH' : 'Winterset',
+    'PRICE_ARR' : [20, 35, 45, 50, 55],
+    'CLS_BUTTON_ID' :  "3LJ8LZNCSQ4QQ",
+    'SUBSC_BUTTON_ID' : "A7N2MH29AQJZQ"
+ },
  '*' : { 'family_price' : fill_price, 
          'make_anchor' : make_anchor,
+         'paypal_buttons' : paypal_buttons,
+         'EXPLAIN_PPAL_BUTTONS' :
+         '''
+           <div class="row paypal-code">{{ make_anchor("paybuttons") }}
+             <div class="col-md-12">
+               <br/>
+               <h3><strong>Use these buttons to pay with Paypal or credit/debit card:</strong></h3>
+               <br/>
+               <p>Select the items you wish to pay for, and on the shopping cart page, you
+               can select a quantity for each.  For class fees, The quantity
+               value determines the number of months
+               you'd like to pay for.  If paying for one session at a time, set the quantity value to
+               2.  You can pay for as many months as you like.
+               </p><br/><p>Signing up for a subscription requires a
+               Paypal account, to manage the subscription, and will charge the same fees
+               on a monthly basis.  If you don't have a Paypal account, you can create
+               one during the checkout process.</p><br/>
+               <p>At any time, you can use the "view cart" button to see your shopping cart:</p><br/>
+
+               {{ VIEW_CART }}
+
+               <br/>
+               <br/>
+             </div>
+            </div>
+         ''',
          'VIEW_CART' : 
          '''
          <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr"
@@ -73,3 +214,4 @@ context = {
          ''' 
           }
 }
+
