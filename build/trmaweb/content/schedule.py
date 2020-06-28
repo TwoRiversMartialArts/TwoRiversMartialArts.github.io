@@ -62,7 +62,7 @@ context = {
                       ( 'Advanced TKD','7:00 PM - 8:00 PM')]},
        { 'day' : 'Wednesday',
          'classes' : #[( 'Colored Belts', '6:00 PM - 7:00 PM')
-                     [( 'All TKD levels', '7:00 PM - 8:00 PM')
+                     [( 'advanced TKD', '7:00 PM - 8:00 PM')
                       #,( 'Adults', '7:00 PM - 8:00 PM')
                      ]},
        { 'day' : 'Thursday',
@@ -80,25 +80,40 @@ context = {
 }
 hub = context['location-hub.html']['class_schedule']
 
-for day in ('Monday','Tuesday','Wednesday','Thursday') :
-  hub.append(
-     { 'day' : day,
-       'classes' : [('TKD','6:00 PM - 7:00 PM')] } )
+hub.extend([
+  {'day':'Monday', 'classes':[
+       ('TKD','6:00 PM - 7:00 PM') ]},
+  {'day':'Tuesday', 'classes':[
+       ('TKD','6:00 PM - 7:00 PM') ]},
+  {'day':'Wednesday', 'classes':[
+       ('TKD','6:00 PM - 7:00 PM') ]},
+  {'day':'Thursday', 'classes':[
+       ('TKD','12:00 PM - 1:00 PM'),
+       ('TKD','6:00 PM - 7:00 PM') ]},
+  {'day':'Friday', 'classes':[
+       ('Brown/Black belt class','6:00 PM - 7:00 PM') ]},
+  {'day':'Saturday', 'classes':[
+       ('TKD','10:30 AM - 11:30 AM') ]},
+])
+#for day in ('Monday','Tuesday','Wednesday','Thursday') :
+  #hub.append(
+     #{ 'day' : day,
+       #'classes' : [
+       # ('TKD','6:00 PM - 7:00 PM')] } )
 
-hub.append( { 'day' : 'Friday',
-  'classes' : [('Brown/Black belt class',
-                '6:00 PM - 7:30 PM')] } )
-hub.append( { 'day' : 'Saturday',
-  'classes' : [ ('TKD**','10:30 AM - 11:30 AM'),
-                ('Black Belt Youth Group',
-                 '1:00 PM or 3:00 PM on 2<sup>nd</sup> '
-                 'Saturday of each month***') 
-              ] } )
-hub.append( { 'day' : 'Sunday' ,
-  'classes' : [
-      ('Martial Spirit','9:30 AM - 12:00 noon'),
-      ('Tai Chi','12:00 noon - 1:00 PM'),
-      ('Kobudo','1:00 PM - 3:00 PM'),
-      ('Brown/Black belt class','3:00 PM - 4:30 PM')
-    ] })
-
+#hub.append( { 'day' : 'Friday',
+  #'classes' : [('Brown/Black belt class',
+                #'6:00 PM - 7:30 PM')] } )
+#hub.append( { 'day' : 'Saturday',
+  #'classes' : [ ('TKD**','10:30 AM - 11:30 AM'),
+                #('Black Belt Youth Group',
+                 #'1:00 PM or 3:00 PM on 2<sup>nd</sup> '
+                 #'Saturday of each month***') 
+              #] } )
+#hub.append( { 'day' : 'Sunday' ,
+  #'classes' : [
+      #('Martial Spirit','9:30 AM - 12:00 noon'),
+      #('Tai Chi','12:00 noon - 1:00 PM'),
+      #('Kobudo','1:00 PM - 3:00 PM'),
+      #('Brown/Black belt class','3:00 PM - 4:30 PM')
+    #] })
