@@ -32,8 +32,7 @@ context = {
     {
     'RE_OPEN': reopen_block('''
     <p>
-    Classes are planned to resume in Carlisle sometime in June.
-    Details still need to be worked out before a date is set.
+    Classes will resume by July 1st.
     </p><br/>
     <p> 
     Below are the guidelines that will be followed when
@@ -42,7 +41,7 @@ context = {
     <div style="margin-left:23px">
     <ul>
     <li>
-    Class sizes will be restricted to 10 students for the time
+    Class sizes will be restricted to 25 students for the time
     being in order to maintain social distancing.  </li>
     <li>If at all possible, students should arrive in their Dobok.
     </li>
@@ -67,9 +66,20 @@ context = {
         one steps and self defense will be without a
         partner unless they are members of a family.
     </li>
+    <li>
+    If the weather is good classes will be held outside.
+    If you want to wear a T-shirt those days to stay cooler
+    then come dressed with the T-Shirt under your Dobok.
+    The T-shirt can be either a Carlisle/Pleasant Hill/TRMA logo shirt.
+    Otherwise it should be a single colored shirt with
+    no pictures or writings.
+    </li>
     </ul></div>
     </p><br/><p> 
     Cleaning will be performed between classes.
+    If you have any questions, concerns or suggestions please let
+    the instructors know. We want to make this as safe as possible
+    and have everyone feeling at ease.
     </p>
     ''')
     },
@@ -206,7 +216,23 @@ context = {
 'location-pleasanthill.html' : 
     {
     'RE_OPEN': reopen_block('''
-    Please check back soon for re-opening plans!
+    <p>
+    Classes are  resuming Wednesday, July 1st.
+    The Pleasant Hill branch will be joining the Carlisle
+    branch during this time. Our location for the month of July is:
+    </p><br/>
+     Parks and Rec building<br/>
+     1220 S. 5th St.<br/>
+     Carlisle, IA 50047<br/>
+     Monday and Wednesday <br/>
+     6:30-7:30<br/><br/>
+
+     <p>
+     Class guidelines and curriculum is listed on the
+     <a href="location-carlisle.html">
+     Carlisle branch page</a>. Please review these before
+     attending class.
+     </p>
     ''')
     },
 'location-waukee.html' : 
@@ -232,8 +258,7 @@ context = {
     Saturday mornings at 10am.  These classes will have limited size and initially
     require masks be worn.  To attend, you must sign up in advance
     to reserve your spot.  Wednesday, June 3rd, will be the
-    first class date. Here is the <a href="https://www.signupgenius.com/go/5080c44a5ab23aaf49-classes">
-    link for June class sign-up</a> and another
+    first class date. Here is the 
     <a href="https://www.signupgenius.com/go/5080c44a5ab23aaf49-july">
     link for July class sign-up</a>. Please arrive wearing your dobok if
     possible and bring your own water bottle.
@@ -249,33 +274,58 @@ context = {
     {
     'RE_OPEN': reopen_block('''
     <p>
-    Winterset school facilities will remain closed until July 1,
-    due to Governor Reynold's proclamation.  At that time, if
-    the proclamation is lifted, our access to the gym will become
-    available. 
+    Below are the guidelines that will be followed
+    as classes start back up at Winterset on July 1, 2020:
     </p>
-    <br/>
-    <p>
-    NOW WHAT DO WE DO???
-    <div style="margin-left:23px">
-    <ul>
-    <li>Keep an eye on the TRMA Winterset Facebook page for updates.
+    <ul style="margin: 15px"> 
+    <li>  Class sizes may be restricted for the time being in order to maintain social distancing.
+    </li>  
+    <li>If possible, students should arrive in their dobok (uniform).
     </li>
-    <li>Monitor <a href="../index.html">
-    the web-site</a> for updates and
-    schedules for other TRMA branch
-    locations. Some are open. Space may be limited.
+    <li>Students should bring their own bottle of water. The water fountain will be off limits for now.
     </li>
-    <li>Students are encouraged to take online classes.
+    <li>Face masks, bandannas, or other alternative face coverings will be required.
+    </li>
+    <li>Because face masks will be worn, classes will be more technique based and less
+    cardio based.  Students are strongly encouraged to attend online classes for
+    the cardio component.
+    </li>
+    <li>Parents will be requested to social distance while waiting for
+        their children. 
+    </li>
+    <li>If weather is good, classes may be held outside.</li>
+    <li>There will be no sparring or board breaking and one-steps and self-defense will
+    be without a partner unless there are members of a family present.
     </li>
     </ul>
-    </div>
-    </p>
-    <br/>
+
+    <div style="font-weight:bold; font-size:150%; text-align: center">
     <p>
-    Please keep track of the numbers of Zoom online classes as well
-    as regular in-person classes you take.
+    We all hope these adjustments to class will be only
+    temporary for the safety of all. We will resume regular
+    classes as soon as possible.
     </p>
+    </div>
+
+    <p>Curriculum:</p>
+    <ul style="margin: 15px"> 
+    </li>
+    <li>Kicking
+    </li>
+    <li>Punching
+    </li>
+    <li>Basic/advanced movements modified for social distance
+    </li>
+    <li>Forms
+    </li>
+    <li>Shadow one steps
+    </li>
+    <li>Shadow Self-defense
+    </li>
+    <li>Shadow sparring
+    </li>
+    <li>Other</li>
+    </ul>
     ''')
     }
 }
