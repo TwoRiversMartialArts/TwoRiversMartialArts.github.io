@@ -155,7 +155,6 @@ context = {
 
     <ul style="margin: 15px"> 
      <li>Monday 6-7 pm White and 7-8 pm all others</li>
-     <li>Wednesday 6-7 pm advanced levels</li>
      <li>Thursday 6-7 pm white and 7-8 pm all others</li>
     </ul>
 
