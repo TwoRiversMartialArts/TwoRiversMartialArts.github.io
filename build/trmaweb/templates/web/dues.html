@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Two Rivers Martial Arts - Black belt dues payment</title>
+    {{ meta_and_links }}
+</head>
+
+<body>
+    {{ top_area }}
+    {{ navigation_bar }}
+    <!-- Start: Banner Background -->
+    <div class="banner-background">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="banner-content">
+                        <div class="banner-heading">
+                            <h2>Black Belt Dues Payment</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End: Banner Background -->
+
+    <!-- Start: Slider Section -->
+    <div class="instructor-detail">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- 
+                {{ program_sidenav }}
+                -->
+                <!-- begin main content row -->
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="MPKEWR9X4FAZQ">
+<table>
+<tr><td><input type="hidden" name="on0" value="Family size">Family size</td></tr><tr><td><select name="os0">
+	<option value="One black belt">One black belt $150.00 USD</option>
+	<option value="Two black belts">Two black belts $300.00 USD</option>
+	<option value="Three black belts">Three black belts $450.00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+                <!-- end main content row -->
+            </div>
+        </div>
+    </div>
+        <!-- End: Slider Section -->
+    {{ back_to_top }}
+    {{ footer_section }}
+    {{ basic_js_libs }}
+</body>
+
+</html>

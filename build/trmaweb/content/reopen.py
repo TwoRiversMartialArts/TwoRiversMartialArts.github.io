@@ -218,7 +218,7 @@ context = {
     <p>
     Classes are  resuming Wednesday, July 1st.
     The Pleasant Hill branch will be joining the Carlisle
-    branch during this time. Our location for the month of July is:
+    branch during this time. Our location is:
     </p><br/>
      Parks and Rec building<br/>
      1220 S. 5th St.<br/>
@@ -256,11 +256,9 @@ context = {
     Monday through Thursday, and at least one class on
     Saturday mornings at 10am.  These classes will have limited size and initially
     require masks be worn.  To attend, you must sign up in advance
-    to reserve your spot.  Here is the 
-    <a href="https://www.signupgenius.com/go/5080c44a5ab23aaf49-july">
-    link for July class sign-up</a>
-    and <a href="https://www.signupgenius.com/go/5080c44a5ab23aaf49-august">
-    one for August</a>. Please arrive wearing your dobok if
+    to reserve your spot.  Here is the link for 
+    <a href="https://www.signupgenius.com/go/5080c44a5ab23aaf49-october">October</a>.
+    Please arrive wearing your dobok if
     possible and bring your own water bottle.
     <br/>
     <br/>
