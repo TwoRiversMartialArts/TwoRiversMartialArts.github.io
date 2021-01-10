@@ -15,7 +15,7 @@ def reopen_block(s):
 
 CLOSED_TXT='''<p>
 Two Rivers has suspended in-person classes through
-January 3rd.  Online classes will continue, and 
+January 16th.  Online classes will continue, and 
 promotion testing can be arranged either online or
 in-person in small groups (1-3 students).
 Please <a href="https://forms.gle/Q19aRBkkKCXEE2jZ6">

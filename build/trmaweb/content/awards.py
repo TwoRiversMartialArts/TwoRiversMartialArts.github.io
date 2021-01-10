@@ -15,7 +15,13 @@ context = {
             Ms. Jasmine Hornback
         ''','December 2017'),
         ('''Ms. Rochelle Douglass''','April 2018'),
-        ('''Ms. Morgan Endecott''','January 2019')
+        ('''Ms. Morgan Endecott''','January 2019'),
+        ('''Mr. Dave Nelson''','January 2021')
+       ],
+       'eh_awards' : [
+        ('''Ms. Jennifer Bailey''', 'January 2021'),
+        ('''Ms. Rochelle Douglass''', 'January 2021'),
+        ('''Ms. Brooke Xaykose''', 'January 2021')
        ],
        'bbhof' : [ ('Master Eric Heintz',1990),
                    ('Master Kaye Bair',1992),

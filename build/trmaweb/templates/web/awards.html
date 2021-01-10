@@ -50,6 +50,32 @@ Awards
                                 <br/><br/>
                                 <div class="col-md-12">
                                     <div class="heading community-outreach">
+                                        <h3>Eric Heintz Memorial Award</h3>
+                                    </div>
+                                    <p>
+                                    In grateful appreciation for teaching, time,
+                                    and talent in providing online classes for
+                                    our students during the Covid pandemic.
+                                    For exemplary dedication and support of Two Rivers Martial
+                                    Arts. 
+                                    </p>
+                                    <div class="row">
+                                    {% for winner,date in eh_awards %}
+                                    	<div class="col-md-5 text-center">
+                                    		<div class="card">
+                                        		<div class="name">
+                                                <h4>{{ winner }}</h4>
+                                                <p class="date">{{ date }}</p>
+                                        		</div>
+                                    		</div>
+                                    	</div>
+                                    {% endfor %}
+
+                                    </div>
+                                </div>
+                                <br/><br/>
+                                <div class="col-md-12">
+                                    <div class="heading community-outreach">
                                         <h3><a href="http://www.jungstkd.com/Black-Belt-Hall-of-Fame.html">
                                             Jung's Tae Kwon Do Black Belt Hall of Fame
                                             </a>
