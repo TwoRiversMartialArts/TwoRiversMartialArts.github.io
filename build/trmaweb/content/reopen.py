@@ -53,7 +53,35 @@ context = {
         this one at the top of the page.
         ''')
     },
- 'location-carlisle.html' : CLOSED_,
+ 'location-carlisle.html' : {
+    'RE_OPEN': reopen_block('''
+     Unfortunately COVID cases are remaining high in Warren county. We are keeping a watch on
+     the numbers at the 
+     <a href="https://coronavirus.iowa.gov/pages/case-counts">state site</a>.
+     <br/><br/> 
+     Until the 14 day average drops below 10% we will remain closed for the safety
+     of our students and community. Once we open if the 7 day average goes above 10%
+     we will close again. The CDC and WHO view rates above 10% as an uncontrolled
+     spread of the virus and with 3 new variants moving into this country which
+     are more contagious we want to be prudent in our actions not to add to the spread.
+     In the meantime there are two options for classes.
+     <ol>
+     <li> Online classes which can be accessed over Zoom. Please go to
+     <a href="https://www.facebook.com/tworiversmartialarts">our Facebook page</a>
+     for more details.</li>
+     <li> Our <a href="/web/location-hub.html">main Hub</a>
+           is offering limited participant in person classes.
+     </ol>
+ 
+     <br/><br/> 
+     Remember the tenets of Tae Kwon Do - Courtesy, Integrity, Perseverance,
+     Self Control, Indomitable Spirit, With these we will get through this.
+     <br/><br/> 
+     Be careful, stay healthy and with numbers currently trending down hopefully
+     we can all practice together again soon.
+       '''),
+    'RE_OPEN_SCHED': CLOSED_['RE_OPEN_SCHED']
+ },
  '':
     {
     'RE_OPEN': reopen_block('''
@@ -109,16 +137,13 @@ context = {
     </p>
     ''')
     },
-'location-hub.html' : CLOSED_,
-'':
-    {
+'location-hub.html' : {
+    'RE_OPEN_SCHED': CLOSED_['RE_OPEN_SCHED'],
     'RE_OPEN': reopen_block('''
     <p>
-    The Hub location will begin holding classes on June 17th. Please follow
-    <a href="https://www.signupgenius.com/index.cfm?go=c.SignUpSearch&eid=00CBCFD7F5CFFD67&cs=09C3BAAD8FBB8B627B0A64715BB29BC9&sortby=&view=i">
-    this link for signups</a>, or view the
-    <a href="https://drive.google.com/file/d/1XPM6DtTLKPrEREDXsLW2WrvM5XqTI3qp/view">
-    instructions</a> to search for the signup pages.
+    The Hub location will begin holding classes on January 19th. Please follow
+    <a href="https://www.signupgenius.com/go/904054ba4a629a0ff2-hub1">
+    this link for February signups</a>.
     </p><br/>
     <p>
     In person classes will look different. 
@@ -171,7 +196,38 @@ context = {
     </div>
     ''')
     },
-'location-indianola.html' : CLOSED_,
+'location-indianola.html' : {
+    'RE_OPEN': reopen_block('''
+        The Indianola Branch will continue to remain closed until
+        Monday, February 15th due to the Covid Pandemic. We will
+        re-evaluate then based upon the following guidelines. 
+        Unfortunately COVID cases are remaining high in Warren County (currently 13%).
+        We are keeping a watch on the numbers
+        <a href="https://coronavirus.iowa.gov/pages/case-counts">at the state site</a>.
+        <br/><br/> 
+        Until the 14 day average drops below 10% (it's currently at 13%) we
+        will remain closed for the safety of our students and community. Once
+        we open if the 7 day average goes above 10% we will close again.
+        The CDC and WHO view rates above 10% as an uncontrolled spread of
+        the virus and with 3 new variants moving into this country which are
+        more contagious we want to be prudent in our actions not to add to the spread.
+        <br/><br/> 
+        In the meantime there are two options for classes.
+        <ol>
+        <li> Online classes which can be accessed over Zoom. Please go to
+        <a href="https://www.facebook.com/tworiversmartialarts">our Facebook page</a>
+        for more details.</li>
+        <li> Our
+         <a href="location-hub.html">main Hub</a>
+         is offering limited participants in person classes.
+         </li>
+       </ol>
+       <br/><br/> 
+       Remember the tenets of Tae Kwon Do - Courtesy, Integrity,
+       Perseverance, Self Control, Indomitable Spirit, With these we will get through this. 
+      '''),
+    'RE_OPEN_SCHED': CLOSED_['RE_OPEN_SCHED']
+},
 '':
     {
     'RE_OPEN': reopen_block('''
@@ -240,7 +296,18 @@ context = {
     ''')
 
     },
-'location-pleasanthill.html' : CLOSED_,
+'location-pleasanthill.html' : {
+    'RE_OPEN': reopen_block('''
+         TRMA had a board meeting to discuss reopening in person classes. Certain
+         branches will reopen Tuesday January 19th. Pleasant Hill has been training
+         at the Carlisle location and Carlisle unfortunately will
+         still be closed until Fed 1st due to the high numbers in Warren County
+         at which time we will re-evaluate opening. In the meantime Zoom classes
+         are still available and you can signup online for in person classes at the Hub.
+         Stay well and take care!
+       '''),
+    'RE_OPEN_SCHED': CLOSED_['RE_OPEN_SCHED']
+ },
 '':
     {
     'RE_OPEN': reopen_block('''
@@ -287,7 +354,7 @@ context = {
     Saturday mornings at 10am.  These classes will have limited size and initially
     require masks be worn.  To attend, you must sign up in advance
     to reserve your spot.  Here is the link for 
-    <a href="https://www.signupgenius.com/go/5080c44a5ab23aaf49-january">January</a>.
+    <a href="https://www.signupgenius.com/go/5080c44a5ab23aaf49-february">February</a>.
     Please arrive wearing your dobok if
     possible and bring your own water bottle.
     <br/>
@@ -298,7 +365,38 @@ context = {
     introductory classes, either in person or online.
     ''')
     },
-'location-winterset.html' : CLOSED_,
+'location-winterset.html' : {
+    'RE_OPEN': reopen_block('''
+        The Winterset Branch will continue to remain closed until
+        Monday, February 15th due to the Covid Pandemic. We will
+        re-evaluate then based upon the following guidelines. 
+        Unfortunately COVID cases are remaining high in Madison County (currently 15%).
+        We are keeping a watch on the numbers
+        <a href="https://coronavirus.iowa.gov/pages/case-counts">at the state site</a>.
+        <br/><br/> 
+        Until the 14 day average drops below 10% (it's currently at 15%) we
+        will remain closed for the safety of our students and community. Once
+        we open if the 7 day average goes above 10% we will close again.
+        The CDC and WHO view rates above 10% as an uncontrolled spread of
+        the virus and with 3 new variants moving into this country which are
+        more contagious we want to be prudent in our actions not to add to the spread.
+        <br/><br/> 
+        In the meantime there are two options for classes.
+        <ol>
+        <li> Online classes which can be accessed over Zoom. Please go to
+        <a href="https://www.facebook.com/tworiversmartialarts">our Facebook page</a>
+        for more details.</li>
+        <li> Our
+         <a href="location-hub.html">main Hub</a>
+         is offering limited participants in person classes.
+         </li>
+       </ol>
+       <br/><br/> 
+       Remember the tenets of Tae Kwon Do - Courtesy, Integrity,
+       Perseverance, Self Control, Indomitable Spirit, With these we will get through this. 
+      '''),
+    'RE_OPEN_SCHED': CLOSED_['RE_OPEN_SCHED']
+},
 '': 
     {
     'RE_OPEN': reopen_block('''
