@@ -55,95 +55,23 @@ context = {
     },
  'location-carlisle.html' : {
     'RE_OPEN': reopen_block('''
-     Unfortunately COVID cases are remaining high in Warren county. We are keeping a watch on
-     the numbers at the 
-     <a href="https://coronavirus.iowa.gov/pages/case-counts">state site</a>.
-     <br/><br/> 
-     Until the 14 day average drops below 10% we will remain closed for the safety
-     of our students and community. Once we open if the 7 day average goes above 10%
-     we will close again. The CDC and WHO view rates above 10% as an uncontrolled
-     spread of the virus and with 3 new variants moving into this country which
-     are more contagious we want to be prudent in our actions not to add to the spread.
-     In the meantime there are two options for classes.
-     <ol>
-     <li> Online classes which can be accessed over Zoom. Please go to
-     <a href="https://www.facebook.com/tworiversmartialarts">our Facebook page</a>
-     for more details.</li>
-     <li> Our <a href="/web/location-hub.html">main Hub</a>
-           is offering limited participant in person classes.
-     </ol>
- 
-     <br/><br/> 
-     Remember the tenets of Tae Kwon Do - Courtesy, Integrity, Perseverance,
-     Self Control, Indomitable Spirit, With these we will get through this.
-     <br/><br/> 
-     Be careful, stay healthy and with numbers currently trending down hopefully
-     we can all practice together again soon.
+    Good news. The Carlisle branch is open for classes again. The first class
+    back was held Monday, Feb. 22nd. It was a good class with reviewing what
+    we have learned. As long as the 7 day average stays below 10% we will
+    continue to hold classes.<br/><br/>
+    Hope to see you there.
        '''),
-    'RE_OPEN_SCHED': CLOSED_['RE_OPEN_SCHED']
+    'RE_OPEN_SCHED': reopen_block('') 
  },
- '':
-    {
-    'RE_OPEN': reopen_block('''
-    <p>
-    Classes will resume by July 1st.
-    </p><br/>
-    <p> 
-    Below are the guidelines that will be followed when
-    classes start back up.
-    </p><br/>
-    <div style="margin-left:23px">
-    <ul>
-    <li>
-    Class sizes will be restricted to 25 students for the time
-    being in order to maintain social distancing.  </li>
-    <li>If at all possible, students should arrive in their Dobok.
-    </li>
-    <li>Students should bring their own bottle of water.
-    The water fountain will be off limits for now.
-    </li>
-    <li>Face masks, bandannas, or other alternative face
-    coverings will be required. Triple layer Ninja masks anyone? :)
-    </li>
-    <li>Shoes may be required. This is still being evaluated.
-    </li>
-    <li>Because face masks will be required, classes will be more
-       technique based and less cardio based.
-    </li>
-    <li>Students are strongly encouraged to attend online classes for
-    the cardio component.
-    </li>
-    <li>Parents will be requested to wait outside of the building.</li>
-    <li>If the weather is good classes may be held outside.
-    </li>
-    <li>There will be no sparring or board breaking and
-        one steps and self defense will be without a
-        partner unless they are members of a family.
-    </li>
-    <li>
-    If the weather is good classes will be held outside.
-    If you want to wear a T-shirt those days to stay cooler
-    then come dressed with the T-Shirt under your Dobok.
-    The T-shirt can be either a Carlisle/Pleasant Hill/TRMA logo shirt.
-    Otherwise it should be a single colored shirt with
-    no pictures or writings.
-    </li>
-    </ul></div>
-    </p><br/><p> 
-    Cleaning will be performed between classes.
-    If you have any questions, concerns or suggestions please let
-    the instructors know. We want to make this as safe as possible
-    and have everyone feeling at ease.
-    </p>
-    ''')
-    },
 'location-hub.html' : {
-    'RE_OPEN_SCHED': CLOSED_['RE_OPEN_SCHED'],
+    'RE_OPEN_SCHED': reopen_block(''),
     'RE_OPEN': reopen_block('''
     <p>
-    The Hub location will begin holding classes on January 19th. Please follow
+    The Hub location is holding in-person classes. Please follow
     <a href="https://www.signupgenius.com/go/904054ba4a629a0ff2-hub1">
-    this link for February signups</a>.
+    this link for February signups</a> and
+    <a href="https://www.signupgenius.com/go/904054ba4a629a0ff2-hub2">
+    this link for March</a>.
     </p><br/>
     <p>
     In person classes will look different. 
@@ -198,103 +126,24 @@ context = {
     },
 'location-indianola.html' : {
     'RE_OPEN': reopen_block('''
-        The Indianola Branch will continue to remain closed until
-        Monday, February 15th due to the Covid Pandemic. We will
-        re-evaluate then based upon the following guidelines. 
-        Unfortunately COVID cases are remaining high in Warren County (currently 13%).
-        We are keeping a watch on the numbers
-        <a href="https://coronavirus.iowa.gov/pages/case-counts">at the state site</a>.
-        <br/><br/> 
-        Until the 14 day average drops below 10% (it's currently at 13%) we
-        will remain closed for the safety of our students and community. Once
-        we open if the 7 day average goes above 10% we will close again.
-        The CDC and WHO view rates above 10% as an uncontrolled spread of
-        the virus and with 3 new variants moving into this country which are
-        more contagious we want to be prudent in our actions not to add to the spread.
-        <br/><br/> 
-        In the meantime there are two options for classes.
-        <ol>
-        <li> Online classes which can be accessed over Zoom. Please go to
-        <a href="https://www.facebook.com/tworiversmartialarts">our Facebook page</a>
-        for more details.</li>
-        <li> Our
-         <a href="location-hub.html">main Hub</a>
-         is offering limited participants in person classes.
-         </li>
-       </ol>
-       <br/><br/> 
-       Remember the tenets of Tae Kwon Do - Courtesy, Integrity,
-       Perseverance, Self Control, Indomitable Spirit, With these we will get through this. 
+        We have been monitoring the 14-day and 7-day positivity rates in Warren county.
+        As of February 12th, the 14-day positivity rate had dropped below 10%. This means:
+        <div style="font-weight:bold; padding-left: 25px">
+        <ul>
+        <li>We will re-open for in-person classes on Monday, February 15th </li>
+        <li>Regular, in-person classes will follow every Monday and Thursday evening-
+          <ul><li>White Belts from 6-7 pm</li>
+              <li>Colored Belts from 7-8 pm</li>
+          </ul></li>
+        <li>We will follow Covid protocols for masks and social distancing.
+            Enhanced cleaning procedures will be followed each class. </li>
+        </ul>
+        </div>
+        We will remain open for in-person classes as long as the 7-day positivity
+        rate for Warren county remains at or below 10%. If that rate goes above 10%,
+        we will close again. If you have any questions, contact the branch instructor.
       '''),
-    'RE_OPEN_SCHED': CLOSED_['RE_OPEN_SCHED']
-},
-'':
-    {
-    'RE_OPEN': reopen_block('''
-    <p>
-    We will be reopening the Indianola dojang on June 8th,
-    running 2 classes as usual ... white belts from 6-7 pm
-    and colored belts from 7-8 pm.
-    </p>
-
-    <ul style="margin: 15px"> 
-     <li>Monday 6-7 pm White and 7-8 pm all others</li>
-     <li>Thursday 6-7 pm white and 7-8 pm all others</li>
-    </ul>
-
-    <p>
-    Below are the guidelines that will be followed as
-    classes start back up at Indianola.
-    </p>
-    <ul style="margin: 15px"> 
-    <li>  Class sizes may be restricted for the time being in order to maintain social distancing.
-    </li>  
-    <li>If possible, students should arrive in their dobok (uniform).
-    </li>
-    <li>Students should bring their own bottle of water. The water fountain will be off limits for now.
-    </li>
-    <li>Face masks, bandannas, or other alternative face coverings will be required.
-    </li>
-    <li>Because face masks will be worn, classes will be more technique based and less
-    cardio based.  Students are strongly encouraged to attend online classes for
-    the cardio component.
-    </li>
-    <li>Parents will be requested to wait outside of the building.
-    </li>
-    <li>There will be no sparring or board breaking and one-steps and self-defense will
-    be without a partner unless there are members of a family present.
-    </li>
-    </ul>
-
-    <div style="font-weight:bold; font-size:150%; text-align: center">
-    <p>
-    We all hope these adjustments to class will be only
-    temporary for the safety of all. We will resume regular
-    classes as soon as possible.
-    </p>
-    </div>
-
-    <p>Curriculum:</p>
-    <ul style="margin: 15px"> 
-    </li>
-    <li>Kicking
-    </li>
-    <li>Punching
-    </li>
-    <li>Basic/advanced movements modified for social distance
-    </li>
-    <li>Forms
-    </li>
-    <li>Shadow one steps
-    </li>
-    <li>Shadow Self-defense
-    </li>
-    <li>Shadow sparring
-    </li>
-    <li>Other</li>
-    </ul>
-    ''')
-
+    'RE_OPEN_SCHED': reopen_block('') 
     },
 'location-pleasanthill.html' : {
     'RE_OPEN': reopen_block('''
@@ -308,28 +157,6 @@ context = {
        '''),
     'RE_OPEN_SCHED': CLOSED_['RE_OPEN_SCHED']
  },
-'':
-    {
-    'RE_OPEN': reopen_block('''
-    <p>
-    Classes are  resuming Wednesday, July 1st.
-    The Pleasant Hill branch will be joining the Carlisle
-    branch during this time. Our location is:
-    </p><br/>
-     Parks and Rec building<br/>
-     1220 S. 5th St.<br/>
-     Carlisle, IA 50047<br/>
-     Monday and Wednesday <br/>
-     6:30-7:30<br/><br/>
-
-     <p>
-     Class guidelines and curriculum is listed on the
-     <a href="location-carlisle.html">
-     Carlisle branch page</a>. Please review these before
-     attending class.
-     </p>
-    ''')
-    },
 'location-waukee.html' : CLOSED_,
 '':
     {
@@ -354,7 +181,9 @@ context = {
     Saturday mornings at 10am.  These classes will have limited size and initially
     require masks be worn.  To attend, you must sign up in advance
     to reserve your spot.  Here is the link for 
-    <a href="https://www.signupgenius.com/go/5080c44a5ab23aaf49-february">February</a>.
+    <a href="https://www.signupgenius.com/go/5080c44a5ab23aaf49-february">February</a>
+    and for
+    <a href="https://www.signupgenius.com/go/5080c44a5ab23aaf49-march">March</a>.
     Please arrive wearing your dobok if
     possible and bring your own water bottle.
     <br/>
@@ -367,92 +196,21 @@ context = {
     },
 'location-winterset.html' : {
     'RE_OPEN': reopen_block('''
-        The Winterset Branch will continue to remain closed until
-        Monday, February 15th due to the Covid Pandemic. We will
-        re-evaluate then based upon the following guidelines. 
-        Unfortunately COVID cases are remaining high in Madison County (currently 15%).
-        We are keeping a watch on the numbers
-        <a href="https://coronavirus.iowa.gov/pages/case-counts">at the state site</a>.
-        <br/><br/> 
-        Until the 14 day average drops below 10% (it's currently at 15%) we
-        will remain closed for the safety of our students and community. Once
-        we open if the 7 day average goes above 10% we will close again.
-        The CDC and WHO view rates above 10% as an uncontrolled spread of
-        the virus and with 3 new variants moving into this country which are
-        more contagious we want to be prudent in our actions not to add to the spread.
-        <br/><br/> 
-        In the meantime there are two options for classes.
-        <ol>
-        <li> Online classes which can be accessed over Zoom. Please go to
-        <a href="https://www.facebook.com/tworiversmartialarts">our Facebook page</a>
-        for more details.</li>
-        <li> Our
-         <a href="location-hub.html">main Hub</a>
-         is offering limited participants in person classes.
-         </li>
-       </ol>
-       <br/><br/> 
-       Remember the tenets of Tae Kwon Do - Courtesy, Integrity,
-       Perseverance, Self Control, Indomitable Spirit, With these we will get through this. 
+        We have been monitoring the 14-day and 7-day positivity rates in Madison county.
+        As of February 12th, the 14-day positivity rate had dropped below 10%. This means:
+        <div style="font-weight:bold; padding-left: 25px">
+        <ul>
+        <li>We will re-open for in-person classes on Monday, February 15th </li>
+        <li>Regular, in-person classes will follow every Monday and Wednesday evening-
+           from 7 - 8 pm</li>
+        <li>We will follow Covid protocols for masks and social distancing.
+            Enhanced cleaning procedures will be followed each class. </li>
+        </ul>
+        </div>
+        We will remain open for in-person classes as long as the 7-day positivity
+        rate for Madison county remains at or below 10%. If that rate goes above 10%,
+        we will close again. If you have any questions, contact the branch instructor.
       '''),
-    'RE_OPEN_SCHED': CLOSED_['RE_OPEN_SCHED']
-},
-'': 
-    {
-    'RE_OPEN': reopen_block('''
-    <p>
-    Below are the guidelines that will be followed
-    as classes start back up at Winterset on July 1, 2020:
-    </p>
-    <ul style="margin: 15px"> 
-    <li>  Class sizes may be restricted for the time being in order to maintain social distancing.
-    </li>  
-    <li>If possible, students should arrive in their dobok (uniform).
-    </li>
-    <li>Students should bring their own bottle of water. The water fountain will be off limits for now.
-    </li>
-    <li>Face masks, bandannas, or other alternative face coverings will be required.
-    </li>
-    <li>Because face masks will be worn, classes will be more technique based and less
-    cardio based.  Students are strongly encouraged to attend online classes for
-    the cardio component.
-    </li>
-    <li>Parents will be requested to social distance while waiting for
-        their children. 
-    </li>
-    <li>If weather is good, classes may be held outside.</li>
-    <li>There will be no sparring or board breaking and one-steps and self-defense will
-    be without a partner unless there are members of a family present.
-    </li>
-    </ul>
-
-    <div style="font-weight:bold; font-size:150%; text-align: center">
-    <p>
-    We all hope these adjustments to class will be only
-    temporary for the safety of all. We will resume regular
-    classes as soon as possible.
-    </p>
-    </div>
-
-    <p>Curriculum:</p>
-    <ul style="margin: 15px"> 
-    </li>
-    <li>Kicking
-    </li>
-    <li>Punching
-    </li>
-    <li>Basic/advanced movements modified for social distance
-    </li>
-    <li>Forms
-    </li>
-    <li>Shadow one steps
-    </li>
-    <li>Shadow Self-defense
-    </li>
-    <li>Shadow sparring
-    </li>
-    <li>Other</li>
-    </ul>
-    ''')
-    }
+    'RE_OPEN_SCHED': reopen_block('') 
+}
 }
