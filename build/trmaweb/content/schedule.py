@@ -84,12 +84,14 @@ hub.extend([
   {'day':'Monday', 'classes':[
        ('TKD','5:30 PM - 6:30 PM') ]},
   {'day':'Tuesday', 'classes':[
-       ('TKD','6:30 PM - 7:30 PM')
+       ('TKD','5:30 PM - 6:15 PM'),
+       ('TKD','6:30 PM - 7:15 PM')
        ]},
   {'day':'Wednesday', 'classes':[
        ('TKD','6:00 PM - 7:00 PM') ]},
   {'day':'Thursday', 'classes':[
-       ('TKD','6:30 PM - 7:30 PM')
+       ('TKD','5:30 PM - 6:15 PM'),
+       ('TKD','6:30 PM - 7:15 PM')
        ]},
   {'day':'Friday', 'classes':[
        ('Brown/Black belt class','6:00 PM - 7:00 PM') ]},
