@@ -68,8 +68,6 @@ context = {
     'RE_OPEN': reopen_block('''
     <p>
     The Hub location is holding in-person classes. Please follow
-    <a href="https://www.signupgenius.com/go/904054ba4a629a0ff2-hub3">
-    this link for April</a> and
     <a href="https://www.signupgenius.com/go/904054ba4a629a0ff2-hub4">
     this link for May</a>.
     </p><br/>
@@ -180,10 +178,8 @@ context = {
     Monday through Thursday, and one class on
     Saturday mornings at 10am.  These classes will have limited size and initially
     require masks be worn.  To attend, you must sign up in advance
-    to reserve your spot.  Here is the link for 
-    <a href="https://www.signupgenius.com/go/5080c44a5ab23aaf49-April">April</a>
-    and for
-    <a href="https://www.signupgenius.com/go/5080c44a5ab23aaf49-mayclasses">May</a>.
+    to reserve your spot.  Here is the 
+    <a href="https://www.signupgenius.com/go/5080c44a5ab23aaf49-mayclasses">link for May</a>.
     Please arrive wearing your dobok if
     possible and bring your own water bottle.
     <br/>
