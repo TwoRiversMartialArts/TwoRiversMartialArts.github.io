@@ -2828,6 +2828,18 @@ span.toplevel {
  font-weight: bold;
 }
 /* history trma */
+.hist-divimg-left {
+   float: left;
+   padding: 10px;
+   margin: 10px 10px 10px 0;
+   border: solid;
+}
+.hist-divimg-right {
+  float: right;
+  padding: 10px;
+  margin: 10px 0 10px 10px;
+  border: solid;
+}
 .history-trma-cont-img-left{
   margin:10px 10px 10px 0;
 }
