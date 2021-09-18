@@ -60,7 +60,12 @@ context = {
     we have learned. As long as the 7 day average stays below 10% we will
     continue to hold classes.<br/><br/>
     Hope to see you there.
-       '''),
+     ''' and
+     '''
+     Carlisle branch is suspending in-person classes beginning on August 9th, 2021
+     due to covid-19 test positivity rate above 10% in Warren county.  Classes will
+     resume when this falls below 10%.
+     '''),
     'RE_OPEN_SCHED': reopen_block('') 
  },
 'location-hub.html' : {
@@ -68,15 +73,18 @@ context = {
     'RE_OPEN': reopen_block('''
     <p>
     The Hub location is holding in-person classes. Please follow
-    <a href="https://www.signupgenius.com/go/904054ba4a629a0ff2-hub4">
-    this link for May</a>.
+    <a href="https://www.signupgenius.com/go/904054ba4a629a0ff2-hub7">
+    this link for August</a> and
+    <a href="https://www.signupgenius.com/go/904054ba4a629a0ff2-hub8">
+    this link for September</a>.
     </p><br/>
     <p>
     In person classes will look different. 
     </p>
     <div style="margin-top:6px; margin-left:23px; margin-bottom:10px">
     <ul>
-      <li>Class sizes will be restricted to 10 students for the time being
+      <li>Class sizes will be restricted to a limited number of
+      students for the time being
       in order to maintain social distancing.  </li>
       <li>A link to a class sign up sheet will be available (see above).</li>
       <li>Students must sign up for each class they want to attend class
@@ -140,6 +148,23 @@ context = {
         We will remain open for in-person classes as long as the 7-day positivity
         rate for Warren county remains at or below 10%. If that rate goes above 10%,
         we will close again. If you have any questions, contact the branch instructor.
+      ''' and '''
+      Indianola Branch is suspending in-person classes on Monday, August 9th, 2021.
+      The 7-day positivity rates in Warren County as of August 9th, 2021, was elevated up to
+      10%.
+      This means-
+      <ul><li>
+       All classes will be closed until the positivity rate drops below 10%.
+      </li><li>
+       We will remain closed for in-person classes if the 7-day positivity rate for Warren County
+      remains at or above 10%.
+      </li><li>
+       As soon as that rate goes below 10%, we will re-open again. That could be as soon as
+      the next regularly scheduled class.
+      </li><li>
+       Monitor Indianola Branch Two Rivers Martial Arts on Facebook for updates.
+      Additionally, updates will be posted on the door to the dojang.
+      </li></ul>
       '''),
     'RE_OPEN_SCHED': reopen_block('') 
     },
@@ -155,31 +180,30 @@ context = {
        '''),
     'RE_OPEN_SCHED': CLOSED_['RE_OPEN_SCHED']
  },
-'location-waukee.html' : CLOSED_,
-'':
+'location-waukee.html' :
     {
     'RE_OPEN': reopen_block('''
-    The Westview church has informed us that outside
-    activities will be suspended through June, and maybe
-    longer.  Please consider the Clive/WDM branch location,
-    or any other branch that is open for in-person classes.
-    Mr. Dale and Mr. Ochiche will be teaching classes
-    at the Clive/WDM location until the Waukee location is
-    able to reopen. Be sure to check the other branch pages
-    for details before coming to a class and consider
-    participating in online classes as well. 
+       The Waukee branch will reopen for in person classes starting Tuesday, July 20th, 2021.
+       Masks will be required for students attending this class.  Waukee will not have a
+       sign up sheet to register for classes, our space is large enough to accommodate
+       students with distance between them.  Classes will be at 6:30 P.M. to 7:30 P.M.
+       Tuesdays and Thursdays.
     ''')
     },
 'location-wdm.html' : 
     {
     'RE_OPEN': reopen_block('''
     We are holding
-    2 classes, 45 minutes each, at 5:45pm and 6:45pm
+    2 classes, one hour each, at 5:45pm and 6:45pm
     Monday through Thursday, and one class on
-    Saturday mornings at 10am.  These classes will have limited size and initially
-    require masks be worn.  To attend, you must sign up in advance
+    Saturday mornings at 10am.  These classes will have limited size.
+    The 5:45pm classes and Saturday classes will require masks.
+    The 6:45pm classes will not require masks for those who are
+    vaccinated. To attend, you must sign up in advance
     to reserve your spot.  Here is the 
-    <a href="https://www.signupgenius.com/go/5080c44a5ab23aaf49-mayclasses">link for May</a>.
+    <a href="https://www.signupgenius.com/go/5080c44a5ab23aaf49-september1">link for September</a>.
+    and the
+    <a href="https://www.signupgenius.com/go/5080c44a5ab23aaf49-october1">link for October</a>.
     Please arrive wearing your dobok if
     possible and bring your own water bottle.
     <br/>
@@ -206,7 +230,25 @@ context = {
         We will remain open for in-person classes as long as the 7-day positivity
         rate for Madison county remains at or below 10%. If that rate goes above 10%,
         we will close again. If you have any questions, contact the branch instructor.
-      '''),
+      ''' and 
+      '''
+      Winterset Branch is suspending in-person classes on Monday, August 9th, 2021.
+      The 7 -day positivity rates in Madison County as of August 9th, 2021, was elevated up to
+      14%.
+      This means-
+      <ul>
+      <li>All classes will be closed until the positivity rate drops below 10%.
+      </li><li>
+      We will remain closed for in-person classes if the 7-day positivity rate for Madison
+      County remains at or above 10%.
+      </li><li>
+      As soon as that rate goes below 10%, we will re-open again. That could be as soon as
+      the next regularly scheduled class.
+      </li><li>
+      Monitor Two Rivers Martial Arts Winterset Branch on Facebook for updates.
+      </li></ul> 
+      '''
+      ),
     'RE_OPEN_SCHED': reopen_block('') 
 }
 }

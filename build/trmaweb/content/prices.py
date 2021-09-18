@@ -67,8 +67,8 @@ def paypal_buttons(nm, subsc, month, prices):
       <input type="hidden" name="hosted_button_id" value="VKEBWAQLXNNUW">
       <table>
       <tr><td><input type="hidden" name="on0" value="Select option">Select option</td></tr><tr><td><select name="os0">
-       <option value="Uniform and patch">Uniform and patch $35.00 USD</option>
-       <option value="Uniform only">Uniform only $30.00 USD</option>
+       <option value="Uniform and patch">Uniform and patch $40.00 USD</option>
+       <option value="Uniform only">Uniform only $35.00 USD</option>
       </select> </td></tr><tr><td>&nbsp;</td></tr>
       <tr><td><input type="hidden" name="on1" value="Branch and Student name(s)">Branch and Student name(s)</td></tr>
           <tr><td><input value="%(nm)s," type="text" name="os1" size="30" maxlength="200"></td></tr>
@@ -86,43 +86,43 @@ def paypal_buttons(nm, subsc, month, prices):
 context = {
  'location-wdm.html' : {
     'BUTTON_BRANCH' : 'Clive/WDM',
-    'PRICE_ARR' : [25, 40, 50, 55, 60],
+    'PRICE_ARR' : [30, 50, 65, 75, 85],
     'CLS_BUTTON_ID' : '4866A5YJNPECN' ,
     'SUBSC_BUTTON_ID' : 'NUA77T77LT7QG'
  },
  'location-carlisle.html' : {
     'BUTTON_BRANCH' : 'Carlisle',
-    'PRICE_ARR' : [20, 35, 45, 50, 55],
+    'PRICE_ARR' : [25, 45, 60, 70, 80],
     'CLS_BUTTON_ID' :  'M8FHZJN42KY58',
     'SUBSC_BUTTON_ID' : 'ZEGDSVCZ2BPXS'
  },
  'location-hub.html': {
     'BUTTON_BRANCH' : 'Hub',
-    'PRICE_ARR' : [25, 40, 50, 55, 60],
+    'PRICE_ARR' : [30, 50, 65, 75, 85],
     'CLS_BUTTON_ID' :  "K44KYJMJWZKCG",
     'SUBSC_BUTTON_ID' : "CJZACC9XLYE48"
  },
  'location-pleasanthill.html' : {
     'BUTTON_BRANCH' : 'Pleasant Hill',
-    'PRICE_ARR' : [20, 35, 45, 50, 55],
+    'PRICE_ARR' : [25, 45, 60, 70, 80],
     'CLS_BUTTON_ID' :  "PMGR7M2PM9EZA",
     'SUBSC_BUTTON_ID' : "C5HCWK693GC46"
  },
  'location-waukee.html' : {
     'BUTTON_BRANCH' : 'Waukee',
-    'PRICE_ARR' : [20, 35, 45, 50, 55],
+    'PRICE_ARR' : [25, 45, 60, 70, 80],
     'CLS_BUTTON_ID' :  "JMXU3TPC3GKYA",
     'SUBSC_BUTTON_ID' : "KAP6FQCC5LGWQ"
  },
  'location-indianola.html' : {
     'BUTTON_BRANCH' : 'Indianola',
-    'PRICE_ARR' : [25, 40, 50, 55, 60],
+    'PRICE_ARR' : [25, 45, 60, 70, 80],
     'CLS_BUTTON_ID' : "NVPR56ELLRKB2",
     'SUBSC_BUTTON_ID' : "7JGZT8DSW65F8"
  },
  'location-winterset.html' : {
     'BUTTON_BRANCH' : 'Winterset',
-    'PRICE_ARR' : [20, 35, 45, 50, 55],
+    'PRICE_ARR' : [25, 45, 60, 70, 80],
     'CLS_BUTTON_ID' :  "3LJ8LZNCSQ4QQ",
     'SUBSC_BUTTON_ID' : "A7N2MH29AQJZQ"
  },

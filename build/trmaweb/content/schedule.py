@@ -1,6 +1,6 @@
 
-wdm_reopen = [('TKD','5:45 PM - 6:30 PM'),
-              ('TKD','6:45 PM - 7:30 PM')]
+wdm_reopen = [('TKD','5:45 PM - 6:45 PM'),
+              ('TKD','6:45 PM - 7:45 PM')]
 context = {
 
  'location-waukee.html' : {
@@ -23,7 +23,7 @@ context = {
        { 'day' : 'Thursday',
          'classes' : wdm_reopen}, #[( 'TKD', '6:15 PM - 7:15 PM')]},
        { 'day' : 'Saturday',
-         'classes' : [( 'TKD*', '10:00 AM - 11:15 AM')]}
+         'classes' : [( 'TKD*', '10:00 AM - 11:00 AM')]}
       ] },
 
  'location-carlisle.html' : {
@@ -88,17 +88,15 @@ hub.extend([
   {'day':'Monday', 'classes':[
        ('TKD','5:30 PM - 6:30 PM') ]},
   {'day':'Tuesday', 'classes':[
-       ('TKD','5:30 PM - 6:15 PM'),
-       ('TKD','6:30 PM - 7:15 PM')
+       ('TKD','5:45 PM - 6:45 PM'),
        ]},
   {'day':'Wednesday', 'classes':[
        ('TKD','6:00 PM - 7:00 PM') ]},
   {'day':'Thursday', 'classes':[
-       ('TKD','5:30 PM - 6:15 PM'),
-       ('TKD','6:30 PM - 7:15 PM')
+       ('TKD','5:45 PM - 6:45 PM'),
        ]},
   {'day':'Friday', 'classes':[
-       ('Brown/Black belt class','6:00 PM - 7:00 PM') ]},
+       ('Brown/Black belt class','6:00 PM - 7:30 PM') ]},
   {'day':'Saturday', 'classes':[
        ('TKD','10:30 AM - 11:30 AM') ]},
 ])
@@ -117,10 +115,10 @@ hub.extend([
                  #'1:00 PM or 3:00 PM on 2<sup>nd</sup> '
                  #'Saturday of each month***') 
               #] } )
-#hub.append( { 'day' : 'Sunday' ,
-  #'classes' : [
-      #('Martial Spirit','9:30 AM - 12:00 noon'),
+hub.append( { 'day' : 'Sunday' ,
+  'classes' : [
+      ('Martial Spirit','9:30 AM - 12:00 noon'),
       #('Tai Chi','12:00 noon - 1:00 PM'),
       #('Kobudo','1:00 PM - 3:00 PM'),
       #('Brown/Black belt class','3:00 PM - 4:30 PM')
-    #] })
+    ] })
