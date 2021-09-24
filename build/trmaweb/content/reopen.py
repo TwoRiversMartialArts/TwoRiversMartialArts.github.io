@@ -73,10 +73,10 @@ context = {
     'RE_OPEN': reopen_block('''
     <p>
     The Hub location is holding in-person classes. Please follow
-    <a href="https://www.signupgenius.com/go/904054ba4a629a0ff2-hub7">
-    this link for August</a> and
     <a href="https://www.signupgenius.com/go/904054ba4a629a0ff2-hub8">
-    this link for September</a>.
+    this link for September</a> and
+    <a href="https://www.signupgenius.com/go/904054ba4a629a0ff2-hub9">
+    this link for October</a>.
     </p><br/>
     <p>
     In person classes will look different. 
@@ -150,7 +150,7 @@ context = {
         we will close again. If you have any questions, contact the branch instructor.
       ''' and '''
       Indianola Branch is suspending in-person classes on Monday, August 9th, 2021.
-      The 7-day positivity rates in Warren County as of August 9th, 2021, was elevated up to
+      The 7-day positivity rates in Warren County as of September 23rd, 2021 is still above
       10%.
       This means-
       <ul><li>
