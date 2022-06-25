@@ -21,7 +21,12 @@ context = {
        'eh_awards' : [
         ('''Ms. Jennifer Bailey''', 'January 2021'),
         ('''Ms. Rochelle Douglass''', 'January 2021'),
-        ('''Ms. Brooke Xaykose''', 'January 2021')
+        ('''Ms. Brooke Xaykose''', 'January 2021'),
+        ('''Jeremiah Keller''', 'December 2021'),
+        ('''Mrs. Lori Whitehead<br/>Mr. Doug Whitehead<br/>Barb Ferguson''',
+         'December 2021'),
+        ('''Ms. Jennifer Bailey<br/>Mr. Kendall Bailey<br/>Linda Bailey''',
+         'December 2021')
        ],
        'bbhof' : [ ('Master Eric Heintz',1990),
                    ('Master Kaye Bair',1992),

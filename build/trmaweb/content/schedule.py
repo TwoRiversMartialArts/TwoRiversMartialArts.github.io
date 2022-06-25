@@ -60,20 +60,20 @@ context = {
                       #( 'Little Dragons','5:30 PM - 6:00 PM'),
                       ( 'Beginner TKD','6:00 PM - 7:00 PM'),
                       ( 'Advanced TKD','7:00 PM - 8:00 PM')]},
-#       { 'day' : 'Wednesday',
-#         'classes' : #[( 'Colored Belts', '6:00 PM - 7:00 PM')
-#                     [( 'advanced TKD', '7:00 PM - 8:00 PM')
-#                      #,( 'Adults', '7:00 PM - 8:00 PM')
-#                     ]},
+       { 'day' : 'Wednesday',
+         'classes' : #[( 'Colored Belts', '6:00 PM - 7:00 PM')
+                     [( 'advanced TKD', '6:30 PM - 7:30 PM')
+                      #,( 'Adults', '7:00 PM - 8:00 PM')
+                     ]},
        { 'day' : 'Thursday',
          'classes' : [ 
                     #  ( 'Little Dragons','5:00 PM - 5:30 PM'),
                       ( 'Beginner TKD','6:00 PM - 7:00 PM'),
                       ( 'Advanced TKD','7:00 PM - 8:00 PM')]},
-       { 'day' : 'Sunday',
-         'classes' : [
-                  ( 'Brown/Black belt class', '2:00 PM - 3:00 PM')
-                  ]}
+       #{ 'day' : 'Sunday',
+       #  'classes' : [
+       #           ( 'Brown/Black belt class', '2:00 PM - 3:00 PM')
+       #           ]}
       ]
    },
 
@@ -118,6 +118,7 @@ hub.extend([
 hub.append( { 'day' : 'Sunday' ,
   'classes' : [
       ('Martial Spirit','9:30 AM - 12:00 noon'),
+      ('Brown/Black belt class', '2:00 PM - 3:30 PM')
       #('Tai Chi','12:00 noon - 1:00 PM'),
       #('Kobudo','1:00 PM - 3:00 PM'),
       #('Brown/Black belt class','3:00 PM - 4:30 PM')

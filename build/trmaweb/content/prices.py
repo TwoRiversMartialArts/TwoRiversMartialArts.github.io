@@ -116,7 +116,7 @@ context = {
  },
  'location-indianola.html' : {
     'BUTTON_BRANCH' : 'Indianola',
-    'PRICE_ARR' : [25, 45, 60, 70, 80],
+    'PRICE_ARR' : [30, 50, 65, 75, 85],
     'CLS_BUTTON_ID' : "NVPR56ELLRKB2",
     'SUBSC_BUTTON_ID' : "7JGZT8DSW65F8"
  },

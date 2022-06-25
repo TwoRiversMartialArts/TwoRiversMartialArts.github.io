@@ -15,7 +15,7 @@ def reopen_block(s):
 
 CLOSED_TXT='''<p>
 Two Rivers has suspended in-person classes through
-January 18th.  Online classes will continue, and 
+January 18th. 
 promotion testing can be arranged either online or
 in-person in small groups (1-3 students).
 Please <a href="https://forms.gle/Q19aRBkkKCXEE2jZ6">
@@ -31,10 +31,7 @@ posted on each branch page soon.</p>
 CLOSED_= {
         'RE_OPEN' : reopen_block(CLOSED_TXT),
         'RE_OPEN_SCHED' : reopen_block('''
-        In-person classes are suspened.  Online zoom
-        classes are still being offered.
-        <a href="contact.html">Contact us</a>
-        for details on how to connect to online classes.
+        In-person classes are suspened.
         ''')
     }
 
@@ -55,16 +52,9 @@ context = {
     },
  'location-carlisle.html' : {
     'RE_OPEN': reopen_block('''
-    Good news. The Carlisle branch is open for classes again. The first class
-    back was held Monday, Feb. 22nd. It was a good class with reviewing what
-    we have learned. As long as the 7 day average stays below 10% we will
-    continue to hold classes.<br/><br/>
+    Good news. The Carlisle branch is open for classes again.
+    <br/><br/>
     Hope to see you there.
-     ''' and
-     '''
-     Carlisle branch is suspending in-person classes beginning on August 9th, 2021
-     due to covid-19 test positivity rate above 10% in Warren county.  Classes will
-     resume when this falls below 10%.
      '''),
     'RE_OPEN_SCHED': reopen_block('') 
  },
@@ -73,10 +63,8 @@ context = {
     'RE_OPEN': reopen_block('''
     <p>
     The Hub location is holding in-person classes. Please follow
-    <a href="https://www.signupgenius.com/go/904054ba4a629a0ff2-hub8">
-    this link for September</a> and
-    <a href="https://www.signupgenius.com/go/904054ba4a629a0ff2-hub9">
-    this link for October</a>.
+    <a href="https://www.signupgenius.com/go/10c0f44a9aa29a7f4c16-june">
+    this link for June</a> class signups.
     </p><br/>
     <p>
     In person classes will look different. 
@@ -91,17 +79,6 @@ context = {
       at the dojang.  This is to help us avoid turning people away at the door.
       </li>
       <li>If at all possible, students should arrive in their dobok. </li>
-      <li>Students should bring their own bottle of water.
-      The water fountain at the dojang will be off limits for now.</li>
-      <li>Face masks, bandanas, or other alternative face coverings
-      will be required.</li>
-      <li>Because face masks will be required,
-      classes will be more technique based and less cardio based.</li>
-      <li>Students are strongly encouraged to attend online classes
-      for the cardio component.</li>
-      <li>New class time for Friday Brown and Black belt class will be from
-          6-7pm.</li>
-      <li>No spectators will be allowed at this time.</li>
     </ul>
     </div>
     <p>
@@ -111,72 +88,34 @@ context = {
     The class schedule and teaching schedule may be adjusted if
     needed depending upon interest.
     </p><br/>
-    <p>
-    Students are encouraged to take online classes.
-    </p><br/>
-    <p>
-     Curriculum:
-     <div style="margin-left:23px; margin-top:6px">
-     <ul>
-      <li>Kicking</li>
-      <li>Punching</li>
-      <li>Basic/advanced  movements modified for social distance</li>
-      <li>Forms</li>
-      <li>Shadow one steps</li>
-      <li>shadow Self-defense</li>
-      <li>Shadow sparring</li>
-      <li>Other</li>
-    <ul>
     </div>
     ''')
     },
 'location-indianola.html' : {
     'RE_OPEN': reopen_block('''
-        We have been monitoring the 14-day and 7-day positivity rates in Warren county.
-        As of February 12th, the 14-day positivity rate had dropped below 10%. This means:
-        <div style="font-weight:bold; padding-left: 25px">
-        <ul>
-        <li>We will re-open for in-person classes on Monday, February 15th </li>
-        <li>Regular, in-person classes will follow every Monday and Thursday evening-
-          <ul><li>White Belts from 6-7 pm</li>
-              <li>Colored Belts from 7-8 pm</li>
-          </ul></li>
-        <li>We will follow Covid protocols for masks and social distancing.
-            Enhanced cleaning procedures will be followed each class. </li>
-        </ul>
-        </div>
-        We will remain open for in-person classes as long as the 7-day positivity
-        rate for Warren county remains at or below 10%. If that rate goes above 10%,
-        we will close again. If you have any questions, contact the branch instructor.
-      ''' and '''
-      Indianola Branch is suspending in-person classes on Monday, August 9th, 2021.
-      The 7-day positivity rates in Warren County as of September 23rd, 2021 is still above
-      10%.
-      This means-
-      <ul><li>
-       All classes will be closed until the positivity rate drops below 10%.
-      </li><li>
-       We will remain closed for in-person classes if the 7-day positivity rate for Warren County
-      remains at or above 10%.
-      </li><li>
-       As soon as that rate goes below 10%, we will re-open again. That could be as soon as
-      the next regularly scheduled class.
-      </li><li>
-       Monitor Indianola Branch Two Rivers Martial Arts on Facebook for updates.
-      Additionally, updates will be posted on the door to the dojang.
-      </li></ul>
+       Classes have resumed for all belt levels.
+       Face masks are optional. If you are not feeling well, please stay home.
+       Otherwise we'll see you at our new location at Fusion Fitness on the south
+       side of the Square in Indianola. Class times will be the same as they've
+       always been. Beginner and Advanced classes are on Mondays and Thursday
+       evenings. Beginners start at 6 pm and colored belts at 7 pm.
+       There is a colored belt class on Wednesdays from 6:30-7:30 pm.
+       There is a changing room available.
+       <br><br>
+       Due to construction on the Square, access to the front (North) side of
+       the building may be limited. Not to worry, there is a back door on the
+       back (South) side of the building in the alley. Parking is available
+       on the street or in a public lot adjacent to the alley where the back
+       entrance to Fusion is located. This parking lot is north or across
+       the street from the Legion Building near the post office.
       '''),
     'RE_OPEN_SCHED': reopen_block('') 
     },
 'location-pleasanthill.html' : {
     'RE_OPEN': reopen_block('''
-         TRMA had a board meeting to discuss reopening in person classes. Certain
-         branches will reopen Tuesday January 19th. Pleasant Hill has been training
-         at the Carlisle location and Carlisle unfortunately will
-         still be closed until Fed 1st due to the high numbers in Warren County
-         at which time we will re-evaluate opening. In the meantime Zoom classes
-         are still available and you can signup online for in person classes at the Hub.
-         Stay well and take care!
+       Due to the pandemic, the Pleasant Hill branch will not be holding
+       classes until further notice. Please consider our other branch
+       locations.
        '''),
     'RE_OPEN_SCHED': CLOSED_['RE_OPEN_SCHED']
  },
@@ -197,58 +136,35 @@ context = {
     2 classes, one hour each, at 5:45pm and 6:45pm
     Monday through Thursday, and one class on
     Saturday mornings at 10am.  These classes will have limited size.
-    The 5:45pm classes and Saturday classes will require masks.
-    The 6:45pm classes will not require masks for those who are
-    vaccinated. To attend, you must sign up in advance
+    Wearing a mask in class is optional.  If a minor child enters
+    wearing a mask, the instructor will assume the parent desires
+    the child to wear the mask throughout the class and will require
+    them to do so. To attend, you must sign up in advance
     to reserve your spot.  Here is the 
-    <a href="https://www.signupgenius.com/go/5080c44a5ab23aaf49-september1">link for September</a>.
-    and the
-    <a href="https://www.signupgenius.com/go/5080c44a5ab23aaf49-october1">link for October</a>.
+    <a href="https://www.signupgenius.com/go/5080c44a5ab23aaf49-mayclasses1">
+    link for May</a> and the
+    <a href="https://www.signupgenius.com/go/5080c44a5ab23aaf49-june1">
+    link for June</a>.
     Please arrive wearing your dobok if
     possible and bring your own water bottle.
-    <br/>
-    <br/>
-    For new students, please contact us by email
-    at wdm@tworiversmartialarts.com or 
-    <a href="contact.html">phone</a> to arrange for
-    introductory classes, either in person or online.
     ''')
     },
 'location-winterset.html' : {
-    'RE_OPEN': reopen_block('''
-        We have been monitoring the 14-day and 7-day positivity rates in Madison county.
-        As of February 12th, the 14-day positivity rate had dropped below 10%. This means:
-        <div style="font-weight:bold; padding-left: 25px">
-        <ul>
-        <li>We will re-open for in-person classes on Monday, February 15th </li>
-        <li>Regular, in-person classes will follow every Monday and Wednesday evening-
-           from 7 - 8 pm</li>
-        <li>We will follow Covid protocols for masks and social distancing.
-            Enhanced cleaning procedures will be followed each class. </li>
-        </ul>
-        </div>
-        We will remain open for in-person classes as long as the 7-day positivity
-        rate for Madison county remains at or below 10%. If that rate goes above 10%,
-        we will close again. If you have any questions, contact the branch instructor.
-      ''' and 
+    'RE_OPEN': reopen_block(
       '''
-      Winterset Branch is suspending in-person classes on Monday, August 9th, 2021.
-      The 7 -day positivity rates in Madison County as of August 9th, 2021, was elevated up to
-      14%.
-      This means-
-      <ul>
-      <li>All classes will be closed until the positivity rate drops below 10%.
-      </li><li>
-      We will remain closed for in-person classes if the 7-day positivity rate for Madison
-      County remains at or above 10%.
-      </li><li>
-      As soon as that rate goes below 10%, we will re-open again. That could be as soon as
-      the next regularly scheduled class.
-      </li><li>
-      Monitor Two Rivers Martial Arts Winterset Branch on Facebook for updates.
-      </li></ul> 
+      Colored belt classes are scheduled for
+      Monday and Wednesday evenings from 7 to 8 pm. Beginners and others,
+      try to arrive 10-15 minutes earlier.
       '''
       ),
     'RE_OPEN_SCHED': reopen_block('') 
+    },
+'taichi.html' : {
+    'RE_OPEN': reopen_block('''
+       Due to the pandemic Tai Chi classes are temporarily suspended.''')
+    },
+'kobudo.html' : {
+    'RE_OPEN': reopen_block('''
+       Due to the pandemic Kobudo classes are temporarily suspended.''')
 }
 }
