@@ -63,26 +63,8 @@ context = {
     'RE_OPEN': reopen_block('''
     <p>
     The Hub location is holding in-person classes. Please follow
-    <a href="https://www.signupgenius.com/go/10c0f44a9aa29a7f4c16-june">
-    this link for June</a> class signups.
-    </p><br/>
-    <p>
-    In person classes will look different. 
-    </p>
-    <div style="margin-top:6px; margin-left:23px; margin-bottom:10px">
-    <ul>
-      <li>Class sizes will be restricted to a limited number of
-      students for the time being
-      in order to maintain social distancing.  </li>
-      <li>A link to a class sign up sheet will be available (see above).</li>
-      <li>Students must sign up for each class they want to attend class
-      at the dojang.  This is to help us avoid turning people away at the door.
-      </li>
-      <li>If at all possible, students should arrive in their dobok. </li>
-    </ul>
-    </div>
-    <p>
-    Cleaning will be performed between classes and after class.
+    <a href="https://www.signupgenius.com/go/10c0f44a9aa29a7f4c16-august">
+    this link for August</a> class signups.
     </p><br/>
     <p>
     The class schedule and teaching schedule may be adjusted if
@@ -122,10 +104,8 @@ context = {
 'location-waukee.html' :
     {
     'RE_OPEN': reopen_block('''
-       The Waukee branch will reopen for in person classes starting Tuesday, July 20th, 2021.
-       Masks will be required for students attending this class.  Waukee will not have a
-       sign up sheet to register for classes, our space is large enough to accommodate
-       students with distance between them.  Classes will be at 6:30 P.M. to 7:30 P.M.
+       The Waukee branch is open for classes.
+       Classes will be at 6:30 P.M. to 7:30 P.M.
        Tuesdays and Thursdays.
     ''')
     },
@@ -135,16 +115,12 @@ context = {
     We are holding
     2 classes, one hour each, at 5:45pm and 6:45pm
     Monday through Thursday, and one class on
-    Saturday mornings at 10am.  These classes will have limited size.
+    Saturday mornings at 10am. 
     Wearing a mask in class is optional.  If a minor child enters
     wearing a mask, the instructor will assume the parent desires
     the child to wear the mask throughout the class and will require
-    them to do so. To attend, you must sign up in advance
-    to reserve your spot.  Here is the 
-    <a href="https://www.signupgenius.com/go/5080c44a5ab23aaf49-mayclasses1">
-    link for May</a> and the
-    <a href="https://www.signupgenius.com/go/5080c44a5ab23aaf49-june1">
-    link for June</a>.
+    them to do so.
+
     Please arrive wearing your dobok if
     possible and bring your own water bottle.
     ''')

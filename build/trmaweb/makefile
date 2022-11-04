@@ -8,6 +8,10 @@ up: site
 site:
 	python build.py
 
+gh: site
+	git commit -a --amend -m "update"
+	git push -f origin master
+
 test: site serve
 
 serve:
