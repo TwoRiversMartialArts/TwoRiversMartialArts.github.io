@@ -2,7 +2,7 @@
 
 up: site
 	rsync -av ../../web \
-                  ../../index.html \
+                  ../../*.html \
               krb70_trmaprod@ssh.phx.nearlyfreespeech.net:./
 
 site:

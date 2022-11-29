@@ -117,6 +117,29 @@ context = {
         November 6th, 2020
         (<a href="https://www.legacy.com/obituaries/desmoinesregister/obituary.aspx?n=tetsugen-eric-heintz&pid=197094052">obituary</a>)
         '''),
+        (
+        '''
+          <div style="float:left;margin:8px">
+          <img src="assets/images/History/krumme.jpg" alt="" width="108"
+               class="img-responsive img-thumbnail" >
+          </div>
+          <span style="text-align:center; font-size: large; font-weight: bold">
+          Master Richard Krumme
+          </span> 
+          <br/><br/>
+          <p>
+          Master Krumme began training with Master Heintz in January 1984 and earned
+          his black belt in 1986. He was the instructor for the Indianola Branch
+          from mid-1980s through the mid-1990s when he turned the instructorship
+          to Master Samuelson a short while before Master Heintz closed his dojang.
+          Master Krumme actively trained with Two Rivers during the early 2000s and
+          tested for 6th dan in April 2008.
+          </p>
+          <div style="clear: both"></div>
+        ''',
+        '''October 25th, 2022
+           (<a href="https://desmoinesregistery.com/obituaries/dmr126800">obituary</a>)'''
+        ),
         ('''
           <div style="float:left;margin:8px">
           {{ make_anchor("mr_samuelson") }}
@@ -128,11 +151,12 @@ context = {
           </span> 
           <br/><br/>
           <p>
-          Master Samuelson began training with Master Heintz in the early 1980s, earned
+          Master Samuelson began training with Master Heintz in September 1985, earned
           his black belt in 1988, and was the Indianola branch instructor
-          for the Eric Heintz Black Belt Academy.  He was one of the founders
+          during the final years of
+          the Eric Heintz Black Belt Academy.  He was one of the founders
           of Two Rivers Martial Arts, and earned
-          his 6th Dan in April 2008. He was the primary instructor for the Indianola
+          his 6th dan in April 2008. He was Two Rivers' initial primary instructor for the Indianola
           Branch, was a former President, and former Vice-President of the TRMA Board
           of Directors.
           </p>
