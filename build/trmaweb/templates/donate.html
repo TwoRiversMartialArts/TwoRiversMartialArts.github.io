@@ -1,13 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta http-equiv="refresh" content="0; url=https://www.paypal.com/donate?token=yCDqwJxDcRKFy9MYbiM6cv10irdhkpuXZgwy0z7BBhUnrQ-acSok8A_chtfE1x-iBh69iz1z-f-du_3i"/>
-</head>
-<body>
-  <p>
-  If not automatically redirected, please click
-  <a href="https://www.paypal.com/donate?token=yCDqwJxDcRKFy9MYbiM6cv10irdhkpuXZgwy0z7BBhUnrQ-acSok8A_chtfE1x-iBh69iz1z-f-du_3i">here</a>.
-  </p>
-</body>
-</html>
+{% extends "layout1.html" %}
 
+{% block title %}
+ Two Rivers Martial Arts -
+ Des Moines, Iowa, Tae Kwon Do, Self Defense, Tai Chi, Kobudo
+{% endblock %}
+
+{% block banner %}
+Welcome to Two Rivers Martial Arts
+{% endblock %}
+
+{% block content %}
+<p>
+  If not automatically redirected, please click
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick" />
+<input type="hidden" name="hosted_button_id" value="7PBTEDPMZH3X8" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+</form>
+<br/>
+<br/>
+<br/>
+<br/>
+{% endblock %}

@@ -645,8 +645,8 @@ Branch Location: Carlisle
                                 <div class="alert alert-warning">
                                     <p>
                                         <i class="fa fa-map-marker"></i>
-                                        Carlisle Community Building
-                                        <br> at 35 Vine St. 
+                                        Carlisle Rec Center  
+                                        <br> at 1230 S. 5th St.
                                         <br> Carlisle, IA 50047
                                         <br>
                                     </p>
@@ -842,7 +842,7 @@ Branch Location: Carlisle
                         </div>
             </div>
             <div class="col-md-12 text-center copyright">
-                <p>&copy; 2022 Two Rivers Martial Arts. All Right Reserved</p>
+                <p>&copy; 2023 Two Rivers Martial Arts. All Right Reserved</p>
             </div>
         </div>
     </footer>
@@ -863,13 +863,13 @@ Branch Location: Carlisle
 <script type="text/javascript">
 (function($){
 function makeMap() {
-   var map = L.map('mymap').setView([41.497938,-93.485818],15);
+   var map = L.map('mymap').setView([41.4883211143,-93.4899016988],15);
    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ' + 
                '(<a href="https://www.openstreetmap.org/fixthemap">fix</a>) contributors'
    }).addTo(map);
    var trma = L.icon({ iconUrl : 'assets/images/TRMA-GMap.png',iconAnchor:[10,23]});
-   L.marker([41.497938,-93.485818],{icon:trma,
+   L.marker([41.4883211143,-93.4899016988],{icon:trma,
       title:"Branch Location: Carlisle"}).addTo(map);
 }
 $(makeMap);

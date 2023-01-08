@@ -18,6 +18,8 @@ context = {
   # if index is outside folder of other pages, 
   #   set the prefix accordingly
   
-  'index.html' : { 'linkto' : indexlt }  
+  'index.html' : { 'linkto' : indexlt },
+  'annualmeeting.html' : { 'linkto' : indexlt },
+  'donate.html' : { 'linkto' : indexlt }  
   
 }
