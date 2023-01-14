@@ -117,6 +117,27 @@ context = {
         November 6th, 2020
         (<a href="https://www.legacy.com/obituaries/desmoinesregister/obituary.aspx?n=tetsugen-eric-heintz&pid=197094052">obituary</a>)
         '''),
+        ('''
+          <div style="float:left;margin:8px">
+          <img src="assets/images/History/beard.jpg" alt="" width="108"
+               class="img-responsive img-thumbnail" >
+          </div>
+          </div>
+          <span style="text-align:center; font-size: large; font-weight: bold">
+          Mr. Ed Beard
+          </span> 
+          <br/><br/>
+          <p>
+          Mr. Ed Beard began training with Two Rivers in 2007 at the SE Polk Branch.
+          He earned his black belt in 2010.  His son, Mr. Scott Beard, trained with
+          him and also earned his black belt with Two Rivers.
+          </p>
+          <div style="clear: both"></div>
+         ''',
+         '''
+         December 18, 2022
+         (<a href="https://www.ilesfuneralhomes.com/obituary/Edward-Beard/Des-Moines-Iowa/1889878"></a>
+         '''),
         (
         '''
           <div style="float:left;margin:8px">
@@ -168,6 +189,10 @@ context = {
         '''),
         (
         '''
+          <div style="float:left;margin:8px">
+          <img src="assets/images/History/miles.jpg" alt="" width="108"
+               class="img-responsive img-thumbnail" >
+          </div>
           <span style="text-align:center; font-size: large; font-weight: bold">
           Mr. Richard Miles
           </span> 
@@ -180,6 +205,7 @@ context = {
            Rivers, earned his permanent 1st dan rank in 2006, and
            served as the Carlisle Branch instructor.   
         </p>
+        <div style="clear:both"></div>
         '''
         ,
         '''2015
