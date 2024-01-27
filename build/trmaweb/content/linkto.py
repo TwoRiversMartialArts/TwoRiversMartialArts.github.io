@@ -20,6 +20,6 @@ context = {
   
   'index.html' : { 'linkto' : indexlt },
   'annualmeeting.html' : { 'linkto' : indexlt },
-  'donate.html' : { 'linkto' : indexlt }  
+  #'donate.html' : { 'linkto' : indexlt }  
   
 }

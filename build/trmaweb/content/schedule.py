@@ -98,7 +98,7 @@ hub.extend([
   {'day':'Friday', 'classes':[
        ('Brown/Black belt class','6:00 PM - 7:30 PM') ]},
   {'day':'Saturday', 'classes':[
-       ('TKD','10:30 AM - 11:30 AM') ]},
+       ('TKD','10:30 AM - 12:00 PM') ]},
 ])
 #for day in ('Monday','Tuesday','Wednesday','Thursday') :
   #hub.append(
@@ -118,8 +118,8 @@ hub.extend([
 hub.append( { 'day' : 'Sunday' ,
   'classes' : [
       ('Martial Spirit','9:30 AM - 12:00 noon'),
+      ('Kobudo','12:00 PM - 1:00 PM'),
       ('Brown/Black belt class', '2:00 PM - 3:30 PM')
       #('Tai Chi','12:00 noon - 1:00 PM'),
-      #('Kobudo','1:00 PM - 3:00 PM'),
       #('Brown/Black belt class','3:00 PM - 4:30 PM')
     ] })

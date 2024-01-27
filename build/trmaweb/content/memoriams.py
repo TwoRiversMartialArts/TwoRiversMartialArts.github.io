@@ -119,6 +119,33 @@ context = {
         '''),
         ('''
           <div style="float:left;margin:8px">
+          <img src="assets/images/History/scotthall.jpg" alt="" width="108"
+               class="img-responsive img-thumbnail" >
+          </div>
+          </div>
+          <span style="text-align:center; font-size: large; font-weight: bold">
+          Mr. Scott Hall
+          </span> 
+          <br/><br/>
+          <p>
+          Dr. Scott Hall earned his black belt at the Eric Heintz Black Belt Academy.
+          After Master Heintz retired, Dr. Hall trained with Two Rivers Martial Arts
+          earning his 2nd and 3rd dan black belts.  When Grandmaster Jung asked that
+          the Missouri branches form their own school, he maintained his affiliation
+          with the Bethany Branch of Heritage Tae Kwon Do where his father,
+          Grandmaster Terry Hall, is Senior Instructor.  
+          </p>
+          <div style="clear: both"></div>
+         ''',
+         '''
+         July 4th, 2023
+        (<a href="https://www.robersonfuneralhome.com/obituary/dr-scott-hall">obituary</a> - 
+         <a href="https://drive.google.com/file/d/19AtqlrwOiW5Htxs0pMWY9MC-ia7wc8_w/view?usp=sharing">
+          pdf</a>)
+         '''
+        ),
+        ('''
+          <div style="float:left;margin:8px">
           <img src="assets/images/History/beard.jpg" alt="" width="108"
                class="img-responsive img-thumbnail" >
           </div>
@@ -136,7 +163,8 @@ context = {
          ''',
          '''
          December 18, 2022
-         (<a href="https://www.ilesfuneralhomes.com/obituary/Edward-Beard/Des-Moines-Iowa/1889878"></a>
+         (<a href="https://www.ilesfuneralhomes.com/obituary/Edward-Beard/Des-Moines-Iowa/1889878">
+         obituary</a>)
          '''),
         (
         '''
@@ -159,7 +187,7 @@ context = {
           <div style="clear: both"></div>
         ''',
         '''October 25th, 2022
-           (<a href="https://desmoinesregistery.com/obituaries/dmr126800">obituary</a>)'''
+           (<a href="https://desmoinesregister.com/obituaries/dmr126800">obituary</a>)'''
         ),
         ('''
           <div style="float:left;margin:8px">

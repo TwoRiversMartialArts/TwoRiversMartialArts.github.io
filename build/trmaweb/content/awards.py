@@ -16,7 +16,9 @@ context = {
         ''','December 2017'),
         ('''Ms. Rochelle Douglass''','April 2018'),
         ('''Ms. Morgan Endecott''','January 2019'),
-        ('''Mr. Dave Nelson''','January 2021')
+        ('''Mr. Dave Nelson''','January 2021'),
+        ('''Mr. Don McDonald''','February 2022'),
+        ('''Mr. Rob Dale''','April 2023')
        ],
        'eh_awards' : [
         ('''Ms. Jennifer Bailey''', 'January 2021'),

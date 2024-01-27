@@ -1,9 +1,11 @@
 
+# UPLOAD=ssh.phx.nearlyfreespeech.net
+UPLOAD=ssh.nyc1.nearlyfreespeech.net
 
 up: site
 	rsync -av ../../web \
                   ../../*.html \
-              krb70_trmaprod@ssh.phx.nearlyfreespeech.net:./
+              krb70_trmaprod@$(UPLOAD):./
 
 site:
 	python build.py
