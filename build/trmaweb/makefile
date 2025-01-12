@@ -8,7 +8,7 @@ up: site
               krb70_trmaprod@$(UPLOAD):./
 
 site:
-	python build.py
+	/usr/bin/python build.py
 
 gh: site
 	git commit -a --amend -m "update"

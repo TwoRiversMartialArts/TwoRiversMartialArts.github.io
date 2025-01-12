@@ -24,7 +24,8 @@ Where To Find Us
                                 Two Rivers Martial Arts has six locations in central Iowa. 
                                 Classes are taught at each of these locations by TRMA black belt
                                 instructors. Advanced students from all branches attend Brown/Black Belt Class Friday nights
-                                at 6:00 PM, and Sundays at 2:00 PM at the Two Rivers Hub location.
+                                at 6:00 PM.
+                                <!-- , and Sundays at 2:00 PM at the Two Rivers Hub location. -->
                             </p><br/>
                             <p>
                                 Brown/Black Belt Class is longer than a typical class and offers 
@@ -118,6 +119,7 @@ Where To Find Us
                                     <br> Grandmaster Dwayne Ferguson
                                 #}
                                     <br> Master Bryan Siever
+                                    <br> Master Brad Kramer
                                     <br> Ms. Rochelle Douglass
                                     <br> Mr. Dave Nelson
                                     <br> Mr. Todd Dooley
@@ -132,7 +134,10 @@ Where To Find Us
                                 <p class="trma-loc-sched">
                                     <strong>TKD</strong> 
                                     <br/> Mon : 5:30-6:30 PM
-                                    <br/> Tue, Wed, Thu : 6:00-7:00 PM
+                                    <br/> Tue : 6:00-7:00 PM, 7:15-8:15 PM
+                                    <br/> Wed : 6:00-7:00 PM
+                                    <br/> Thu : 6:00-7:00 PM, 7:15-8:15 PM
+                                    <br/> Sun : 2:00-3:00 PM
                                     <br/>
                                     <br/> Saturday:
                                     <br/> &nbsp; &nbsp;<strong>TKD</strong>: 10:30 AM-12:00 PM
@@ -140,7 +145,7 @@ Where To Find Us
                                     <br/>
                                     <br/> <strong>Brown/Black Class</strong>:
                                     <br/> Fri. 6:00 - approx. 7:30 PM
-                                    <br/> Sun. 2:00 - approx. 3:30 PM
+                              <!--      <br/> Sun. 2:00 - approx. 3:30 PM -->
                                     <br/>
                                     <br/> <strong>Black Belt class</strong>
                                     <br/> Varies - see announcements
@@ -317,11 +322,9 @@ Where To Find Us
                             <p>
                                 <br>Master Jennifer Bailey
                                 <br>Mr. Kendall Bailey
-                                {#
-                                <br>Mr. Todd Dooley 
-                                #}
-                                <br>Ms. Lori Whitehead 
                                 <br>Mr. Doug Whitehead 
+                                <br>Ms. Lori Whitehead 
+                                <br>Mr. Jeremiah Keller
                                 <br>
                             </p>
                         </div>
@@ -353,10 +356,10 @@ Where To Find Us
                                 <p>
                                     <i class="fa fa-map-marker"></i>
                                     Fusion Fitness
-                                    <br> 107 West Salem Avenue 
+                                    <br> 2406 W. 2nd Ave.
                                     <br> Indianola, Iowa 50125
                                     <br>
-                                    <br> [<a href="http://maps.google.com/maps?saddr=&daddr=107 West Salem Avenue, Indianola, Iowa">directions</a>]
+                                    <br> [<a href="http://maps.google.com/maps?saddr=&daddr=2406 W. 2nd Avenue, Indianola, Iowa">directions</a>]
                                     <br>
                                     <br>
                                 </p>
@@ -393,14 +396,21 @@ Where To Find Us
                               <p class="trma-loc-sched"><strong>Schedule</strong></p>
                             </h3>
                             <p class="trma-loc-sched">
-                                <strong>Beginner TKD</strong>: Mon. and Thu.
+                                <strong>Beginner TKD</strong>: Mon.
+                                <br/>6:30-7:30 PM
+                                <br/>
+                                <strong>Beginner TKD</strong>: Thu.
                                 <br/>6:00-7:00 PM
                                 <br/>
-                                <br/><strong>Advanced TKD</strong>: Mon., Thu.
+                                <br/><strong>Advanced TKD</strong>: Mon.
+                                <br/> 7:30-8:30 PM
+                                <br/>
+                                <strong>Advanced TKD</strong>: Wed.
+                                <br/> 6:30-7:30 PM
+                                <br/>
+                                <strong>Advanced TKD</strong>: Thu.
                                 <br/> 7:00-8:00 PM
                                 <br/>
-                                <br/><strong>Advanced TKD</strong>: Wed.
-                                <br/> 6:30-7:30 PM
                                 <br/>
                             {#
                                 <br/><strong>Little Dragons</strong>: Thu.
@@ -583,9 +593,9 @@ Where To Find Us
 <div id="map_address2" class="GmapMarker" >
   <div id="map_address2_title" class="MarkerTitle">Indianola Branch</div>
   <div id="map_address2_descr" class="MarkerDescr">
-107 West Salem Avenue<br />
+2406 W. 2nd Avenue<br />
 Indianola, Iowa 50125</div>
-  <div id="map_address2_link" class="MarkerDirectionsLink">Directions: <a href="http://www.google.com/maps?daddr=41.3601369,-93.56138092&iwstate1=dir:to&z=7" target="_blank">To Here</a> - <a href="http://www.google.com/maps?saddr=41.3601369,-93.56138092&iwstate1=dir:from&z=7" target="_blank">From Here</a></div>
+  <div id="map_address2_link" class="MarkerDirectionsLink">Directions: <a href="http://www.google.com/maps?daddr=41.35679,-93.59287&iwstate1=dir:to&z=7" target="_blank">To Here</a> - <a href="http://www.google.com/maps?saddr=41.35679,-93.59287&iwstate1=dir:from&z=7" target="_blank">From Here</a></div>
 </div>
 <div id="map_address5" class="GmapMarker">
   <div id="map_address5_title" class="MarkerTitle">Clive/West Des Moines Branch</div>
@@ -663,7 +673,7 @@ $(function() {
  
    var trma = L.icon({ iconUrl : 'assets/images/TRMA-GMap.png',iconAnchor:[10,23]});
    var jung = L.icon({ iconUrl : 'assets/images/JUNG-GMap.png',iconAnchor:[10,23]});
-   L.marker([41.36013689,-93.56138092],{icon:trma}).addTo(map)
+   L.marker([41.35677,-93.59286],{icon:trma}).addTo(map)
     .bindPopup( $('#map_address2').html() );
    L.marker([41.601793,-93.831828],{icon:trma}).addTo(map)
     .bindPopup( $('#map_address3').html() ); 

@@ -6,7 +6,8 @@ context = {
     {'LATLNG':'41.53319,-93.64416','BRANCHNAME':'Hub'},
 'location-indianola.html' : 
     #{'LATLNG':'41.355373,-93.583986','BRANCHNAME':'Indianola'},
-    {'LATLNG':'41.36013689,-93.56138092','BRANCHNAME':'Indianola'},
+    #{'LATLNG':'41.36013689,-93.56138092','BRANCHNAME':'Indianola'},
+    {'LATLNG':'41.35681,-93.59286','BRANCHNAME':'Indianola'},
 'location-pleasanthill.html' : 
     {'LATLNG':'41.601833,-93.504325','BRANCHNAME':'Pleasant Hill'},
 'location-waukee.html' : 
