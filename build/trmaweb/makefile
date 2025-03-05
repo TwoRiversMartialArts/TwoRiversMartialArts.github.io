@@ -3,7 +3,9 @@
 UPLOAD=ssh.nyc1.nearlyfreespeech.net
 
 up: site
-	rsync -av ../../web \
+	rsync --exclude *.pdf \
+              --exclude *.doc* \
+              -av ../../web \
                   ../../*.html \
               krb70_trmaprod@$(UPLOAD):./
 
