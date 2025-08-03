@@ -10,7 +10,7 @@ up: site
               krb70_trmaprod@$(UPLOAD):./
 
 site:
-	/usr/bin/python build.py
+	~/Safe/trma/.venv/bin/python build.py
 
 gh: site
 	git commit -a --amend -m "update"
