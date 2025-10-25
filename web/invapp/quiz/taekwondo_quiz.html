@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Two Rivers Martial Arts Form Quiz Generator</title>
+  <style>
+  body { font-family: "Raleway", sans-serif; margin: 28px; font-size: 125%; }
+  .quizBody { max-width: 900px; }
+    h1 { margin-bottom: 30px; }
+  select, button, input { font-size: 19px; padding: 6px 8px; margin-right: 8px; }
+    #quizArea { margin-top: 18px; }
+    .hidden { display: none; }
+    .option { display: block; margin: 12px 0px; text-indent: -30px; padding-left: 30px; }
+    .correct { color: #0a7; font-weight: 600; }
+    .incorrect { color: #c33; font-weight: 600; }
+    .result-block { border: 1px solid #ddd; padding: 12px; border-radius: 6px; margin-bottom: 12px; background: #fafafa; }
+    .right { color: #0a7; }
+    .wrong { color: #c33; }
+  .small { font-size: 16px; color: #666; }
+    .controls { margin-top: 12px; }
+    /* Responsive layout: on wide screens show answers to the right, on small screens stack vertically */
+    .quiz-layout { display: block; }
+  /* main quiz column styles handled by flex rules */
+  .answers-panel { margin-top: 12px; border:1px solid #eee; padding:8px; border-radius:6px; background:#fff; font-size: 125%; }
+    @media(min-width: 1200px) {
+      .quiz-layout { display: flex; gap: 18px; align-items: flex-start; }
+      .quiz-main { width: 50%; min-width: 600px; }
+      .answers-panel { width: 50%; min-width: 600px; margin-top: 0; }
+    }
+    /* Mobile improvements: larger touch targets and readable text */
+    @media(max-width: 1199px) {
+      body { font-size: 40px; }
+      h1 { font-size: 45px; }
+      #questionTitle { font-size: 45px; }
+      select, button, input { font-size: 40px; padding: 10px 12px; }
+      .option { font-size: 40px; margin: 10px 0; }
+      .controls { margin-top: 25px; }
+  /* make control buttons easier to tap; only show buttons that are not hidden */
+  .controls button:not(.hidden) { display: block; width: 100%; margin: 8px 0; }
+  /* ensure hidden class forces buttons to be hidden in all browsers (Edge) */
+  .controls button.hidden { display: none !important; }
+  .answers-panel { font-size: 40px; padding: 10px; }
+      .small { font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Two Rivers Martial Arts Form Quiz (Multiple Choice)</h1>
+
+  <div id="quizBody">
+    <div id="chooser">
+      <label for="fileSelect"><strong>Choose a Form</strong></label>
+      <select id="fileSelect"></select>
+      <button id="startBtn">Start Quiz</button>
+    </div>
+    <div id="formNameDisplay" class="hidden">
+        <h2><label id="formNameLabel"></label></h2>
+    </div>
+
+    <div id="quizArea" class="hidden">
+      <div class="quiz-layout">
+        <div class="quiz-main">
+          <div id="questionHeader"><h2 id="questionTitle"></h2></div>
+          <div id="questionBody"></div>
+          <div class="controls">
+            <button id="backBtn" class="hidden">Back</button>
+            <button id="nextBtn">Next</button>
+            <button id="finishBtn" class="hidden">Finish</button>
+            <button id="cancelBtn">Cancel</button>
+          </div>
+        </div>
+        <div id="answersPanel" class="answers-panel hidden">
+          <strong>Your answers</strong>
+          <div id="answersList" class="small" style="margin-top:8px;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="resultsArea" class="hidden"></div>
+
+    <script>
+
+
+ // fill file list dynamically from the data subdir
+      let fileList = [
+        "Choi Yong.txt",
+        "Chon-ji.txt",
+        "Choong-Jang.txt",
+        "Chun Kwon.txt",
+        "Chun-Gun.txt",
+        "Chung-Mu.txt",
+        "Dan-Gun.txt",
+        "Do-San.txt",
+        "Eui-Am.txt",
+        "Gae-Bek.txt",
+        "Hansoo.txt",
+        "Hwa-Rang.txt",
+        "Ji Tae.txt",
+        "Juche.txt",
+        "Ko Dang.txt",
+        "Koryo.txt",
+        "Kuemgang.txt",
+        "Kwang-gae.txt",
+        "Moon-Moo.txt",
+        "Pal-gwe 1.txt",
+        "Pal-gwe 2.txt",
+        "Pal-Gwe 3.txt",
+        "Pal-gwe 4.txt",
+        "Pal-Gwe 5.txt",
+        "Pal-Gwe 6.txt",
+        "Pal-Gwe 7.txt",
+        "Pal-Gwe 8.txt",
+        "Po-eun.txt",
+        "Pyong Won.txt",
+        "Sam-Il.txt",
+        "Se-Jong.txt",
+        "Sip Jin.txt",
+        "So-San.txt",
+        "Tae Baek.txt",
+        "Toi-Gye.txt",
+        "Tong-Il.txt",
+        "Ul-Ji.txt",
+        "Won-Hyo.txt",
+        "Yon-Gae.txt",
+        "Yoo-Sin.txt",
+        "Yul-Gok.txt"
+      ];
+
+      // --- State ---
+      let allFilesData = []; 
+      let currentData = null; // selected file
+      let otherLevels = []; // meanings from other files
+      let otherMeanings = []; // meanings from other files
+      let otherCounts = []; // counts from other files
+      let otherSteps = []; // steps from other files
+      let currentQuestionIndex = 0; // 0 = meaning, 1 = #moves, 2 = first step, 3+ = step questions
+      let userAnswers = []; // recorded chosen option values
+    let submittedSteps = 0; // how many step answers the user has submitted via Next/Finish
+    let submittedFlags = []; // map of questionIndex -> boolean to avoid double-counting submissions
+    let questionOptions = []; // cached options per question so they remain stable when navigating back
+      let totalQuestions = 0;
+
+      // --- DOM refs ---
+      const fileSelect = document.getElementById('fileSelect');
+      const startBtn = document.getElementById('startBtn');
+      const quizArea = document.getElementById('quizArea');
+      const questionTitle = document.getElementById('questionTitle');
+      const questionBody = document.getElementById('questionBody');
+      const chooserDrop = document.getElementById('chooser');
+      const formNameDisplay = document.getElementById('formNameDisplay');
+      const formNameLabel = document.getElementById('formNameLabel');
+      const nextBtn = document.getElementById('nextBtn');
+      const finishBtn = document.getElementById('finishBtn');
+  const backBtn = document.getElementById('backBtn');
+      const cancelBtn = document.getElementById('cancelBtn');
+    const resultsArea = document.getElementById('resultsArea');
+    const answersPanel = document.getElementById('answersPanel');
+    const answersList = document.getElementById('answersList');
+
+      // --- Utilities ---
+      function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+      }
+      function escapeHtml(str) {
+        if (str === null || str === undefined) return '';
+        return String(str).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+      }
+      function parseFileText(filename, text) {
+        const lines = text.split('\n').map(l => l.replace(/\r/g,''));
+        const first = (lines[0] || '').trim();
+        const third = (lines[2] || '').trim();
+        const fifth = (lines[4] || '').trim();
+        const steps = [];
+        for (let i = 5; i < lines.length; i++) {
+          const s = (lines[i] || '').trim();
+          if (s) steps.push(s);
+          }
+        console.log('level = ' + third)
+        return { filename, name: first, level: third, meaning: fifth, steps };
+      }
+
+      // --- Fetch files and populate selector ---
+      function populateAndFetchAll() {
+        fileSelect.innerHTML = '';
+        fileList.forEach(f => {
+          const opt = document.createElement('option');
+          opt.value = f;
+          opt.textContent = f.replace(/\.[^/.]+$/, '');
+          fileSelect.appendChild(opt);
+        });
+
+        const fetches = fileList.map(fn =>
+          fetch('data/' + encodeURIComponent(fn)).then(r => {
+            if (!r.ok) throw new Error(`Failed to load ${fn}`);
+            return r.text();
+          }).then(text => parseFileText(fn, text))
+            .catch(err => {
+              console.error(err);
+              return { filename: fn, name: fn, meaning: '', steps: [] };
+            })
+        );
+
+        Promise.all(fetches).then(results => {
+          allFilesData = results;
+        });
+      }
+
+      // --- Start quiz ---
+      function startQuiz() {
+        const selected = fileSelect.value;
+        currentData = allFilesData.find(f => f.filename === selected);
+        if (!currentData) { alert('Selected file not available. Check fileList and data/'); return; }
+
+        // build pools from other files
+        otherLevels = [];
+        otherMeanings = [];
+        otherCounts = [];
+        otherSteps = [];
+        allFilesData.forEach(f => {
+          if (f.filename !== currentData.filename) {
+            if (f.level) otherLevels.push(f.level);
+            if (f.meaning) otherMeanings.push(f.meaning);
+            otherCounts.push(f.steps.length);
+            otherSteps.push(...f.steps);
+          }
+        });
+
+        // de-duplicate where appropriate
+        otherLevels = Array.from(new Set(otherLevels));
+        otherMeanings = Array.from(new Set(otherMeanings));
+        otherCounts = Array.from(new Set(otherCounts));
+        otherSteps = Array.from(new Set(otherSteps));
+
+  currentQuestionIndex = 0;
+  userAnswers = [];
+  questionOptions = [];
+        // reset submitted tracking
+        submittedSteps = 0;
+        submittedFlags = [];
+        totalQuestions = 4 + currentData.steps.length;
+        quizArea.classList.remove('hidden');
+        resultsArea.classList.add('hidden');
+
+        formNameLabel.innerText = currentData.name;
+        // answers panel remains hidden until user submits a step answer
+        updateAnswersPanel();
+        showQuestion();
+        updateControls();
+      }
+
+      // Return stored options for a question index or generate and store them the first time
+      function getOptionsForQuestion(qIndex) {
+        if (questionOptions[qIndex]) return questionOptions[qIndex];
+        // generate based on question type
+        if (qIndex === 0) {
+          const opts = buildMCQOptions_forLevel(currentData.level);
+          questionOptions[qIndex] = opts;
+          return opts;
+        }
+        if (qIndex === 1) {
+          const opts = buildMCQOptions_forMeaning(currentData.meaning);
+          questionOptions[qIndex] = opts;
+          return opts;
+        }
+        if (qIndex === 2) {
+          const opts = buildMCQOptions_forCount(currentData.steps.length);
+          questionOptions[qIndex] = opts;
+          return opts;
+        }
+        const stepIndex = qIndex - 3;
+        if (stepIndex >= 0 && stepIndex < (currentData.steps || []).length) {
+          const opts = buildMCQOptions_forStep(currentData.steps[stepIndex], stepIndex);
+          questionOptions[qIndex] = opts;
+          return opts;
+        }
+        return [];
+      }
+
+        // --- Build multiple-choice options helpers ---
+        function buildMCQOptions_forLevel(correctLevel) {
+            const distractors = shuffle([...otherLevels.filter(m => m !== correctLevel)]);
+            const needed = Math.max(0, 3 - distractors.length);
+            const options = [correctLevel, ...distractors.slice(0, 3)];
+            // if there aren't enough distractors, use placeholders
+            while (options.length < 4) options.push('(no meaning)');
+            return shuffle(options.slice(0, 4));
+        }
+
+        // --- Build multiple-choice options helpers ---
+        function buildMCQOptions_forMeaning(correctMeaning) {
+            const distractors = shuffle([...otherMeanings.filter(m => m !== correctMeaning)]);
+            const needed = Math.max(0, 3 - distractors.length);
+            const options = [correctMeaning, ...distractors.slice(0, 3)];
+            // if not enough distractors, use placeholders
+            while (options.length < 4) options.push('(no meaning)');
+            return shuffle(options.slice(0, 4));
+        }
+
+      function buildMCQOptions_forCount(correctCount) {
+        const distractors = shuffle([...otherCounts.filter(c => c !== correctCount)]).map(String);
+        const options = [String(correctCount), ...distractors.slice(0,3)];
+        while (options.length < 4) options.push(String(Math.max(0, correctCount + (Math.floor(Math.random()*3)+1))));
+        return shuffle(options.slice(0,4));
+      }
+
+      function buildMCQOptions_forStep(correctStep, stepIndex = -1) {
+        const candidates = otherSteps.filter(s => s !== correctStep);
+        const distractors = shuffle(candidates).slice(0,3);
+        // fill other steps from the same file if needed
+        if (distractors.length < 3) {
+          const sameFileOther = currentData.steps.filter((s, i) => s !== correctStep && i !== stepIndex);
+          shuffle(sameFileOther);
+          for (const s of sameFileOther) {
+            if (distractors.length >= 3) break;
+            if (!distractors.includes(s)) distractors.push(s);
+          }
+        }
+        while (distractors.length < 3) distractors.push('(noisy step ' + Math.floor(Math.random()*100) + ')');
+        return shuffle([correctStep, ...distractors.slice(0,3)]);
+      }
+
+      // --- Render current question as multiple choice question ---
+      function showQuestion() {
+        questionBody.innerHTML = '';
+        const name = currentData.name || currentData.filename;
+        const level = currentData.level || '';
+        const meaning = currentData.meaning || '';
+        const steps = currentData.steps || [];
+
+          if (currentQuestionIndex === 0) {
+              questionTitle.textContent = `1. What is the belt level of "${name}"?`;
+              const opts = getOptionsForQuestion(0);
+              renderOptions(opts, 'q');
+              return;
+          }
+
+          if (currentQuestionIndex === 1) {
+              questionTitle.textContent = `2. What is the meaning of "${name}"?`;
+              const opts = getOptionsForQuestion(1);
+              renderOptions(opts, 'q');
+              return;
+          }
+
+        if (currentQuestionIndex === 2) {
+          questionTitle.textContent = `3. How many moves are there in "${name}"?`;
+          const opts = getOptionsForQuestion(2);
+          renderOptions(opts, 'q');
+          return;
+        }
+        const stepIndex = currentQuestionIndex - 3;
+        if (stepIndex >= 0 && stepIndex < steps.length) {
+          questionTitle.textContent = `Step ${stepIndex + 1}: Which of the following is the correct step?`;
+          const opts = getOptionsForQuestion(currentQuestionIndex);
+          renderOptions(opts, 'q');
+          return;
+        }
+
+        questionTitle.textContent = 'No more questions';
+        questionBody.innerHTML = '<p>Click Finish to see results.</p>';
+      }
+
+      function renderOptions(options, radioName) {
+        const prevSelected = userAnswers[currentQuestionIndex] || '';
+        options.forEach((opt, i) => {
+          const label = document.createElement('label');
+          label.className = 'option';
+          const radio = document.createElement('input');
+          radio.type = 'radio';
+          radio.name = radioName;
+          radio.value = opt;
+          radio.id = radioName + '_' + i;
+          // pre-select previously chosen answer when navigating back
+          if (prevSelected && String(prevSelected) === String(opt)) {
+            radio.checked = true;
+          }
+          // update userAnswers live when user selects an option
+          radio.addEventListener('change', () => {
+            const qIndex = currentQuestionIndex;
+            // make sure the array has proper length for assignment
+            userAnswers[qIndex] = radio.value;
+            updateAnswersPanel();
+          });
+          label.appendChild(radio);
+          const txt = document.createTextNode(' ' + opt);
+          label.appendChild(txt);
+          questionBody.appendChild(label);
+        });
+      }
+
+      // Update the visible answers panel (only show step answers)
+      function updateAnswersPanel() {
+        if (!answersPanel || !answersList) return;
+        const steps = (currentData && currentData.steps) ? currentData.steps : [];
+        // Only show panel while quiz is active
+    if (!quizArea || quizArea.classList.contains('hidden') || steps.length === 0) {
+      answersPanel.classList.add('hidden');
+      return;
+    }
+
+    const start = 3; // step answers start at index 3 in userAnswers
+    // Build header entries for level/meaning/count (questions 0..2) only if they've been submitted
+    const header = [];
+    if (submittedFlags[0]) header.push(`<strong>Level:</strong> ${escapeHtml(userAnswers[0] || '(not answered)')}`);
+    if (submittedFlags[1]) header.push(`<strong>Meaning:</strong> ${escapeHtml(userAnswers[1] || '(not answered)')}`);
+    if (submittedFlags[2]) header.push(`<strong>Number of moves:</strong> ${escapeHtml(userAnswers[2] || '(not answered)')}`);
+
+        const items = [];
+        let anySubmitted = false;
+        for (let i = 0; i < steps.length; i++) {
+          const qIdx = start + i;
+          if (submittedFlags[qIdx]) {
+            anySubmitted = true;
+            const ans = userAnswers[qIdx] || '(not answered)';
+            items.push(`Step ${i+1}: ${escapeHtml(ans)}`);
+          }
+        }
+
+        // Show the panel after at least one step has been submitted OR after the first question (index 0)
+        // has been submitted (user clicked Next on question 1). Headers and steps still depend on submittedFlags.
+        if (!anySubmitted && !submittedFlags[0]) {
+          answersList.innerHTML = '';
+          answersPanel.classList.add('hidden');
+          return;
+        }
+
+        // Create the HTML header lines (if submitted), then add submitted steps
+        const headerHtml = header.length ? header.join('<br>') + (items.length ? '<hr>' : '') : '';
+        answersList.innerHTML = headerHtml + items.join('<br>');
+        answersPanel.classList.remove('hidden');
+      }
+
+      // --- Collect the answer ---
+      // Returns the selected value (string) or '' if none selected.
+      // If an answer was previously stored for this question, treat that as selected.
+      function collectAnswerForCurrent() {
+        const radios = document.querySelectorAll('input[name="q"]');
+        let selected = '';
+        radios.forEach(r => { if (r.checked) selected = r.value; });
+        // If nothing is currently selected in the radios, fall back to any previously stored answer
+        if (!selected && userAnswers[currentQuestionIndex]) selected = userAnswers[currentQuestionIndex];
+        // store answer at current question index (overwrite if we have a value)
+        if (selected) userAnswers[currentQuestionIndex] = selected;
+        // update panel state (panel visibility still controlled by submitted flags)
+        updateAnswersPanel();
+        return selected;
+      }
+
+      // --- Navigation handlers ---
+      function onNext() {
+        const selected = collectAnswerForCurrent();
+        if (!selected) {
+          alert('Please select an answer');
+          return; // stay on current question
+        }
+        // mark current question as submitted when moving on; this includes header questions 0..2 and step questions 3+
+        const qIndex = currentQuestionIndex;
+        if (qIndex >= 0) {
+          if (!submittedFlags[qIndex]) {
+            submittedFlags[qIndex] = true;
+            if (qIndex >= 3) submittedSteps++;
+          }
+          updateAnswersPanel();
+        }
+        currentQuestionIndex++;
+        if (currentQuestionIndex >= totalQuestions) {
+          showResults();
+        } else {
+          showQuestion();
+          updateControls();
+        }
+      }
+      function onBack() {
+        // Move to previous question, preserving submitted flags and answers
+        if (currentQuestionIndex <= 0) return;
+        currentQuestionIndex--;
+        showQuestion();
+        updateControls();
+        // Ensure the answers panel reflects any submitted answers (we don't unsubmit on back)
+        updateAnswersPanel();
+      }
+      function onFinish() {
+        const selected = collectAnswerForCurrent();
+        // mark current question as submitted when finishing; include header questions 0..2 as well as steps
+        const qIndex = currentQuestionIndex;
+        if (!submittedFlags[qIndex]) {
+          submittedFlags[qIndex] = true;
+          if (qIndex >= 3) submittedSteps++;
+        }
+        updateAnswersPanel();
+        showResults();
+        // hide answers panel after finishing
+        if (answersPanel) answersPanel.classList.add('hidden');
+      }
+      function onCancel() {
+        if (!confirm('Cancel this quiz and return to chooser?')) return;
+        chooserDrop.classList.remove('hidden');
+        formNameDisplay.classList.add('hidden');
+        quizArea.classList.add('hidden');
+        resultsArea.classList.add('hidden');
+        currentData = null;
+        userAnswers = [];
+        currentQuestionIndex = 0;
+        if (answersPanel) answersPanel.classList.add('hidden');
+      }
+
+      // --- Results ---
+      function showResults() {
+        const name = currentData.name || currentData.filename;
+        const level = currentData.level || '';
+        const meaning = currentData.meaning || '';
+        const steps = currentData.steps || [];
+        const maxScore = 3 + steps.length;
+        while (userAnswers.length < maxScore) userAnswers.push('');
+
+        let score = 0;
+        resultsArea.innerHTML = '';
+        resultsArea.classList.remove('hidden');
+        quizArea.classList.add('hidden');
+
+        const header = document.createElement('div');
+        header.className = 'result-block';
+        header.innerHTML = `<h2>Quiz Results</h2><p><strong>Form:</strong> ${escapeHtml(name)}</p>`;
+        header.innerHTML += `<p><strong>Belt Level (from file):</strong> ${escapeHtml(level)}</p>`;
+        header.innerHTML += `<p><strong>Meaning (from file):</strong> ${escapeHtml(meaning)}</p>`;
+        header.innerHTML += `<p><strong>Steps (from file):</strong><br>${steps.map((s,i) => `${i+1}. ${escapeHtml(s)}`).join('<br>')}</p>`;
+        resultsArea.appendChild(header);
+
+        const feedback = document.createElement('div');
+        feedback.className = 'result-block';
+        feedback.innerHTML = '<h3>Question feedback</h3>';
+
+          // Q1 meaning (index 0)
+          if (userAnswers[0] === level) { score++; feedback.innerHTML += `<p class="right">✅ Q1 Level — Correct</p>`; }
+          else { feedback.innerHTML += `<p class="wrong">❌ Q1 Belt Level — Your: "${escapeHtml(userAnswers[0])}" — Correct: "${escapeHtml(level)}"</p>`; }
+
+          // Q1 meaning (index 1)
+          if (userAnswers[1] === meaning) { score++; feedback.innerHTML += `<p class="right">✅ Q2 Meaning — Correct</p>`; }
+          else { feedback.innerHTML += `<p class="wrong">❌ Q2 Meaning — Your: "${escapeHtml(userAnswers[1])}" — Correct: "${escapeHtml(meaning)}"</p>`; }
+
+        // Q2 count (index 2)
+        if (userAnswers[2] === String(steps.length)) { score++; feedback.innerHTML += `<p class="right">✅ Q2 Number of moves — Correct (${steps.length})</p>`; }
+        else { feedback.innerHTML += `<p class="wrong">❌ Q3 Number of moves — Your: "${escapeHtml(userAnswers[2])}" — Correct: ${steps.length}</p>`; }
+
+        // Step questions
+        for (let i = 0; i < steps.length; i++) {
+          const userAns = userAnswers[3 + i];
+          const correct = steps[i];
+          if (userAns === correct) { score++; feedback.innerHTML += `<p class="right">✅ Step ${i+1} — Correct</p>`; }
+          else { feedback.innerHTML += `<p class="wrong">❌ Step ${i+1} — Your: "${escapeHtml(userAns)}" — Correct: "${escapeHtml(correct)}"</p>`; }
+        }
+
+        feedback.innerHTML += `<hr><h3>Your Score: ${score} / ${maxScore}</h3>`;
+        resultsArea.appendChild(feedback);
+
+        const actions = document.createElement('div');
+        actions.className = 'result-block';
+        const chooseAnother = document.createElement('button');
+        chooseAnother.textContent = 'Choose Another Form';
+        chooseAnother.onclick = () => {
+          resultsArea.classList.add('hidden');
+          quizArea.classList.add('hidden');
+          currentData = null;
+          userAnswers = [];
+          currentQuestionIndex = 0;
+          // reset submitted tracking and hide panel
+          submittedSteps = 0;
+          submittedFlags = [];
+          if (answersPanel) answersPanel.classList.add('hidden');
+        };
+        const retake = document.createElement('button');
+        retake.textContent = 'Retake Same Form';
+        retake.style.marginLeft = '8px';
+        retake.onclick = () => {
+          userAnswers = [];
+          currentQuestionIndex = 0;
+          submittedSteps = 0;
+          submittedFlags = [];
+          quizArea.classList.remove('hidden');
+          resultsArea.classList.add('hidden');
+          updateAnswersPanel();
+          showQuestion();
+          updateControls();
+        };
+        actions.appendChild(chooseAnother);
+        actions.appendChild(retake);
+        resultsArea.appendChild(actions);
+      }
+
+      // --- update controls on the screen for the current state ---
+      function updateControls() {
+        if (currentQuestionIndex < totalQuestions - 1) {
+          chooserDrop.classList.add('hidden');
+          formNameDisplay.classList.remove('hidden');
+          nextBtn.classList.remove('hidden');
+          finishBtn.classList.add('hidden');
+          if (typeof backBtn !== 'undefined' && backBtn) {
+            if (currentQuestionIndex > 0) backBtn.classList.remove('hidden'); else backBtn.classList.add('hidden');
+          }
+        } else {
+          chooserDrop.classList.remove('hidden');
+          formNameDisplay.classList.add('hidden');
+          nextBtn.classList.add('hidden');
+          finishBtn.classList.remove('hidden');
+          if (typeof backBtn !== 'undefined' && backBtn) {
+            if (currentQuestionIndex > 0) backBtn.classList.remove('hidden'); else backBtn.classList.add('hidden');
+          }
+        }
+      }
+
+      // --- Wire up buttons ---
+      startBtn.addEventListener('click', startQuiz);
+  if (typeof backBtn !== 'undefined' && backBtn) backBtn.addEventListener('click', onBack);
+      nextBtn.addEventListener('click', onNext);
+      finishBtn.addEventListener('click', onFinish);
+      cancelBtn.addEventListener('click', onCancel);
+
+    // Initialization
+    populateAndFetchAll();
+
+    </script>
+  </div>
+
+</body>
+</html>

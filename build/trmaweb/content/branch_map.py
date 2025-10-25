@@ -1,7 +1,8 @@
 
 context = {
  'location-carlisle.html' : 
-    {'LATLNG':'41.4883211143,-93.4899016988','BRANCHNAME':'Carlisle'},
+    #{'LATLNG':'41.4883211143,-93.4899016988','BRANCHNAME':'Carlisle'},
+     {'LATLNG': '41.4979283,-93.4858797', 'BRANCHNAME': 'Carlisle'},
 'location-hub.html' : 
     {'LATLNG':'41.53319,-93.64416','BRANCHNAME':'Hub'},
 'location-indianola.html' : 
