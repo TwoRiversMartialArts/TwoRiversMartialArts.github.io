@@ -321,13 +321,31 @@
           if (firstStepIdx === -1) firstStepIdx = 8;
           for (let i = firstStepIdx; i < lines.length; i++) {
             const s = (lines[i] || '').trim();
-            if (s) steps.push(s);
+            if (s) {
+              // Try to extract step number from format "1." or "A." at start of line
+              const match = s.match(/^([A-Za-z0-9]+)\.\s+(.+)$/);
+              if (match) {
+                steps.push({ number: match[1], text: match[2].trim() });
+              } else {
+                // Fallback: use line number as step number
+                steps.push({ number: String(steps.length + 1), text: s });
+              }
+            }
           }
         } else {
           // Backwards-compatible behavior: steps begin at line 6
           for (let i = 6; i < lines.length; i++) {
             const s = (lines[i] || '').trim();
-            if (s) steps.push(s);
+            if (s) {
+              // Try to extract step number from format "1." or "A." at start of line
+              const match = s.match(/^([A-Za-z0-9]+)\.\s+(.+)$/);
+              if (match) {
+                steps.push({ number: match[1], text: match[2].trim() });
+              } else {
+                // Fallback: use line number as step number
+                steps.push({ number: String(steps.length + 1), text: s });
+              }
+            }
           }
         }
 
@@ -465,20 +483,22 @@
         return shuffle(options.slice(0, 4));
       }
 
-      function buildMCQOptions_forStep(correctStep, stepIndex = -1) {
-        const candidates = otherSteps.filter(s => s !== correctStep);
-        const distractors = shuffle(candidates).slice(0, 3);
+      function buildMCQOptions_forStep(step, stepIndex = -1) {
+        const correctText = step.text;
+        // Filter other steps to just their text content for comparison
+        const candidates = otherSteps.map(s => typeof s === 'string' ? s : s.text).filter(s => s !== correctText);
+        const distractors = shuffle(candidates).slice(0,3);
         // fill other steps from the same file if needed
         if (distractors.length < 3) {
-          const sameFileOther = currentData.steps.filter((s, i) => s !== correctStep && i !== stepIndex);
+          const sameFileOther = currentData.steps.filter((s, i) => s.text !== correctText && i !== stepIndex);
           shuffle(sameFileOther);
           for (const s of sameFileOther) {
             if (distractors.length >= 3) break;
-            if (!distractors.includes(s)) distractors.push(s);
+            if (!distractors.includes(s.text)) distractors.push(s.text);
           }
         }
-        while (distractors.length < 3) distractors.push('(noisy step ' + Math.floor(Math.random() * 100) + ')');
-        return shuffle([correctStep, ...distractors.slice(0, 3)]);
+        while (distractors.length < 3) distractors.push('(noisy step ' + Math.floor(Math.random()*100) + ')');
+        return shuffle([correctText, ...distractors.slice(0,3)]);
       }
 
       // --- Render current question as multiple choice question ---
@@ -511,8 +531,9 @@
           return;
         }
         const stepIndex = currentQuestionIndex - 3;
-        if (stepIndex >= 0 && stepIndex < stepCount) {
-          questionTitle.textContent = `Step ${stepIndex + 1}: Which of the following is the correct step?`;
+        if (stepIndex >= 0 && stepIndex < steps.length) {
+          const stepNumber = steps[stepIndex].number || (stepIndex + 1);
+          questionTitle.textContent = `Step ${stepNumber}: Which of the following is the correct step?`;
           const opts = getOptionsForQuestion(currentQuestionIndex);
           renderOptions(opts, 'q');
           return;
@@ -575,7 +596,8 @@
           if (submittedFlags[qIdx]) {
             anySubmitted = true;
             const ans = userAnswers[qIdx] || '(not answered)';
-            items.push(`Step ${i + 1}: ${escapeHtml(ans)}`);
+            const stepNumber = steps[i].number || String(i + 1);
+            items.push(`Step ${stepNumber}: ${escapeHtml(ans)}`);
           }
         }
 
@@ -689,7 +711,7 @@
         header.innerHTML += `<p><strong>Belt Level (from file):</strong> ${escapeHtml(level)}</p>`;
         header.innerHTML += `<p><strong>Meaning (from file):</strong> ${escapeHtml(meaning)}</p>`;
         header.innerHTML += `<p><strong>Step Count (from file):</strong> ${escapeHtml(stepCount)}</p>`;
-        header.innerHTML += `<p><strong>Steps (from file):</strong><br>${steps.slice(0, declaredCount).map((s, i) => `${i + 1}. ${escapeHtml(s)}`).join('<br>')}</p>`;
+        header.innerHTML += `<p><strong>Steps (from file):</strong><br>${steps.map(s => `${s.number}. ${escapeHtml(s.text)}`).join('<br>')}</p>`;
         resultsArea.appendChild(header);
 
         const feedback = document.createElement('div');
@@ -711,9 +733,9 @@
         // Step questions
         for (let i = 0; i < declaredCount; i++) {
           const userAns = userAnswers[3 + i];
-          const correct = steps[i];
-          if (userAns === correct) { score++; feedback.innerHTML += `<p class="right">✅ Step ${i + 1} — Correct</p>`; }
-          else { feedback.innerHTML += `<p class="wrong">❌ Step ${i + 1} — Your: "${escapeHtml(userAns)}" — Correct: "${escapeHtml(correct)}"</p>`; }
+          const step = steps[i];
+          if (userAns === step.text) { score++; feedback.innerHTML += `<p class="right">✅ Step ${step.number} — Correct</p>`; }
+          else { feedback.innerHTML += `<p class="wrong">❌ Step ${step.number} — Your: "${escapeHtml(userAns)}" — Correct: "${escapeHtml(step.text)}"</p>`; }
         }
 
         feedback.innerHTML += `<hr><h3>Your Score: ${score} / ${maxScore}</h3>`;
