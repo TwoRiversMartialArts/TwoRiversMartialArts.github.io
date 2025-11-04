@@ -4,52 +4,54 @@ Yon-Gae
 
 Named after a famous General during the Koguryo Dynasty, Yon Gae Somoon. The 49 movements refer to the last two figures of 649 A.D., the year he forced the Tang Dynasty to quit Korea after destroying nearly 300,000 of their troops at Ansi Sung. 
 
-Step back with right leg into a right back stance while executing a low left ridge hand block. Perform in circular motion.
-Execute a high right long fist punch (bear claw punch), slide right leg back to form a left front stance. Perform in slow motion
-Step back with the left leg into a left back stance, fighting stance.
-Jump forward and execute a high right knife hand strike, land in a left back stance with left arm still extended.
-Slightly slide both legs back keeping the left back stance and execute shoulder level checking block with x-fists.
-Slide right leg into a right front stance, execute a high right knife hand strike.
-Move right leg into a left leg back cat stance, execute downward right elbow strike.
-Jump forward into left x-stance while executing a high left back fist strike.
-Move the right leg back into a left front stance while executing a low right knife hand block.
-Move the right foot forward into a parallel stance (shoulder width stance), while executing a left middle hooking block with right fist on right side of body.
-Execute a right middle punch while maintaining stance.
-Step back with left leg into a left back stance while executing a low right ridge hand block. Perform in circular motion.
-Execute a high left long fist punch (bear claw punch), slide left leg back to form a right front stance. Perform in slow motion.
-Step back with the right leg into a right back stance, fighting stance.
-Jump forward and execute a high left knife hand strike, land in a right back stance with right arm extended.
-Slightly slide both legs back keeping the right back stance and execute shoulder level checking block with x-fists.
-Slide left leg into a left front stance, execute a high left knife hand strike.
-Move the left leg into a right leg back cat stance, execute downward left elbow strike.
-Jump forward into a right x-stance while executing a high right back fist strike.
-Move the left leg back into a right front stance while executing a low left knife hand block.
-Move the left foot into forward into a parallel stance (shoulder width stance), while executing a right middle hooking block with left fist on left side of body.
-Execute a left middle punch while maintaining stance.
-Move the right foot to the side into a horse stance while executing a W-shape ridge hand blocks.
-Cross the left foot over the right foot into a right x-stance while executing horizontal twin elbow strikes.
-Move the right foot into a horse stance while executing checking block with twin vertical outer forearm blocks.
-Cross the left foot over the right foot into a right x-stance while executing an  right uppercut punch and pulling the left fist in front of the right shoulder.
-Execute a high right reverse hooking kick.
-Lower the right leg and then execute a left high side kick while turning clockwise.
-Lower the left leg in a jumping motion into a left x-stance while executing a left downward back fist strike.
-Move the left foot into a horse stance while executing a W-shape ridge hand blocks.
-Cross the right foot over the left foot into a left x-stance while executing horizontal twin elbow strikes.
-Move the left foot into a horse stance while executing checking block with twin vertical outer forearm blocks.
-Cross the right foot over the left foot into a left x-stance while executing an left uppercut punch and pulling the right fist in front of the left shoulder.
-Execute a high left reverse hooking kick.
-Lower the left leg and then execute a right high side kick while turning counter-clock wise.
-Lower the right leg in a jumping motion into a right x-stance while executing a right downward back fist strike.
-Move the left leg to the back into a left back stance, execute fighting stance.
-Turning counter-clockwise 180 degrees with the left leg into a left cat stance while executing an upward waist block with right inner forearm.
- Move the left leg in a stomping motion into a right back stance while executing a high left knife hand strike.
-Shift into a right back stance, fighting stance.
-Turning clockwise 180 degrees with the right leg into a right cat stance while executing an upward waist block with left inner forearm.
-Move the right leg in a stomping motion into a left back stance while executing a high right knife hand strike.
-Move the right leg turning counter-clockwise 180 degrees into a right leg fighting back stance.
-Jump right leg reverse side kick, land in left back stance, middle knife hand block.
-Jump left leg reverse side kick, land in right back stance, middle knife hand block.
-Slide right leg into a left front stance, execute a low right ridge hand block with left fist over right shoulder.
-Move the left leg back into a left back stance, execute left elbow strike.
-Slide left leg into a right front stance, execute a low left ridge hand block with right fist over left shoulder.
-Move the right leg back into a right back stance, execute right elbow strike. Kiyap
+49
+
+1. Step back with right leg into a right back stance while executing a low left ridge hand block. Perform in circular motion.
+2. Execute a high right long fist punch (bear claw punch), slide right leg back to form a left front stance. Perform in slow motion
+3. Step back with the left leg into a left back stance, fighting stance.
+4. Jump forward and execute a high right knife hand strike, land in a left back stance with left arm still extended.
+5. Slightly slide both legs back keeping the left back stance and execute shoulder level checking block with x-fists.
+6. Slide right leg into a right front stance, execute a high right knife hand strike.
+7. Move right leg into a left leg back cat stance, execute downward right elbow strike.
+8. Jump forward into left x-stance while executing a high left back fist strike.
+9. Move the right leg back into a left front stance while executing a low right knife hand block.
+10. Move the right foot forward into a parallel stance (shoulder width stance), while executing a left middle hooking block with right fist on right side of body.
+11. Execute a right middle punch while maintaining stance.
+12. Step back with left leg into a left back stance while executing a low right ridge hand block. Perform in circular motion.
+13. Execute a high left long fist punch (bear claw punch), slide left leg back to form a right front stance. Perform in slow motion.
+14. Step back with the right leg into a right back stance, fighting stance.
+15. Jump forward and execute a high left knife hand strike, land in a right back stance with right arm extended.
+16. Slightly slide both legs back keeping the right back stance and execute shoulder level checking block with x-fists.
+17. Slide left leg into a left front stance, execute a high left knife hand strike.
+18. Move the left leg into a right leg back cat stance, execute downward left elbow strike.
+19. Jump forward into a right x-stance while executing a high right back fist strike.
+20. Move the left leg back into a right front stance while executing a low left knife hand block.
+21. Move the left foot into forward into a parallel stance (shoulder width stance), while executing a right middle hooking block with left fist on left side of body.
+22. Execute a left middle punch while maintaining stance.
+23. Move the right foot to the side into a horse stance while executing a W-shape ridge hand blocks.
+24. Cross the left foot over the right foot into a right x-stance while executing horizontal twin elbow strikes.
+25. Move the right foot into a horse stance while executing checking block with twin vertical outer forearm blocks.
+26. Cross the left foot over the right foot into a right x-stance while executing an  right uppercut punch and pulling the left fist in front of the right shoulder.
+27. Execute a high right reverse hooking kick.
+28. Lower the right leg and then execute a left high side kick while turning clockwise.
+29. Lower the left leg in a jumping motion into a left x-stance while executing a left downward back fist strike.
+30. Move the left foot into a horse stance while executing a W-shape ridge hand blocks.
+31. Cross the right foot over the left foot into a left x-stance while executing horizontal twin elbow strikes.
+32. Move the left foot into a horse stance while executing checking block with twin vertical outer forearm blocks.
+33. Cross the right foot over the left foot into a left x-stance while executing an left uppercut punch and pulling the right fist in front of the left shoulder.
+34. Execute a high left reverse hooking kick.
+35. Lower the left leg and then execute a right high side kick while turning counter-clock wise.
+36. Lower the right leg in a jumping motion into a right x-stance while executing a right downward back fist strike.
+37. Move the left leg to the back into a left back stance, execute fighting stance.
+38. Turning counter-clockwise 180 degrees with the left leg into a left cat stance while executing an upward waist block with right inner forearm.
+39. Move the left leg in a stomping motion into a right back stance while executing a high left knife hand strike.
+40. Shift into a right back stance, fighting stance.
+41. Turning clockwise 180 degrees with the right leg into a right cat stance while executing an upward waist block with left inner forearm.
+42. Move the right leg in a stomping motion into a left back stance while executing a high right knife hand strike.
+43. Move the right leg turning counter-clockwise 180 degrees into a right leg fighting back stance.
+44. Jump right leg reverse side kick, land in left back stance, middle knife hand block.
+45. Jump left leg reverse side kick, land in right back stance, middle knife hand block.
+46. Slide right leg into a left front stance, execute a low right ridge hand block with left fist over right shoulder.
+47. Move the left leg back into a left back stance, execute left elbow strike.
+48. Slide left leg into a right front stance, execute a low left ridge hand block with right fist over left shoulder.
+49. Move the right leg back into a right back stance, execute right elbow strike. Kiyap
