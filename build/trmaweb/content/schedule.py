@@ -94,7 +94,7 @@ hub.extend([
   {'day':'Wednesday', 'classes':[
        ('TKD','6:00 PM - 7:00 PM') ]},
   {'day':'Thursday', 'classes':[
-       ('TKD','6:00 PM - 7:00 PM'),
+       ('TKD','5:45 PM - 7:00 PM'),
        ('TKD','7:15 PM - 8:15 PM'),
        ]},
   {'day':'Friday', 'classes':[
