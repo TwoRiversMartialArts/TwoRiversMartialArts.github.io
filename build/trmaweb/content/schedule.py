@@ -60,8 +60,8 @@ context = {
        { 'day' : 'Monday',
          'classes' : [
                       #( 'Little Dragons','5:30 PM - 6:00 PM'),
-                      ( 'Beginner TKD','6:30 PM - 7:30 PM'),
-                      ( 'Advanced TKD','7:30 PM - 8:30 PM')]},
+                      ( 'Beginner TKD','6:00 PM - 7:00 PM'),
+                      ( 'Advanced TKD','7:00 PM - 8:00 PM')]},
        { 'day' : 'Wednesday',
          'classes' : #[( 'Colored Belts', '6:00 PM - 7:00 PM')
                      [( 'advanced TKD', '6:30 PM - 7:30 PM')
